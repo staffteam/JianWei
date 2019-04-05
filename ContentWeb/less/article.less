@@ -1,0 +1,213 @@
+@import "plus.less";
+@media (max-width:1920px) and (min-width:801px) {
+    .streamer{position: relative;
+    p{overflow: hidden; height: 23vw; img{max-width: none; width: 100%;}}
+    div.headline{.center(); color: white; border: 2px solid rgba(255,255,255,0.5); border-top:0px; text-align: center; width: 19vw; height: 6vw;
+    &:before{border-top:2px solid rgba(255,255,255,0.5); content: ''; display: block; width: 25%; left: 0; position: absolute; top: 0; }
+    &:after{border-top:2px solid rgba(255,255,255,0.5); content: ''; display: block; width: 25%; right: 0; position: absolute; top: 0; }
+    span{display: block; font-size: 1.7vw; font-weight: 500; position: relative; transform: translateY(-50%); }
+    font{display: block; font-size: 2.2vw;  font-weight: 500; line-height: 0.8;}}
+    div.location{position: absolute; bottom: 10%; font-weight: 100; left: 12.5%; color: white; font-size: 1.2vw; a{color: white; font-size: 1.2vw; margin: 0 0.5vw; } }}
+    body{background-color: #f8f8f8;}
+    div.article{padding-bottom: 5vw;
+        div.content{width: 75%; margin: 0 auto; overflow: hidden; 
+        &>div.left{width: 15vw; float: left;  background-color: white; padding-bottom: 1vw;
+        &.second{
+            ul{
+                li{
+                    &.on{
+                        a{i{ transform:rotate(0deg); color: @colors; }}
+                        div{}
+                    }
+                    a{position: relative; display: block;
+                    i{float: right; transform:rotate(45deg); font-size: 1.1vw; transition: 0.3s transform; color: #999999; }}
+                    div{display: none; background-color: #F8F8F8;
+                    p{border-bottom: 1px solid #DDDDDD;
+                    &.on{a{color: @colors;}} 
+                    &:last-child{border-bottom: 0;}}}
+                }
+            }
+        }
+        div.top{padding: 2vw 0 3vw 0; text-align: center; color: @colors;
+        span{display: block; font-size: 1.8vw; }
+        font{display: block; font-size: 1.5vw;}}
+        ul{border-bottom: 1px solid #DDDDDD;
+            li{border-top: 1px solid #DDDDDD; text-align: center;
+            &.on{&>a{color: @colors;
+            &:before{height: 60%; position: absolute; top: 20%; left: 0; width: 4px; background-color: @colors; content: '';}}
+             }
+            a{display: block; position: relative; padding: 1.5vw; font-size: 1.1vw;  line-height: 1.5;
+            }}
+        }}
+        &>div.right{margin-left: 20vw;
+        div.articleTitle{text-align: center; padding: 5vw 0;
+        span.a{border-bottom: 2px solid @colors; width: 5vw; position: relative; display: inline-block; width: 7vw;
+        &:before{content: ''; position: absolute; width: 10px; height: 10px; border: 2px solid @colors; border-radius: 50%; background-color: #F8F8F8; right: 0; top: -4px;}}
+        h2{font-size: 1.8vw; font-weight: normal; color: black; display: inline-block; position: relative; transform: translateY(25%); padding: 0 1.5vw;}
+        span.b{border-bottom: 2px solid @colors; width: 5vw; position: relative; display: inline-block; width: 7vw;
+        &:before{content: ''; position: absolute; width: 10px; height: 10px; border: 2px solid @colors; border-radius: 50%; background-color: #F8F8F8; left: 0; top: -4px;}}}
+        div.professionalList{
+            ul{
+                li{overflow: hidden; margin-bottom: 3vw;
+                &:hover{div.right{h2{color: @colors;}}}
+                div.left{width: 15vw; height: 20vw; float: left;}
+                div.right{margin-left: 18vw; position: relative; height: 20vw;
+                h2{font-weight: 500; font-size: 1.5vw; .line();}
+                span{display: block; margin-top: 0.5vw; font-size: 1.2vw; color: #999999; }
+                font{display: block; margin-top: 0.2vw; font-size: 1.2vw; color: #666666; }
+                p{.lines(); line-height: 2; font-size: 1vw; margin-top: 1vw;  -webkit-line-clamp: 3;}
+                &>div{position: absolute; right: 0; bottom: 1vw;
+                a{display: inline-block; margin-left: 1.5vw; padding-left: 3vw; height: 2vw; background: url(../images/icon_jl_fx.png) left no-repeat ; background-size: 2vw; line-height: 2vw; font-size: 0.9vw;
+                &:hover{opacity: 1 !important;}
+                &.xz{background: url(../images/icon_jl_xz.png) left no-repeat ; background-size: 2vw;}}}}}
+            }}}}
+    }
+    .pageview{text-align: center; margin-top: 4vw; height: 3vw;
+         span{
+             &.link{color: @colors; cursor: no-drop;}
+         }
+         a{}
+         .link{cursor: pointer; color: #000000; font-size: 1.2vw; width: 2.5vw; border: 0 !important; border-radius: 50%; height: 2.5vw; line-height: 2.5vw; text-align: center; display: inline-block; margin: 0 0.5vw;
+         i{ font-size: 1vw; position: relative; top: -1px;}
+         &:first-child{width: auto;}
+         &:last-child{width: auto;}
+         &:hover{color: @colors; border: 0 !important;}}
+         a.prev-link:first-child:hover,a.next:last-child:hover{border: 1px solid @colors; color: @colors;  }
+         }
+         .collegeList{
+         ul{border-bottom: 1px solid #DDDDDD;
+             li{border-top: 1px solid #DDDDDD; padding: 2vw 0; 
+             &:hover{a{h2{color: @colors;}}}
+         a{
+             h2{font-size: 1.2vw; .line();}
+             span{display: block; margin-top: 0.5vw; font-size: 1vw; color: #999999;}
+             div{margin-top: 0.5vw; line-height: 2; font-size: 0.9vw; color: #999999; .lines();  -webkit-line-clamp: 3;}
+         }}
+         }}
+         .productText{padding: 5vw 0;}
+         .productList{overflow: hidden;
+         ul{
+             li{border: 1px solid #DDDDDD; width: 46%; float: left; margin: 2%; padding-bottom: 5vw;
+             &>p{background-color: white; width: 90%; margin: 1vw auto; border-radius: 2vw; font-size: 1.2vw; font-weight: 600; line-height: 1.5; padding: 1vw 0; text-align: center; }
+             &>div{padding: 0 2vw;
+                 span{display: block; padding: 1vw 0; text-align: center; font-size: 1vw; border-bottom: 1px solid #DDDDDD; }
+             }}
+         }}
+         .advantageList{
+             ul{
+                 li{margin-top: 2vw;
+                 &:first-child{margin-top: 0;}
+                     h2{font-size: 1.3vw; font-weight: 600; }
+                     div{line-height: 1.8; font-size: 1vw; margin-top: 1.5vw;}
+                 }
+             }
+         }
+} 
+
+@media (max-width:1400px) and (min-width:801px) {
+}
+
+@media (max-width:800px) {
+    .streamer{position: relative;
+    p{overflow: hidden; height: 10rem; img{max-width: none; height: 100%;}}
+    div.headline{.center(); color: white; border: 0.1rem solid rgba(255,255,255,0.5); border-top:0px; text-align: center; width: 10rem; height: 3rem;
+    &:before{border-top:0.1rem solid rgba(255,255,255,0.5); content: ''; display: block; width: 20%; left: 0; position: absolute; top: 0; }
+    &:after{border-top:0.1rem solid rgba(255,255,255,0.5); content: ''; display: block; width: 20%; right: 0; position: absolute; top: 0; }
+    span{display: block; font-size: 1.3rem; font-weight: 500; position: relative; transform: translateY(-50%); }
+    font{display: block; font-size: 1.3rem;  font-weight: 500; line-height: 0.5;}}
+    div.location{position: absolute; bottom: 8%; font-weight: 100; left: 10%; color: white; font-size: 1.2rem; a{color: white; font-size: 1.2rem; margin: 0 0.3rem; } }}
+    body{background-color: #f8f8f8;}
+    div.article{padding-bottom: 2rem;
+        div.content{width: 95%; margin: 0 auto; overflow: hidden; 
+        &>div.left{width: 7rem; float: left;  background-color: white; padding-bottom: 1rem;
+        &.second{
+            ul{
+                li{
+                    &.on{
+                        a{i{ transform:rotate(0deg); color: @colors; }}
+                        div{}
+                    }
+                    a{position: relative; display: block;
+                    i{float: right; transform:rotate(45deg); font-size: 1rem; transition: 0.3s transform; color: #999999; }}
+                    div{display: none; background-color: #F8F8F8;
+                    p{border-bottom: 1px solid #DDDDDD;
+                    &.on{a{color: @colors;}} 
+                    &:last-child{border-bottom: 0;}}}
+                }
+            }
+        }
+        div.top{padding: 1rem 0 1.5rem 0; text-align: center; color: @colors;
+        span{display: block; font-size: 1.1rem; }
+        font{display: block; font-size: 1.1rem;}}
+        ul{border-bottom: 1px solid #DDDDDD;
+            li{border-top: 1px solid #DDDDDD; text-align: center; position: relative;
+            &.on{&>a{color: @colors;
+            &:before{height: 60%; position: absolute; top: 20%; left: 0; width: 0.2rem; background-color: @colors; content: '';}}
+             }
+            a{display: block; padding: 1rem 0.5rem; font-size: 1rem; line-height: 1.5;
+            }}
+        }}
+        &>div.right{margin-left: 8rem;
+        div.articleTitle{text-align: center; padding: 2rem 0;
+        span.a{border-bottom: 0.1rem solid @colors; width: 3rem; position: relative; display: inline-block; width: 4rem;
+        &:before{content: ''; position: absolute; width: 0.5rem; height: 0.5rem; border: 0.1rem solid @colors; border-radius: 50%; background-color: #F8F8F8; right: 0; top: -0.25rem;}}
+        h2{font-size: 1.3rem; font-weight: normal; color: black; display: inline-block; position: relative; transform: translateY(25%); padding: 0 1rem;}
+        span.b{border-bottom: 0.1rem solid @colors; width: 4rem; position: relative; display: inline-block; width: 4rem;
+        &:before{content: ''; position: absolute; width: 0.5rem; height: 0.5rem; border: 0.1rem solid @colors; border-radius: 50%; background-color: #F8F8F8; left: 0; top: -0.25rem;}}}
+        div.professionalList{
+            ul{
+                li{overflow: hidden; margin-bottom: 1rem;
+                div.left{width: 8rem; height: 10.5rem; float: left;}
+                div.right{margin-left: 8.5rem; position: relative; height: 10.5rem;
+                h2{font-weight: 500; font-size: 1.3rem; .line();}
+                span{display: block; margin-top: 0.2rem; font-size: 1rem; color: #999999; }
+                font{display: block; margin-top: 0rem; font-size: 1rem; color: #666666; }
+                p{.lines(); line-height: 1.5; font-size: 1rem; margin-top: 0.5rem;  -webkit-line-clamp: 2;}
+                &>div{position: absolute; right: 0; bottom: 0;
+                a{display: inline-block; margin: 0; margin-left: 0.5rem; padding-left: 1.2rem; height: 1rem; background: url(../images/icon_jl_fx.png) left no-repeat ; background-size: 1rem; line-height: 1rem; font-size: 0.9rem;
+                &.xz{background: url(../images/icon_jl_xz.png) left no-repeat ; background-size: 1rem;}}}}}
+            }}}}
+    }
+    .pageview{text-align: center; margin-top: 2rem;
+         span{
+             &.link{color: @colors; cursor: no-drop;}
+         }
+         a{}
+         .link{cursor: pointer; color: #000000; font-size: 1.2rem; border: 0px !important; border-radius: 50%; height: 2.5rem; line-height: 2.5rem; text-align: center; display: inline-block; margin: 0 0.5rem;
+         i{ font-size: 1rem;}
+         &:first-child{width: auto;}
+         &:last-child{width: auto;}
+         &:hover{color: @colors;}}
+         .prev-link:first-child{border: 1px solid #333333; color: #333333;  }
+         .next:last-child{border: 1px solid #333333; color: #333333;  }}
+         
+          .collegeList{
+         ul{border-bottom: 1px solid #DDDDDD;
+             li{border-top: 1px solid #DDDDDD; padding: 1rem 0; 
+             &:hover{a{h2{color: @colors;}}}
+         a{
+             h2{font-size: 1.2rem; .line();}
+             span{display: block; margin-top: 0.5rem; font-size: 1rem; color: #999999;}
+             div{margin-top: 0.5rem; font-size: 1rem; color: #999999; .lines(); line-height: 1.5;  -webkit-line-clamp: 2;}
+         }}
+         }}
+         
+         .productText{padding: 2rem 0 0 0;}
+         .productList{overflow: hidden;
+         ul{
+             li{border: 1px solid #DDDDDD; width: 95%; float: left; margin: 1rem 2.5%; padding-bottom: 2rem;
+             &>p{background-color: white; width: 90%; margin: 1rem auto; border-radius: 1.5rem; font-size: 1.2rem; font-weight: 600; line-height: 1.5; padding: 1rem 0; text-align: center; }
+             &>div{padding: 0 1rem;
+                 span{display: block; padding: 1rem 0; text-align: center; font-size: 1rem; border-bottom: 1px solid #DDDDDD; }
+             }}
+         }}
+         .advantageList{
+             ul{
+                 li{margin-top: 1rem;
+                 &:first-child{margin-top: 0;}
+                     h2{font-size: 1.3rem; font-weight: 600; }
+                     div{line-height: 1.8; font-size: 1rem; margin-top: 1rem;}
+                 }
+             }
+         }
+}
