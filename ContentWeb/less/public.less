@@ -8,7 +8,11 @@
      i{font-size: 30px; color: #666666;}}
     .navbar-nav{height: 5vw; margin-left:5vw;
     &>li{height: 5vw; 
-    &>a{ padding:1.5vw 1.5vw; line-height: 2vw;
+    &.active{a{background-color: white; color: @colors;
+    &:before{content: ''; display: block; position: absolute; bottom: 0; left: 20%; width: 60%; border-bottom: 4px solid @colors; }}}
+    &>a{ padding:1.5vw 1.5vw; line-height: 2vw; position: relative;
+    &:hover{background-color: white; color: @colors;
+    &:before{content: ''; display: block; position: absolute; bottom: 0; left: 20%; width: 60%; border-bottom: 4px solid @colors; }}
     &>span.caret{margin-left:5px;}}
     &>ul{
         li{ a{line-height: 2vw;}}
@@ -46,6 +50,13 @@
     .bsFrameDiv>div{width: 210px !important; height: 210px !important;}
     .bsFrameDiv>div>img{margin: 16px !important;}
     .navHeight{height: 5vw;}
+    .nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+    color: @colors; background-color: white;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+    color: @colors; 
+}
+
 }
 
 @media (max-width:1400px) and (min-width:801px) {

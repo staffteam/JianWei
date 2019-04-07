@@ -84,7 +84,8 @@
              div{margin-top: 0.5vw; line-height: 2; font-size: 0.9vw; color: #999999; .lines();  -webkit-line-clamp: 3;}
          }}
          }}
-         .productText{padding: 5vw 0;}
+         .productText{padding: 5vw 0; line-height: 1.5; p{margin: 5px 0;}}
+         .introduceText{line-height: 1.5; p{margin: 5px 0;}}
          .productList{overflow: hidden;
          ul{
              li{border: 1px solid #DDDDDD; width: 46%; float: left; margin: 2%; padding-bottom: 5vw;
@@ -101,6 +102,155 @@
                      div{line-height: 1.8; font-size: 1vw; margin-top: 1.5vw;}
                  }
              }
+         }
+         .lndustryList{background-color: white; padding:3vw; margin-bottom: 2vw;
+         &>h2{font-size: 1.2vw; line-height: 1.5; font-weight: 600; padding-left: 1.5vw; }
+         &>p{font-size: 1.2vw; margin-top: 2vw; font-weight: 600; padding-left: 1.5vw;}
+         ul{margin-top: 2vw;
+             li{margin-top: 1.5vw; font-size: 1vw; position: relative; padding-left: 1.5vw;
+             &:before{content: ''; width: 0.5vw; height: 0.5vw; background-color: @colors; display: block; position: absolute; left: 0; top: 50%; transform: translateY(-50%) rotate(45deg);  }}
+         }}
+         .honorList{
+             h2{font-size: 1vw; font-weight: 600;}
+             ul{margin-top: 2vw;
+                 li{display: inline-block; font-size: 1.2vw; margin-right: 2vw; padding: 0.2vw 1vw; cursor: pointer;
+                 &.on{background-color: @colors; border-radius: 1.5vw; color: white;}}
+             }
+         }
+         .honorContent{margin-top: 3vw;
+         ul{
+             li{margin-top: 1.5vw;
+                 p{font-size: 1vw; position: relative; padding-left: 1.5vw;
+             &:before{content: ''; width: 0.5vw; height: 0.5vw; background-color: @colors; display: block; position: absolute; left: 0; top: 50%; transform: translateY(-50%) rotate(45deg);  }}
+             div{margin-top: 1vw; padding-bottom: 1.5vw; border-bottom: 1px solid #DDDDDD; padding-left: 2vw;
+             span{display: block; font-size: 1vw; line-height: 2;}}
+             }
+         }}
+         .culture{
+             .top{overflow: hidden;
+             &>div{width: 48%; float: left;
+             &>p{overflow: hidden; .imgs(); height: 18vw; img{max-width: none; width: 100%;}}
+             div{background-color: white; padding: 2vw 3vw;
+             h2{font-size: 1.4vw; font-weight: 600;}
+             p{font-size: 1vw; margin-top: 1.5vw;}}}
+             div.right{margin-left: 4%;}}
+             .bottom{margin-top: 2vw; background-color: white; padding-top:2vw;
+             &>h2{font-size: 1.4vw; font-weight: 600; position: relative; padding-left: 2vw;
+             &:before{content: ''; right: 0; top: 50%; transform: translateY(-50%); border-bottom: 1px solid #DDDDDD; position: absolute; width: 85%; }}
+             &>div{ padding: 2vw; line-height: 1.5; h1, h2, h3, h4, h5, h6{font-weight: 600;} p{margin: 5px 0;} }}
+         }
+         .newsList{
+             ul{
+                 li{border-bottom: 1px solid #DDDDDD;
+                 &:first-child{border-top: 1px solid #DDDDDD;}
+                 &:first-child,&:nth-child(2),&:nth-child(3){background:url(../images/icon_new.png) no-repeat right top; background-size: 2vw;}
+                  padding: 2vw 0; position: relative;
+                  &:hover{h2{color: @colors;}
+                  i{color: @colors;}}
+                 h2{font-size: 1.2vw; .line();}
+                 span{font-size: 1.1vw; display: block; margin-top: 1vw;}
+                 i{position: absolute; right: 3vw; top: 50%; transform: translateY(-50%); font-size: 1.5vw;}}
+             }
+         }
+         .joinList{
+             div.list{
+                 div.top{
+                     h2{font-size: 1.4vw; font-weight: 600; }
+                     span{display: block; margin-top: 1vw; font-size: 1vw; color: #999999;}
+                 }
+                 div.bottom{
+                     ul{
+                         li{margin-top: 2vw;
+                             h2{font-size: 1.1vw; font-weight: 600; }
+                             p{line-height: 2; margin-top:1vw; font-size: 1vw;}
+                         }
+                     }
+                 }
+             }
+         }
+         .aboutlist{
+             div.text{line-height: 1.5; h1, h2, h3, h4, h5, h6{font-weight: 600;} p{margin: 5px 0;} }
+             div.list{margin-top: 2vw;
+             h2{font-size: 1.2vw; font-weight: 600;}
+             div{margin-top: 2vw;
+                 span{display: inline-block; background-color: white; padding: 0.5vw 3vw; border-radius: 2vw; line-height: 2; font-size:1vw; margin-right: 2vw; }
+             }}
+             div.hd{margin-top: 2vw;
+             h2{font-size: 1.2vw; font-weight: 600;}
+             ul{margin-top: 1.5vw;
+                 li{width: 46%; float: left; margin: 2%; padding: 0.5vw; background-color: white;
+                 a{display: block; .imgs(); overflow: hidden; height: 16vw;
+                 img{max-width: none; width: 100%;}} }
+             }}
+         }
+         .teamcontent{
+             .teamTitle{text-align: center; padding: 5vw 0;
+        span.a{border-bottom: 2px solid @colors; width: 5vw; position: relative; display: inline-block; width: 7vw;
+        &:before{content: ''; position: absolute; width: 10px; height: 10px; border: 2px solid @colors; border-radius: 50%; background-color: #F8F8F8; right: 0; top: -4px;}}
+        h2{font-size: 1.8vw; font-weight: normal; color: black; display: inline-block; position: relative; transform: translateY(25%); padding: 0 1.5vw;}
+        span.b{border-bottom: 2px solid @colors; width: 5vw; position: relative; display: inline-block; width: 7vw;
+        &:before{content: ''; position: absolute; width: 10px; height: 10px; border: 2px solid @colors; border-radius: 50%; background-color: #F8F8F8; left: 0; top: -4px;}}}
+            .teamList{overflow: hidden; padding: 0 10%;padding-bottom: 2vw;
+            ul{
+                li{width:46%; float: left; margin: 2%; background-color:white;
+                &>p{width: 13vw; height: 17.5vw; .imgs(); overflow: hidden;  float: left;
+                img{max-width: none; width: 100%;}}
+                div{margin-left: 13vw; position: relative;  height: 17.5vw;
+                &>a{padding: 2vw 2vw; display: block;
+                h2{font-size: 1.4vw;}
+                span{display: block; margin-top: 1vw; font-size: 1vw; color: #999999;}}
+                p{position: absolute; right: 2vw; bottom: 2vw;
+                a{width: 3.5vw; height: 3.5vw; border-radius: 50%; margin-left: 2vw; background-color: #F8F8F8; display: inline-block; text-align: center; line-height: 3.5vw;
+                i{font-size: 1.5vw; color: #666666;} }}}}
+            }}
+         }
+         .teamLeft{padding-bottom: 0 !important; background-color: #F8F8F8 !important;}
+         .teams{margin-top: 3vw;
+         &>p{overflow: hidden;
+         img{max-width: none; width: 100%;}}
+         div.tle{padding: 2vw 1vw; text-align: center; background-color: white;
+         h2{font-size: 1.5vw; font-weight: 600;}
+         span{font-size: 1vw; margin-top: 1vw; display: block;}}
+         div.list{text-align: center; background-color: white;
+             p{border-top: 1px solid #DDDDDD; padding: 1vw;
+             span{display: block; font-size: 1vw; text-align: center;
+             i{font-size: 1vw; color: @colors; margin-right: 0.5vw; }}
+             font{display: block; text-align: center; font-size: 0.8vw;word-break:break-all;}}
+         }
+         div.code{margin-top: 2vw; padding: 2vw; background-color: white;
+         p{width: 90%; margin: 0 auto;}
+         h2{text-align: center; margin-top: 1vw; font-size: 1vw;}}
+         div.down{margin-top: 4vw; text-align: center; background-color: white; line-height: 2; font-size: 1vw; border-radius: 2vw; padding: 0.5vw 0;
+         i{font-size: 1vw; margin-right: 1.5vw; }}
+         }
+         .teamContent{padding: 4vw 0;
+             ul{
+                 li{
+                     &>h2{font-size: 1.2vw; font-weight: 600; position: relative; padding-left: 1.5vw;
+                        &:before{content: ''; width: 0.5vw; height: 0.5vw; background-color: @colors; display: block; position: absolute; left: 0; top: 50%; transform: translateY(-50%) rotate(45deg);  }
+                        &:after{content: ''; right: 0;  top: 50%; display: block; position: absolute; transform: translateY(-50%); border-bottom: 1px solid #DDDDDD; width: 85%; } }
+                     &>div{padding: 1.5vw 2vw; line-height: 1.5; h1, h2, h3, h4, h5, h6{font-weight: 600;} p{margin: 5px 0;} }
+                 }
+             }
+         }
+         .contactTop{overflow: hidden; padding: 0 12.5%;
+         div.left{width: 50%; float: left;
+         img{max-width: none; width: 100%;}}
+         div.right{width: 45%; float: right;
+         h2{font-size: 1.3vw; font-weight: 600; position: relative; padding-bottom: 1vw;
+         &:before{content: ''; position: absolute; left: 0; bottom: 0; width: 3vw; border-bottom: 3px solid @colors; }}
+         p{margin-top: 2vw; font-size: 1.1vw;}}}
+         .contactBottom{ padding: 0 12.5%;
+             ul{
+                 li{padding: 0.3vw 2vw; border-radius: 2vw; font-size: 1vw; display: inline-block; margin: 0.5vw; cursor: pointer; line-height: 2;
+                 &.on{background-color: @colors; color: white;}}
+             }
+             div.map{margin: 5vw 0; height: 60vw; background:url(../images/map2.png) no-repeat center; background-size: 100% 100%; position: relative; display: none;
+             &>div{position: absolute; width: 40vw; height: 14.3vw; background: url(../images/icon_map_bj.png) no-repeat left bottom; background-size: 7vw;
+             &>span{display: block; font-size: 1.1vw; position: absolute; bottom: 5.5vw; font-size: 1.2vw; width: 3vw; text-align: center; }
+             &>div{margin-left: 9vw; padding-top: 0;
+             h2{font-size: 1.1vw; font-weight: 600;}
+             div{font-size: 1vw; line-height: 2; margin-top: 1vw;}}}}
          }
 } 
 
@@ -192,7 +342,8 @@
          }}
          }}
          
-         .productText{padding: 2rem 0 0 0;}
+         .productText{padding: 2rem 0 0 0; line-height: 1.5; p{margin: 5px 0;}}
+         .introduceText{line-height: 1.5; p{margin: 5px 0;}}
          .productList{overflow: hidden;
          ul{
              li{border: 1px solid #DDDDDD; width: 95%; float: left; margin: 1rem 2.5%; padding-bottom: 2rem;
@@ -207,6 +358,159 @@
                  &:first-child{margin-top: 0;}
                      h2{font-size: 1.3rem; font-weight: 600; }
                      div{line-height: 1.8; font-size: 1rem; margin-top: 1rem;}
+                 }
+             }
+         }
+         .lndustryList{background-color: white; padding:1rem; margin-bottom: 1rem;
+         &>h2{font-size: 1.2rem; line-height: 1.5; font-weight: 600; padding-left: 1.5rem; }
+         &>p{font-size: 1.2rem; margin-top: 1rem; font-weight: 600; padding-left: 1.5rem;}
+         ul{margin-top: 1rem;
+             li{margin-top: 1.5rem; font-size: 1rem; position: relative; padding-left: 1.5rem;
+             &:before{content: ''; width: 0.5rem; height: 0.5rem; background-color: @colors; display: block; position: absolute; left: 0; top: 0.4rem; transform:rotate(45deg);  }}
+         }}
+         .honorList{
+             h2{font-size: 1rem; font-weight: 600;}
+             ul{margin-top: 1rem;
+                 li{display: inline-block; font-size: 1.2rem; margin-right: 2rem; padding: 0.2rem 1rem; cursor: pointer; line-height: 1.5;
+                 &.on{background-color: @colors; border-radius: 1.5rem; color: white;}}
+             }
+         }
+         .honorContent{margin-top: 2rem;
+         ul{
+             li{margin-top: 1rem;
+                 p{font-size: 1rem; position: relative; padding-left: 1.5rem;
+             &:before{content: ''; width: 0.5rem; height: 0.5rem; background-color: @colors; display: block; position: absolute; left: 0; top: 50%; transform: translateY(-50%) rotate(45deg);  }}
+             div{margin-top: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #DDDDDD; padding-left: 2rem;
+             span{display: block; font-size: 1rem; line-height: 1.5;}}
+             }
+         }}
+         
+         .culture{
+             .top{overflow: hidden;
+             &>div{margin: 1rem 0;
+             &>p{overflow: hidden; .imgs(); img{max-width: none; width: 100%;}}
+             div{background-color: white; padding: 1rem;
+             h2{font-size: 1.3rem; font-weight: 600;}
+             p{font-size: 1rem; margin-top: 1rem;}}}
+             div.right{}}
+             .bottom{margin-top: 1rem; background-color: white; padding-top:1rem;
+             &>h2{font-size: 1.3rem; font-weight: 600; position: relative; padding-left: 2vw;
+             &:before{content: ''; right: 0; top: 50%; transform: translateY(-50%); border-bottom: 1px solid #DDDDDD; position: absolute; width: 75%; }}
+             &>div{ padding: 1rem; line-height: 1.5; h1, h2, h3, h4, h5, h6{font-weight: 600;} p{margin: 5px 0;} }}
+         }
+         .newsList{
+             ul{
+                 li{border-bottom: 1px solid #DDDDDD;
+                 &:first-child{border-top: 1px solid #DDDDDD;}
+                 &:first-child,&:nth-child(2),&:nth-child(3){background:url(../images/icon_new.png) no-repeat right top; background-size: 2rem;}
+                  padding: 1.5rem 0; position: relative;
+                  &:hover{h2{color: @colors;}
+                  i{color: @colors;}}
+                 h2{font-size: 1.2rem; .line();}
+                 span{font-size: 1.1rem; display: block; margin-top: 1rem;}
+                 i{display: none;}}
+             }
+         }
+         .joinList{
+             div.list{
+                 div.top{
+                     h2{font-size: 1.4rem; font-weight: 600; }
+                     span{display: block; margin-top: 1rem; font-size: 1rem; color: #999999;}
+                 }
+                 div.bottom{
+                     ul{
+                         li{margin-top: 2rem;
+                             h2{font-size: 1.1rem; font-weight: 600; }
+                             p{line-height: 2; margin-top:1rem; font-size: 1rem;}
+                         }
+                     }
+                 }
+             }
+         }
+         
+         .aboutlist{
+             div.text{line-height: 1.5; h1, h2, h3, h4, h5, h6{font-weight: 600;} p{margin: 5px 0;} }
+             div.list{margin-top: 1.5rem;
+             h2{font-size: 1.2rem; font-weight: 600;}
+             div{margin-top: 1rem;
+                 span{display: inline-block; background-color: white; padding: 0.2rem 1rem; border-radius: 2rem; margin: 0.5rem; line-height: 2; font-size:1rem; margin-right: 0.5rem; }
+             }}
+             div.hd{margin-top: 1.5rem;
+             h2{font-size: 1.2rem; font-weight: 600;}
+             ul{margin-top: 1.5rem;
+                 li{margin: 1rem; padding: 0.5rem; background-color: white;
+                 a{display: block; .imgs(); overflow: hidden;
+                 img{max-width: none; width: 100%;}} }
+             }}
+         }
+         .teamcontent{
+             .teamTitle{text-align: center; padding: 2rem 0;
+        span.a{border-bottom: 0.1rem solid @colors; width: 3rem; position: relative; display: inline-block; width: 4rem;
+        &:before{content: ''; position: absolute; width: 0.5rem; height: 0.5rem; border: 0.1rem solid @colors; border-radius: 50%; background-color: #F8F8F8; right: 0; top: -0.25rem;}}
+        h2{font-size: 1.3rem; font-weight: normal; color: black; display: inline-block; position: relative; transform: translateY(25%); padding: 0 1rem;}
+        span.b{border-bottom: 0.1rem solid @colors; width: 4rem; position: relative; display: inline-block; width: 4rem;
+        &:before{content: ''; position: absolute; width: 0.5rem; height: 0.5rem; border: 0.1rem solid @colors; border-radius: 50%; background-color: #F8F8F8; left: 0; top: -0.25rem;}}}
+            .teamList{overflow: hidden; padding: 0 10%;padding-bottom: 2rem;
+            ul{
+                li{margin: 1rem; background-color:white;
+                &>p{width: 10rem; height: 43.5vw; .imgs(); overflow: hidden;  float: left;
+                img{max-width: none; width: 100%;}}
+                div{margin-left: 10rem; position: relative;  height: 43.5vw;
+                &>a{padding: 1rem; display: block;
+                h2{font-size: 1.4rem;}
+                span{display: block; margin-top: 1rem; font-size: 1rem; color: #999999;}}
+                p{position: absolute; right: 1rem; bottom: 1rem;
+                a{width: 3rem; height: 3rem; border-radius: 50%; margin-left: 2rem; background-color: #F8F8F8; display: inline-block; text-align: center; line-height: 3rem;
+                i{font-size: 1.5rem; color: #666666;} }}}}
+            }}
+         }
+         .teamLeft{padding-bottom: 0 !important; background-color: #F8F8F8 !important;}
+         .teams{margin-top: 2rem;
+         &>p{overflow: hidden;
+         img{max-width: none; width: 100%;}}
+         div.tle{padding: 2rem 1rem; text-align: center; background-color: white;
+         h2{font-size: 1.3rem; font-weight: 600;}
+         span{font-size: 1rem; margin-top: 1rem; display: block;}}
+         div.list{text-align: center; background-color: white;
+             p{border-top: 1px solid #DDDDDD; padding: 1rem;
+             span{display: block; font-size: 1rem; text-align: center;
+             i{font-size: 1rem; color: @colors; margin-right: 0.5vw; }}
+             font{display: block; text-align: center; font-size: 0.8vw;word-break:break-all;}}
+         }
+         div.code{margin-top: 2rem; padding: 1rem; background-color: white;
+         p{width: 100%; margin: 0 auto;}
+         h2{text-align: center; margin-top: 1rem; font-size: 0.9rem;}}
+         div.down{margin-top: 2rem; text-align: center; background-color: white; line-height: 2; font-size: 1rem; border-radius: 1rem; padding: 0.5rem;
+         i{font-size:0.8rem; margin-right: 0.5rem; }}
+         }
+         .teamContent{padding: 2rem 0;
+             ul{
+                 li{
+                     &>h2{font-size: 1.2rem; font-weight: 600; position: relative; padding-left: 1rem;
+                        &:before{content: ''; width: 0.5rem; height: 0.5rem; background-color: @colors; display: block; position: absolute; left: 0; top: 50%; transform: translateY(-50%) rotate(45deg);  }
+                        &:after{content: ''; right: 0;  top: 50%; display: block; position: absolute; transform: translateY(-50%); border-bottom: 1px solid #DDDDDD; width: 70%; } }
+                     &>div{padding: 1rem 1rem; line-height: 1.5; h1, h2, h3, h4, h5, h6{font-weight: 600;} p{margin: 5px 0;} }
+                 }
+             }
+         }
+         .contactTop{overflow: hidden; padding: 0 2.5%;
+         div.left{
+         img{max-width: none; width: 100%;}}
+         div.right{margin-top: 1.5rem;
+         h2{font-size: 1.3rem; font-weight: 600; position: relative; padding-bottom: 1rem;
+         &:before{content: ''; position: absolute; left: 0; bottom: 0; width: 3rem; border-bottom: 0.2rem solid @colors; }}
+         p{margin-top: 1rem; font-size: 1.1rem;}}}
+         .contactBottom{ padding: 0 2.5%;
+             ul{
+                 li{padding: 0.3rem 2rem; border-radius: 2rem; font-size: 1rem; display: inline-block; margin: 0.5rem; cursor: pointer; line-height: 2;
+                 &.on{background-color: @colors; color: white;}}
+             }
+             div.map{margin-top: 1rem; padding-bottom: 2rem;
+                 div{width: 100% !important;
+                     &>span{display: block; font-size: 2rem; font-weight: 600; text-align: center;}
+                     &>div{margin-top: 1rem;
+                     h2{font-size: 1.4rem; font-weight: 600;}
+                     div{line-height: 1.5; margin-top: 1rem; font-size: 1.2rem;}}
                  }
              }
          }
