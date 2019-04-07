@@ -56,6 +56,13 @@
     }}}
     .more{display: block; text-align: right; padding: 0 10%;
     a{ font-size: 1.2vw;color: @colors; i{font-size: 1.2vw;} }}}
+    
+    .backs{position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 99999; background-color: white;
+    div.c{position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; img{max-width: none; width: 100%;}}
+    div.a{ .center; top: 40%; opacity: 0; }
+    div.b{font-size: 1.5vw; opacity: 0; .center; top: 55%; letter-spacing: 1vw; text-indent: 1vw; padding: 0 5vw; text-align: center;
+    &:before{content: ''; left: 0; top: 50%; transform: translateY(-50%); width: 4vw; border-bottom: 2px solid @colors; position: absolute; display: block; }
+    &:after{content: ''; right: 0; top: 50%; transform: translateY(-50%); width: 4vw; border-bottom: 2px solid @colors; position: absolute; display: block; } }}
 }
 @media screen and (max-width: 800px){
     #indexbanner{

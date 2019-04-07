@@ -48,7 +48,17 @@ $(function() {
 		}else{
 			$(this).find('div').eq(1).css({'width':'12rem'});
 		}
-	})
+	});
+	$('.backs .a').animate({'opacity':'1'},1000);
+	setTimeout(function(){
+		$('.backs .b').animate({'opacity':'1'},1000);
+		$('.backs .c').animate({'opacity':'1'},1000);
+	},1000)
+	setTimeout(function(){
+		$('.backs').animate({'opacity':'0'},2000,function(){
+			$('.backs').hide();
+		});
+	},3000)
 });
 $(window).scroll(function(){
 	$('.title').each(function(){
