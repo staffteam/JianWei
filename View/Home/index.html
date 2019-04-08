@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="../../ContentWeb/bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet/less" type="text/css" href="../../ContentWeb/less/public.less" />
 		<link rel="stylesheet/less" type="text/css" href="../../ContentWeb/less/index.less" />
+		<link rel="stylesheet" type="text/css" href="../../ContentWeb/layui/css/modules/layer/default/layer.css"/>
 	</head>
 
 	<body>
@@ -31,7 +32,7 @@
 							<a href="index.html">首页</a>
 						</li>
 						<li>
-							<a href="../ArticleContent/aboutus.html" class="dropdown-toggle" data-toggle="dropdown" >关于我们<span class="caret"></span></a>
+							<a href="../ArticleContent/aboutus.html" class="dropdown-toggle" data-toggle="dropdown" >关于我们</a>
 							<ul class="dropdown-menu">
 								<li>
 									<a href="#">企业介绍</a>
@@ -66,11 +67,11 @@
 		<div class="navHeight"></div>
 			
 		<!--首页动画-->
-		<div class="backs">
+		<!--<div class="backs">
 			<div class="c"><img src="../../ContentWeb/images/homeBack.jpg"/></div>
 			<div class="a"><img src="../../ContentWeb/images/logo.png"/></div>
 			<div class="b">城市开发建设法律服务领跑者</div>
-		</div>
+		</div>-->
 		
 		<!--首页轮播-->
 		<div class="swiper-container" id="indexbanner">
@@ -302,13 +303,9 @@
 				<div class="fenxiang">
 					<div class="bshare-custom">
 							<div class="bsPromo bsPromo2"></div>
-							<p>
-								<a title="" class="bshare-weixin"></a><i class="iconfont">&#xe654;</i></p>
-							<p>
-								<a title="" class="bshare-sinaminiblog"></a><i class="iconfont">&#xe68a;</i></p>
+							<p onclick="weixin()"><i class="iconfont">&#xe654;</i></p>
+							<p><a href=""><i class="iconfont">&#xe68a;</i></a></p>
 						</div>
-						<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=3&amp;lang=zh"></script>
-						<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
 				</div>
 				<div class="right">
 					<a href="">法律声明</a>     
@@ -320,6 +317,7 @@
 	</body>
 	<script src="../../ContentWeb/js/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../../ContentWeb/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../ContentWeb/layer/layer.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../../ContentWeb/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../../ContentWeb/js/public.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../../ContentWeb/js/index.js" type="text/javascript" charset="utf-8"></script>

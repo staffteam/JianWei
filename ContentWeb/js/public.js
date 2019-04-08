@@ -40,6 +40,16 @@ $(function() {
 	})
 });
 
+//微信
+function weixin(){
+	layer.open({
+	  type: 1,
+	  title: false,
+	  area:['15vw','17.5vw'],
+	  content: '<div class="wxfx"><h2>关注微信公众号</h2><p><img src="../../ContentWeb/images/weixin.jpg" /></p></div>'
+	});
+}
+
 var publicObj = {
 	//文档高度
 	getDT: function() {
