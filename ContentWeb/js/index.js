@@ -22,16 +22,16 @@ $(function() {
 		var obj = this;
 		if(!$(obj).hasClass('liHover')){
 			$('#businessDetails ul li.txtShow').remove();
-				$('#businessDetails ul li').removeClass('liHover');
-					$(obj).addClass('liHover');
-					var index_ = $(obj).index('#businessDetails ul li')+1;
-					var indexs = index_%4 == 0?4:index_%4;
-					indexs = 4-indexs;
-					var list_ = index_+ indexs-1;
-					if(list_ > $('#businessDetails ul li').length-1){
-						list_ = $('#businessDetails ul li').length-1;
-					}
-					$('#businessDetails ul li').eq(list_).after("<li class='txtShow'><h2>项目简介</h2><div>"+$(this).find('div').html()+"</div><a>查看更多<i class='iconfont' >&#xe636;</i></a></li>");
+			$('#businessDetails ul li').removeClass('liHover');
+				$(obj).addClass('liHover');
+				var index_ = $(obj).index('#businessDetails ul li')+1;
+//					var indexs = index_%4 == 0?4:index_%4;
+//					indexs = 4-indexs;
+//					var list_ = index_+ indexs-1;
+//					if(list_ > $('#businessDetails ul li').length-1){
+//						list_ = $('#businessDetails ul li').length-1;
+//					}
+				$('#businessDetails ul li').eq(3).after("<li class='txtShow' data-index='"+index_+"'><div class='content'><h2>项目简介</h2><div>"+$(this).find('div').html()+"</div><a>查看更多<i class='iconfont' >&#xe636;</i></a></div><div class='right' ><span onclick='zmove(this)' ><i class='iconfont' >&#xe630;</i></span><span onclick='ymove(this)'> <i class='iconfont' >&#xe604;</i></span></div></li>");
 				
 		}else{
 			$(obj).removeClass('liHover');
@@ -49,6 +49,7 @@ $(function() {
 			$(this).find('div').eq(1).css({'width':'12rem'});
 		}
 	});
+	$('body').css('overflow','hidden');
 	$('.backs .a').animate({'opacity':'1'},1000);
 	setTimeout(function(){
 		$('.backs .b').animate({'opacity':'1'},1000);
@@ -57,6 +58,7 @@ $(function() {
 	setTimeout(function(){
 		$('.backs').animate({'opacity':'0'},2000,function(){
 			$('.backs').hide();
+			$('body').removeAttr('style');
 		});
 	},3000)
 });
@@ -67,3 +69,24 @@ $(window).scroll(function(){
 		}
 	})
 })
+function zmove(obj){
+	var _index = Number($(obj).closest('.txtShow').attr('data-index'));
+	_index=_index-2;
+	if(_index>=4){
+		_index=_index+1;
+	}
+	if(_index==-1){
+		_index=8;
+	}
+	$('#businessDetails ul li').eq(_index).click();
+}
+function ymove(obj){
+	var _index = Number($(obj).closest('.txtShow').attr('data-index'));
+	if(_index==8){
+		_index=0;
+	}
+	if(_index>=4 && _index<8){
+		_index=_index+1;
+	}
+	$('#businessDetails ul li').eq(_index).click();
+}

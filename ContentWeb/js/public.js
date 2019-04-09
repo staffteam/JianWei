@@ -32,20 +32,34 @@ $(function() {
 	    		$(this).closest('.header').find('.nav').show().animate({'opacity':'1'},300);
 	    	}
 	    })
-	//点击logo置顶
-	$('#tabnav .logo,.btntop').click(function() {
-		$('body,html').animate({
-			scrollTop: 0
-		}, 500)
-	})
+	    $(window).scroll(function(){
+	    	if($(window).width()>800){
+	    		if($('body,html').scrollTop() > $('body').height() / 3) {
+					$('.theTop').addClass('show');
+				} else {
+					$('.theTop').removeClass('show');
+				}
+	    	}else{
+	    		if($('body,html').scrollTop() ==0) {
+					$('.theTop').removeClass('show');
+				} else {
+					$('.theTop').addClass('show');
+				}
+	    	}
+	    })
 });
-
+function theTop(){
+	$('body,html').animate({
+		scrollTop: 0
+	}, 500)
+}
 //微信
 function weixin(){
+	var arrs = $(window).width()>800?['15vw','17.5vw']:['17rem','20rem'];
 	layer.open({
 	  type: 1,
 	  title: false,
-	  area:['15vw','17.5vw'],
+	  area:arrs,
 	  content: '<div class="wxfx"><h2>关注微信公众号</h2><p><img src="../../ContentWeb/images/weixin.jpg" /></p></div>'
 	});
 }

@@ -31,5 +31,17 @@ $(function() {
 		$('.map >div>span').html($(this).html());
 		$('.map >div>div h2').html($(this).attr('data-title'));
 		$('.map >div>div div').html($(this).attr('data-content'));
+	});
+	//搜索
+	$('#searchs').keydown(function(){
+		if(event.keyCode==13)
+	    {
+	          $('#searchTitle').html($(this).val());  
+	          $('#searchContent').html('<p class="null">- 暂无内容 -</p>');
+	    }
 	})
 })
+function deleteNull(){
+	$('#searchs').val('');  
+	$('#searchTitle').html('');  
+}

@@ -252,6 +252,34 @@
              h2{font-size: 1vw; font-weight: 600;}
              div{font-size: 0.9vw; line-height: 2; margin-top: 1vw;}}}}
          }
+         
+         .search{padding: 5vw 12.5%;
+         div.top{width: 80%; margin: 0 auto; height: 4vw; border-bottom: 1px solid #DDDDDD;
+         i{float: left; font-size: 1.2vw; float: left; width: 3%; height: 4vw; line-height: 4vw; cursor: pointer; text-align: center;}
+         input{width: 94%; float: left; height: 4vw; line-height: 4vw; background-color: rgba(0,0,0,0); border: 0; padding-left: 2%; font-size: 1.2vw; }
+         span{width: 3%; float: right; height: 4vw; line-height: 4vw; cursor: pointer;} }
+         div.bottom{margin-top: 5vw;
+             &>h2{font-size: 1.2vw; font-weight: 600; }
+             &>div{margin-top: 5vw;
+             p.null{padding: 5vw 0; text-align: center; font-size: 1.2vw;}
+             ul{
+                 li{border-top: 1px solid #DDDDDD; padding:1.5vw 0; 
+                 &:last-child{border-bottom: 1px solid #DDDDDD;}
+                 h2{font-size: 1.2vw; .line();}
+                 div{.lines(); line-height: 2; margin-top: 1.5vw; font-size: 1vw;  -webkit-line-clamp: 3;
+                 }}
+             }}
+         }}
+         .newsDetails{padding: 5vw 12.5%;
+         &>h2{font-size: 1.2vw; text-align: center; font-weight: 600;}
+         &>p{text-align: center; margin-top: 1vw; font-size: 1vw; color: #666666;}
+         div.content{ padding: 4vw 0; line-height: 1.5; h1, h2, h3, h4, h5, h6{font-weight: 600;} p{margin: 5px 0;} }
+         div.bottom{overflow: hidden;
+         a{font-size: 1vw; width: 49%;
+         &:hover{color: @colors;}}
+         a:first-child{float: left;}
+         a:last-child{float: right; text-align: right;}}
+         }
 } 
 
 @media (max-width:1400px) and (min-width:801px) {
@@ -513,5 +541,34 @@
                      div{line-height: 1.5; margin-top: 1rem; font-size: 1.2rem;}}
                  }
              }
+         }
+         
+         .search{padding: 2rem 2.5%;
+         div.top{width: 90%; margin: 0 auto; height: 3rem; border-bottom: 1px solid #DDDDDD;
+         i{float: left; font-size: 1.2vw; float: left; width: 5%; height: 3rem; line-height: 3rem; cursor: pointer; text-align: center;}
+         input{width: 90%; float: left; height: 3rem; line-height: 3rem; background-color: rgba(0,0,0,0); border: 0; padding-left: 2%; font-size: 1.2rem; }
+         span{width: 5%; float: right; height: 3rem; line-height: 3rem; cursor: pointer;} }
+         div.bottom{margin-top: 2rem;
+             &>h2{font-size: 1.2rem; font-weight: 600; }
+             &>div{margin-top: 2rem;
+             p.null{padding: 2rem 0; text-align: center; font-size: 1.2rem;}
+             ul{
+                 li{border-top: 1px solid #DDDDDD; padding:1.5rem 0; 
+                 &:last-child{border-bottom: 1px solid #DDDDDD;}
+                 h2{font-size: 1.2rem; font-weight: 600; .line();}
+                 div{.lines(); line-height: 1.5; margin-top: 1rem; font-size: 1rem;  -webkit-line-clamp: 3;
+                 }}
+             }}
+         }}
+         
+         .newsDetails{padding: 2rem 2.5%;
+         &>h2{font-size: 1.4rem; text-align: center; font-weight: 600;}
+         &>p{text-align: center; margin-top: 1rem; font-size: 1rem; color: #666666;}
+         div.content{ padding: 2rem 0; line-height: 1.5; h1, h2, h3, h4, h5, h6{font-weight: 600;} p{margin: 5px 0;} }
+         div.bottom{overflow: hidden;
+         a{font-size: 1rem; display: block;
+         &:hover{color: @colors;}}
+         a:first-child{}
+         a:last-child{margin-top: 1rem;}}
          }
 }
