@@ -9,6 +9,11 @@ $(function() {
 		}
 
 	}
+	$('#menu >ul>li').hover(function(){
+		$(this).addClass("open");
+	},function(){
+		$(this).removeClass("open");
+	});
 	//二级导航初始化
 	publicObj.navtab();
 	/***html默认px初始化***/
