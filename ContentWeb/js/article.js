@@ -40,6 +40,19 @@ $(function() {
 	          $('#searchContent').html('<p class="null">- 暂无内容 -</p>');
 	    }
 	})
+	$('span.btns').click(function(){
+		if($(this).hasClass('on')){
+				$(this).removeClass('on');
+				$(this).closest('.left').animate({'left':'-9rem'},300)
+		}else{
+			$(this).addClass('on');
+			if($(this).closest('.left').css('position') == 'fixed'){
+				$(this).closest('.left').animate({'left':'1rem'},300);
+			}else{
+				$(this).closest('.left').animate({'left':'0'},300);
+			}
+		}
+	})
 })
 function deleteNull(){
 	$('#searchs').val('');  
