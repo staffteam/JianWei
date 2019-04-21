@@ -145,7 +145,9 @@
              ul{
                  li{border-bottom: 1px solid #DDDDDD;
                  &:first-child{border-top: 1px solid #DDDDDD;}
-                 &:first-child,&:nth-child(2),&:nth-child(3){background:url(../images/icon_new.png) no-repeat right top; background-size: 2vw;}
+                 &.new{background:url(../images/icon_new.png) no-repeat right top; background-size: 2vw;}
+                &.top{background: url(../images/icon_top.png) no-repeat right top; background-size: 2vw;}
+                &.hot{background: url(../images/icon_hot.png) no-repeat right top; background-size: 2vw;}
                   padding: 2vw 0; position: relative;
                   &:hover{h2{color: @colors;}
                   i{color: @colors;}}
@@ -440,7 +442,9 @@
              ul{
                  li{border-bottom: 1px solid #DDDDDD;
                  &:first-child{border-top: 1px solid #DDDDDD;}
-                 &:first-child,&:nth-child(2),&:nth-child(3){background:url(../images/icon_new.png) no-repeat right top; background-size: 2rem;}
+                 &.new{background:url(../images/icon_new.png) no-repeat right top; background-size: 2rem;}
+                 &.top{background: url(../images/icon_top.png) no-repeat right top; background-size: 2rem;}
+                 &.hot{background: url(../images/icon_hot.png) no-repeat right top; background-size: 2rem;}
                   padding: 1.5rem 0; position: relative;
                   &:hover{h2{color: @colors;}
                   i{color: @colors;}}
