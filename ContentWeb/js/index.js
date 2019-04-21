@@ -1,4 +1,26 @@
+function getQueryString(name) { 
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+    var r = window.location.search.substr(1).match(reg); 
+    if (r != null) return r[2]; 
+    return null; 
+} 
 $(function() {
+	if(getQueryString('ishome')!='true'){
+		$('body').css('overflow','hidden');
+		$('.backs .a').animate({'opacity':'1'},1000);
+		setTimeout(function(){
+			$('.backs .b').animate({'opacity':'1'},1000);
+			$('.backs .c').animate({'opacity':'1'},1000);
+		},1000)
+		setTimeout(function(){
+			$('.backs').animate({'opacity':'0'},2000,function(){
+				$('.backs').hide();
+				$('body').removeAttr('style');
+			});
+		},3000)
+	}else{
+		$('.backs').hide();
+	}
 	var indexbanner = new Swiper('#indexbanner', {
 		loop: true, // 循环模式选项
 		autoplay: {
@@ -49,18 +71,6 @@ $(function() {
 			$(this).find('div').eq(1).css({'width':'12rem'});
 		}
 	});
-	$('body').css('overflow','hidden');
-	$('.backs .a').animate({'opacity':'1'},1000);
-	setTimeout(function(){
-		$('.backs .b').animate({'opacity':'1'},1000);
-		$('.backs .c').animate({'opacity':'1'},1000);
-	},1000)
-	setTimeout(function(){
-		$('.backs').animate({'opacity':'0'},2000,function(){
-			$('.backs').hide();
-			$('body').removeAttr('style');
-		});
-	},3000)
 });
 $(window).scroll(function(){
 	$('.title').each(function(){

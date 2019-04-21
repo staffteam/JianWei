@@ -41,10 +41,11 @@
         }}
         &>div.right{margin-left: 20vw;
         div.articleTitle{text-align: center; padding: 5vw 0;
-        span.a{border-bottom: 2px solid @colors; width: 5vw; position: relative; display: inline-block; width: 7vw;
+        &:hover{span.a{width:5vw; margin-right:0;}span.b{width:5vw; margin-left:0;}}
+        span.a{border-bottom: 2px solid @colors; width: 5vw; position: relative; display: inline-block; width: 7vw; margin-right: 1vw; transition: 0.6s width,0.6s margin-right;
         &:before{content: ''; position: absolute; width: 10px; height: 10px; border: 2px solid @colors; border-radius: 50%; background-color: #F8F8F8; right: 0; top: -4px;}}
         h2{font-size: 1.7vw; font-weight: normal; color: black; display: inline-block; position: relative; transform: translateY(25%); padding: 0 1.5vw;}
-        span.b{border-bottom: 2px solid @colors; width: 5vw; position: relative; display: inline-block; width: 7vw;
+        span.b{border-bottom: 2px solid @colors; width: 5vw; position: relative; display: inline-block; width: 7vw; margin-left: 1vw; transition: 0.6s width,0.6s margin-left;
         &:before{content: ''; position: absolute; width: 10px; height: 10px; border: 2px solid @colors; border-radius: 50%; background-color: #F8F8F8; left: 0; top: -4px;}}}
         div.professionalList{
             ul{
@@ -314,9 +315,9 @@
                 }
             }
         }
-        div.top{padding: 1rem 0 1.5rem 0; text-align: center; color: @colors;
-        span{display: block; font-size: 1.1rem; }
-        font{display: block; font-size: 1.1rem;}}
+        div.top{padding: 1rem 0 1.3rem 0; text-align: center; color: @colors;
+        span{display: block; font-size: 1rem; }
+        font{display: block; font-size: 1rem; margin-top:0.2rem;}}
         ul{border-bottom: 1px solid #DDDDDD;
             li{border-top: 1px solid #DDDDDD; text-align: center; position: relative;
             &.on{&>a{color: @colors;
@@ -370,8 +371,8 @@
          }}
          }}
          
-         .productText{padding: 2rem 0 0 0; line-height: 1.5; p{margin: 5px 0;}}
-         .introduceText{line-height: 1.5; p{margin: 5px 0;}}
+         .productText{padding: 2rem 0 0 0; line-height: 1.5; *{font-size:1rem !important;} h1, h2, h3, h4, h5, h6{font-size:1.2rem !important;} p{margin: 5px 0;}}
+         .introduceText{line-height: 1.5; *{font-size:1rem !important;} h1, h2, h3, h4, h5, h6{font-size:1.2rem !important;} p{margin: 5px 0;}}
          .productList{overflow: hidden;
          ul{
              li{border: 1px solid #DDDDDD; width: 95%; float: left; margin: 1rem 2.5%; padding-bottom: 2rem;
@@ -424,7 +425,7 @@
              .bottom{margin-top: 1rem; background-color: white; padding-top:1rem;
              &>h2{font-size: 1.3rem; font-weight: 600; position: relative; padding-left: 2vw;
              &:before{content: ''; right: 0; top: 50%; transform: translateY(-50%); border-bottom: 1px solid #DDDDDD; position: absolute; width: 75%; }}
-             &>div{ padding: 1rem; line-height: 1.5; h1, h2, h3, h4, h5, h6{font-weight: 600;} p{margin: 5px 0;} }}
+             &>div{ padding: 1rem; line-height: 1.5; *{font-size:1rem !important;} h1, h2, h3, h4, h5, h6{font-size:1.2rem !important;} h1, h2, h3, h4, h5, h6{font-weight: 600;} p{margin: 5px 0;} }}
          }
          .newsList{
              ul{
@@ -457,7 +458,7 @@
          }
          
          .aboutlist{
-             div.text{line-height: 1.5; h1, h2, h3, h4, h5, h6{font-weight: 600;} p{margin: 5px 0;} }
+             div.text{line-height: 1.5; h1, h2, h3, h4, h5, h6{font-weight: 600;} *{font-size:1rem !important;} h1, h2, h3, h4, h5, h6{font-size:1.2rem !important;} p{margin: 5px 0;} }
              div.list{margin-top: 1.5rem;
              h2{font-size: 1.2rem; font-weight: 600;}
              div{margin-top: 1rem;
@@ -517,7 +518,7 @@
                      &>h2{font-size: 1.2rem; font-weight: 600; position: relative; padding-left: 1rem;
                         &:before{content: ''; width: 0.5rem; height: 0.5rem; background-color: @colors; display: block; position: absolute; left: 0; top: 50%; transform: translateY(-50%) rotate(45deg);  }
                         &:after{content: ''; right: 0;  top: 50%; display: block; position: absolute; transform: translateY(-50%); border-bottom: 1px solid #DDDDDD; width: 70%; } }
-                     &>div{padding: 1rem 1rem; line-height: 1.5; h1, h2, h3, h4, h5, h6{font-weight: 600;} p{margin: 5px 0;} }
+                     &>div{padding: 1rem 1rem; line-height: 1.5; h1, h2, h3, h4, h5, h6{font-weight: 600;} *{font-size:1rem !important;} h1, h2, h3, h4, h5, h6{font-size:1.2rem !important;} p{margin: 5px 0;} }
                  }
              }
          }
@@ -564,7 +565,7 @@
          .newsDetails{padding: 2rem 2.5%;
          &>h2{font-size: 1.4rem; text-align: center; font-weight: 600;}
          &>p{text-align: center; margin-top: 1rem; font-size: 1rem; color: #666666;}
-         div.content{ padding: 2rem 0; line-height: 1.5; h1, h2, h3, h4, h5, h6{font-weight: 600;} p{margin: 5px 0;} }
+         div.content{ padding: 2rem 0; line-height: 1.5; h1, h2, h3, h4, h5, h6{font-weight: 600;} *{font-size:1rem !important;} h1, h2, h3, h4, h5, h6{font-size:1.2rem !important;} p{margin: 5px 0;} }
          div.bottom{overflow: hidden;
          a{font-size: 1rem; display: block;
          &:hover{color: @colors;}}

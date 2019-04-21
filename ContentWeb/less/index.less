@@ -59,7 +59,9 @@
         div.text{margin-left: 8vw;
         h2{.line(); font-size: 1.1vw;}
         p{.lines(); line-height: 1.8vw; font-size: 1vw; margin-top: 0.5vw; color: #999999; }}
-        &.new{background: url(../images/icon_new.png) no-repeat right top;}}
+        &.new{background: url(../images/icon_new.png) no-repeat right top;}
+        &.top{background: url(../images/icon_top.png) no-repeat right top;}
+        &.hot{background: url(../images/icon_hot.png) no-repeat right top;}}
     }}}
     .more{display: block; text-align: right; padding: 0 10%;
     a{ font-size: 1.1vw;color: @colors; i{font-size: 1.1vw;} }}}
@@ -144,7 +146,7 @@
     .backs{position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 99999; background-color: white;
     div.c{position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; img{max-width: none; height: 100%; position: relative; left: 50%; transform: translateX(-50%);}}
     div.a{ .center; top: 40%; opacity: 0; }
-    div.b{font-size: 1.4vw; opacity: 0; .center; top: 55%; letter-spacing: 1vw; text-indent: 1vw; padding: 0 5vw; text-align: center;
+    div.b{font-size: 1.4vw; opacity: 0; .center; top: 55%; width: 70%; letter-spacing: 1vw; text-indent: 1vw; padding: 0 5vw; text-align: center;
     &:before{content: ''; left: 0; top: 50%; transform: translateY(-50%); width: 4vw; border-bottom: 2px solid @colors; position: absolute; display: block; }
     &:after{content: ''; right: 0; top: 50%; transform: translateY(-50%); width: 4vw; border-bottom: 2px solid @colors; position: absolute; display: block; } }}
 }
