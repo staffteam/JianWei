@@ -5,9 +5,9 @@
     div.headline{.center(); color: white; border: 2px solid rgba(255,255,255,0.5); border-top:0px; text-align: center; width: 19vw; height: 6vw;
     &:before{border-top:2px solid rgba(255,255,255,0.5); content: ''; display: block; width: 25%; left: 0; position: absolute; top: 0; }
     &:after{border-top:2px solid rgba(255,255,255,0.5); content: ''; display: block; width: 25%; right: 0; position: absolute; top: 0; }
-    span{display: block; font-size: 1.6vw; font-weight: 500; position: relative; transform: translateY(-50%); }
-    font{display: block; font-size: 2.1vw;  font-weight: 500; line-height: 0.8;}}
-    div.location{position: absolute; bottom: 10%; font-weight: 100; left: 12.5%; color: white; font-size: 1.1vw; a{color: white; font-size: 1.1vw; margin: 0 0.5vw; } }}
+    span{display: block; font-size: 1.5vw; font-weight: 500; position: relative; transform: translateY(-50%); }
+    font{display: block; font-size: 2vw;  font-weight: 500; line-height: 0.8;}}
+    div.location{position: absolute; bottom: 10%; font-weight: 100; left: 12.5%; color: white; font-size: 1vw; a{color: white; font-size: 1vw; margin: 0 0.5vw; } }}
     body{background-color: #f8f8f8;}
     div.article{padding-bottom: 5vw;
         div.content{width: 75%; margin: 0 auto; overflow: hidden;  position: relative;
@@ -21,7 +21,7 @@
                         div{}
                     }
                     a{position: relative; display: block;
-                    i{float: right; transform:rotate(45deg); font-size: 1vw; transition: 0.3s transform; color: #999999; }}
+                    i{float: right; transform:rotate(45deg); font-size: 0.9vw; transition: 0.3s transform; color: #999999; }}
                     div{display: none; background-color: #F8F8F8;
                     p{border-bottom: 1px solid #DDDDDD;
                     &.on{a{color: @colors;}} 
@@ -30,36 +30,36 @@
             }
         }
         div.top{padding: 2vw 0 3vw 0; text-align: center; color: @colors;
-        span{display: block; font-size: 1.7vw; }
-        font{display: block; font-size: 1.4vw;}}
+        span{display: block; font-size: 1.5vw; }
+        font{display: block; font-size: 1.3vw;}}
         ul{border-bottom: 1px solid #DDDDDD;
             li{border-top: 1px solid #DDDDDD; text-align: center;
             &.on{&>a{color: @colors;
             &:before{height: 60%; position: absolute; top: 20%; left: 0; width: 4px; background-color: @colors; content: '';}}
              }
-            a{display: block; position: relative; padding: 1.5vw; font-size: 1vw;  line-height: 1.5;
+            a{display: block; position: relative; padding: 1.5vw; font-size: 0.9vw;  line-height: 1.5;
             }}
         }}
         &>div.right{margin-left: 20vw;
         div.articleTitle{text-align: center; padding: 5vw 0;
-        &:hover{span.a{width:5vw; margin-right:0;}span.b{width:5vw; margin-left:0;}}
-        span.a{border-bottom: 2px solid @colors; width: 5vw; position: relative; display: inline-block; width: 7vw; margin-right: 1vw; transition: 0.6s width,0.6s margin-right;
-        &:before{content: ''; position: absolute; width: 10px; height: 10px; border: 2px solid @colors; border-radius: 50%; background-color: #F8F8F8; right: 0; top: -4px;}}
-        h2{font-size: 1.7vw; font-weight: normal; color: black; display: inline-block; position: relative; transform: translateY(25%); padding: 0 1.5vw;}
-        span.b{border-bottom: 2px solid @colors; width: 5vw; position: relative; display: inline-block; width: 7vw; margin-left: 1vw; transition: 0.6s width,0.6s margin-left;
-        &:before{content: ''; position: absolute; width: 10px; height: 10px; border: 2px solid @colors; border-radius: 50%; background-color: #F8F8F8; left: 0; top: -4px;}}}
+        &:hover{span.a{width:7vw; margin-right:0; &:before{opacity: 1;}}span.b{width:7vw; margin-left:0; opacity: 1; &:before{opacity: 1;}}}
+        span.a{border-bottom: 2px solid @colors; position: relative; display: inline-block; width: 3vw; margin-right: 4vw; transition: 0.6s width,0.6s margin-right,opacity 0.6s;
+        &:before{content: ''; position: absolute; width: 10px; height: 10px; border: 2px solid @colors; border-radius: 50%; background-color: #F8F8F8; right: -10px; top: -4px; opacity: 0;  transition: 0.3s opacity;}}
+        h2{font-size: 1.5vw; font-weight: normal; color: black; display: inline-block; position: relative; transform: translateY(25%); padding: 0 1.5vw;}
+        span.b{border-bottom: 2px solid @colors; position: relative; display: inline-block; width: 3vw; margin-left: 4vw; transition: 0.6s width,0.6s margin-left; 
+        &:before{content: ''; position: absolute; width: 10px; height: 10px; border: 2px solid @colors; border-radius: 50%; background-color: #F8F8F8; left: -10px; top: -4px; opacity: 0; transition: 0.3s opacity;}}}
         div.professionalList{
             ul{
                 li{overflow: hidden; margin-bottom: 3vw;
                 &:hover{div.right{h2{color: @colors;}}}
                 div.left{width: 15vw; height: 20vw; float: left;}
                 div.right{margin-left: 18vw; position: relative; height: 20vw;
-                h2{font-weight: 500; font-size: 1.4vw; .line();}
-                span{display: block; margin-top: 0.5vw; font-size: 1.1vw; color: #999999; }
-                font{display: block; margin-top: 0.2vw; font-size: 1.1vw; color: #666666; }
-                p{.lines(); line-height: 2; font-size: 0.9vw; margin-top: 1vw;  -webkit-line-clamp: 3;}
+                h2{font-weight: 500; font-size: 1.3vw; .line();}
+                span{display: block; margin-top: 0.5vw; font-size: 1vw; color: #999999; }
+                font{display: block; margin-top: 0.2vw; font-size: 1vw; color: #666666; }
+                p{.lines(); line-height: 2; font-size: 0.8vw; margin-top: 1vw;  -webkit-line-clamp: 3;}
                 &>div{position: absolute; right: 0; bottom: 1vw;
-                a{display: inline-block; margin-left: 1.5vw; padding-left: 3vw; height: 2vw; background: url(../images/icon_jl_fx.png) left no-repeat ; background-size: 2vw; line-height: 2vw; font-size: 0.9vw;
+                a{display: inline-block; margin-left: 1.5vw; padding-left: 3vw; height: 2vw; background: url(../images/icon_jl_fx.png) left no-repeat ; background-size: 2vw; line-height: 2vw; font-size: 0.8vw;
                 &:hover{opacity: 1 !important;}
                 &.xz{background: url(../images/icon_jl_xz.png) left no-repeat ; background-size: 2vw;}}}}}
             }}}}
@@ -69,8 +69,8 @@
              &.link{color: @colors; cursor: no-drop;}
          }
          a{}
-         .link{cursor: pointer; color: #000000; font-size: 1.1vw; width: 2.5vw; border: 0 !important; border-radius: 50%; height: 2.5vw; line-height: 2.5vw; text-align: center; display: inline-block; margin: 0 0.5vw;
-         i{ font-size: 0.9vw; position: relative; top: -1px;}
+         .link{cursor: pointer; color: #000000; font-size: 1vw; width: 2.5vw; border: 0 !important; border-radius: 50%; height: 2.5vw; line-height: 2.5vw; text-align: center; display: inline-block; margin: 0 0.5vw;
+         i{ font-size: 0.8vw; position: relative; top: -1px;}
          &:first-child{width: auto;}
          &:last-child{width: auto;}
          &:hover{color: @colors; border: 0 !important;}}
@@ -81,9 +81,9 @@
              li{border-top: 1px solid #DDDDDD; padding: 2vw 0; 
              &:hover{a{h2{color: @colors;}}}
          a{
-             h2{font-size: 1.1vw; .line();}
-             span{display: block; margin-top: 0.5vw; font-size: 0.9vw; color: #999999;}
-             div{margin-top: 0.5vw; line-height: 2; font-size: 0.9vw; color: #999999; .lines();  -webkit-line-clamp: 3;}
+             h2{font-size: 1vw; .line();}
+             span{display: block; margin-top: 0.5vw; font-size: 0.8vw; color: #999999;}
+             div{margin-top: 0.5vw; line-height: 2; font-size: 0.8vw; color: #999999; .lines();  -webkit-line-clamp: 3;}
          }}
          }}
          .productText{padding: 5vw 0 0 0; line-height: 1.5; p{margin: 5px 0;}}
@@ -91,41 +91,41 @@
          .productList{overflow: hidden;
          ul{
              li{border: 1px solid #DDDDDD; width: 46%; display: inline-grid; margin: 1.5%; padding-bottom: 3vw;
-             &>p{background-color: white; width: 90%; margin: 1vw auto; border-radius: 2vw; font-size: 1.1vw; font-weight: 600; line-height: 1.5; padding: 1vw 0; text-align: center; }
+             &>p{background-color: white; width: 90%; margin: 1vw auto; border-radius: 2vw; font-size: 1vw; font-weight: 600; line-height: 1.5; padding: 1vw 0; text-align: center; }
              &>div{padding: 0 2vw;
-                 span{display: block; padding: 1vw 0; text-align: center; font-size: 0.9vw; border-bottom: 1px solid #DDDDDD; }
+                 span{display: block; padding: 1vw 0; text-align: center; font-size: 0.8vw; border-bottom: 1px solid #DDDDDD; }
              }}
          }}
          .advantageList{
              ul{
                  li{margin-top: 2vw;
                  &:first-child{margin-top: 0;}
-                     h2{font-size: 1.2vw; font-weight: 600; }
-                     div{line-height: 1.8; font-size: 0.9vw; margin-top: 1.5vw;}
+                     h2{font-size: 1.1vw; font-weight: 600; }
+                     div{line-height: 1.8; font-size: 0.8vw; margin-top: 1.5vw;}
                  }
              }
          }
          .lndustryList{background-color: white; padding:3vw; margin-bottom: 2vw;
-         &>h2{font-size: 1.1vw; line-height: 1.5; font-weight: 600; padding-left: 1.5vw; }
-         &>p{font-size: 1.1vw; margin-top: 2vw; font-weight: 600; padding-left: 1.5vw;}
+         &>h2{font-size: 1vw; line-height: 1.5; font-weight: 600; padding-left: 1.5vw; }
+         &>p{font-size: 1vw; margin-top: 2vw; font-weight: 600; padding-left: 1.5vw;}
          ul{margin-top: 2vw;
-             li{margin-top: 1.5vw; font-size: 0.9vw; position: relative; padding-left: 1.5vw;
+             li{margin-top: 1.5vw; font-size: 0.8vw; position: relative; padding-left: 1.5vw;
              &:before{content: ''; width: 0.5vw; height: 0.5vw; background-color: @colors; display: block; position: absolute; left: 0; top: 50%; transform: translateY(-50%) rotate(45deg);  }}
          }}
          .honorList{
-             h2{font-size: 0.9vw; font-weight: 600;}
+             h2{font-size: 0.8vw; font-weight: 600;}
              ul{margin-top: 2vw;
-                 li{display: inline-block; font-size: 1.1vw; margin-right: 2vw; padding: 0.2vw 1vw; cursor: pointer;
+                 li{display: inline-block; font-size: 1vw; margin-right: 2vw; padding: 0.2vw 1vw; cursor: pointer;
                  &.on{background-color: @colors; border-radius: 1.5vw; color: white;}}
              }
          }
          .honorContent{margin-top: 3vw;
          ul{
              li{margin-top: 1.5vw;
-                 p{font-size: 0.9vw; position: relative; padding-left: 1.5vw;
+                 p{font-size: 0.8vw; position: relative; padding-left: 1.5vw;
              &:before{content: ''; width: 0.5vw; height: 0.5vw; background-color: @colors; display: block; position: absolute; left: 0; top: 50%; transform: translateY(-50%) rotate(45deg);  }}
              div{margin-top: 1vw; padding-bottom: 1.5vw; border-bottom: 1px solid #DDDDDD; padding-left: 2vw;
-             span{display: block; font-size: 0.9vw; line-height: 2;}}
+             span{display: block; font-size: 0.8vw; line-height: 2;}}
              }
          }}
          .culture{
@@ -133,11 +133,11 @@
              &>div{width: 48%; float: left;
              &>p{overflow: hidden; .imgs(); height: 18vw; img{max-width: none; width: 100%;}}
              div{background-color: white; padding: 2vw 3vw;
-             h2{font-size: 1.3vw; font-weight: 600;}
-             p{font-size: 0.9vw; margin-top: 1.5vw;}}}
+             h2{font-size: 1.2vw; font-weight: 600;}
+             p{font-size: 0.8vw; margin-top: 1.5vw;}}}
              div.right{margin-left: 4%;}}
              .bottom{margin-top: 2vw; background-color: white; padding-top:2vw;
-             &>h2{font-size: 1.3vw; font-weight: 600; position: relative; padding-left: 2vw;
+             &>h2{font-size: 1.2vw; font-weight: 600; position: relative; padding-left: 2vw;
              &:before{content: ''; right: 0; top: 50%; transform: translateY(-50%); border-bottom: 1px solid #DDDDDD; position: absolute; width: 85%; }}
              &>div{ padding: 2vw; line-height: 1.5; h1, h2, h3, h4, h5, h6{font-weight: 600;} p{margin: 5px 0;} }}
          }
@@ -151,22 +151,22 @@
                   padding: 2vw 0; position: relative;
                   &:hover{h2{color: @colors;}
                   i{color: @colors;}}
-                 h2{font-size: 1.1vw; .line();}
-                 span{font-size: 1vw; display: block; margin-top: 1vw;}
-                 i{position: absolute; right: 3vw; top: 50%; transform: translateY(-50%); font-size: 1.4vw;}}
+                 h2{font-size: 1vw; .line();}
+                 span{font-size: 0.9vw; display: block; margin-top: 1vw;}
+                 i{position: absolute; right: 3vw; top: 50%; transform: translateY(-50%); font-size: 1.3vw;}}
              }
          }
          .joinList{
              div.list{
                  div.top{
-                     h2{font-size: 1.3vw; font-weight: 600; }
-                     span{display: block; margin-top: 1vw; font-size: 0.9vw; color: #999999;}
+                     h2{font-size: 1.2vw; font-weight: 600; }
+                     span{display: block; margin-top: 1vw; font-size: 0.8vw; color: #999999;}
                  }
                  div.bottom{
                      ul{
                          li{margin-top: 2vw;
-                             h2{font-size: 1vw; font-weight: 600; }
-                             p{line-height: 2; margin-top:1vw; font-size: 0.9vw;}
+                             h2{font-size: 0.9vw; font-weight: 600; }
+                             p{line-height: 2; margin-top:1vw; font-size: 0.8vw;}
                          }
                      }
                  }
@@ -175,12 +175,12 @@
          .aboutlist{
              div.text{line-height: 1.5; h1, h2, h3, h4, h5, h6{font-weight: 600;} p{margin: 5px 0;} }
              div.list{margin-top: 2vw;
-             h2{font-size: 1.1vw; font-weight: 600;}
+             h2{font-size: 1vw; font-weight: 600;}
              div{margin-top: 2vw;
-                 span{display: inline-block; background-color: white; padding: 0.5vw 3vw; border-radius: 2vw; line-height: 2; font-size:1vw; margin-right: 2vw; }
+                 span{display: inline-block; background-color: white; padding: 0.5vw 3vw; border-radius: 2vw; line-height: 2; font-size:0.9vw; margin-right: 2vw; }
              }}
              div.hd{margin-top: 2vw;
-             h2{font-size: 1.1vw; font-weight: 600;}
+             h2{font-size: 1vw; font-weight: 600;}
              ul{margin-top: 1.5vw;
                  li{width: 46%; float: left; margin: 2%; padding: 0.5vw; background-color: white;
                  a{display: block; .imgs(); overflow: hidden; height: 16vw;
@@ -192,7 +192,7 @@
         &:hover{span.a{width:5vw; margin-right:0;}span.b{width:5vw; margin-left:0;}}
         span.a{border-bottom: 2px solid @colors; width: 5vw; position: relative; display: inline-block; width: 7vw; margin-right: 1vw; transition: 0.6s width,0.6s margin-right;
         &:before{content: ''; position: absolute; width: 10px; height: 10px; border: 2px solid @colors; border-radius: 50%; background-color: #F8F8F8; right: 0; top: -4px;}}
-        h2{font-size: 1.7vw; font-weight: normal; color: black; display: inline-block; position: relative; transform: translateY(25%); padding: 0 1.5vw;}
+        h2{font-size: 1.5vw; font-weight: normal; color: black; display: inline-block; position: relative; transform: translateY(25%); padding: 0 1.5vw;}
         span.b{border-bottom: 2px solid @colors; width: 5vw; position: relative; display: inline-block; width: 7vw; margin-left: 1vw; transition: 0.6s width,0.6s margin-left;
         &:before{content: ''; position: absolute; width: 10px; height: 10px; border: 2px solid @colors; border-radius: 50%; background-color: #F8F8F8; left: 0; top: -4px;}}}
             .teamList{overflow: hidden; padding: 0 10%;padding-bottom: 2vw;
@@ -202,11 +202,11 @@
                 img{max-width: none; width: 100%;}}
                 div{margin-left: 13vw; position: relative;  height: 17.5vw;
                 &>a{padding: 2vw 2vw; display: block;
-                h2{font-size: 1.3vw;}
-                span{display: block; margin-top: 1vw; font-size: 0.9vw; color: #999999;}}
+                h2{font-size: 1.2vw;}
+                span{display: block; margin-top: 1vw; font-size: 0.8vw; color: #999999;}}
                 p{position: absolute; right: 2vw; bottom: 2vw;
                 a{width: 3.5vw; height: 3.5vw; border-radius: 50%; margin-left: 2vw; background-color: #F8F8F8; display: inline-block; text-align: center; line-height: 3.5vw;
-                i{font-size: 1.4vw; color: #666666;} }}}}
+                i{font-size: 1.3vw; color: #666666;} }}}}
             }}
          }
          .teamLeft{padding-bottom: 0 !important; background-color: #F8F8F8 !important;}
@@ -214,24 +214,24 @@
          &>p{overflow: hidden;
          img{max-width: none; width: 100%;}}
          div.tle{padding: 2vw 1vw; text-align: center; background-color: white;
-         h2{font-size: 1.4vw; font-weight: 600;}
-         span{font-size: 0.9vw; margin-top: 1vw; display: block;}}
+         h2{font-size: 1.3vw; font-weight: 600;}
+         span{font-size: 0.8vw; margin-top: 1vw; display: block;}}
          div.list{text-align: center; background-color: white;
              p{border-top: 1px solid #DDDDDD; padding: 1vw;
-             span{display: block; font-size: 0.9vw; text-align: center;
-             i{font-size: 0.9vw; color: @colors; margin-right: 0.5vw; }}
-             font{display: block; text-align: center; font-size: 0.8vw;word-break:break-all;}}
+             span{display: block; font-size: 0.8vw; text-align: center;
+             i{font-size: 0.8vw; color: @colors; margin-right: 0.5vw; }}
+             font{display: block; text-align: center; font-size: 0.7vw;word-break:break-all;}}
          }
          div.code{margin-top: 2vw; padding: 2vw; background-color: white;
          p{width: 90%; margin: 0 auto;}
-         h2{text-align: center; margin-top: 1vw; font-size: 0.9vw;}}
-         div.down{margin-top: 4vw; text-align: center; background-color: white; line-height: 2; font-size: 0.9vw; border-radius: 2vw; padding: 0.5vw 0;
-         i{font-size: 0.9vw; margin-right: 1.5vw; }}
+         h2{text-align: center; margin-top: 1vw; font-size: 0.8vw;}}
+         div.down{margin-top: 4vw; text-align: center; background-color: white; line-height: 2; font-size: 0.8vw; border-radius: 2vw; padding: 0.5vw 0;
+         i{font-size: 0.8vw; margin-right: 1.5vw; }}
          }
          .teamContent{padding: 4vw 0;
              ul{
                  li{
-                     &>h2{font-size: 1.1vw; font-weight: 600; position: relative; padding-left: 1.5vw;
+                     &>h2{font-size: 1vw; font-weight: 600; position: relative; padding-left: 1.5vw;
                         &:before{content: ''; width: 0.5vw; height: 0.5vw; background-color: @colors; display: block; position: absolute; left: 0; top: 50%; transform: translateY(-50%) rotate(45deg);  }
                         &:after{content: ''; right: 0;  top: 50%; display: block; position: absolute; transform: translateY(-50%); border-bottom: 1px solid #DDDDDD; width: 85%; } }
                      &>div{padding: 1.5vw 2vw; line-height: 1.5; h1, h2, h3, h4, h5, h6{font-weight: 600;} p{margin: 5px 0;} }
@@ -242,45 +242,45 @@
          div.left{width: 50%; float: left;
          img{max-width: none; width: 100%;}}
          div.right{width: 45%; float: right;
-         h2{font-size: 1.2vw; font-weight: 600; position: relative; padding-bottom: 1vw;
+         h2{font-size: 1.1vw; font-weight: 600; position: relative; padding-bottom: 1vw;
          &:before{content: ''; position: absolute; left: 0; bottom: 0; width: 3vw; border-bottom: 3px solid @colors; }}
-         p{margin-top: 2vw; font-size: 1vw;}}}
+         p{margin-top: 2vw; font-size: 0.9vw;}}}
          .contactBottom{ padding: 0 12.5%;    height: 42vw;
              ul{
-                 li{padding: 0.3vw 2vw; border-radius: 2vw; font-size: 0.9vw; display: inline-block; margin: 0.5vw; cursor: pointer; line-height: 2;
+                 li{padding: 0.3vw 2vw; border-radius: 2vw; font-size: 0.8vw; display: inline-block; margin: 0.5vw; cursor: pointer; line-height: 2;
                  &.on{background-color: @colors; color: white;}}
              }
              div.map{margin: 5vw 0; height: 60vw; background:url(../images/map2.png) no-repeat center; background-size: 100% 100%; position: relative; display: none; transform: scale(0.5);  top: -19vw;
              &>div{position: absolute; width: 50vw !important; height: 14.3vw; background: url(../images/icon_map_bj.png) no-repeat left bottom; background-size: 7vw;
-             &>span{display: block; font-size: 1.5vw; position: absolute; bottom: 5.5vw; font-size: 1.5vw; width: 6vw; text-align: left; }
+             &>span{display: block; font-size: 1.4vw; position: absolute; bottom: 5.5vw; font-size: 1.4vw; width: 6vw; text-align: left; }
              &>div{margin-left: 9vw; padding-top: 0;
-             h2{font-size: 1.6vw; font-weight: 600;}
-             div{font-size: 1.4vw; line-height: 2; margin-top: 1vw;}}}}
+             h2{font-size: 1.5vw; font-weight: 600;}
+             div{font-size: 1.3vw; line-height: 2; margin-top: 1vw;}}}}
          }
          
          .search{padding: 5vw 12.5%;
          div.top{width: 80%; margin: 0 auto; height: 4vw; border-bottom: 1px solid #DDDDDD;
-         i{float: left; font-size: 1.2vw; float: left; width: 3%; height: 4vw; line-height: 4vw; cursor: pointer; text-align: center;}
-         input{width: 94%; float: left; height: 4vw; line-height: 4vw; background-color: rgba(0,0,0,0); border: 0; padding-left: 2%; font-size: 1.2vw; }
+         i{float: left; font-size: 1.1vw; float: left; width: 3%; height: 4vw; line-height: 4vw; cursor: pointer; text-align: center;}
+         input{width: 94%; float: left; height: 4vw; line-height: 4vw; background-color: rgba(0,0,0,0); border: 0; padding-left: 2%; font-size: 1.1vw; }
          span{width: 3%; float: right; height: 4vw; line-height: 4vw; cursor: pointer;} }
          div.bottom{margin-top: 5vw;
-             &>h2{font-size: 1.2vw; font-weight: 600; }
+             &>h2{font-size: 1.1vw; font-weight: 600; }
              &>div{margin-top: 5vw;
-             p.null{padding: 5vw 0; text-align: center; font-size: 1.2vw;}
+             p.null{padding: 5vw 0; text-align: center; font-size: 1.1vw;}
              ul{
                  li{border-top: 1px solid #DDDDDD; padding:1.5vw 0; 
                  &:last-child{border-bottom: 1px solid #DDDDDD;}
-                 h2{font-size: 1.2vw; .line();}
-                 div{.lines(); line-height: 2; margin-top: 1.5vw; font-size: 1vw;  -webkit-line-clamp: 3;
+                 h2{font-size: 1.1vw; .line();}
+                 div{.lines(); line-height: 2; margin-top: 1.5vw; font-size: 0.9vw;  -webkit-line-clamp: 3;
                  }}
              }}
          }}
-         .newsDetails{padding: 5vw 12.5%;
-         &>h2{font-size: 1.2vw; text-align: center; font-weight: 600;}
-         &>p{text-align: center; margin-top: 1vw; font-size: 1vw; color: #666666;}
+         .newsDetails{padding: 5vw 20%;
+         &>h2{font-size: 1.1vw; text-align: center; font-weight: 600;}
+         &>p{text-align: center; margin-top: 1vw; font-size: 0.9vw; color: #666666;}
          div.content{ padding: 4vw 0; line-height: 1.5; h1, h2, h3, h4, h5, h6{font-weight: 600;} p{margin: 5px 0;} }
          div.bottom{overflow: hidden;
-         a{font-size: 1vw; width: 49%;
+         a{font-size: 0.9vw; width: 49%;
          &:hover{color: @colors;}}
          a:first-child{float: left;}
          a:last-child{float: right; text-align: right;}}

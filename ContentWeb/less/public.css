@@ -1,0 +1,662 @@
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  background: #fff;
+  color: #333;
+  font-size: 14px;
+  font-family: Arial, "微软雅黑";
+}
+ul,
+ol {
+  list-style-type: none;
+}
+select,
+input,
+img,
+select {
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #333;
+}
+a:visited {
+  color: #333;
+}
+a:hover,
+a:active,
+a:focus {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'iconfont';
+  /* project id 1119181 */
+  src: url('//at.alicdn.com/t/font_1119181_7m3py25lubj.eot');
+  src: url('//at.alicdn.com/t/font_1119181_7m3py25lubj.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_1119181_7m3py25lubj.woff2') format('woff2'), url('//at.alicdn.com/t/font_1119181_7m3py25lubj.woff') format('woff'), url('//at.alicdn.com/t/font_1119181_7m3py25lubj.ttf') format('truetype'), url('//at.alicdn.com/t/font_1119181_7m3py25lubj.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+input {
+  border: 1px solid #dddddd;
+  outline: none;
+  font-family: Arial, "微软雅黑";
+}
+input:focus {
+  border: 1px solid #dddddd;
+}
+.imgs:hover img {
+  transform: scale(1.1);
+}
+.imgs img {
+  transform: scale(1);
+  transition: 0.3s transform;
+}
+
+@media (max-width: 1920px) and (min-width: 801px) {
+  .navbar-white {
+    background-color: white;
+    height: 5vw;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  .navbar-white .navbar-brand {
+    height: 5vw;
+    padding: 0.8vw;
+  }
+  .navbar-white .navbar-brand img {
+    height: 100%;
+  }
+  .navbar-white .navbar-search {
+    display: inline-block;
+    height: 5vw;
+    line-height: 5vw;
+    margin-left: 2vw;
+  }
+  .navbar-white .navbar-search:hover {
+    text-decoration: none;
+  }
+  .navbar-white .navbar-search p {
+    display: none;
+  }
+  .navbar-white .navbar-search i {
+    font-size: 30px;
+    color: #666666;
+  }
+  .navbar-white .navbar-nav {
+    height: 5vw;
+    margin-left: 5vw;
+  }
+  .navbar-white .navbar-nav > li {
+    height: 5vw;
+  }
+  .navbar-white .navbar-nav > li.active > a {
+    background-color: white;
+    color: #c9151e;
+  }
+  .navbar-white .navbar-nav > li.active > a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 60%;
+    border-bottom: 4px solid #c9151e;
+  }
+  .navbar-white .navbar-nav > li > a {
+    padding: 1.5vw 1.5vw;
+    line-height: 2vw;
+    position: relative;
+  }
+  .navbar-white .navbar-nav > li > a:hover {
+    background-color: white;
+    color: #c9151e;
+  }
+  .navbar-white .navbar-nav > li > a:hover:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 60%;
+    border-bottom: 4px solid #c9151e;
+  }
+  .navbar-white .navbar-nav > li > a > span.caret {
+    margin-left: 5px;
+  }
+  .navbar-white .navbar-nav > li > ul li a {
+    line-height: 2vw;
+  }
+  .title {
+    text-align: center;
+    height: 5vw;
+    width: 15vw;
+    margin: 0 auto;
+  }
+  .title:hover > div > div {
+    width: 12vw;
+  }
+  .title h2 {
+    font-size: 1.4vw;
+    font-weight: 500;
+  }
+  .title > div {
+    margin: 0 auto;
+    margin-top: 1vw;
+    display: block;
+    position: relative;
+    width: 14vw;
+  }
+  .title > div > div {
+    width: 14vw;
+    transition: 0.5s width;
+    margin: 0 auto;
+    position: relative;
+  }
+  .title > div > div:before {
+    position: absolute;
+    content: '';
+    border-bottom: 2px solid #959595;
+    top: 14px;
+    left: 0;
+    width: 100%;
+  }
+  .title > div > div p.left {
+    width: 35px;
+    height: 29px;
+    background: url(../images/icon_line_left.png) no-repeat;
+    background-size: cover;
+    float: left;
+  }
+  .title > div > div p.right {
+    width: 35px;
+    height: 29px;
+    background: url(../images/icon_line_right.png) no-repeat;
+    background-size: cover;
+    float: right;
+  }
+  .title > div p.center {
+    height: 29px;
+    padding: 9px 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .title > div p.center span {
+    display: block;
+    float: left;
+    border-radius: 50%;
+    margin-left: 1px;
+    z-index: 9;
+  }
+  .title > div p.center span:first-child {
+    width: 7px;
+    height: 7px;
+    background-color: #959595;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .title > div p.center span:nth-child(2) {
+    width: 11px;
+    height: 11px;
+    background-color: #959595;
+  }
+  .title > div p.center span:nth-child(3) {
+    width: 7px;
+    height: 7px;
+    background-color: #959595;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .footer {
+    background-color: #1b1b1b;
+    padding: 3vw 10%;
+  }
+  .footer ul {
+    overflow: hidden;
+  }
+  .footer ul li {
+    width: 12%;
+    float: left;
+    margin-left: 4%;
+  }
+  .footer ul li a:first-child {
+    color: #f8f8f8;
+    opacity: 0.5;
+    margin-bottom: 0.5vw;
+  }
+  .footer ul li a {
+    color: white;
+    font-size: 0.8vw;
+    line-height: 2;
+    display: block;
+  }
+  .footer .bottom {
+    margin-top: 2vw;
+  }
+  .footer .bottom div.left {
+    display: inline-block;
+    color: white;
+    opacity: 0.8;
+    font-size: 0.8vw;
+  }
+  .footer .bottom div.fenxiang {
+    display: inline-block;
+    position: relative;
+    top: 0.5vw;
+    margin-left: 1vw;
+  }
+  .footer .bottom div.fenxiang p {
+    display: inline-block;
+    position: relative;
+    width: 2vw;
+    height: 2vw;
+    margin-left: 1vw;
+  }
+  .footer .bottom div.fenxiang p i {
+    color: #c9151e;
+    font-size: 1.8vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    z-index: 9;
+    top: 0;
+    width: 2vw;
+    height: 2vw;
+    line-height: 2vw;
+  }
+  .footer .bottom div.fenxiang p i:before {
+    background-color: white;
+    width: 1.6vw;
+    height: 1.6vw;
+    line-height: 1.6vw;
+    top: 0.2vw;
+    left: 0.2vw;
+    border-radius: 50%;
+    position: absolute;
+    content: '';
+    display: block;
+    z-index: -1;
+  }
+  .footer .bottom div.right {
+    display: inline-block;
+    float: right;
+    margin-right: 7%;
+  }
+  .footer .bottom div.right a {
+    display: inline-block;
+    color: white;
+    opacity: 0.8;
+    font-size: 0.8vw;
+    margin-right: 3vw;
+  }
+  .bsTop {
+    width: auto !important;
+  }
+  .bsFrameDiv > div {
+    width: 210px !important;
+    height: 210px !important;
+  }
+  .bsFrameDiv > div > img {
+    margin: 16px !important;
+  }
+  .navHeight {
+    height: 5vw;
+  }
+  .nav .open > a,
+  .nav .open > a:focus,
+  .nav .open > a:hover {
+    color: #c9151e;
+    background-color: white;
+  }
+  .dropdown-menu > li > a:focus,
+  .dropdown-menu > li > a:hover {
+    color: #c9151e;
+  }
+  .wxfx {
+    padding: 1vw;
+  }
+  .wxfx h2 {
+    text-align: center;
+    font-size: 0.8vw;
+  }
+  .wxfx p {
+    margin-top: 1vw;
+  }
+  .theTop {
+    position: fixed;
+    bottom: 10vw;
+    display: none;
+    border-radius: 50%;
+    cursor: pointer;
+    right: 5vw;
+    width: 5vw;
+    height: 5vw;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 5vw;
+    z-index: 999;
+  }
+  .theTop i {
+    font-size: 1.4vw;
+  }
+  .theTop.show {
+    display: block;
+  }
+}
+@media (max-width: 1400px) and (min-width: 801px) {
+  .navbar-white .navbar-search i {
+    font-size: 20px;
+  }
+  .navbar-white .navbar-nav > li > a {
+    padding: 1.5vw 1vw;
+  }
+}
+@media (max-width: 800px) {
+  .navbar-white {
+    background-color: white;
+    height: 5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #DDDDDD;
+  }
+  .navbar-white .navbar-toggle {
+    border-color: #333;
+    margin: 1.25rem;
+    width: 3rem;
+    height: 2.5rem;
+    padding: 0.3rem 0.5rem;
+  }
+  .navbar-white .navbar-toggle .icon-bar {
+    background-color: black;
+    width: 100%;
+  }
+  .navbar-white .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 0.5rem;
+  }
+  .navbar-white .navbar-brand {
+    height: 5rem;
+    padding: 1rem;
+  }
+  .navbar-white .navbar-brand img {
+    height: 100%;
+  }
+  .navbar-white .navbar-search {
+    line-height: 2rem;
+    display: block;
+    padding-bottom: 0.5rem;
+  }
+  .navbar-white .navbar-search:hover {
+    text-decoration: none;
+  }
+  .navbar-white .navbar-search p {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+  .navbar-white .navbar-search p i {
+    font-size: 14px;
+    color: #666666;
+  }
+  .navbar-white .navbar-search > i {
+    display: none;
+  }
+  .navbar-white #menu {
+    background-color: white;
+    border-bottom: 1px solid #DDDDDD;
+  }
+  .navbar-white .navbar-nav > li > a {
+    padding: 0.5rem 1rem;
+    line-height: 2rem;
+  }
+  .navbar-white .navbar-nav > li > a > span.caret {
+    margin-left: 5px;
+  }
+  .navbar-white .navbar-nav > li > ul li a {
+    line-height: 2rem;
+  }
+  .title {
+    text-align: center;
+    height: 4rem;
+    width: 12rem;
+    margin: 0 auto;
+  }
+  .title:hover > div > div {
+    width: 12rem;
+  }
+  .title h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .title > div {
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    display: block;
+    position: relative;
+    width: 12rem;
+    overflow: hidden;
+  }
+  .title > div > div {
+    width: 12rem;
+    transition: 0.5s width;
+    margin: 0 auto;
+    position: relative;
+  }
+  .title > div > div:before {
+    position: absolute;
+    content: '';
+    border-bottom: 0.15rem solid #959595;
+    top: 0.8rem;
+    left: 0;
+    width: 100%;
+  }
+  .title > div > div p.left {
+    width: 2rem;
+    height: 1.8rem;
+    background: url(../images/icon_line_left.png) no-repeat;
+    background-size: 100% 100%;
+    float: left;
+  }
+  .title > div > div p.right {
+    width: 2rem;
+    height: 1.8rem;
+    background: url(../images/icon_line_right.png) no-repeat;
+    background-size: 100% 100%;
+    float: right;
+  }
+  .title > div p.center {
+    height: 1.8rem;
+    padding: 0.6rem 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+  .title > div p.center span {
+    display: block;
+    float: left;
+    border-radius: 50%;
+    margin-left: 1px;
+    z-index: 9;
+  }
+  .title > div p.center span:first-child {
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: #959595;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .title > div p.center span:nth-child(2) {
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: #959595;
+  }
+  .title > div p.center span:nth-child(3) {
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: #959595;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .footer {
+    background-color: #1b1b1b;
+    padding: 1.5rem 2.5%;
+  }
+  .footer ul {
+    overflow: hidden;
+    text-align: center;
+  }
+  .footer ul li {
+    display: inline-grid;
+  }
+  .footer ul li a:first-child {
+    color: #f8f8f8;
+    opacity: 0.5;
+    margin-bottom: 0.5vw;
+  }
+  .footer ul li a {
+    color: white;
+    font-size: 1rem;
+    line-height: 2;
+    display: block;
+  }
+  .footer .bottom {
+    margin-top: 0;
+    text-align: center;
+  }
+  .footer .bottom div.left {
+    color: white;
+    opacity: 0.8;
+    font-size: 1rem;
+    line-height: 2;
+    padding: 1rem 0;
+  }
+  .footer .bottom div.fenxiang {
+    display: inline-block;
+    position: relative;
+    top: 0.6rem;
+  }
+  .footer .bottom div.fenxiang p {
+    display: inline-block;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+  }
+  .footer .bottom div.fenxiang p i {
+    color: #c9151e;
+    font-size: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    z-index: 9;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+  }
+  .footer .bottom div.fenxiang p i:before {
+    background-color: white;
+    width: 1.4rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    top: 0.3rem;
+    left: 0.3rem;
+    border-radius: 50%;
+    position: absolute;
+    content: '';
+    display: block;
+    z-index: -1;
+  }
+  .footer .bottom div.right {
+    text-align: center;
+    display: inline-block;
+    margin-left: 2rem;
+  }
+  .footer .bottom div.right a {
+    display: inline-block;
+    color: white;
+    opacity: 0.8;
+    font-size: 1rem;
+    margin-right: 2rem;
+  }
+  .bsTop {
+    width: auto !important;
+  }
+  .bsFrameDiv > div {
+    width: 210px !important;
+    height: 210px !important;
+  }
+  .bsFrameDiv > div > img {
+    margin: 16px !important;
+  }
+  .navHeight {
+    height: 5rem;
+  }
+  .wxfx {
+    padding: 1rem;
+  }
+  .wxfx h2 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .wxfx p {
+    margin-top: 1rem;
+  }
+  .theTop {
+    position: fixed;
+    bottom: 2rem;
+    display: none;
+    border-radius: 50%;
+    cursor: pointer;
+    right: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 3rem;
+    z-index: 999;
+  }
+  .theTop i {
+    font-size: 1.5rem;
+  }
+  .theTop.show {
+    display: block;
+  }
+}

@@ -1,0 +1,2404 @@
+input {
+  border: 1px solid #dddddd;
+  outline: none;
+  font-family: Arial, "微软雅黑";
+}
+input:focus {
+  border: 1px solid #dddddd;
+}
+.imgs:hover img {
+  transform: scale(1.1);
+}
+.imgs img {
+  transform: scale(1);
+  transition: 0.3s transform;
+}
+@media (max-width: 1920px) and (min-width: 801px) {
+  .streamer {
+    position: relative;
+  }
+  .streamer p {
+    overflow: hidden;
+    height: 23vw;
+  }
+  .streamer p img {
+    max-width: none;
+    width: 100%;
+  }
+  .streamer div.headline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-top: 0px;
+    text-align: center;
+    width: 19vw;
+    height: 6vw;
+  }
+  .streamer div.headline:before {
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    content: '';
+    display: block;
+    width: 25%;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  .streamer div.headline:after {
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    content: '';
+    display: block;
+    width: 25%;
+    right: 0;
+    position: absolute;
+    top: 0;
+  }
+  .streamer div.headline span {
+    display: block;
+    font-size: 1.4vw;
+    font-weight: 500;
+    position: relative;
+    transform: translateY(-50%);
+  }
+  .streamer div.headline font {
+    display: block;
+    font-size: 2vw;
+    font-weight: 500;
+    line-height: 0.8;
+  }
+  .streamer div.location {
+    position: absolute;
+    bottom: 10%;
+    font-weight: 100;
+    left: 12.5%;
+    color: white;
+    font-size: 1vw;
+  }
+  .streamer div.location a {
+    color: white;
+    font-size: 1vw;
+    margin: 0 0.5vw;
+  }
+  body {
+    background-color: #f8f8f8;
+  }
+  div.article {
+    padding-bottom: 5vw;
+  }
+  div.article div.content {
+    width: 75%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  div.article div.content > div.left {
+    width: 15vw;
+    float: left;
+    background-color: white;
+    padding-bottom: 1vw;
+  }
+  div.article div.content > div.left span.btns {
+    display: none;
+  }
+  div.article div.content > div.left.second ul li.on a i {
+    transform: rotate(0deg);
+    color: #c9151e;
+  }
+  div.article div.content > div.left.second ul li a {
+    position: relative;
+    display: block;
+  }
+  div.article div.content > div.left.second ul li a i {
+    float: right;
+    transform: rotate(45deg);
+    font-size: 0.9vw;
+    transition: 0.3s transform;
+    color: #999999;
+  }
+  div.article div.content > div.left.second ul li div {
+    display: none;
+    background-color: #F8F8F8;
+  }
+  div.article div.content > div.left.second ul li div p {
+    border-bottom: 1px solid #DDDDDD;
+  }
+  div.article div.content > div.left.second ul li div p.on a {
+    color: #c9151e;
+  }
+  div.article div.content > div.left.second ul li div p:last-child {
+    border-bottom: 0;
+  }
+  div.article div.content > div.left div.top {
+    padding: 2vw 0 3vw 0;
+    text-align: center;
+    color: #c9151e;
+  }
+  div.article div.content > div.left div.top span {
+    display: block;
+    font-size: 1.4vw;
+  }
+  div.article div.content > div.left div.top font {
+    display: block;
+    font-size: 1.3vw;
+  }
+  div.article div.content > div.left ul {
+    border-bottom: 1px solid #DDDDDD;
+  }
+  div.article div.content > div.left ul li {
+    border-top: 1px solid #DDDDDD;
+    text-align: center;
+  }
+  div.article div.content > div.left ul li.on > a {
+    color: #c9151e;
+  }
+  div.article div.content > div.left ul li.on > a:before {
+    height: 60%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 4px;
+    background-color: #c9151e;
+    content: '';
+  }
+  div.article div.content > div.left ul li a {
+    display: block;
+    position: relative;
+    padding: 1.5vw;
+    font-size: 0.9vw;
+    line-height: 1.5;
+  }
+  div.article div.content > div.right {
+    margin-left: 20vw;
+  }
+  div.article div.content > div.right div.articleTitle {
+    text-align: center;
+    padding: 5vw 0;
+  }
+  div.article div.content > div.right div.articleTitle:hover span.a {
+    width: 7vw;
+    margin-right: 0;
+  }
+  div.article div.content > div.right div.articleTitle:hover span.a:before {
+    opacity: 1;
+  }
+  div.article div.content > div.right div.articleTitle:hover span.b {
+    width: 7vw;
+    margin-left: 0;
+    opacity: 1;
+  }
+  div.article div.content > div.right div.articleTitle:hover span.b:before {
+    opacity: 1;
+  }
+  div.article div.content > div.right div.articleTitle span.a {
+    border-bottom: 2px solid #c9151e;
+    position: relative;
+    display: inline-block;
+    width: 3vw;
+    margin-right: 4vw;
+    transition: 0.6s width, 0.6s margin-right, opacity 0.6s;
+  }
+  div.article div.content > div.right div.articleTitle span.a:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #c9151e;
+    border-radius: 50%;
+    background-color: #F8F8F8;
+    right: -10px;
+    top: -4px;
+    opacity: 0;
+    transition: 0.3s opacity;
+  }
+  div.article div.content > div.right div.articleTitle h2 {
+    font-size: 1.4vw;
+    font-weight: normal;
+    color: black;
+    display: inline-block;
+    position: relative;
+    transform: translateY(25%);
+    padding: 0 1.5vw;
+  }
+  div.article div.content > div.right div.articleTitle span.b {
+    border-bottom: 2px solid #c9151e;
+    position: relative;
+    display: inline-block;
+    width: 3vw;
+    margin-left: 4vw;
+    transition: 0.6s width, 0.6s margin-left;
+  }
+  div.article div.content > div.right div.articleTitle span.b:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #c9151e;
+    border-radius: 50%;
+    background-color: #F8F8F8;
+    left: -10px;
+    top: -4px;
+    opacity: 0;
+    transition: 0.3s opacity;
+  }
+  div.article div.content > div.right div.professionalList ul li {
+    overflow: hidden;
+    margin-bottom: 3vw;
+  }
+  div.article div.content > div.right div.professionalList ul li:hover div.right h2 {
+    color: #c9151e;
+  }
+  div.article div.content > div.right div.professionalList ul li div.left {
+    width: 15vw;
+    height: 20vw;
+    float: left;
+  }
+  div.article div.content > div.right div.professionalList ul li div.right {
+    margin-left: 18vw;
+    position: relative;
+    height: 20vw;
+  }
+  div.article div.content > div.right div.professionalList ul li div.right h2 {
+    font-weight: 500;
+    font-size: 1.3vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  div.article div.content > div.right div.professionalList ul li div.right span {
+    display: block;
+    margin-top: 0.5vw;
+    font-size: 1vw;
+    color: #999999;
+  }
+  div.article div.content > div.right div.professionalList ul li div.right font {
+    display: block;
+    margin-top: 0.2vw;
+    font-size: 1vw;
+    color: #666666;
+  }
+  div.article div.content > div.right div.professionalList ul li div.right p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 30px;
+    line-height: 2;
+    font-size: 0.8vw;
+    margin-top: 1vw;
+    -webkit-line-clamp: 3;
+  }
+  div.article div.content > div.right div.professionalList ul li div.right > div {
+    position: absolute;
+    right: 0;
+    bottom: 1vw;
+  }
+  div.article div.content > div.right div.professionalList ul li div.right > div a {
+    display: inline-block;
+    margin-left: 1.5vw;
+    padding-left: 3vw;
+    height: 2vw;
+    background: url(../images/icon_jl_fx.png) left no-repeat;
+    background-size: 2vw;
+    line-height: 2vw;
+    font-size: 0.8vw;
+  }
+  div.article div.content > div.right div.professionalList ul li div.right > div a:hover {
+    opacity: 1 !important;
+  }
+  div.article div.content > div.right div.professionalList ul li div.right > div a.xz {
+    background: url(../images/icon_jl_xz.png) left no-repeat;
+    background-size: 2vw;
+  }
+  .pageview {
+    text-align: center;
+    margin-top: 4vw;
+    height: 3vw;
+  }
+  .pageview span.link {
+    color: #c9151e;
+    cursor: no-drop;
+  }
+  .pageview .link {
+    cursor: pointer;
+    color: #000000;
+    font-size: 1vw;
+    width: 2.5vw;
+    border: 0 !important;
+    border-radius: 50%;
+    height: 2.5vw;
+    line-height: 2.5vw;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0.5vw;
+  }
+  .pageview .link i {
+    font-size: 0.8vw;
+    position: relative;
+    top: -1px;
+  }
+  .pageview .link:first-child {
+    width: auto;
+  }
+  .pageview .link:last-child {
+    width: auto;
+  }
+  .pageview .link:hover {
+    color: #c9151e;
+    border: 0 !important;
+  }
+  .pageview a.prev-link:first-child:hover,
+  .pageview a.next:last-child:hover {
+    border: 1px solid #c9151e;
+    color: #c9151e;
+  }
+  .collegeList ul {
+    border-bottom: 1px solid #DDDDDD;
+  }
+  .collegeList ul li {
+    border-top: 1px solid #DDDDDD;
+    padding: 2vw 0;
+  }
+  .collegeList ul li:hover a h2 {
+    color: #c9151e;
+  }
+  .collegeList ul li a h2 {
+    font-size: 1vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .collegeList ul li a span {
+    display: block;
+    margin-top: 0.5vw;
+    font-size: 0.8vw;
+    color: #999999;
+  }
+  .collegeList ul li a div {
+    margin-top: 0.5vw;
+    line-height: 2;
+    font-size: 0.8vw;
+    color: #999999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 30px;
+    -webkit-line-clamp: 3;
+  }
+  .productText {
+    padding: 5vw 0 0 0;
+    line-height: 1.5;
+  }
+  .productText p {
+    margin: 5px 0;
+  }
+  .introduceText {
+    line-height: 1.5;
+  }
+  .introduceText p {
+    margin: 5px 0;
+  }
+  .productList {
+    overflow: hidden;
+  }
+  .productList ul li {
+    border: 1px solid #DDDDDD;
+    width: 46%;
+    display: inline-grid;
+    margin: 1.5%;
+    padding-bottom: 3vw;
+  }
+  .productList ul li > p {
+    background-color: white;
+    width: 90%;
+    margin: 1vw auto;
+    border-radius: 2vw;
+    font-size: 1vw;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 1vw 0;
+    text-align: center;
+  }
+  .productList ul li > div {
+    padding: 0 2vw;
+  }
+  .productList ul li > div span {
+    display: block;
+    padding: 1vw 0;
+    text-align: center;
+    font-size: 0.8vw;
+    border-bottom: 1px solid #DDDDDD;
+  }
+  .advantageList ul li {
+    margin-top: 2vw;
+  }
+  .advantageList ul li:first-child {
+    margin-top: 0;
+  }
+  .advantageList ul li h2 {
+    font-size: 1.1vw;
+    font-weight: 600;
+  }
+  .advantageList ul li div {
+    line-height: 1.8;
+    font-size: 0.8vw;
+    margin-top: 1.5vw;
+  }
+  .lndustryList {
+    background-color: white;
+    padding: 3vw;
+    margin-bottom: 2vw;
+  }
+  .lndustryList > h2 {
+    font-size: 1vw;
+    line-height: 1.5;
+    font-weight: 600;
+    padding-left: 1.5vw;
+  }
+  .lndustryList > p {
+    font-size: 1vw;
+    margin-top: 2vw;
+    font-weight: 600;
+    padding-left: 1.5vw;
+  }
+  .lndustryList ul {
+    margin-top: 2vw;
+  }
+  .lndustryList ul li {
+    margin-top: 1.5vw;
+    font-size: 0.8vw;
+    position: relative;
+    padding-left: 1.5vw;
+  }
+  .lndustryList ul li:before {
+    content: '';
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: #c9151e;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .honorList h2 {
+    font-size: 0.8vw;
+    font-weight: 600;
+  }
+  .honorList ul {
+    margin-top: 2vw;
+  }
+  .honorList ul li {
+    display: inline-block;
+    font-size: 1vw;
+    margin-right: 2vw;
+    padding: 0.2vw 1vw;
+    cursor: pointer;
+  }
+  .honorList ul li.on {
+    background-color: #c9151e;
+    border-radius: 1.5vw;
+    color: white;
+  }
+  .honorContent {
+    margin-top: 3vw;
+  }
+  .honorContent ul li {
+    margin-top: 1.5vw;
+  }
+  .honorContent ul li p {
+    font-size: 0.8vw;
+    position: relative;
+    padding-left: 1.5vw;
+  }
+  .honorContent ul li p:before {
+    content: '';
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: #c9151e;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .honorContent ul li div {
+    margin-top: 1vw;
+    padding-bottom: 1.5vw;
+    border-bottom: 1px solid #DDDDDD;
+    padding-left: 2vw;
+  }
+  .honorContent ul li div span {
+    display: block;
+    font-size: 0.8vw;
+    line-height: 2;
+  }
+  .culture .top {
+    overflow: hidden;
+  }
+  .culture .top > div {
+    width: 48%;
+    float: left;
+  }
+  .culture .top > div > p {
+    overflow: hidden;
+    height: 18vw;
+  }
+  .culture .top > div > p:hover img {
+    transform: scale(1.1);
+  }
+  .culture .top > div > p img {
+    transform: scale(1);
+    transition: 0.3s transform;
+  }
+  .culture .top > div > p img {
+    max-width: none;
+    width: 100%;
+  }
+  .culture .top > div div {
+    background-color: white;
+    padding: 2vw 3vw;
+  }
+  .culture .top > div div h2 {
+    font-size: 1.2vw;
+    font-weight: 600;
+  }
+  .culture .top > div div p {
+    font-size: 0.8vw;
+    margin-top: 1.5vw;
+  }
+  .culture .top div.right {
+    margin-left: 4%;
+  }
+  .culture .bottom {
+    margin-top: 2vw;
+    background-color: white;
+    padding-top: 2vw;
+  }
+  .culture .bottom > h2 {
+    font-size: 1.2vw;
+    font-weight: 600;
+    position: relative;
+    padding-left: 2vw;
+  }
+  .culture .bottom > h2:before {
+    content: '';
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-bottom: 1px solid #DDDDDD;
+    position: absolute;
+    width: 85%;
+  }
+  .culture .bottom > div {
+    padding: 2vw;
+    line-height: 1.5;
+  }
+  .culture .bottom > div h1,
+  .culture .bottom > div h2,
+  .culture .bottom > div h3,
+  .culture .bottom > div h4,
+  .culture .bottom > div h5,
+  .culture .bottom > div h6 {
+    font-weight: 600;
+  }
+  .culture .bottom > div p {
+    margin: 5px 0;
+  }
+  .newsList ul li {
+    border-bottom: 1px solid #DDDDDD;
+    padding: 2vw 0;
+    position: relative;
+  }
+  .newsList ul li:first-child {
+    border-top: 1px solid #DDDDDD;
+  }
+  .newsList ul li.new {
+    background: url(../images/icon_new.png) no-repeat right top;
+    background-size: 2vw;
+  }
+  .newsList ul li.top {
+    background: url(../images/icon_top.png) no-repeat right top;
+    background-size: 2vw;
+  }
+  .newsList ul li.hot {
+    background: url(../images/icon_hot.png) no-repeat right top;
+    background-size: 2vw;
+  }
+  .newsList ul li:hover h2 {
+    color: #c9151e;
+  }
+  .newsList ul li:hover i {
+    color: #c9151e;
+  }
+  .newsList ul li h2 {
+    font-size: 1vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .newsList ul li span {
+    font-size: 0.9vw;
+    display: block;
+    margin-top: 1vw;
+  }
+  .newsList ul li i {
+    position: absolute;
+    right: 3vw;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3vw;
+  }
+  .joinList div.list div.top h2 {
+    font-size: 1.2vw;
+    font-weight: 600;
+  }
+  .joinList div.list div.top span {
+    display: block;
+    margin-top: 1vw;
+    font-size: 0.8vw;
+    color: #999999;
+  }
+  .joinList div.list div.bottom ul li {
+    margin-top: 2vw;
+  }
+  .joinList div.list div.bottom ul li h2 {
+    font-size: 0.9vw;
+    font-weight: 600;
+  }
+  .joinList div.list div.bottom ul li p {
+    line-height: 2;
+    margin-top: 1vw;
+    font-size: 0.8vw;
+  }
+  .aboutlist div.text {
+    line-height: 1.5;
+  }
+  .aboutlist div.text h1,
+  .aboutlist div.text h2,
+  .aboutlist div.text h3,
+  .aboutlist div.text h4,
+  .aboutlist div.text h5,
+  .aboutlist div.text h6 {
+    font-weight: 600;
+  }
+  .aboutlist div.text p {
+    margin: 5px 0;
+  }
+  .aboutlist div.list {
+    margin-top: 2vw;
+  }
+  .aboutlist div.list h2 {
+    font-size: 1vw;
+    font-weight: 600;
+  }
+  .aboutlist div.list div {
+    margin-top: 2vw;
+  }
+  .aboutlist div.list div span {
+    display: inline-block;
+    background-color: white;
+    padding: 0.5vw 3vw;
+    border-radius: 2vw;
+    line-height: 2;
+    font-size: 0.9vw;
+    margin-right: 2vw;
+  }
+  .aboutlist div.hd {
+    margin-top: 2vw;
+  }
+  .aboutlist div.hd h2 {
+    font-size: 1vw;
+    font-weight: 600;
+  }
+  .aboutlist div.hd ul {
+    margin-top: 1.5vw;
+  }
+  .aboutlist div.hd ul li {
+    width: 46%;
+    float: left;
+    margin: 2%;
+    padding: 0.5vw;
+    background-color: white;
+  }
+  .aboutlist div.hd ul li a {
+    display: block;
+    overflow: hidden;
+    height: 16vw;
+  }
+  .aboutlist div.hd ul li a:hover img {
+    transform: scale(1.1);
+  }
+  .aboutlist div.hd ul li a img {
+    transform: scale(1);
+    transition: 0.3s transform;
+  }
+  .aboutlist div.hd ul li a img {
+    max-width: none;
+    width: 100%;
+  }
+  .teamcontent .teamTitle {
+    text-align: center;
+    padding: 5vw 0;
+  }
+  .teamcontent .teamTitle:hover span.a {
+    width: 5vw;
+    margin-right: 0;
+  }
+  .teamcontent .teamTitle:hover span.b {
+    width: 5vw;
+    margin-left: 0;
+  }
+  .teamcontent .teamTitle span.a {
+    border-bottom: 2px solid #c9151e;
+    width: 5vw;
+    position: relative;
+    display: inline-block;
+    width: 7vw;
+    margin-right: 1vw;
+    transition: 0.6s width, 0.6s margin-right;
+  }
+  .teamcontent .teamTitle span.a:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #c9151e;
+    border-radius: 50%;
+    background-color: #F8F8F8;
+    right: 0;
+    top: -4px;
+  }
+  .teamcontent .teamTitle h2 {
+    font-size: 1.4vw;
+    font-weight: normal;
+    color: black;
+    display: inline-block;
+    position: relative;
+    transform: translateY(25%);
+    padding: 0 1.5vw;
+  }
+  .teamcontent .teamTitle span.b {
+    border-bottom: 2px solid #c9151e;
+    width: 5vw;
+    position: relative;
+    display: inline-block;
+    width: 7vw;
+    margin-left: 1vw;
+    transition: 0.6s width, 0.6s margin-left;
+  }
+  .teamcontent .teamTitle span.b:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #c9151e;
+    border-radius: 50%;
+    background-color: #F8F8F8;
+    left: 0;
+    top: -4px;
+  }
+  .teamcontent .teamList {
+    overflow: hidden;
+    padding: 0 10%;
+    padding-bottom: 2vw;
+  }
+  .teamcontent .teamList ul li {
+    width: 46%;
+    float: left;
+    margin: 2%;
+    background-color: white;
+  }
+  .teamcontent .teamList ul li > p {
+    width: 13vw;
+    height: 17.5vw;
+    overflow: hidden;
+    float: left;
+  }
+  .teamcontent .teamList ul li > p:hover img {
+    transform: scale(1.1);
+  }
+  .teamcontent .teamList ul li > p img {
+    transform: scale(1);
+    transition: 0.3s transform;
+  }
+  .teamcontent .teamList ul li > p img {
+    max-width: none;
+    width: 100%;
+  }
+  .teamcontent .teamList ul li div {
+    margin-left: 13vw;
+    position: relative;
+    height: 17.5vw;
+  }
+  .teamcontent .teamList ul li div > a {
+    padding: 2vw 2vw;
+    display: block;
+  }
+  .teamcontent .teamList ul li div > a h2 {
+    font-size: 1.2vw;
+  }
+  .teamcontent .teamList ul li div > a span {
+    display: block;
+    margin-top: 1vw;
+    font-size: 0.8vw;
+    color: #999999;
+  }
+  .teamcontent .teamList ul li div p {
+    position: absolute;
+    right: 2vw;
+    bottom: 2vw;
+  }
+  .teamcontent .teamList ul li div p a {
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 50%;
+    margin-left: 2vw;
+    background-color: #F8F8F8;
+    display: inline-block;
+    text-align: center;
+    line-height: 3.5vw;
+  }
+  .teamcontent .teamList ul li div p a i {
+    font-size: 1.3vw;
+    color: #666666;
+  }
+  .teamLeft {
+    padding-bottom: 0 !important;
+    background-color: #F8F8F8 !important;
+  }
+  .teams {
+    margin-top: 3vw;
+  }
+  .teams > p {
+    overflow: hidden;
+  }
+  .teams > p img {
+    max-width: none;
+    width: 100%;
+  }
+  .teams div.tle {
+    padding: 2vw 1vw;
+    text-align: center;
+    background-color: white;
+  }
+  .teams div.tle h2 {
+    font-size: 1.3vw;
+    font-weight: 600;
+  }
+  .teams div.tle span {
+    font-size: 0.8vw;
+    margin-top: 1vw;
+    display: block;
+  }
+  .teams div.list {
+    text-align: center;
+    background-color: white;
+  }
+  .teams div.list p {
+    border-top: 1px solid #DDDDDD;
+    padding: 1vw;
+  }
+  .teams div.list p span {
+    display: block;
+    font-size: 0.8vw;
+    text-align: center;
+  }
+  .teams div.list p span i {
+    font-size: 0.8vw;
+    color: #c9151e;
+    margin-right: 0.5vw;
+  }
+  .teams div.list p font {
+    display: block;
+    text-align: center;
+    font-size: 0.7vw;
+    word-break: break-all;
+  }
+  .teams div.code {
+    margin-top: 2vw;
+    padding: 2vw;
+    background-color: white;
+  }
+  .teams div.code p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .teams div.code h2 {
+    text-align: center;
+    margin-top: 1vw;
+    font-size: 0.8vw;
+  }
+  .teams div.down {
+    margin-top: 4vw;
+    text-align: center;
+    background-color: white;
+    line-height: 2;
+    font-size: 0.8vw;
+    border-radius: 2vw;
+    padding: 0.5vw 0;
+  }
+  .teams div.down i {
+    font-size: 0.8vw;
+    margin-right: 1.5vw;
+  }
+  .teamContent {
+    padding: 4vw 0;
+  }
+  .teamContent ul li > h2 {
+    font-size: 1vw;
+    font-weight: 600;
+    position: relative;
+    padding-left: 1.5vw;
+  }
+  .teamContent ul li > h2:before {
+    content: '';
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: #c9151e;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .teamContent ul li > h2:after {
+    content: '';
+    right: 0;
+    top: 50%;
+    display: block;
+    position: absolute;
+    transform: translateY(-50%);
+    border-bottom: 1px solid #DDDDDD;
+    width: 85%;
+  }
+  .teamContent ul li > div {
+    padding: 1.5vw 2vw;
+    line-height: 1.5;
+  }
+  .teamContent ul li > div h1,
+  .teamContent ul li > div h2,
+  .teamContent ul li > div h3,
+  .teamContent ul li > div h4,
+  .teamContent ul li > div h5,
+  .teamContent ul li > div h6 {
+    font-weight: 600;
+  }
+  .teamContent ul li > div p {
+    margin: 5px 0;
+  }
+  .contactTop {
+    overflow: hidden;
+    padding: 0 12.5%;
+  }
+  .contactTop div.left {
+    width: 50%;
+    float: left;
+  }
+  .contactTop div.left img {
+    max-width: none;
+    width: 100%;
+  }
+  .contactTop div.right {
+    width: 45%;
+    float: right;
+  }
+  .contactTop div.right h2 {
+    font-size: 1.1vw;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 1vw;
+  }
+  .contactTop div.right h2:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3vw;
+    border-bottom: 3px solid #c9151e;
+  }
+  .contactTop div.right p {
+    margin-top: 2vw;
+    font-size: 0.9vw;
+  }
+  .contactBottom {
+    padding: 0 12.5%;
+    height: 42vw;
+  }
+  .contactBottom ul li {
+    padding: 0.3vw 2vw;
+    border-radius: 2vw;
+    font-size: 0.8vw;
+    display: inline-block;
+    margin: 0.5vw;
+    cursor: pointer;
+    line-height: 2;
+  }
+  .contactBottom ul li.on {
+    background-color: #c9151e;
+    color: white;
+  }
+  .contactBottom div.map {
+    margin: 5vw 0;
+    height: 60vw;
+    background: url(../images/map2.png) no-repeat center;
+    background-size: 100% 100%;
+    position: relative;
+    display: none;
+    transform: scale(0.5);
+    top: -19vw;
+  }
+  .contactBottom div.map > div {
+    position: absolute;
+    width: 50vw !important;
+    height: 14.3vw;
+    background: url(../images/icon_map_bj.png) no-repeat left bottom;
+    background-size: 7vw;
+  }
+  .contactBottom div.map > div > span {
+    display: block;
+    position: absolute;
+    bottom: 5.5vw;
+    font-size: 1.4vw;
+    width: 6vw;
+    text-align: left;
+  }
+  .contactBottom div.map > div > div {
+    margin-left: 9vw;
+    padding-top: 0;
+  }
+  .contactBottom div.map > div > div h2 {
+    font-size: 1.4vw;
+    font-weight: 600;
+  }
+  .contactBottom div.map > div > div div {
+    font-size: 1.3vw;
+    line-height: 2;
+    margin-top: 1vw;
+  }
+  .search {
+    padding: 5vw 12.5%;
+  }
+  .search div.top {
+    width: 80%;
+    margin: 0 auto;
+    height: 4vw;
+    border-bottom: 1px solid #DDDDDD;
+  }
+  .search div.top i {
+    font-size: 1.1vw;
+    float: left;
+    width: 3%;
+    height: 4vw;
+    line-height: 4vw;
+    cursor: pointer;
+    text-align: center;
+  }
+  .search div.top input {
+    width: 94%;
+    float: left;
+    height: 4vw;
+    line-height: 4vw;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    padding-left: 2%;
+    font-size: 1.1vw;
+  }
+  .search div.top span {
+    width: 3%;
+    float: right;
+    height: 4vw;
+    line-height: 4vw;
+    cursor: pointer;
+  }
+  .search div.bottom {
+    margin-top: 5vw;
+  }
+  .search div.bottom > h2 {
+    font-size: 1.1vw;
+    font-weight: 600;
+  }
+  .search div.bottom > div {
+    margin-top: 5vw;
+  }
+  .search div.bottom > div p.null {
+    padding: 5vw 0;
+    text-align: center;
+    font-size: 1.1vw;
+  }
+  .search div.bottom > div ul li {
+    border-top: 1px solid #DDDDDD;
+    padding: 1.5vw 0;
+  }
+  .search div.bottom > div ul li:last-child {
+    border-bottom: 1px solid #DDDDDD;
+  }
+  .search div.bottom > div ul li h2 {
+    font-size: 1.1vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .search div.bottom > div ul li div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 30px;
+    line-height: 2;
+    margin-top: 1.5vw;
+    font-size: 0.9vw;
+    -webkit-line-clamp: 3;
+  }
+  .newsDetails {
+    padding: 5vw 20%;
+  }
+  .newsDetails > h2 {
+    font-size: 1.1vw;
+    text-align: center;
+    font-weight: 600;
+  }
+  .newsDetails > p {
+    text-align: center;
+    margin-top: 1vw;
+    font-size: 0.9vw;
+    color: #666666;
+  }
+  .newsDetails div.content {
+    padding: 4vw 0;
+    line-height: 1.5;
+  }
+  .newsDetails div.content h1,
+  .newsDetails div.content h2,
+  .newsDetails div.content h3,
+  .newsDetails div.content h4,
+  .newsDetails div.content h5,
+  .newsDetails div.content h6 {
+    font-weight: 600;
+  }
+  .newsDetails div.content p {
+    margin: 5px 0;
+  }
+  .newsDetails div.bottom {
+    overflow: hidden;
+  }
+  .newsDetails div.bottom a {
+    font-size: 0.9vw;
+    width: 49%;
+  }
+  .newsDetails div.bottom a:hover {
+    color: #c9151e;
+  }
+  .newsDetails div.bottom a:first-child {
+    float: left;
+  }
+  .newsDetails div.bottom a:last-child {
+    float: right;
+    text-align: right;
+  }
+}
+@media (max-width: 800px) {
+  .streamer {
+    position: relative;
+  }
+  .streamer p {
+    overflow: hidden;
+    height: 10rem;
+  }
+  .streamer p img {
+    max-width: none;
+    height: 100%;
+  }
+  .streamer div.headline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    color: white;
+    border: 0.1rem solid rgba(255, 255, 255, 0.5);
+    border-top: 0px;
+    text-align: center;
+    width: 10rem;
+    height: 3rem;
+  }
+  .streamer div.headline:before {
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.5);
+    content: '';
+    display: block;
+    width: 20%;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  .streamer div.headline:after {
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.5);
+    content: '';
+    display: block;
+    width: 20%;
+    right: 0;
+    position: absolute;
+    top: 0;
+  }
+  .streamer div.headline span {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 500;
+    position: relative;
+    transform: translateY(-50%);
+  }
+  .streamer div.headline font {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 0.5;
+  }
+  .streamer div.location {
+    position: absolute;
+    bottom: 8%;
+    font-weight: 100;
+    left: 10%;
+    color: white;
+    font-size: 1.2rem;
+  }
+  .streamer div.location a {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 0.3rem;
+  }
+  body {
+    background-color: #f8f8f8;
+  }
+  div.article {
+    padding-bottom: 2rem;
+  }
+  div.article div.content {
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  div.article div.content > div.left {
+    width: 9rem;
+    background-color: white;
+    padding-bottom: 1rem;
+    position: absolute;
+    left: -9rem;
+  }
+  div.article div.content > div.left span.btns {
+    position: absolute;
+    right: -3rem;
+    top: 0;
+    border: 1px solid #dddddd;
+    background-color: white;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 3rem;
+    text-align: center;
+    margin-right: -1rem;
+  }
+  div.article div.content > div.left span.btns.on i:first-child {
+    display: none;
+  }
+  div.article div.content > div.left span.btns.on i:last-child {
+    display: block;
+  }
+  div.article div.content > div.left span.btns i {
+    font-size: 1rem;
+  }
+  div.article div.content > div.left span.btns i:first-child {
+    display: block;
+  }
+  div.article div.content > div.left span.btns i:last-child {
+    display: none;
+  }
+  div.article div.content > div.left.second ul li.on a i {
+    transform: rotate(0deg);
+    color: #c9151e;
+  }
+  div.article div.content > div.left.second ul li a {
+    position: relative;
+    display: block;
+  }
+  div.article div.content > div.left.second ul li a i {
+    float: right;
+    transform: rotate(45deg);
+    font-size: 1rem;
+    transition: 0.3s transform;
+    color: #999999;
+  }
+  div.article div.content > div.left.second ul li div {
+    display: none;
+    background-color: #F8F8F8;
+  }
+  div.article div.content > div.left.second ul li div p {
+    border-bottom: 1px solid #DDDDDD;
+  }
+  div.article div.content > div.left.second ul li div p.on a {
+    color: #c9151e;
+  }
+  div.article div.content > div.left.second ul li div p:last-child {
+    border-bottom: 0;
+  }
+  div.article div.content > div.left div.top {
+    padding: 1rem 0 1.3rem 0;
+    text-align: center;
+    color: #c9151e;
+  }
+  div.article div.content > div.left div.top span {
+    display: block;
+    font-size: 1rem;
+  }
+  div.article div.content > div.left div.top font {
+    display: block;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+  }
+  div.article div.content > div.left ul {
+    border-bottom: 1px solid #DDDDDD;
+  }
+  div.article div.content > div.left ul li {
+    border-top: 1px solid #DDDDDD;
+    text-align: center;
+    position: relative;
+  }
+  div.article div.content > div.left ul li.on > a {
+    color: #c9151e;
+  }
+  div.article div.content > div.left ul li.on > a:before {
+    height: 60%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 0.2rem;
+    background-color: #c9151e;
+    content: '';
+  }
+  div.article div.content > div.left ul li a {
+    display: block;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  div.article div.content > div.right div.articleTitle {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  div.article div.content > div.right div.articleTitle span.a {
+    border-bottom: 0.1rem solid #c9151e;
+    width: 3rem;
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+  }
+  div.article div.content > div.right div.articleTitle span.a:before {
+    content: '';
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 0.1rem solid #c9151e;
+    border-radius: 50%;
+    background-color: #F8F8F8;
+    right: 0;
+    top: -0.25rem;
+  }
+  div.article div.content > div.right div.articleTitle h2 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: black;
+    display: inline-block;
+    position: relative;
+    transform: translateY(25%);
+    padding: 0 1rem;
+  }
+  div.article div.content > div.right div.articleTitle span.b {
+    border-bottom: 0.1rem solid #c9151e;
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+  }
+  div.article div.content > div.right div.articleTitle span.b:before {
+    content: '';
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 0.1rem solid #c9151e;
+    border-radius: 50%;
+    background-color: #F8F8F8;
+    left: 0;
+    top: -0.25rem;
+  }
+  div.article div.content > div.right div.professionalList ul li {
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  div.article div.content > div.right div.professionalList ul li div.left {
+    width: 8rem;
+    height: 10.5rem;
+    float: left;
+  }
+  div.article div.content > div.right div.professionalList ul li div.right {
+    margin-left: 8.5rem;
+    position: relative;
+    height: 10.5rem;
+  }
+  div.article div.content > div.right div.professionalList ul li div.right h2 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  div.article div.content > div.right div.professionalList ul li div.right span {
+    display: block;
+    margin-top: 0.2rem;
+    font-size: 1rem;
+    color: #999999;
+  }
+  div.article div.content > div.right div.professionalList ul li div.right font {
+    display: block;
+    margin-top: 0rem;
+    font-size: 1rem;
+    color: #666666;
+  }
+  div.article div.content > div.right div.professionalList ul li div.right p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: 30px;
+    line-height: 1.5;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    -webkit-line-clamp: 2;
+  }
+  div.article div.content > div.right div.professionalList ul li div.right > div {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  div.article div.content > div.right div.professionalList ul li div.right > div a {
+    display: inline-block;
+    margin: 0;
+    margin-left: 0.5rem;
+    padding-left: 1.2rem;
+    height: 1rem;
+    background: url(../images/icon_jl_fx.png) left no-repeat;
+    background-size: 1rem;
+    line-height: 1rem;
+    font-size: 0.9rem;
+  }
+  div.article div.content > div.right div.professionalList ul li div.right > div a.xz {
+    background: url(../images/icon_jl_xz.png) left no-repeat;
+    background-size: 1rem;
+  }
+  .pageview {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .pageview span.link {
+    color: #c9151e;
+    cursor: no-drop;
+  }
+  .pageview .link {
+    cursor: pointer;
+    color: #000000;
+    font-size: 1.2rem;
+    border: 0px !important;
+    border-radius: 50%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+  .pageview .link i {
+    font-size: 1rem;
+  }
+  .pageview .link:first-child {
+    width: auto;
+  }
+  .pageview .link:last-child {
+    width: auto;
+  }
+  .pageview .link:hover {
+    color: #c9151e;
+  }
+  .pageview .prev-link:first-child {
+    border: 1px solid #333333;
+    color: #333333;
+  }
+  .pageview .next:last-child {
+    border: 1px solid #333333;
+    color: #333333;
+  }
+  .collegeList ul {
+    border-bottom: 1px solid #DDDDDD;
+  }
+  .collegeList ul li {
+    border-top: 1px solid #DDDDDD;
+    padding: 1rem 0;
+  }
+  .collegeList ul li:hover a h2 {
+    color: #c9151e;
+  }
+  .collegeList ul li a h2 {
+    font-size: 1.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .collegeList ul li a span {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #999999;
+  }
+  .collegeList ul li a div {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #999999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: 30px;
+    line-height: 1.5;
+    -webkit-line-clamp: 2;
+  }
+  .productText {
+    padding: 2rem 0 0 0;
+    line-height: 1.5;
+  }
+  .productText * {
+    font-size: 1rem !important;
+  }
+  .productText h1,
+  .productText h2,
+  .productText h3,
+  .productText h4,
+  .productText h5,
+  .productText h6 {
+    font-size: 1.2rem !important;
+  }
+  .productText p {
+    margin: 5px 0;
+  }
+  .introduceText {
+    line-height: 1.5;
+  }
+  .introduceText * {
+    font-size: 1rem !important;
+  }
+  .introduceText h1,
+  .introduceText h2,
+  .introduceText h3,
+  .introduceText h4,
+  .introduceText h5,
+  .introduceText h6 {
+    font-size: 1.2rem !important;
+  }
+  .introduceText p {
+    margin: 5px 0;
+  }
+  .productList {
+    overflow: hidden;
+  }
+  .productList ul li {
+    border: 1px solid #DDDDDD;
+    width: 95%;
+    float: left;
+    margin: 1rem 2.5%;
+    padding-bottom: 2rem;
+  }
+  .productList ul li > p {
+    background-color: white;
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  .productList ul li > div {
+    padding: 0 1rem;
+  }
+  .productList ul li > div span {
+    display: block;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom: 1px solid #DDDDDD;
+  }
+  .advantageList ul li {
+    margin-top: 1rem;
+  }
+  .advantageList ul li:first-child {
+    margin-top: 0;
+  }
+  .advantageList ul li h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .advantageList ul li div {
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .lndustryList {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .lndustryList > h2 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 600;
+    padding-left: 1.5rem;
+  }
+  .lndustryList > p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    padding-left: 1.5rem;
+  }
+  .lndustryList ul {
+    margin-top: 1rem;
+  }
+  .lndustryList ul li {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  .lndustryList ul li:before {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #c9151e;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0.4rem;
+    transform: rotate(45deg);
+  }
+  .honorList h2 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .honorList ul {
+    margin-top: 1rem;
+  }
+  .honorList ul li {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+    line-height: 1.5;
+  }
+  .honorList ul li.on {
+    background-color: #c9151e;
+    border-radius: 1.5rem;
+    color: white;
+  }
+  .honorContent {
+    margin-top: 2rem;
+  }
+  .honorContent ul li {
+    margin-top: 1rem;
+  }
+  .honorContent ul li p {
+    font-size: 1rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  .honorContent ul li p:before {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #c9151e;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .honorContent ul li div {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #DDDDDD;
+    padding-left: 2rem;
+  }
+  .honorContent ul li div span {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .culture .top {
+    overflow: hidden;
+  }
+  .culture .top > div {
+    margin: 1rem 0;
+  }
+  .culture .top > div > p {
+    overflow: hidden;
+  }
+  .culture .top > div > p:hover img {
+    transform: scale(1.1);
+  }
+  .culture .top > div > p img {
+    transform: scale(1);
+    transition: 0.3s transform;
+  }
+  .culture .top > div > p img {
+    max-width: none;
+    width: 100%;
+  }
+  .culture .top > div div {
+    background-color: white;
+    padding: 1rem;
+  }
+  .culture .top > div div h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .culture .top > div div p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .culture .bottom {
+    margin-top: 1rem;
+    background-color: white;
+    padding-top: 1rem;
+  }
+  .culture .bottom > h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    position: relative;
+    padding-left: 2vw;
+  }
+  .culture .bottom > h2:before {
+    content: '';
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-bottom: 1px solid #DDDDDD;
+    position: absolute;
+    width: 75%;
+  }
+  .culture .bottom > div {
+    padding: 1rem;
+    line-height: 1.5;
+  }
+  .culture .bottom > div * {
+    font-size: 1rem !important;
+  }
+  .culture .bottom > div h1,
+  .culture .bottom > div h2,
+  .culture .bottom > div h3,
+  .culture .bottom > div h4,
+  .culture .bottom > div h5,
+  .culture .bottom > div h6 {
+    font-size: 1.2rem !important;
+  }
+  .culture .bottom > div h1,
+  .culture .bottom > div h2,
+  .culture .bottom > div h3,
+  .culture .bottom > div h4,
+  .culture .bottom > div h5,
+  .culture .bottom > div h6 {
+    font-weight: 600;
+  }
+  .culture .bottom > div p {
+    margin: 5px 0;
+  }
+  .newsList ul li {
+    border-bottom: 1px solid #DDDDDD;
+    padding: 1.5rem 0;
+    position: relative;
+  }
+  .newsList ul li:first-child {
+    border-top: 1px solid #DDDDDD;
+  }
+  .newsList ul li.new {
+    background: url(../images/icon_new.png) no-repeat right top;
+    background-size: 2rem;
+  }
+  .newsList ul li.top {
+    background: url(../images/icon_top.png) no-repeat right top;
+    background-size: 2rem;
+  }
+  .newsList ul li.hot {
+    background: url(../images/icon_hot.png) no-repeat right top;
+    background-size: 2rem;
+  }
+  .newsList ul li:hover h2 {
+    color: #c9151e;
+  }
+  .newsList ul li:hover i {
+    color: #c9151e;
+  }
+  .newsList ul li h2 {
+    font-size: 1.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .newsList ul li span {
+    font-size: 1.1rem;
+    display: block;
+    margin-top: 1rem;
+  }
+  .newsList ul li i {
+    display: none;
+  }
+  .joinList div.list div.top h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .joinList div.list div.top span {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #999999;
+  }
+  .joinList div.list div.bottom ul li {
+    margin-top: 2rem;
+  }
+  .joinList div.list div.bottom ul li h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .joinList div.list div.bottom ul li p {
+    line-height: 2;
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  .aboutlist div.text {
+    line-height: 1.5;
+  }
+  .aboutlist div.text h1,
+  .aboutlist div.text h2,
+  .aboutlist div.text h3,
+  .aboutlist div.text h4,
+  .aboutlist div.text h5,
+  .aboutlist div.text h6 {
+    font-weight: 600;
+  }
+  .aboutlist div.text * {
+    font-size: 1rem !important;
+  }
+  .aboutlist div.text h1,
+  .aboutlist div.text h2,
+  .aboutlist div.text h3,
+  .aboutlist div.text h4,
+  .aboutlist div.text h5,
+  .aboutlist div.text h6 {
+    font-size: 1.2rem !important;
+  }
+  .aboutlist div.text p {
+    margin: 5px 0;
+  }
+  .aboutlist div.list {
+    margin-top: 1.5rem;
+  }
+  .aboutlist div.list h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .aboutlist div.list div {
+    margin-top: 1rem;
+  }
+  .aboutlist div.list div span {
+    display: inline-block;
+    background-color: white;
+    padding: 0.2rem 1rem;
+    border-radius: 2rem;
+    margin: 0.5rem;
+    line-height: 2;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+  .aboutlist div.hd {
+    margin-top: 1.5rem;
+  }
+  .aboutlist div.hd h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .aboutlist div.hd ul {
+    margin-top: 1.5rem;
+  }
+  .aboutlist div.hd ul li {
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: white;
+  }
+  .aboutlist div.hd ul li a {
+    display: block;
+    overflow: hidden;
+  }
+  .aboutlist div.hd ul li a:hover img {
+    transform: scale(1.1);
+  }
+  .aboutlist div.hd ul li a img {
+    transform: scale(1);
+    transition: 0.3s transform;
+  }
+  .aboutlist div.hd ul li a img {
+    max-width: none;
+    width: 100%;
+  }
+  .teamcontent .teamTitle {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .teamcontent .teamTitle span.a {
+    border-bottom: 0.1rem solid #c9151e;
+    width: 3rem;
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+  }
+  .teamcontent .teamTitle span.a:before {
+    content: '';
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 0.1rem solid #c9151e;
+    border-radius: 50%;
+    background-color: #F8F8F8;
+    right: 0;
+    top: -0.25rem;
+  }
+  .teamcontent .teamTitle h2 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: black;
+    display: inline-block;
+    position: relative;
+    transform: translateY(25%);
+    padding: 0 1rem;
+  }
+  .teamcontent .teamTitle span.b {
+    border-bottom: 0.1rem solid #c9151e;
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+  }
+  .teamcontent .teamTitle span.b:before {
+    content: '';
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 0.1rem solid #c9151e;
+    border-radius: 50%;
+    background-color: #F8F8F8;
+    left: 0;
+    top: -0.25rem;
+  }
+  .teamcontent .teamList {
+    overflow: hidden;
+    padding: 0 10%;
+    padding-bottom: 2rem;
+  }
+  .teamcontent .teamList ul li {
+    margin: 1rem;
+    background-color: white;
+  }
+  .teamcontent .teamList ul li > p {
+    width: 10rem;
+    height: 43.5vw;
+    overflow: hidden;
+    float: left;
+  }
+  .teamcontent .teamList ul li > p:hover img {
+    transform: scale(1.1);
+  }
+  .teamcontent .teamList ul li > p img {
+    transform: scale(1);
+    transition: 0.3s transform;
+  }
+  .teamcontent .teamList ul li > p img {
+    max-width: none;
+    width: 100%;
+  }
+  .teamcontent .teamList ul li div {
+    margin-left: 10rem;
+    position: relative;
+    height: 43.5vw;
+  }
+  .teamcontent .teamList ul li div > a {
+    padding: 1rem;
+    display: block;
+  }
+  .teamcontent .teamList ul li div > a h2 {
+    font-size: 1.4rem;
+  }
+  .teamcontent .teamList ul li div > a span {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #999999;
+  }
+  .teamcontent .teamList ul li div p {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+  }
+  .teamcontent .teamList ul li div p a {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-left: 2rem;
+    background-color: #F8F8F8;
+    display: inline-block;
+    text-align: center;
+    line-height: 3rem;
+  }
+  .teamcontent .teamList ul li div p a i {
+    font-size: 1.5rem;
+    color: #666666;
+  }
+  .teamLeft {
+    padding-bottom: 0 !important;
+    background-color: #F8F8F8 !important;
+  }
+  .teams {
+    margin-top: 2rem;
+  }
+  .teams > p {
+    overflow: hidden;
+  }
+  .teams > p img {
+    max-width: none;
+    width: 100%;
+  }
+  .teams div.tle {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: white;
+  }
+  .teams div.tle h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .teams div.tle span {
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: block;
+  }
+  .teams div.list {
+    text-align: center;
+    background-color: white;
+  }
+  .teams div.list p {
+    border-top: 1px solid #DDDDDD;
+    padding: 1rem;
+  }
+  .teams div.list p span {
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .teams div.list p span i {
+    font-size: 1rem;
+    color: #c9151e;
+    margin-right: 0.5vw;
+  }
+  .teams div.list p font {
+    display: block;
+    text-align: center;
+    font-size: 0.8vw;
+    word-break: break-all;
+  }
+  .teams div.code {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: white;
+  }
+  .teams div.code p {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .teams div.code h2 {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  .teams div.down {
+    margin-top: 2rem;
+    text-align: center;
+    background-color: white;
+    line-height: 2;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+  }
+  .teams div.down i {
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+  }
+  .teamContent {
+    padding: 2rem 0;
+  }
+  .teamContent ul li > h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+    padding-left: 1rem;
+  }
+  .teamContent ul li > h2:before {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #c9151e;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .teamContent ul li > h2:after {
+    content: '';
+    right: 0;
+    top: 50%;
+    display: block;
+    position: absolute;
+    transform: translateY(-50%);
+    border-bottom: 1px solid #DDDDDD;
+    width: 70%;
+  }
+  .teamContent ul li > div {
+    padding: 1rem 1rem;
+    line-height: 1.5;
+  }
+  .teamContent ul li > div h1,
+  .teamContent ul li > div h2,
+  .teamContent ul li > div h3,
+  .teamContent ul li > div h4,
+  .teamContent ul li > div h5,
+  .teamContent ul li > div h6 {
+    font-weight: 600;
+  }
+  .teamContent ul li > div * {
+    font-size: 1rem !important;
+  }
+  .teamContent ul li > div h1,
+  .teamContent ul li > div h2,
+  .teamContent ul li > div h3,
+  .teamContent ul li > div h4,
+  .teamContent ul li > div h5,
+  .teamContent ul li > div h6 {
+    font-size: 1.2rem !important;
+  }
+  .teamContent ul li > div p {
+    margin: 5px 0;
+  }
+  .contactTop {
+    overflow: hidden;
+    padding: 0 2.5%;
+  }
+  .contactTop div.left img {
+    max-width: none;
+    width: 100%;
+  }
+  .contactTop div.right {
+    margin-top: 1.5rem;
+  }
+  .contactTop div.right h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+  .contactTop div.right h2:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3rem;
+    border-bottom: 0.2rem solid #c9151e;
+  }
+  .contactTop div.right p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+  .contactBottom {
+    padding: 0 2.5%;
+  }
+  .contactBottom ul li {
+    padding: 0.3rem 2rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0.5rem;
+    cursor: pointer;
+    line-height: 2;
+  }
+  .contactBottom ul li.on {
+    background-color: #c9151e;
+    color: white;
+  }
+  .contactBottom div.map {
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .contactBottom div.map div {
+    width: 100% !important;
+  }
+  .contactBottom div.map div > span {
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .contactBottom div.map div > div {
+    margin-top: 1rem;
+  }
+  .contactBottom div.map div > div h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .contactBottom div.map div > div div {
+    line-height: 1.5;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .search {
+    padding: 2rem 2.5%;
+  }
+  .search div.top {
+    width: 90%;
+    margin: 0 auto;
+    height: 3rem;
+    border-bottom: 1px solid #DDDDDD;
+  }
+  .search div.top i {
+    font-size: 1.2vw;
+    float: left;
+    width: 5%;
+    height: 3rem;
+    line-height: 3rem;
+    cursor: pointer;
+    text-align: center;
+  }
+  .search div.top input {
+    width: 90%;
+    float: left;
+    height: 3rem;
+    line-height: 3rem;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    padding-left: 2%;
+    font-size: 1.2rem;
+  }
+  .search div.top span {
+    width: 5%;
+    float: right;
+    height: 3rem;
+    line-height: 3rem;
+    cursor: pointer;
+  }
+  .search div.bottom {
+    margin-top: 2rem;
+  }
+  .search div.bottom > h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .search div.bottom > div {
+    margin-top: 2rem;
+  }
+  .search div.bottom > div p.null {
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .search div.bottom > div ul li {
+    border-top: 1px solid #DDDDDD;
+    padding: 1.5rem 0;
+  }
+  .search div.bottom > div ul li:last-child {
+    border-bottom: 1px solid #DDDDDD;
+  }
+  .search div.bottom > div ul li h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .search div.bottom > div ul li div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 30px;
+    line-height: 1.5;
+    margin-top: 1rem;
+    font-size: 1rem;
+    -webkit-line-clamp: 3;
+  }
+  .newsDetails {
+    padding: 2rem 2.5%;
+  }
+  .newsDetails > h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 600;
+  }
+  .newsDetails > p {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #666666;
+  }
+  .newsDetails div.content {
+    padding: 2rem 0;
+    line-height: 1.5;
+  }
+  .newsDetails div.content h1,
+  .newsDetails div.content h2,
+  .newsDetails div.content h3,
+  .newsDetails div.content h4,
+  .newsDetails div.content h5,
+  .newsDetails div.content h6 {
+    font-weight: 600;
+  }
+  .newsDetails div.content * {
+    font-size: 1rem !important;
+  }
+  .newsDetails div.content h1,
+  .newsDetails div.content h2,
+  .newsDetails div.content h3,
+  .newsDetails div.content h4,
+  .newsDetails div.content h5,
+  .newsDetails div.content h6 {
+    font-size: 1.2rem !important;
+  }
+  .newsDetails div.content p {
+    margin: 5px 0;
+  }
+  .newsDetails div.bottom {
+    overflow: hidden;
+  }
+  .newsDetails div.bottom a {
+    font-size: 1rem;
+    display: block;
+  }
+  .newsDetails div.bottom a:hover {
+    color: #c9151e;
+  }
+  .newsDetails div.bottom a:last-child {
+    margin-top: 1rem;
+  }
+}
