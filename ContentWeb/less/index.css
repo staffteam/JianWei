@@ -118,10 +118,12 @@ input:focus {
     position: relative;
     margin: 0 auto;
     transition: 0.3s background-color;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
     cursor: pointer;
   }
   .business ul li p:hover {
     background-color: #c9151e;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
   }
   .business ul li p img {
     position: absolute;
@@ -233,11 +235,13 @@ input:focus {
     height: 3vw;
     line-height: 3vw;
     font-size: 0.8vw;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
   }
-  .news div.newsNav span.on {
+  .news div.newsNav span.on,.news div.newsNav span:hover {
     background-color: #c9151e;
     color: white;
     border: 1px solid #c9151e;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
   }
   .news div.content {
     padding: 2vw 18%;
@@ -384,6 +388,11 @@ input:focus {
   .news div.content div.right ul li.new {
     background: url(../images/icon_new.png) no-repeat right top;
   }
+  .news div.content div.right ul li:hover{background-color: #c9151e; transition: 0.3s box-shadow,0.3s background; box-shadow: 0 0 30px rgba(0,0,0,0.8);}
+  .news div.content div.right ul li:hover.new {
+    background: url(../images/icon_new.png) no-repeat right top #c9151e;
+  }
+  .news div.content div.right ul li:hover *{color: white !important;}
   .news div.content div.right ul li.top {
     background: url(../images/icon_top.png) no-repeat right top;
   }

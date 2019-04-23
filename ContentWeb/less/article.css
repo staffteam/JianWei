@@ -88,7 +88,7 @@ input:focus {
     padding-bottom: 5vw;
   }
   div.article div.content {
-    width: 75%;
+    width: 60%;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -104,7 +104,7 @@ input:focus {
   }
   div.article div.content > div.left.second ul li.on a i {
     transform: rotate(0deg);
-    color: #c9151e;
+    color: white;
   }
   div.article div.content > div.left.second ul li a {
     position: relative;
@@ -122,10 +122,11 @@ input:focus {
     background-color: #F8F8F8;
   }
   div.article div.content > div.left.second ul li div p {
-    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
   }
   div.article div.content > div.left.second ul li div p.on a {
-    color: #c9151e;
+    background-color: #c9151e;
+    color: white;
   }
   div.article div.content > div.left.second ul li div p:last-child {
     border-bottom: 0;
@@ -150,8 +151,12 @@ input:focus {
     border-top: 1px solid #DDDDDD;
     text-align: center;
   }
-  div.article div.content > div.left ul li.on > a {
-    color: #c9151e;
+  div.article div.content > div.left ul li.on > a,div.article div.content > div.left ul li:hover > a {
+    background: #c9151e;
+    color: white;
+  }
+  div.article div.content > div.left.second ul li:hover a i{
+  	color: white;
   }
   div.article div.content > div.left ul li.on > a:before {
     height: 60%;
@@ -176,19 +181,19 @@ input:focus {
     text-align: center;
     padding: 5vw 0;
   }
-  div.article div.content > div.right div.articleTitle:hover span.a {
+  div.article div.content > div.right div.articleTitle.on span.a {
     width: 7vw;
     margin-right: 0;
   }
-  div.article div.content > div.right div.articleTitle:hover span.a:before {
+  div.article div.content > div.right div.articleTitle.on span.a:before {
     opacity: 1;
   }
-  div.article div.content > div.right div.articleTitle:hover span.b {
+  div.article div.content > div.right div.articleTitle.on span.b {
     width: 7vw;
     margin-left: 0;
     opacity: 1;
   }
-  div.article div.content > div.right div.articleTitle:hover span.b:before {
+  div.article div.content > div.right div.articleTitle.on span.b:before {
     opacity: 1;
   }
   div.article div.content > div.right div.articleTitle span.a {
@@ -745,22 +750,28 @@ input:focus {
     text-align: center;
     padding: 5vw 0;
   }
-  .teamcontent .teamTitle:hover span.a {
-    width: 5vw;
+  .teamcontent .teamTitle.on span.a {
+    width: 7vw;
     margin-right: 0;
   }
-  .teamcontent .teamTitle:hover span.b {
-    width: 5vw;
+  .teamcontent .teamTitle.on span.a:before {
+    opacity: 1;
+  }
+  .teamcontent .teamTitle.on span.b {
+    width: 7vw;
     margin-left: 0;
+    opacity: 1;
+  }
+  .teamcontent .teamTitle.on span.b:before {
+    opacity: 1;
   }
   .teamcontent .teamTitle span.a {
     border-bottom: 2px solid #c9151e;
-    width: 5vw;
     position: relative;
     display: inline-block;
-    width: 7vw;
-    margin-right: 1vw;
-    transition: 0.6s width, 0.6s margin-right;
+    width: 3vw;
+    margin-right: 4vw;
+    transition: 0.6s width, 0.6s margin-right, opacity 0.6s;
   }
   .teamcontent .teamTitle span.a:before {
     content: '';
@@ -770,8 +781,10 @@ input:focus {
     border: 2px solid #c9151e;
     border-radius: 50%;
     background-color: #F8F8F8;
-    right: 0;
+    right: -10px;
     top: -4px;
+    opacity: 0;
+    transition: 0.3s opacity;
   }
   .teamcontent .teamTitle h2 {
     font-size: 1.4vw;
@@ -784,11 +797,10 @@ input:focus {
   }
   .teamcontent .teamTitle span.b {
     border-bottom: 2px solid #c9151e;
-    width: 5vw;
     position: relative;
     display: inline-block;
-    width: 7vw;
-    margin-left: 1vw;
+    width: 3vw;
+    margin-left: 4vw;
     transition: 0.6s width, 0.6s margin-left;
   }
   .teamcontent .teamTitle span.b:before {
@@ -799,8 +811,10 @@ input:focus {
     border: 2px solid #c9151e;
     border-radius: 50%;
     background-color: #F8F8F8;
-    left: 0;
+    left: -10px;
     top: -4px;
+    opacity: 0;
+    transition: 0.3s opacity;
   }
   .teamcontent .teamList {
     overflow: hidden;
@@ -862,6 +876,9 @@ input:focus {
     display: inline-block;
     text-align: center;
     line-height: 3.5vw;
+  }
+  .teamcontent .teamList ul li div p a:hover{
+  	box-shadow: 0 0 20px rgba(0,0,0,0.2);
   }
   .teamcontent .teamList ul li div p a i {
     font-size: 1.3vw;
@@ -1038,9 +1055,10 @@ input:focus {
     cursor: pointer;
     line-height: 2;
   }
-  .contactBottom ul li.on {
+  .contactBottom ul li.on,.contactBottom ul li:hover {
     background-color: #c9151e;
     color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
   }
   .contactBottom div.map {
     margin: 5vw 0;
@@ -1318,7 +1336,7 @@ input:focus {
   }
   div.article div.content > div.left.second ul li.on a i {
     transform: rotate(0deg);
-    color: #c9151e;
+    color: white;
   }
   div.article div.content > div.left.second ul li a {
     position: relative;

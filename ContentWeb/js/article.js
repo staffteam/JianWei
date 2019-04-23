@@ -52,7 +52,13 @@ $(function() {
 				$(this).closest('.left').animate({'left':'0'},300);
 			}
 		}
-	})
+	});
+	$('.teamTitle').hover(function(){
+		$(this).addClass('on');
+	});
+	$('.articleTitle').hover(function(){
+		$(this).addClass('on');
+	});
 })
 function deleteNull(){
 	$('#searchs').val('');  

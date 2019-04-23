@@ -285,6 +285,7 @@ input:focus {
     width: 2vw;
     height: 2vw;
     margin-left: 1vw;
+    cursor: pointer;
   }
   .footer .bottom div.fenxiang p i {
     color: #c9151e;
