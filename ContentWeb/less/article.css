@@ -263,6 +263,13 @@ input:focus {
     height: 20vw;
     float: left;
   }
+  div.article div.content > div.right div.professionalList ul li div.left img{
+  	max-width: none;
+  	width:100%;
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+  }
   div.article div.content > div.right div.professionalList ul li div.right {
     margin-left: 18vw;
     position: relative;
