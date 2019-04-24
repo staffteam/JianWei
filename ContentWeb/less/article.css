@@ -1317,6 +1317,7 @@ input:focus {
     padding-bottom: 1rem;
     position: absolute;
     left: -9rem;
+    z-index: 999;
   }
   div.article div.content > div.left span.btns {
     position: absolute;
@@ -2102,6 +2103,7 @@ input:focus {
   }
   .teams {
     margin-top: 2rem;
+    padding-bottom: 1rem;
   }
   .teams > p {
     overflow: hidden;

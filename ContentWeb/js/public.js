@@ -9,11 +9,13 @@ $(function() {
 		}
 
 	}
-	$('#menu >ul>li').hover(function(){
+	if($(window).width()>800){
+		$('#menu >ul>li').hover(function(){
 		$(this).addClass("open");
-	},function(){
-		$(this).removeClass("open");
-	});
+		},function(){
+			$(this).removeClass("open");
+		});
+	}
 	//二级导航初始化
 	publicObj.navtab();
 	/***html默认px初始化***/
@@ -57,6 +59,10 @@ $(function() {
 		    		if($(window).width()>800){
 		    			$('.article .content>.left').css({"position":"fixed","top":"6vw","bottom":"auto","max-height":"87vh","overflow-y":"auto"})
 		    		}else{
+		    			if($('.article .content>.left .teams').length==1){
+	    					var hh = $(window).height()-$('.navbar-header').height()*1.3;
+	    					$('.article .content>.left .teams').css({"max-height":hh+'px',"overflow-y":"auto","margin-top":"0"});
+	    				}
 		    			if($('.article .content>.left span.btns').hasClass('on')){
 		    				$('.article .content>.left').css({"position":"fixed","top":"6rem","bottom":"auto",'left':'1rem'})
 		    			}else{
@@ -71,6 +77,10 @@ $(function() {
 		    				$('.article .content>.left').css({"position":"fixed","top":"6vw","bottom":"auto"})
 		    			}
 		    		}else{
+		    			if($('.article .content>.left .teams').length==1){
+	    					var hh = $(window).height()-$('.navbar-header').height()*1.3;
+	    					$('.article .content>.left .teams').css({"max-height":hh+'px',"overflow-y":"auto","margin-top":"0"});
+	    				}
 		    			if($('.article .content>.left span.btns').hasClass('on')){
 		    				$('.article .content>.left').css({"position":"fixed","top":"6rem","bottom":"auto",'left':'1rem'})
 		    			}else{
@@ -82,6 +92,10 @@ $(function() {
 		    			$('.article .content>.left').scrollTop(0)
 		    			$('.article .content>.left').removeAttr('style');
 		    		}else{
+		    			if($('.article .content>.left .teams').length==1){
+		    				var hh = $(window).height()-$('.teamLeft').offset().top;
+	    					$('.article .content>.left .teams').css({"max-height":hh+'px',"overflow-y":"auto","margin-top":"0"});
+	    				}
 		    			if($('.article .content>.left span.btns').hasClass('on')){
 		    				$('.article .content>.left').css({"position":"absolute","top":"0","bottom":"auto",'left':'0'})
 		    			}else{
