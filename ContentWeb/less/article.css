@@ -14,6 +14,9 @@ input:focus {
   transition: 0.3s transform;
 }
 @media (max-width: 1920px) and (min-width: 801px) {
+	div.article div.content > div.left::-webkit-scrollbar {
+	    display: none;
+	}
   .streamer {
     position: relative;
   }
@@ -225,6 +228,7 @@ input:focus {
     position: relative;
     transform: translateY(25%);
     padding: 0 1.5vw;
+    font-weight: 600;
   }
   div.article div.content > div.right div.articleTitle span.b {
     border-bottom: 2px solid #c9151e;
@@ -412,13 +416,12 @@ input:focus {
   }
   .productList ul li {
     border: 1px solid #DDDDDD;
-    width: 46%;
+    width: 100%;
     display: inline-grid;
-    margin: 1.5%;
-    padding-bottom: 3vw;
+    margin: 1.5% 0;
+    padding-bottom: 1vw;
   }
   .productList ul li > p {
-    background-color: white;
     width: 90%;
     margin: 1vw auto;
     border-radius: 2vw;
@@ -426,17 +429,15 @@ input:focus {
     font-weight: 600;
     line-height: 1.5;
     padding: 1vw 0;
-    text-align: center;
   }
   .productList ul li > div {
     padding: 0 2vw;
   }
   .productList ul li > div span {
-    display: block;
-    padding: 1vw 0;
-    text-align: center;
+    display: inline-grid;
+    padding: 0.2vw 0;
+    width: 49%;
     font-size: 0.8vw;
-    border-bottom: 1px solid #DDDDDD;
   }
   .advantageList ul li {
     margin-top: 2vw;
@@ -500,14 +501,15 @@ input:focus {
   .honorList ul li {
     display: inline-block;
     font-size: 1vw;
-    margin-right: 2vw;
+    margin:0.5vw 1vw 0 0vw;
     padding: 0.2vw 1vw;
     cursor: pointer;
   }
-  .honorList ul li.on {
+  .honorList ul li.on,.honorList ul li:hover {
     background-color: #c9151e;
     border-radius: 1.5vw;
     color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
   }
   .honorContent {
     margin-top: 3vw;
@@ -535,7 +537,7 @@ input:focus {
     margin-top: 1vw;
     padding-bottom: 1.5vw;
     border-bottom: 1px solid #DDDDDD;
-    padding-left: 2vw;
+    padding-left: 1.5vw;
   }
   .honorContent ul li div span {
     display: block;
@@ -551,7 +553,7 @@ input:focus {
   }
   .culture .top > div > p {
     overflow: hidden;
-    height: 18vw;
+    height: 13vw;
   }
   .culture .top > div > p:hover img {
     transform: scale(1.1);
@@ -645,6 +647,7 @@ input:focus {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-weight: 600;
   }
   .newsList ul li span {
     font-size: 0.9vw;
@@ -794,6 +797,7 @@ input:focus {
     position: relative;
     transform: translateY(25%);
     padding: 0 1.5vw;
+    font-weight: 600;
   }
   .teamcontent .teamTitle span.b {
     border-bottom: 2px solid #c9151e;

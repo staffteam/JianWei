@@ -122,8 +122,13 @@ input:focus {
     cursor: pointer;
   }
   .business ul li p:hover {
-    background-color: #c9151e;
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  }
+  .business ul li p:hover img:first-child {
+    display: none;
+  }
+  .business ul li p:hover img:last-child {
+    display: block;
   }
   .business ul li p img {
     position: absolute;
@@ -143,14 +148,13 @@ input:focus {
     display: none;
   }
   .business ul li.txtShow {
-    width: 130%;
-    margin-left: -15%;
+    width: 100%;
     background-color: white;
-    padding: 3vw 22%;
+    padding: 3vw 8%;
     position: relative;
   }
   .business ul li.txtShow div.content {
-    width: 85%;
+    width: 100%;
     float: left;
     display: block;
   }
@@ -185,9 +189,9 @@ input:focus {
     margin-left: 0.2vw;
   }
   .business ul li.txtShow div.right {
+  	display: none;
     width: 10%;
     float: right;
-    display: block;
   }
   .business ul li.txtShow div.right span {
     display: block;
@@ -282,6 +286,7 @@ input:focus {
     -webkit-box-orient: vertical;
     line-height: 30px;
     line-height: 1.5;
+    font-weight: 600;
   }
   .news div.content div.left > span {
     display: block;
@@ -372,6 +377,7 @@ input:focus {
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 0.9vw;
+    font-weight: 600;
   }
   .news div.content div.right ul li div.text p {
     overflow: hidden;
@@ -731,6 +737,7 @@ input:focus {
     -webkit-box-orient: vertical;
     line-height: 30px;
     line-height: 1.5;
+    font-weight: 600;
   }
   .news div.content div.left > span {
     display: block;
