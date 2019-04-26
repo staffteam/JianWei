@@ -57,7 +57,7 @@ $(function() {
 	    	if($('body').height()>$(window).height()*2){
 	    		if($('body,html').scrollTop() > articleTop && $('body,html').scrollTop()<$('.footer').offset().top-($(window).height()-$('.footer').height()+($(window).width()*0.15))){
 		    		if($(window).width()>800){
-		    			$('.article .content>.left').css({"position":"fixed","top":"6vw","bottom":"auto","max-height":"87vh","overflow-y":"auto"})
+		    			//$('.article .content>.left').css({"position":"fixed","top":"6vw","bottom":"auto","max-height":"87vh","overflow-y":"auto"})
 		    		}else{
 		    			if($('.article .content>.left .teams').length==1){
 	    					var hh = $(window).height()-$('.navbar-header').height()*1.3;
@@ -71,11 +71,11 @@ $(function() {
 		    		}
 		    	}else if($('body,html').scrollTop()>$('.footer').offset().top-($(window).height()-$('.footer').height()+($(window).width()*0.15))){
 		    		if($(window).width()>800){
-		    			if($('.article .content>.left').height()>($(window).height()-$('.footer').innerHeight()-(($(window).width()/32)*5))){
-		    				$('.article .content>.left').css({"position":"absolute","bottom":0,"top":"auto"})
-		    			}else{
-		    				$('.article .content>.left').css({"position":"fixed","top":"6vw","bottom":"auto"})
-		    			}
+//		    			if($('.article .content>.left').height()>($(window).height()-$('.footer').innerHeight()-(($(window).width()/32)*5))){
+//		    				$('.article .content>.left').css({"position":"absolute","bottom":0,"top":"auto"})
+//		    			}else{
+//		    				$('.article .content>.left').css({"position":"fixed","top":"6vw","bottom":"auto"})
+//		    			}
 		    		}else{
 		    			if($('.article .content>.left .teams').length==1){
 	    					var hh = $(window).height()-$('.navbar-header').height()*1.3;
@@ -89,8 +89,8 @@ $(function() {
 		    		}
 		    	}else{
 		    		if($(window).width()>800){
-		    			$('.article .content>.left').scrollTop(0)
-		    			$('.article .content>.left').removeAttr('style');
+		    			//$('.article .content>.left').scrollTop(0)
+		    			//$('.article .content>.left').removeAttr('style');
 		    		}else{
 		    			if($('.article .content>.left .teams').length==1){
 		    				var hh = $(window).height()-$('.teamLeft').offset().top;

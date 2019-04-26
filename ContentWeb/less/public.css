@@ -93,7 +93,7 @@ input:focus {
   }
   .navbar-white .navbar-brand {
     height: 5vw;
-    padding: 0.8vw;
+    padding:1.05vw 0.8vw;
   }
   .navbar-white .navbar-brand img {
     height: 100%;
@@ -243,7 +243,7 @@ input:focus {
   }
   .footer {
     background-color: #1b1b1b;
-    padding: 3vw 10%;
+    padding: 3vw 20%;
   }
   .footer ul {
     overflow: hidden;

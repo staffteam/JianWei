@@ -75,7 +75,7 @@ input:focus {
     position: absolute;
     bottom: 10%;
     font-weight: 100;
-    left: 12.5%;
+    left: 20%;
     color: white;
     font-size: 1vw;
   }
@@ -128,8 +128,7 @@ input:focus {
     border-top: 1px solid #DDDDDD;
   }
   div.article div.content > div.left.second ul li div p.on a {
-    background-color: #c9151e;
-    color: white;
+    background-color: #eeeeee;
   }
   div.article div.content > div.left.second ul li div p:last-child {
     border-bottom: 0;
@@ -169,6 +168,7 @@ input:focus {
     width: 4px;
     background-color: #c9151e;
     content: '';
+    display: none;
   }
   div.article div.content > div.left ul li a {
     display: block;
@@ -409,15 +409,18 @@ input:focus {
     padding: 5vw 0 0 0;
     line-height: 1.5;
   }
-  .productText p {
-    margin: 5px 0;
+  .productText h1,.productText h2,.productText h3,.productText h4,.productText h5,.productText h6,.productText strong{
+  	font-size: 1vw;
+  	line-height:2;
   }
-  .introduceText {
-    line-height: 1.5;
+  .productText *{font-size: 0.9vw; line-height:1.5;}
+  .productText p{margin:5px 0;}
+  .introduceText h1,.introduceText h2,.introduceText h3,.introduceText h4,.introduceText h5,.introduceText h6,.introduceText strong{
+  	font-size: 1vw;
+  	line-height:2;
   }
-  .introduceText p {
-    margin: 5px 0;
-  }
+  .introduceText *{font-size: 0.9vw; line-height:1.5;}
+  .introduceText p{margin:5px 0;}
   .productList {
     overflow: hidden;
   }
@@ -440,12 +443,32 @@ input:focus {
   .productList ul li > div {
     padding: 0 2vw;
   }
-  .productList ul li > div span {
-    display: inline-grid;
-    padding: 0.2vw 0;
-    width: 49%;
-    font-size: 0.8vw;
+  .productList ul li > div div h2{
+  	font-size: 0.9vw;
+  	font-weight: 600;
+  	padding-top: 1vw;
+  	line-height: 2;
   }
+  .productList ul li > div div h2:first-child{padding-top: 0;}
+  .productList ul li > div div p{
+  	font-size: 0.8vw;
+  	line-height: 2;
+  }
+  .productList ul li > div div.left {
+    width: 50%;
+    float: left;
+  }
+  .productList ul li > div div.right {
+    width: 50%;
+    float: left;
+  }
+  .advantageList{border: 1px solid #DDDDDD;    padding: 1vw;}
+  .advantageList h1,.advantageList h2,.advantageList h3,.advantageList h4,.advantageList h5,.advantageList h6,.advantageList strong{
+  	font-size: 1vw;
+  	line-height:2;
+  }
+  .advantageList *{font-size: 0.9vw; line-height:1.5;}
+  .advantageList p{margin:5px 0;}
   .advantageList ul li {
     margin-top: 2vw;
   }
@@ -528,6 +551,7 @@ input:focus {
     font-size: 0.8vw;
     position: relative;
     padding-left: 1.5vw;
+    line-height: 2;
   }
   .honorContent ul li p:before {
     content: '';
@@ -541,7 +565,6 @@ input:focus {
     transform: translateY(-50%) rotate(45deg);
   }
   .honorContent ul li div {
-    margin-top: 1vw;
     padding-bottom: 1.5vw;
     border-bottom: 1px solid #DDDDDD;
     padding-left: 1.5vw;
@@ -617,11 +640,15 @@ input:focus {
   .culture .bottom > div h3,
   .culture .bottom > div h4,
   .culture .bottom > div h5,
-  .culture .bottom > div h6 {
+  .culture .bottom > div h6,
+  .culture .bottom > div strong {
+  	font-size: 1vw;
+  	line-height:2;
     font-weight: 600;
   }
   .culture .bottom > div p {
     margin: 5px 0;
+    font-size: 0.9vw; line-height:1.5;
   }
   .newsList ul li {
     border-bottom: 1px solid #DDDDDD;
@@ -829,7 +856,7 @@ input:focus {
   }
   .teamcontent .teamList {
     overflow: hidden;
-    padding: 0 10%;
+    padding: 0 20%;
     padding-bottom: 2vw;
   }
   .teamcontent .teamList ul li {
@@ -837,6 +864,7 @@ input:focus {
     float: left;
     margin: 2%;
     background-color: white;
+    border: 1px solid #dddddd;
   }
   .teamcontent .teamList ul li > p {
     width: 13vw;
@@ -1348,7 +1376,6 @@ input:focus {
   }
   div.article div.content > div.left.second ul li.on a i {
     transform: rotate(0deg);
-    color: white;
   }
   div.article div.content > div.left.second ul li a {
     position: relative;
@@ -1612,7 +1639,7 @@ input:focus {
   .productText h3,
   .productText h4,
   .productText h5,
-  .productText h6 {
+  .productText h6,.productText strong {
     font-size: 1.2rem !important;
   }
   .productText p {
@@ -1629,7 +1656,7 @@ input:focus {
   .introduceText h3,
   .introduceText h4,
   .introduceText h5,
-  .introduceText h6 {
+  .introduceText h6,.introduceText strong {
     font-size: 1.2rem !important;
   }
   .introduceText p {
@@ -1659,13 +1686,28 @@ input:focus {
   .productList ul li > div {
     padding: 0 1rem;
   }
-  .productList ul li > div span {
-    display: block;
-    padding: 1rem 0;
-    text-align: center;
-    font-size: 1rem;
-    border-bottom: 1px solid #DDDDDD;
+  .productList ul li > div div h2{
+  	font-size: 1rem;
+  	font-weight: 600;
+  	padding-top: 1rem;
+  	line-height: 2;
   }
+  .productList ul li > div div h2:first-child{padding-top: 0;}
+  .productList ul li > div div p{
+  	font-size: 0.9rem;
+  	line-height: 2;
+  }
+  .productList ul li > div div.left {
+  }
+  .productList ul li > div div.right {
+  }
+  .advantageList{border: 1px solid #DDDDDD;    padding: 1rem;}
+  .advantageList h1,.advantageList h2,.advantageList h3,.advantageList h4,.advantageList h5,.advantageList h6,.advantageList strong{
+  	font-size: 1.2rem;
+  	line-height:2;
+  }
+  .advantageList *{font-size: 1rem; line-height:1.5;}
+  .advantageList p{margin:5px 0;}
   .advantageList ul li {
     margin-top: 1rem;
   }
@@ -1837,17 +1879,24 @@ input:focus {
   .culture .bottom > div h5,
   .culture .bottom > div h6 {
     font-size: 1.2rem !important;
+    line-height:1.5;
   }
   .culture .bottom > div h1,
   .culture .bottom > div h2,
   .culture .bottom > div h3,
   .culture .bottom > div h4,
   .culture .bottom > div h5,
-  .culture .bottom > div h6 {
+  .culture .bottom > div h6,.culture .bottom > div strong {
     font-weight: 600;
   }
   .culture .bottom > div p {
     margin: 5px 0;
+    line-height:1.5;
+    font-size: 1rem !important;
+  }
+  .culture .bottom > div {
+    padding: 2vw;
+    line-height: 1.5;
   }
   .newsList ul li {
     border-bottom: 1px solid #DDDDDD;
