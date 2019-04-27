@@ -463,12 +463,12 @@ input:focus {
   	line-height: 2;
   }
   .productList ul li > div div.left {
-    width: 50%;
+    width: 48%;
     float: left;
   }
   .productList ul li > div div.right {
-    width: 50%;
-    float: left;
+    width: 48%;
+    float: right;
   }
   .advantageList{border: 1px solid #DDDDDD;    padding: 1vw;}
   .advantageList h1,.advantageList h2,.advantageList h3,.advantageList h4,.advantageList h5,.advantageList h6,.advantageList strong{
