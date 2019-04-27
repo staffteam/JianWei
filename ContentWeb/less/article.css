@@ -410,16 +410,24 @@ input:focus {
     line-height: 1.5;
   }
   .productText h1,.productText h2,.productText h3,.productText h4,.productText h5,.productText h6,.productText strong{
-  	font-size: 1vw;
+  	font-size: 1vw !important;
   	line-height:2;
   }
-  .productText *{font-size: 0.9vw; line-height:1.5;}
+  .productText h1 *,.productText h2 *,.productText h3 *,.productText h4 *,.productText h5 *,.productText h6 *,.productText strong *{
+  	font-size: 1vw !important;
+  	line-height:2;
+  }
+  .productText *{font-size: 0.9vw !important; line-height:1.5; font-family: "微软雅黑" !important;}
   .productText p{margin:5px 0;}
   .introduceText h1,.introduceText h2,.introduceText h3,.introduceText h4,.introduceText h5,.introduceText h6,.introduceText strong{
-  	font-size: 1vw;
+  	font-size: 1vw !important;
   	line-height:2;
   }
-  .introduceText *{font-size: 0.9vw; line-height:1.5;}
+  .introduceText h1 *,.introduceText h2 *,.introduceText h3 *,.introduceText h4 *,.introduceText h5 *,.introduceText h6 *,.introduceText strong *{
+  	font-size: 1vw !important;
+  	line-height:2;
+  }
+  .introduceText *{font-size: 0.9vw !important; line-height:1.5; font-family: "微软雅黑" !important;}
   .introduceText p{margin:5px 0;}
   .productList {
     overflow: hidden;
@@ -464,10 +472,14 @@ input:focus {
   }
   .advantageList{border: 1px solid #DDDDDD;    padding: 1vw;}
   .advantageList h1,.advantageList h2,.advantageList h3,.advantageList h4,.advantageList h5,.advantageList h6,.advantageList strong{
-  	font-size: 1vw;
+  	font-size: 1vw !important;
   	line-height:2;
   }
-  .advantageList *{font-size: 0.9vw; line-height:1.5;}
+  .advantageList h1 *,.advantageList h2 *,.advantageList h3 *,.advantageList h4 *,.advantageList h5 *,.advantageList h6 *,.advantageList strong *{
+  	font-size: 1vw !important;
+  	line-height:2;
+  }
+  .advantageList *{font-size: 0.9vw !important; line-height:1.5; font-family: "微软雅黑" !important;}
   .advantageList p{margin:5px 0;}
   .advantageList ul li {
     margin-top: 2vw;
@@ -642,14 +654,28 @@ input:focus {
   .culture .bottom > div h5,
   .culture .bottom > div h6,
   .culture .bottom > div strong {
-  	font-size: 1vw;
+  	font-size: 1vw !important;
+  	line-height:2;
+    font-weight: 600;
+  }
+  .culture .bottom > div h1 *,
+  .culture .bottom > div h2 *,
+  .culture .bottom > div h3 *,
+  .culture .bottom > div h4 *,
+  .culture .bottom > div h5 *,
+  .culture .bottom > div h6 *,
+  .culture .bottom > div strong * {
+  	font-size: 1vw !important;
   	line-height:2;
     font-weight: 600;
   }
   .culture .bottom > div p {
     margin: 5px 0;
-    font-size: 0.9vw; 
+  }
+  .culture .bottom > div *{
+  	font-size: 0.9vw !important; 
     line-height:1.5;
+    font-family: "微软雅黑" !important;
   }
   .newsList ul li {
     border-bottom: 1px solid #DDDDDD;
@@ -710,17 +736,49 @@ input:focus {
     margin-top: 2vw;
   }
   .joinList div.list div.bottom ul li h2 {
-    font-size: 0.9vw;
+    font-size: 1vw;
     font-weight: 600;
   }
   .joinList div.list div.bottom ul li p {
     line-height: 2;
     margin-top: 1vw;
-    font-size: 0.8vw;
+    font-size: 0.9vw;
+  }
+  .joinList div.list div.bottom{
+  	line-height: 1.5;
+    font-size: 0.9vw !important;
+  }
+  .joinList div.list div.bottom h1,
+  .joinList div.list div.bottom h2,
+  .joinList div.list div.bottom h3,
+  .joinList div.list div.bottom h4,
+  .joinList div.list div.bottom h5,
+  .joinList div.list div.bottom h6,
+  .joinList div.list div.bottom strong * {
+    font-weight: 600;
+    font-size: 1vw !important;
+  }
+  .joinList div.list div.bottom h1 *,
+  .joinList div.list div.bottom h2 *,
+  .joinList div.list div.bottom h3 *,
+  .joinList div.list div.bottom h4 *,
+  .joinList div.list div.bottom h5 *,
+  .joinList div.list div.bottom h6 *,
+  .joinList div.list div.bottom strong * {
+    font-weight: 600;
+    font-size: 1vw !important;
+  }
+  .joinList div.list div.bottom p {
+    margin: 5px 0;
+  }
+  .joinList div.list div.bottom *{
+  	font-size: 0.9vw !important; 
+    line-height:1.5;
+    font-family: "微软雅黑" !important;
   }
   .aboutlist div.text {
     line-height: 1.5;
-    font-size: 0.9vw;
+    font-size: 0.9vw !important;
   }
   .aboutlist div.text h1,
   .aboutlist div.text h2,
@@ -729,10 +787,25 @@ input:focus {
   .aboutlist div.text h5,
   .aboutlist div.text h6 {
     font-weight: 600;
-    font-size: 1vw;
+    font-size: 1vw !important;
+  }
+  .aboutlist div.text h1 *,
+  .aboutlist div.text h2 *,
+  .aboutlist div.text h3 *,
+  .aboutlist div.text h4 *,
+  .aboutlist div.text h5 *,
+  .aboutlist div.text h6 *
+  .aboutlist div.text strong * {
+    font-weight: 600;
+    font-size: 1vw !important;
   }
   .aboutlist div.text p {
     margin: 5px 0;
+  }
+  .aboutlist div.text *{
+  	font-size: 0.9vw !important; 
+    line-height:1.5;
+    font-family: "微软雅黑" !important;
   }
   .aboutlist div.list {
     margin-top: 2vw;
@@ -743,6 +816,7 @@ input:focus {
   }
   .aboutlist div.list div {
     margin-top: 2vw;
+    width: 110%;
   }
   .aboutlist div.list div span {
     display: inline-block;
@@ -751,7 +825,9 @@ input:focus {
     border-radius: 2vw;
     line-height: 2;
     font-size: 0.9vw;
-    margin-right: 2vw;
+    width: 12vw;
+    margin: 0.5vw 1.5vw 0 0;
+    text-align: center;
   }
   .aboutlist div.hd {
     margin-top: 2vw;
@@ -1037,8 +1113,10 @@ input:focus {
   }
   .teamContent ul li > div {
     padding: 1.5vw 2vw;
-    line-height: 1.5;
-    font-size: 0.9vw;
+  }
+  .teamContent ul li > div *{
+  	line-height: 1.5;
+    font-size: 0.9vw !important;
   }
   .teamContent ul li > div h1,
   .teamContent ul li > div h2,
@@ -1047,7 +1125,16 @@ input:focus {
   .teamContent ul li > div h5,
   .teamContent ul li > div h6 {
     font-weight: 600;
-    font-size: 1vw;
+    font-size: 1vw !important;
+  }
+  .teamContent ul li > div h1 *,
+  .teamContent ul li > div h2 *,
+  .teamContent ul li > div h3 *,
+  .teamContent ul li > div h4 *,
+  .teamContent ul li > div h5 *,
+  .teamContent ul li > div h6 * {
+    font-weight: 600;
+    font-size: 1vw !important;
   }
   .teamContent ul li > div p {
     margin: 5px 0;
@@ -1085,6 +1172,9 @@ input:focus {
   .contactTop div.right p {
     margin-top: 2vw;
     font-size: 0.9vw;
+  }
+  .contactTop div.right p *{
+  	font-size: 0.9vw !important;
   }
   .contactBottom {
     padding: 0 12.5%;
@@ -1125,8 +1215,7 @@ input:focus {
     display: block;
     position: absolute;
     bottom: 5.5vw;
-    font-size: 1.4vw;
-    width: 6vw;
+    font-size: 1.5vw;
     text-align: left;
   }
   .contactBottom div.map > div > div {
@@ -1134,11 +1223,11 @@ input:focus {
     padding-top: 0;
   }
   .contactBottom div.map > div > div h2 {
-    font-size: 1.6vw;
+    font-size: 1.8vw;
     font-weight: 600;
   }
   .contactBottom div.map > div > div div {
-    font-size: 1.4vw;
+    font-size: 1.5vw;
     line-height: 2;
     margin-top: 1vw;
   }
@@ -1233,8 +1322,10 @@ input:focus {
   }
   .newsDetails div.content {
     padding: 4vw 0;
-    line-height: 1.5;
-    font-size: 0.9vw;
+  }
+  .newsDetails div.content *{
+  	line-height: 1.5;
+    font-size: 0.9vw !important;
   }
   .newsDetails div.content h1,
   .newsDetails div.content h2,
@@ -1243,7 +1334,16 @@ input:focus {
   .newsDetails div.content h5,
   .newsDetails div.content h6 {
     font-weight: 600;
-    font-size: 1vw;
+    font-size: 1vw !important;
+  }
+  .newsDetails div.content h1 *,
+  .newsDetails div.content h2 *,
+  .newsDetails div.content h3 *,
+  .newsDetails div.content h4 *,
+  .newsDetails div.content h5 *,
+  .newsDetails div.content h6 * {
+    font-weight: 600;
+    font-size: 1vw !important;
   }
   .newsDetails div.content p {
     margin: 5px 0;
@@ -1642,6 +1742,7 @@ input:focus {
   }
   .productText * {
     font-size: 1rem !important;
+    font-family: "微软雅黑" !important;
   }
   .productText h1,
   .productText h2,
@@ -1649,6 +1750,14 @@ input:focus {
   .productText h4,
   .productText h5,
   .productText h6,.productText strong {
+    font-size: 1.2rem !important;
+  }
+  .productText h1 *,
+  .productText h2 *,
+  .productText h3 *,
+  .productText h4 *,
+  .productText h5 *,
+  .productText h6 *,.productText strong * {
     font-size: 1.2rem !important;
   }
   .productText p {
@@ -1659,6 +1768,7 @@ input:focus {
   }
   .introduceText * {
     font-size: 1rem !important;
+    font-family: "微软雅黑" !important;
   }
   .introduceText h1,
   .introduceText h2,
@@ -1666,6 +1776,14 @@ input:focus {
   .introduceText h4,
   .introduceText h5,
   .introduceText h6,.introduceText strong {
+    font-size: 1.2rem !important;
+  }
+  .introduceText h1 *,
+  .introduceText h2 *,
+  .introduceText h3 *,
+  .introduceText h4 *,
+  .introduceText h5 *,
+  .introduceText h6 *,.introduceText strong * {
     font-size: 1.2rem !important;
   }
   .introduceText p {
@@ -1707,10 +1825,14 @@ input:focus {
   }
   .advantageList{border: 1px solid #DDDDDD;    padding: 1rem;}
   .advantageList h1,.advantageList h2,.advantageList h3,.advantageList h4,.advantageList h5,.advantageList h6,.advantageList strong{
-  	font-size: 1.2rem;
+  	font-size: 1.2rem !important;
   	line-height:2;
   }
-  .advantageList *{font-size: 1rem; line-height:1.5;}
+  .advantageList h1 *,.advantageList h2 *,.advantageList h3 *,.advantageList h4 *,.advantageList h5 *,.advantageList h6 *,.advantageList strong *{
+  	font-size: 1.2rem !important;
+  	line-height:2;
+  }
+  .advantageList *{font-size: 1rem !important; line-height:1.5; font-family: "微软雅黑" !important;}
   .advantageList p{margin:5px 0;}
   .advantageList ul li {
     margin-top: 1rem;
@@ -1875,6 +1997,7 @@ input:focus {
   }
   .culture .bottom > div * {
     font-size: 1rem !important;
+    font-family: "微软雅黑" !important;
   }
   .culture .bottom > div h1,
   .culture .bottom > div h2,
@@ -1884,19 +2007,20 @@ input:focus {
   .culture .bottom > div h6 {
     font-size: 1.2rem !important;
     line-height:1.5;
+    font-weight: 600;
   }
-  .culture .bottom > div h1,
-  .culture .bottom > div h2,
-  .culture .bottom > div h3,
-  .culture .bottom > div h4,
-  .culture .bottom > div h5,
-  .culture .bottom > div h6,.culture .bottom > div strong {
+  .culture .bottom > div h1 *,
+  .culture .bottom > div h2 *,
+  .culture .bottom > div h3 *,
+  .culture .bottom > div h4 *,
+  .culture .bottom > div h5 *,
+  .culture .bottom > div h6 * {
+    font-size: 1.2rem !important;
+    line-height:1.5;
     font-weight: 600;
   }
   .culture .bottom > div p {
     margin: 5px 0;
-    line-height:1.5;
-    font-size: 1rem !important;
   }
   .culture .bottom > div {
     padding: 2vw;
@@ -1974,17 +2098,20 @@ input:focus {
   .aboutlist div.text h5,
   .aboutlist div.text h6 {
     font-weight: 600;
+    font-size: 1.2rem !important;
+  }
+  .aboutlist div.text h1 *,
+  .aboutlist div.text h2 *,
+  .aboutlist div.text h3 *,
+  .aboutlist div.text h4 *,
+  .aboutlist div.text h5 *,
+  .aboutlist div.text h6 * {
+    font-weight: 600;
+    font-size: 1.2rem !important;
   }
   .aboutlist div.text * {
     font-size: 1rem !important;
-  }
-  .aboutlist div.text h1,
-  .aboutlist div.text h2,
-  .aboutlist div.text h3,
-  .aboutlist div.text h4,
-  .aboutlist div.text h5,
-  .aboutlist div.text h6 {
-    font-size: 1.2rem !important;
+    font-family: "微软雅黑" !important;
   }
   .aboutlist div.text p {
     margin: 5px 0;
@@ -2271,17 +2398,20 @@ input:focus {
   .teamContent ul li > div h5,
   .teamContent ul li > div h6 {
     font-weight: 600;
+    font-size: 1.2rem !important;
+  }
+  .teamContent ul li > div h1 *,
+  .teamContent ul li > div h2 *,
+  .teamContent ul li > div h3 *,
+  .teamContent ul li > div h4 *,
+  .teamContent ul li > div h5 *,
+  .teamContent ul li > div h6 * {
+    font-weight: 600;
+    font-size: 1.2rem !important;
   }
   .teamContent ul li > div * {
     font-size: 1rem !important;
-  }
-  .teamContent ul li > div h1,
-  .teamContent ul li > div h2,
-  .teamContent ul li > div h3,
-  .teamContent ul li > div h4,
-  .teamContent ul li > div h5,
-  .teamContent ul li > div h6 {
-    font-size: 1.2rem !important;
+    font-family: "微软雅黑" !important;
   }
   .teamContent ul li > div p {
     margin: 5px 0;
@@ -2457,17 +2587,20 @@ input:focus {
   .newsDetails div.content h5,
   .newsDetails div.content h6 {
     font-weight: 600;
+    font-size: 1.2rem !important;
+  }
+  .newsDetails div.content h1 *,
+  .newsDetails div.content h2 *,
+  .newsDetails div.content h3 *,
+  .newsDetails div.content h4 *,
+  .newsDetails div.content h5 *,
+  .newsDetails div.content h6 * {
+    font-weight: 600;
+    font-size: 1.2rem !important;
   }
   .newsDetails div.content * {
     font-size: 1rem !important;
-  }
-  .newsDetails div.content h1,
-  .newsDetails div.content h2,
-  .newsDetails div.content h3,
-  .newsDetails div.content h4,
-  .newsDetails div.content h5,
-  .newsDetails div.content h6 {
-    font-size: 1.2rem !important;
+    font-family: "微软雅黑" !important;
   }
   .newsDetails div.content p {
     margin: 5px 0;
