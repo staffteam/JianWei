@@ -243,10 +243,11 @@ input:focus {
   }
   .footer {
     background-color: #1b1b1b;
-    padding: 3vw 20%;
+    padding: 3vw 17.5%;
   }
   .footer ul {
     overflow: hidden;
+    width: 108%;
   }
   .footer ul li {
     width: 12%;
@@ -265,6 +266,8 @@ input:focus {
     display: block;
   }
   .footer .bottom {
+    width: 92%;
+    margin: 0 auto;
     margin-top: 2vw;
   }
   .footer .bottom div.left {
