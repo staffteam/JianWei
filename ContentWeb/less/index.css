@@ -62,7 +62,7 @@ input:focus {
     background-color: #F5F5F5;
   }
   .business ul {
-    padding: 0 18%;
+    padding: 0 20%;
     margin-top: 5vw;
     overflow: hidden;
   }
@@ -248,7 +248,7 @@ input:focus {
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
   }
   .news div.content {
-    padding: 2vw 18%;
+    padding: 2vw 20%;
     overflow: hidden;
   }
   .news div.content div.left {
@@ -262,7 +262,7 @@ input:focus {
     color: #c9151e;
   }
   .news div.content div.left > p {
-    height: 9vw;
+    height: 8.5vw;
     overflow: hidden;
   }
   .news div.content div.left > p:hover img {
@@ -329,7 +329,7 @@ input:focus {
   .news div.content div.right ul li {
     background-color: white;
     padding: 1vw 1vw;
-    margin-top: 1vw;
+    margin-top: 0.8vw;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
   }
@@ -408,7 +408,7 @@ input:focus {
   .news .more {
     display: block;
     text-align: right;
-    padding: 0 18%;
+    padding: 0 20%;
   }
   .news .more a {
     font-size: 0.8vw;
