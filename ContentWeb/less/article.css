@@ -1171,10 +1171,10 @@ input:focus {
   }
   .contactTop div.right p {
     margin-top: 2vw;
-    font-size: 0.9vw;
+    font-size: 0.8vw;
   }
   .contactTop div.right p *{
-  	font-size: 0.9vw !important;
+  	font-size: 0.8vw !important;
   }
   .contactBottom {
     padding: 0 12.5%;
