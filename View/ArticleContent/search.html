@@ -9,9 +9,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 		<link rel="stylesheet" type="text/css" href="../../ContentWeb/less/swiper.min.css" />
 		<link rel="stylesheet" type="text/css" href="../../ContentWeb/bootstrap/css/bootstrap.min.css" />
-		<link rel="stylesheet/less" type="text/css" href="../../ContentWeb/less/public.less" />
-		<link rel="stylesheet/less" type="text/css" href="../../ContentWeb/less/article.less" />
+		<link rel="stylesheet" type="text/css" href="../../ContentWeb/less/public.css" />
+		<link rel="stylesheet" type="text/css" href="../../ContentWeb/less/article.css" />
 		<link rel="stylesheet" type="text/css" href="../../ContentWeb/layui/css/modules/layer/default/layer.css"/>
+		<script src="../../ContentWeb/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../ContentWeb/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../ContentWeb/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../ContentWeb/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../ContentWeb/js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../ContentWeb/js/article.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../ContentWeb/js/less.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
@@ -24,7 +31,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-					<a href="#" class="navbar-brand"><img src="../../ContentWeb/images/logo.png"/></a>
+					<a href="javascript:" class="navbar-brand"><img src="../../ContentWeb/images/logo.png"/></a>
 				</div>
 				<div id="menu" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
@@ -58,8 +65,12 @@
 							<a href="../ArticleContent/aboutus.html">联系我们</a>
 						</li>
 					</ul>
-					<a href="#" class="navbar-search"><i class="iconfont">&#xe7b7;</i>
+					<a href="javascript:" class="navbar-search" >
+						<i class="iconfont" onclick="searchs(this)">&#xe7b7;</i>
 						<p><i class="iconfont">&#xe7b7;</i> 搜索</p>
+						<input type="search" name="headsearch" id="headsearch" value="" placeholder="请输入关键字，按回车搜索" oninput="inputs(this)" onblur="blurs(this)" />
+						<div class="searchlist">
+						</div>
 					</a>
 				</div>
 			</div>
@@ -69,8 +80,9 @@
 		<div class="search">
 			<div class="top">
 				<i class="iconfont">&#xe7b7;</i>
-				<input type="text" name="searchs" id="searchs" value="" placeholder="请输入内容 按回车键搜索" />
+				<input type="text" name="searchs" id="searchs" oninput="inputs(this)" onblur="blur2(this)" value="" placeholder="请输入内容 按回车键搜索" />
 				<span onclick="deleteNull()"><i class="iconfont">&#xe60e;</i></span>
+				<div class="searchlist"></div>
 			</div>
 			<div class="bottom">
 				<h2 id="searchTitle" ></h2>
@@ -157,12 +169,5 @@
 		</div>
 		<!--底部结束-->
 	</body>
-	<script src="../../ContentWeb/js/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../ContentWeb/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../ContentWeb/layer/layer.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../ContentWeb/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../ContentWeb/js/public.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../ContentWeb/js/article.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../ContentWeb/js/less.js" type="text/javascript" charset="utf-8"></script>
 
 </html>

@@ -100,7 +100,6 @@ input:focus {
     width: 15vw;
     float: left;
     background-color: white;
-    padding-bottom: 1vw;
   }
   div.article div.content > div.left span.btns {
     display: none;
@@ -147,7 +146,6 @@ input:focus {
     font-size: 1.3vw;
   }
   div.article div.content > div.left ul {
-    border-bottom: 1px solid #DDDDDD;
   }
   div.article div.content > div.left ul li {
     border-top: 1px solid #DDDDDD;
@@ -709,11 +707,25 @@ input:focus {
     text-overflow: ellipsis;
     white-space: nowrap;
     font-weight: 600;
+    height: 1.5vw;
+    line-height: 1.5vw;
   }
   .newsList ul li span {
     font-size: 0.9vw;
     display: block;
     margin-top: 1vw;
+  }
+  .newsList ul li div{
+  	font-size:0.8vw;
+  	margin-top:0.5vw;
+  	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: 1.5vw;
+    height: 3vw;
+    -webkit-line-clamp: 2;
+    width: 85%;
   }
   .newsList ul li i {
     position: absolute;
@@ -1239,6 +1251,7 @@ input:focus {
     margin: 0 auto;
     height: 4vw;
     border-bottom: 1px solid #DDDDDD;
+    position: relative;
   }
   .search div.top i {
     font-size: 1.1vw;
@@ -1265,6 +1278,26 @@ input:focus {
     height: 4vw;
     line-height: 4vw;
     cursor: pointer;
+  }
+  .search div.top .searchlist{
+  	position: absolute;
+  	left: 3%;
+  	top: 102%;
+  	width: 97%;
+  	background-color: white;
+  	max-height: 10vw;
+  	overflow-y: auto;
+  	overflow-x: hidden;
+  	padding:0 1vw;
+  }
+  .search div.top .searchlist p{
+  	font-size: 0.8vw;
+  	height: 2vw;
+    line-height: 2vw;
+    cursor: pointer;
+  }
+  .search div.top .searchlist p:hover{
+  	color: #c9151e;
   }
   .search div.bottom {
     margin-top: 5vw;
@@ -1447,11 +1480,11 @@ input:focus {
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    min-height: 35vh;
   }
   div.article div.content > div.left {
     width: 9rem;
     background-color: white;
-    padding-bottom: 1rem;
     position: absolute;
     left: -9rem;
     z-index: 999;
@@ -1525,7 +1558,6 @@ input:focus {
     margin-top: 0.2rem;
   }
   div.article div.content > div.left ul {
-    border-bottom: 1px solid #DDDDDD;
   }
   div.article div.content > div.left ul li {
     border-top: 1px solid #DDDDDD;
@@ -2056,7 +2088,21 @@ input:focus {
     font-size: 1.2rem;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: nowrap !important;
+    line-height: 1.5rem;
+    height: 1.5rem;
+    font-weight: 600;
+  }
+  .newsList ul li div{
+  	font-size: 1rem;
+  	margin-top:0.5rem;
+  	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: 1.5rem;
+    height: 3rem;
+    -webkit-line-clamp: 2;
   }
   .newsList ul li span {
     font-size: 1.1rem;
@@ -2134,6 +2180,8 @@ input:focus {
     margin: 0.5rem;
     line-height: 2;
     font-size: 1rem;
+    width: 8rem;
+    text-align: center;
     margin-right: 0.5rem;
   }
   .aboutlist div.hd {
@@ -2494,6 +2542,7 @@ input:focus {
     margin: 0 auto;
     height: 3rem;
     border-bottom: 1px solid #DDDDDD;
+    position: relative;
   }
   .search div.top i {
     font-size: 1.2vw;
@@ -2521,12 +2570,36 @@ input:focus {
     line-height: 3rem;
     cursor: pointer;
   }
+  .search div.top .searchlist{
+  	position: absolute;
+  	left: 5%;
+  	top: 102%;
+  	width: 95%;
+  	background-color: white;
+  	max-height: 10rem;
+  	overflow-y: auto;
+  	overflow-x: hidden;
+  	padding:0 0.5rem;
+  }
+  .search div.top .searchlist p{
+  	font-size: 0.8rem;
+  	height: 2rem;
+    line-height: 2rem;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .search div.top .searchlist p:hover{
+  	color: #c9151e;
+  }
   .search div.bottom {
     margin-top: 2rem;
   }
   .search div.bottom > h2 {
     font-size: 1.2rem;
     font-weight: 600;
+    line-height: 1.5;
   }
   .search div.bottom > div {
     margin-top: 2rem;

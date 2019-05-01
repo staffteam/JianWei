@@ -105,7 +105,72 @@ $(function() {
 		    	}
 	    	}
 	    })
+	    
+	    //搜索
+	    function getQueryString(name) { 
+		    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+		    var r = window.location.search.substr(1).match(reg); 
+		    if (r != null) return decodeURI(r[2]); 
+		    return null; 
+		} 
+		if(getQueryString('value')!='' && getQueryString('value') != null && $('#searchs').length==1){
+			$('#searchs').val(getQueryString('value'));
+			$('#searchTitle').html(getQueryString('value'));  
+	        $('#searchContent').html('<p class="null">- 暂无内容 -</p>');
+		}
+		$('#headsearch').keydown(function(){
+			var e = event || window.event || arguments.callee.caller.arguments[0];
+			if(e.keyCode==13)
+		    {
+		    	var locations = location.protocol+'//'+location.host;
+		        location.href=locations+'/github/JianWei/View/ArticleContent/search.html?value='+$(this).val();
+		    }
+		});
 });
+//搜索事件
+if($(window).width()<800){
+	$('.navbar-search').attr('href','/ArticleContent/search.html')
+}
+
+function searchs(obj){
+	$(obj).parent().css({'border-bottom':'1px solid #dddddd','width':'46vw'});
+	$('.navbar-white .navbar-nav').animate({'opacity':'0'},300);
+	$(obj).parent().find('input').show().focus();
+	$(obj).parent().find('input').css({'opacity':'1'})
+	$(obj).parent().find('.searchlist').show().css({'opacity':'1'});
+	$(obj).parent().find('i').css({'width':'12%'})
+	$(obj).parent().find('.searchlist').html('');
+}
+function blurs(obj){
+	setTimeout(function(){
+		$(obj).val('').css({'opacity':'0'});
+		$(obj).parent().css({'border-bottom':'0 solid #dddddd','width':'2vw'});
+		$(obj).parent().find('i').css({'width':'2vw'})
+		$(obj).parent().find('.searchlist').show().css({'opacity':'0'});
+		$('.navbar-white .navbar-nav').animate({'opacity':'1'},300);
+		$(obj).parent().find('.searchlist').html('');
+	},100)
+}
+function blur2(obj){
+	setTimeout(function(){
+		$(obj).parent().find('.searchlist').html('');
+	},100)
+}
+function inputs(obj){
+	var arrs = ['君合上海分所荣获2015-2018年度“上海市十佳律师事务所”','黄荣楠律师荣膺第四届“东方大律师”','“东方大律师”黄荣楠律师荣膺第四届','君合律师事务所上海分所荣誉上榜','此次会议选举产生了上海市律师协会第十一届理事会','上海市第十一届律师代表大会第一次会议顺利召开','申城共有300余名律师代表参加会议'];
+	$(obj).parent().find('.searchlist').html('');
+	if($(obj).val()=='')return;
+	$.each(arrs,function(){
+		if(this.indexOf($(obj).val())>=0){
+			$(obj).parent().find('.searchlist').append('<p>'+this+'</p>');
+		}
+	});
+	var locations = location.protocol+'//'+location.host;
+	$(obj).parent().find('.searchlist p').click(function(){
+		location.href=locations+'/github/JianWei/View/ArticleContent/search.html?value='+$(this).html();
+	});
+}
+
 function theTop(){
 	$('body,html').animate({
 		scrollTop: 0
@@ -113,12 +178,12 @@ function theTop(){
 }
 //微信
 function weixin(){
-	var arrs = $(window).width()>800?['15vw','17.5vw']:['17rem','20rem'];
+	var arrs = $(window).width()>800?['26vw','14.5vw']:['22rem','13rem'];
 	layer.open({
 	  type: 1,
 	  title: false,
 	  area:arrs,
-	  content: '<div class="wxfx"><h2>关注微信公众号</h2><p><img src="../../ContentWeb/images/weixin.jpg" /></p></div>'
+	  content: '<div class="wxfx"><h2>关注微信公众号</h2><div><p><img src="../../ContentWeb/images/weixin.jpg" /></p><p><img src="../../ContentWeb/images/weixin.jpg" /></p></div></div>'
 	});
 }
 
