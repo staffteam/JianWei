@@ -274,8 +274,8 @@ input:focus {
     height: 20vw;
   }
   div.article div.content > div.right div.professionalList ul li div.right h2 {
-    font-weight: 500;
-    font-size: 1.3vw;
+    font-weight: 600;
+    font-size: 1.2vw;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -289,8 +289,9 @@ input:focus {
   div.article div.content > div.right div.professionalList ul li div.right font {
     display: block;
     margin-top: 0.2vw;
-    font-size: 1vw;
+    font-size: 0.85vw;
     color: #666666;
+    font-weight: 600;
   }
   div.article div.content > div.right div.professionalList ul li div.right p {
     overflow: hidden;
