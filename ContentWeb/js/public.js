@@ -123,7 +123,17 @@ $(function() {
 			if(e.keyCode==13)
 		    {
 		    	var locations = location.protocol+'//'+location.host;
-		        location.href=locations+'/github/JianWei/View/ArticleContent/search.html?value='+$(this).val();
+		        location.href=locations+'/Search?value='+$(this).val();
+		    }
+		});
+		$.ajax({
+		    type:'get',
+		    url:'/SearchInput',
+            	    dataType: "json",
+		    success:function(data){
+				if(data.length>0){
+				    arrs=data;
+				}
 		    }
 		});
 });
@@ -131,7 +141,7 @@ $(function() {
 if($(window).width()<800){
 	$('.navbar-search').attr('href','/ArticleContent/search.html')
 }
-
+var notp=true;
 function searchs(obj){
 	$(obj).parent().css({'border-bottom':'1px solid #dddddd','width':'46vw'});
 	$('.navbar-white .navbar-nav').animate({'opacity':'0'},300);
@@ -143,12 +153,17 @@ function searchs(obj){
 }
 function blurs(obj){
 	setTimeout(function(){
-		$(obj).val('').css({'opacity':'0'});
-		$(obj).parent().css({'border-bottom':'0 solid #dddddd','width':'2vw'});
-		$(obj).parent().find('i').css({'width':'2vw'})
-		$(obj).parent().find('.searchlist').show().css({'opacity':'0'});
-		$('.navbar-white .navbar-nav').animate({'opacity':'1'},300);
-		$(obj).parent().find('.searchlist').html('');
+		if(notp){
+			notp=false;
+			$(obj).val('').css({'opacity':'0'});
+			$(obj).parent().css({'border-bottom':'0 solid #dddddd','width':'2vw'});
+			$(obj).parent().find('i').css({'width':'2vw'})
+			$(obj).parent().find('.searchlist').show().css({'opacity':'0'});
+			$('.navbar-white .navbar-nav').animate({'opacity':'1'},300);
+			$(obj).parent().find('.searchlist').html('');
+		}else{
+			notp=true;
+		}
 	},100)
 }
 function blur2(obj){
@@ -156,19 +171,20 @@ function blur2(obj){
 		$(obj).parent().find('.searchlist').html('');
 	},100)
 }
+var arrs=[];
 function inputs(obj){
-	var arrs = ['君合上海分所荣获2015-2018年度“上海市十佳律师事务所”','黄荣楠律师荣膺第四届“东方大律师”','“东方大律师”黄荣楠律师荣膺第四届','君合律师事务所上海分所荣誉上榜','此次会议选举产生了上海市律师协会第十一届理事会','上海市第十一届律师代表大会第一次会议顺利召开','申城共有300余名律师代表参加会议'];
 	$(obj).parent().find('.searchlist').html('');
-	if($(obj).val()=='')return;
-	$.each(arrs,function(){
-		if(this.indexOf($(obj).val())>=0){
-			$(obj).parent().find('.searchlist').append('<p>'+this+'</p>');
-		}
-	});
-	var locations = location.protocol+'//'+location.host;
-	$(obj).parent().find('.searchlist p').click(function(){
-		location.href=locations+'/github/JianWei/View/ArticleContent/search.html?value='+$(this).html();
-	});
+    if($(obj).val()=='')return;
+    $.each(arrs,function(){
+	    if(this.indexOf($(obj).val())>=0){
+	    	$(obj).parent().find('.searchlist').append('<p>'+this+'</p>');
+	    }
+    });
+    $(obj).parent().find('.searchlist p').click(function(){
+    	notp=false;
+		$("#headsearch").val($(this).html());
+		$("#headsearch").focus();
+    });
 }
 
 function theTop(){
