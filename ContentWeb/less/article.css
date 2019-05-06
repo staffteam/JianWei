@@ -1408,6 +1408,7 @@ input:focus {
    .wzfx> div {
    	margin:0 auto;
    	text-align: center;
+   	margin-top:1vw;
   }
   .wzfx>.bshare-custom.icon-medium a {
     display: inline-block;
@@ -1424,6 +1425,10 @@ input:focus {
   }
   .wzfx>.bshare-custom.icon-medium a.xz {
     background: url(../images/icon_jl_xz.png) left no-repeat;
+    background-size: 2vw;
+  }
+  .wzfx>.bshare-custom.icon-medium a.ck {
+    background: url(../images/shows.png) left no-repeat;
     background-size: 2vw;
   }
   
@@ -2728,5 +2733,33 @@ input:focus {
   	width: 1.8rem;
   	height: 3rem;
     background-size: cover;
+  }
+  
+  .wzfx> div {
+   	margin:0 auto;
+   	text-align: center;
+   	margin-top:1rem;
+  }
+  .wzfx>.bshare-custom.icon-medium a {
+    display: inline-block;
+    margin: 0;
+    margin-left: 0.5rem;
+    padding-left: 1.8rem;
+    height: 1.5rem;
+    background: url(../images/icon_jl_fx.png) left no-repeat;
+    background-size: 1.5rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+  .wzfx>.bshare-custom.icon-medium a:hover {
+    opacity: 1 !important;
+  }
+  .wzfx>.bshare-custom.icon-medium a.xz {
+    background: url(../images/icon_jl_xz.png) left no-repeat;
+    background-size: 1.5rem;
+  }
+  .wzfx>.bshare-custom.icon-medium a.ck {
+    background: url(../images/shows.png) left no-repeat;
+    background-size: 1.5rem;
   }
 }
