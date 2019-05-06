@@ -64,3 +64,4 @@ function deleteNull(){
 	$('#searchs').val('');  
 	$('#searchTitle').html('');  
 }
+

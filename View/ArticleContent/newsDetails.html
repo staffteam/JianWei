@@ -11,6 +11,12 @@
 		<link rel="stylesheet" type="text/css" href="../../ContentWeb/bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="../../ContentWeb/less/public.css" />
 		<link rel="stylesheet" type="text/css" href="../../ContentWeb/less/article.css" />
+		<script src="../../ContentWeb/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../ContentWeb/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../ContentWeb/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../ContentWeb/js/public.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../ContentWeb/js/article.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../ContentWeb/js/less.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
@@ -23,7 +29,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-					<a href="#" class="navbar-brand"><img src="../../ContentWeb/images/logo.png"/></a>
+					<a href="#" class="navbar-brand"><img src="../../ContentWeb/images/logo.png" /></a>
 				</div>
 				<div id="menu" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
@@ -31,37 +37,59 @@
 							<a href="../Home/index.html">首页</a>
 						</li>
 						<li>
-							<a href="javascript:" class="dropdown-toggle" data-toggle="dropdown" >关于我们<span class="caret"></span></a>
+							<a href="javascript:" class="dropdown-toggle" data-toggle="dropdown">关于我们<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li class="on"><a href="../ArticleContent/introduce.html">建纬介绍</a></li>
-								<li><a href="../ArticleContent/honor.html">建纬荣誉</a></li>
-								<li><a href="../ArticleContent/culture.html">建纬文化</a></li>
-								<li><a href="../ArticleContent/Industry.html">行业成就</a></li>
-								<li><a href="../ArticleContent/news.html">新闻动态</a></li>
+								<li class="on">
+									<a href="../ArticleContent/introduce.html">建纬介绍</a>
+								</li>
+								<li>
+									<a href="../ArticleContent/honor.html">建纬荣誉</a>
+								</li>
+								<li>
+									<a href="../ArticleContent/culture.html">建纬文化</a>
+								</li>
+								<li>
+									<a href="../ArticleContent/Industry.html">行业成就</a>
+								</li>
+								<li>
+									<a href="../ArticleContent/news.html">新闻动态</a>
+								</li>
 							</ul>
 						</li>
 						<li>
-							<a href="javascript:" class="dropdown-toggle" data-toggle="dropdown" >专业领域<span class="caret"></span></a>
+							<a href="javascript:" class="dropdown-toggle" data-toggle="dropdown">专业领域<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li class="on"><a href="../ArticleContent/product.html">产品介绍</a></li>
-								<li><a href="../ArticleContent/advantage.html">建纬荣誉</a></li>
+								<li class="on">
+									<a href="../ArticleContent/product.html">产品介绍</a>
+								</li>
+								<li>
+									<a href="../ArticleContent/advantage.html">建纬荣誉</a>
+								</li>
 							</ul>
 						</li>
 						<li>
 							<a href="../ArticleContent/team.html">专业团队</a>
 						</li>
 						<li>
-							<a href="javascript:" class="dropdown-toggle" data-toggle="dropdown" >专业交流<span class="caret"></span></a>
+							<a href="javascript:" class="dropdown-toggle" data-toggle="dropdown">专业交流<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li class="on"><a href="../ArticleContent/college.html">建纬学院</a></li>
-								<li><a href="../ArticleContent/professional.html">专业著作</a></li>
+								<li class="on">
+									<a href="../ArticleContent/college.html">建纬学院</a>
+								</li>
+								<li>
+									<a href="../ArticleContent/professional.html">专业著作</a>
+								</li>
 							</ul>
 						</li>
 						<li>
-							<a href="javascript:" class="dropdown-toggle" data-toggle="dropdown" >建纬招聘<span class="caret"></span></a>
+							<a href="javascript:" class="dropdown-toggle" data-toggle="dropdown">建纬招聘<span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li class="on"><a href="../ArticleContent/aboutus.html">走进建纬</a></li>
-								<li><a href="../ArticleContent/join.html">建纬职位</a></li>
+								<li class="on">
+									<a href="../ArticleContent/aboutus.html">走进建纬</a>
+								</li>
+								<li>
+									<a href="../ArticleContent/join.html">建纬职位</a>
+								</li>
 							</ul>
 						</li>
 						<li>
@@ -75,20 +103,21 @@
 			</div>
 		</nav>
 		<div class="navHeight"></div>
-		
+
 		<!--横幅-->
 		<div class="streamer">
-			<p><img src="../../ContentWeb/images/icon_article_back.jpg"/></p>
+			<p><img src="../../ContentWeb/images/icon_article_back.jpg" /></p>
 			<div class="headline">
 				<span>关于我们</span>
 				<font>ABOUT US</font>
 			</div>
 			<div class="location">
-				<a href="">首页</a> / <a href="">关于我们</a>
+				<a href="">首页</a> /
+				<a href="">关于我们</a>
 			</div>
 		</div>
 		<!--横幅结束-->
-		
+
 		<!--内容-->
 		<div class="newsDetails">
 			<h2>这是一篇文章</h2>
@@ -100,8 +129,24 @@
 				<a href="">上一篇：测试文章</a>
 				<a href="">下一篇：测试文章</a>
 			</div>
+			<div class="wzfx">
+				<div class="bshare-custom icon-medium">
+					<div class="bsPromo bsPromo2"></div>
+					<div class="bsPromo bsPromo2"></div>
+					<a class="fx" title="转发二维码" class="bshare-weixin" href="javascript:void(0);" onclick="javascript:bShare.share(event,'weixin');return false;">转发二维码</a>
+					<a class="xz" href="">下载PDF</a>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(function() {
+					bShare.addEntry({
+						title: $('#detailTitle').text(), // 获取文章标题
+						url: location.href, // 获取文章链接
+						summary: $('#detailTitle').text(), // 从postBody中获取文章摘要
+					});
+				})
+			</script>
 		</div>
-		
 		<!--底部-->
 		<div class="footer">
 			<ul>
@@ -141,7 +186,7 @@
 					<a href="">走进建纬</a>
 					<a href="">建纬职位</a>
 				</li>
-				
+
 				<li>
 					<a href="">联系我们 </a>
 					<a href="">联系我们</a>
@@ -153,28 +198,21 @@
 				</div>
 				<div class="fenxiang">
 					<div class="bshare-custom">
-							<div class="bsPromo bsPromo2"></div>
-							<p>
-								<a title="" class="bshare-weixin"></a><i class="iconfont">&#xe654;</i></p>
-							<p>
-								<a title="" class="bshare-sinaminiblog"></a><i class="iconfont">&#xe68a;</i></p>
-						</div>
-						<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=3&amp;lang=zh"></script>
-						<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+						<div class="bsPromo bsPromo2"></div>
+						<p>
+							<a title="" class="bshare-weixin"></a><i class="iconfont">&#xe654;</i></p>
+						<p>
+							<a title="" class="bshare-sinaminiblog"></a><i class="iconfont">&#xe68a;</i></p>
+					</div>
+					<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=3&amp;lang=zh"></script>
+					<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
 				</div>
 				<div class="right">
-					<a href="">法律声明</a>     
+					<a href="">法律声明</a>
 					<a href="">网站地图</a>
 				</div>
 			</div>
 		</div>
 		<!--底部结束-->
 	</body>
-	<script src="../../ContentWeb/js/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../ContentWeb/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../ContentWeb/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../ContentWeb/js/public.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../ContentWeb/js/article.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../ContentWeb/js/less.js" type="text/javascript" charset="utf-8"></script>
-
 </html>

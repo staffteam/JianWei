@@ -146,6 +146,7 @@ function searchs(obj){
 	$(obj).parent().css({'border-bottom':'1px solid #dddddd','width':'46vw'});
 	$('.navbar-white .navbar-nav').animate({'opacity':'0'},300);
 	$(obj).parent().find('input').show().focus();
+	$(obj).parent().find('span').show().animate({'opacity':'1'},300);
 	$(obj).parent().find('input').css({'opacity':'1'})
 	$(obj).parent().find('.searchlist').show().css({'opacity':'1'});
 	$(obj).parent().find('i').css({'width':'12%'})
@@ -154,12 +155,14 @@ function searchs(obj){
 function blurs(obj){
 	setTimeout(function(){
 		if(notp){
-			notp=false;
 			$(obj).val('').css({'opacity':'0'});
 			$(obj).parent().css({'border-bottom':'0 solid #dddddd','width':'2vw'});
 			$(obj).parent().find('i').css({'width':'2vw'})
 			$(obj).parent().find('.searchlist').show().css({'opacity':'0'});
 			$('.navbar-white .navbar-nav').animate({'opacity':'1'},300);
+			$(obj).parent().find('span').animate({'opacity':'0'},300,function(){
+				$(this).hide()
+			});
 			$(obj).parent().find('.searchlist').html('');
 		}else{
 			notp=true;
@@ -184,9 +187,15 @@ function inputs(obj){
     	notp=false;
 		$("#headsearch").val($(this).html());
 		$("#headsearch").focus();
+		setTimeout(function(){notp=true;},110);
     });
 }
-
+function headsearchDel(){
+	notp=false;
+	setTimeout(function(){notp=true;},110);
+	$("#headsearch").val('');
+	$("#headsearch").focus();
+}
 function theTop(){
 	$('body,html').animate({
 		scrollTop: 0

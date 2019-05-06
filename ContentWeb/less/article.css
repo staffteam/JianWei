@@ -260,13 +260,15 @@ input:focus {
     width: 15vw;
     height: 20vw;
     float: left;
+    background-color: white;
+  }
+  div.article div.content > div.right div.professionalList ul li div.left a{
+  	display: block;
+  	height: 100%;
   }
   div.article div.content > div.right div.professionalList ul li div.left img{
   	max-width: none;
   	width:100%;
-    position:relative;
-    top:50%;
-    transform:translateY(-50%);
   }
   div.article div.content > div.right div.professionalList ul li div.right {
     margin-left: 18vw;
@@ -594,7 +596,8 @@ input:focus {
   }
   .culture .top > div > p {
     overflow: hidden;
-    height: 13vw;
+    height: 21vw;
+    background-color: white;
   }
   .culture .top > div > p:hover img {
     transform: scale(1.1);
@@ -1401,6 +1404,29 @@ input:focus {
   }
   #hdBanner{margin-top: 2vw; position: relative; overflow: hidden;}
   #hdBanner .swiper-slide p img{width: 100%; max-width: none;}
+  
+   .wzfx> div {
+   	margin:0 auto;
+   	text-align: center;
+  }
+  .wzfx>.bshare-custom.icon-medium a {
+    display: inline-block;
+    margin-left: 1.5vw;
+    padding-left: 3vw;
+    height: 2vw;
+    background: url(../images/icon_jl_fx.png) left no-repeat;
+    background-size: 2vw;
+    line-height: 2vw;
+    font-size: 0.8vw;
+  }
+  .wzfx>.bshare-custom.icon-medium a:hover {
+    opacity: 1 !important;
+  }
+  .wzfx>.bshare-custom.icon-medium a.xz {
+    background: url(../images/icon_jl_xz.png) left no-repeat;
+    background-size: 2vw;
+  }
+  
 }
 @media (max-width: 800px) {
   .streamer {
@@ -1639,6 +1665,11 @@ input:focus {
     width: 8rem;
     height: 10.5rem;
     float: left;
+    background-color: white;
+  }
+  div.article div.content > div.right div.professionalList ul li div.left a{
+  	display: block;
+  	height: 100%;
   }
   div.article div.content > div.right div.professionalList ul li div.right {
     margin-left: 8.5rem;

@@ -135,6 +135,19 @@ input:focus {
   .navbar-white .navbar-search .searchlist p:hover,.navbar-white .navbar-search .searchlist p.on{
   	color: #c9151e;
   }
+  .navbar-white .navbar-search span{
+  	text-align: center;
+  	width: 5%;
+    position: absolute;
+    right:0;
+    top:0;
+    height: 2.2vw;
+    line-height: 2.2vw;
+    cursor: pointer;
+    display: none;
+    opacity: 0;
+  }
+  .navbar-white .navbar-search span i{font-size:1.3vw;}
   .navbar-white .navbar-search:hover {
     text-decoration: none;
   }
