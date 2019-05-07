@@ -590,19 +590,23 @@ input:focus {
   .culture .top {
     overflow: hidden;
   }
-  .culture .top > div {
-    width: 48%;
-    float: left;
+  .culture .top > p {
+  	 width:100%;
+  	 height: 21vw;
+  }
+  .culture .top > p img{
+  	width:100%;
+  	max-width:100%;
   }
   .culture .top > div > p {
     overflow: hidden;
     height: 21vw;
     background-color: white;
   }
-  .culture .top > div > p:hover img {
+  .culture .top p:hover img {
     transform: scale(1.1);
   }
-  .culture .top > div > p img {
+  .culture .top p img {
     transform: scale(1);
     transition: 0.3s transform;
   }
