@@ -185,9 +185,9 @@ function inputs(obj){
     });
     $(obj).parent().find('.searchlist p').click(function(){
     	notp=false;
-		$("#headsearch").val($(this).html());
-		$("#headsearch").focus();
 		setTimeout(function(){notp=true;},110);
+		var locations = location.protocol+'//'+location.host;
+		location.href=locations+'/Search?value='+$(this).html();
     });
 }
 function headsearchDel(){

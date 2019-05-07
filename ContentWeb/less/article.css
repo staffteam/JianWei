@@ -1432,6 +1432,38 @@ input:focus {
     background-size: 2vw;
   }
   
+  .periodicalDetails .periodicaContent{
+  	overflow: hidden;
+  	padding:4vw 0;
+  }
+  .periodicalDetails .periodicaContent .left{
+  	width:15vw;
+  	float:left;
+  	border:1px solid #aaaaaa;
+  	padding-bottom: 2vw;
+  }
+  .periodicalDetails .periodicaContent .left p{
+  	width:90%;
+  	margin:0 auto;
+  	padding:1vw 0;
+  }
+  .periodicalDetails .periodicaContent .left h2{
+  	font-size:0.8vw;
+  	margin:0 5%;
+  	margin-top:1vw;
+  	line-height: 2;
+  }
+  .periodicalDetails .periodicaContent .left span{
+  	font-size:0.8vw;
+  	margin:0 5%;
+  	margin-top:0.5vw;
+  	display: block;
+  	line-height: 2;
+  }
+  .periodicalDetails .periodicaContent .content{
+  	margin-left:17vw;
+  	padding:0;
+  }
 }
 @media (max-width: 800px) {
   .streamer {
@@ -2761,5 +2793,9 @@ input:focus {
   .wzfx>.bshare-custom.icon-medium a.ck {
     background: url(../images/shows.png) left no-repeat;
     background-size: 1.5rem;
+  }
+  
+  .periodicalDetails .periodicaContent .left{
+  	display: none;
   }
 }
