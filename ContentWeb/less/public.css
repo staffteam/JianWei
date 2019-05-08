@@ -750,7 +750,7 @@ input:focus {
     z-index: 999;
   }
   .theTop i {
-    font-size: 1.3rem;
+    font-size: 1.3rem; 
   }
   .theTop.show {
     display: block;
