@@ -11,6 +11,12 @@
 		<link rel="stylesheet" type="text/css" href="../../ContentWeb/bootstrap/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="../../ContentWeb/less/public.css" />
 		<link rel="stylesheet" type="text/css" href="../../ContentWeb/less/article.css" />
+		<script src="../../ContentWeb/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../ContentWeb/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../ContentWeb/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../ContentWeb/js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../ContentWeb/js/article.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../ContentWeb/js/less.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
@@ -116,6 +122,7 @@
 								<span>深圳 / 人力资源部 / 人力 / 1人 / 2019-03-25 更新</span>
 							</div>
 							<div class="bottom">
+								<span class="triangle"><img src="../../ContentWeb/images/icon_triangle.png"/></span>
 								<ul>
 									<li>
 										<h2>职位描述</h2>
@@ -144,6 +151,7 @@
 								<span>深圳 / 人力资源部 / 人力 / 1人 / 2019-03-25 更新</span>
 							</div>
 							<div class="bottom">
+								<span class="triangle"><img src="../../ContentWeb/images/icon_triangle.png"/></span>
 								<ul>
 									<li>
 										<h2>职位描述</h2>
@@ -167,6 +175,17 @@
 							</div>
 						</div>
 					</div>
+					<script type="text/javascript">
+						$(function(){
+							$('.joinList .list .top').click(function(){
+								if($(this).parent().find('.bottom').css('display')=='none'){
+									$(this).parent().find('.bottom').show();
+								}else{
+									$(this).parent().find('.bottom').hide();
+								}
+							})
+						})
+					</script>
 				</div>
 			</div>
 		</div>
@@ -240,11 +259,4 @@
 		</div>
 		<!--底部结束-->
 	</body>
-	<script src="../../ContentWeb/js/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../ContentWeb/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../ContentWeb/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../ContentWeb/js/public.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../ContentWeb/js/article.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../ContentWeb/js/less.js" type="text/javascript" charset="utf-8"></script>
-
 </html>

@@ -753,6 +753,9 @@ input:focus {
     transform: translateY(-50%);
     font-size: 1.3vw;
   }
+  .joinList div.list div.top{
+  	cursor: pointer;
+  }
   .joinList div.list div.top h2 {
     font-size: 1.2vw;
     font-weight: 600;
@@ -778,6 +781,18 @@ input:focus {
   .joinList div.list div.bottom{
   	line-height: 1.5;
     font-size: 0.9vw !important;
+    background-color: white;
+    margin-top:3vw;
+    position: relative;
+    padding: 1.5vw;
+    display: none;
+  }
+  .joinList div.list div.bottom .triangle{
+  	position: absolute;
+  	left: 1vw;
+  	top:0;
+  	transform: translateY(-100%);
+  	width:2.8vw;
   }
   .joinList div.list div.bottom h1,
   .joinList div.list div.bottom h2,
@@ -802,6 +817,7 @@ input:focus {
   .joinList div.list div.bottom p {
     margin: 5px 0;
   }
+  .joinList div.list div.bottom ul li:first-child{margin-top:0;}
   .joinList div.list{
   	padding-bottom: 2.5vw !important;
   	margin-top:2.5vw !important;
@@ -2230,6 +2246,13 @@ input:focus {
   	border-bottom: 0;
   	padding-bottom: 0 !important;
   }
+  .joinList div.list div.bottom{
+  	position: relative;
+  	background-color: white;
+  	padding: 1rem;
+  	margin-top: 2rem;
+  	display: none;
+  }
   .joinList div.list div.bottom ul li {
     margin-top: 2rem;
   }
@@ -2242,6 +2265,14 @@ input:focus {
     margin-top: 1rem;
     font-size: 1rem;
   }
+  .joinList div.list div.bottom .triangle{
+  	position: absolute;
+  	left: 1rem;
+  	top:0;
+  	transform: translateY(-100%);
+  	width:2.5rem;
+  }
+  .joinList div.list div.bottom ul li:first-child{margin-top:0;}
   .aboutlist div.text {
     line-height: 1.5;
   }
