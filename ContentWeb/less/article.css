@@ -443,44 +443,66 @@ input:focus {
   .introduceText p{margin:5px 0;}
   .productList {
     overflow: hidden;
+    padding:2.5vw;
+    background:url(../images/zyly_bottom.jpg) no-repeat bottom;
+    background-size:100% auto;
+    background-color:white;
   }
-  .productList ul li {
-    border: 1px solid #DDDDDD;
-    width: 100%;
-    display: inline-grid;
-    margin: 1.5% 0;
-    padding-bottom: 1vw;
+  .productList ul li{
+    padding-bottom:4vw;
+    position: relative;
   }
-  .productList ul li > p {
-    width: 90%;
-    margin: 1vw auto;
-    border-radius: 2vw;
-    font-size: 1vw;
+  .productList ul li:last-child div.left:before{
+    display: none;
+  }
+  .productList ul li div.left{
+    position: absolute;
+    left: 0;
+    top:0;
+    bottom:0;
+    width:1.5vw;
+    height: 100%;
+  }
+  .productList ul li div.right{
+    margin-left:4vw;
+  }
+  .productList ul li div.right h2{
+    font-size: 1.2vw;
+    padding-bottom:0.8vw;
     font-weight: 600;
-    line-height: 1.5;
-    padding: 1vw 0;
+    position: relative;
   }
-  .productList ul li > div {
-    padding: 0 2vw;
+  .productList ul li div.right h2::before{
+    border-bottom:3px solid #c9151e;
+    content: '';
+    left:0;
+    bottom:0;
+    width:2.5vw;
+    position: absolute;
+    display: block;
   }
-  .productList ul li > div div h2{
-  	font-size: 0.9vw;
-  	font-weight: 600;
-  	padding-top: 1vw;
-  	line-height: 2;
+  .productList ul li div.right div{
+    margin-top:2vw;
   }
-  .productList ul li > div div h2:first-child{padding-top: 0;}
-  .productList ul li > div div p{
-  	font-size: 0.8vw;
-  	line-height: 2;
+  .productList ul li div.right div p{
+    font-size:0.9vw;
+    margin-top:2vw;
   }
-  .productList ul li > div div.left {
-    width: 48%;
-    float: left;
+  .productList ul li div.left span{
+    width:1.5vw;
+    height: 1.5vw;
+    background-color:#c9151e;
+    display: block;
+    border-radius: 50%;
   }
-  .productList ul li > div div.right {
-    width: 48%;
-    float: right;
+  .productList ul li div.left::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:50%;
+    bottom:0;
+    border-right:1px solid #c9151e;
+    display: block;
   }
   .advantageList{border: 1px solid #DDDDDD;    padding: 1vw;}
   .advantageList h1,.advantageList h2,.advantageList h3,.advantageList h4,.advantageList h5,.advantageList h6,.advantageList strong{
@@ -1935,37 +1957,66 @@ input:focus {
   }
   .productList {
     overflow: hidden;
+    padding:2rem 2rem;
+    background:url(../images/zyly_bottom.jpg) no-repeat bottom;
+    background-size:100% auto;
+    background-color:white;
   }
-  .productList ul li {
-    border: 1px solid #DDDDDD;
-    width: 95%;
-    float: left;
-    margin: 1rem 2.5%;
-    padding-bottom: 2rem;
+  .productList ul li{
+    padding-bottom:2rem;
+    position: relative;
   }
-  .productList ul li > p {
-    font-size: 1.3rem;
+  .productList ul li:last-child div.left:before{
+    display: none;
+  }
+  .productList ul li div.left{
+    position: absolute;
+    left: 0;
+    top:0;
+    bottom:0;
+    width:1.5rem;
+    height: 100%;
+  }
+  .productList ul li div.right{
+    margin-left:3rem;
+  }
+  .productList ul li div.right h2{
+    font-size: 1.2rem;
+    padding-bottom:0.8rem;
     font-weight: 600;
-    line-height: 1.5;
-    padding: 1rem 1rem 0.5rem 1rem;
+    position: relative;
   }
-  .productList ul li > div {
-    padding: 0 1rem;
+  .productList ul li div.right h2::before{
+    border-bottom:3px solid #c9151e;
+    content: '';
+    left:0;
+    bottom:0;
+    width:1.5rem;
+    position: absolute;
+    display: block;
   }
-  .productList ul li > div div h2{
-  	font-size: 1.2rem;
-  	font-weight: 600;
-  	padding-top: 1rem;
-  	line-height: 2;
+  .productList ul li div.right div{
+    margin-top:1rem;
   }
-  .productList ul li > div div h2:first-child{padding-top: 0;}
-  .productList ul li > div div p{
-  	font-size: 1rem;
-  	line-height: 2;
+  .productList ul li div.right div p{
+    font-size:0.9rem;
+    margin-top:1.5rem;
   }
-  .productList ul li > div div.left {
+  .productList ul li div.left span{
+    width:1.5rem;
+    height: 1.5rem;
+    background-color:#c9151e;
+    display: block;
+    border-radius: 50%;
   }
-  .productList ul li > div div.right {
+  .productList ul li div.left::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:50%;
+    bottom:0;
+    border-right:1px solid #c9151e;
+    display: block;
   }
   .advantageList{border: 1px solid #DDDDDD;    padding: 1rem;}
   .advantageList h1,.advantageList h2,.advantageList h3,.advantageList h4,.advantageList h5,.advantageList h6,.advantageList strong{

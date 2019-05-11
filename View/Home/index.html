@@ -1,218 +1,224 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-		<link rel="stylesheet" type="text/css" href="../../ContentWeb/less/swiper.min.css" />
-		<link rel="stylesheet" type="text/css" href="../../ContentWeb/bootstrap/css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="../../ContentWeb/less/public.css" />
-		<link rel="stylesheet" type="text/css" href="../../ContentWeb/less/index.css" />
-		<link rel="stylesheet" type="text/css" href="../../ContentWeb/layui/css/modules/layer/default/layer.css"/>
-		<script src="../../ContentWeb/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../../ContentWeb/less/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../ContentWeb/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../../ContentWeb/less/public.css" />
+	<link rel="stylesheet" type="text/css" href="../../ContentWeb/less/index.css" />
+	<link rel="stylesheet" type="text/css" href="../../ContentWeb/layui/css/modules/layer/default/layer.css" />
+	<script src="../../ContentWeb/js/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../../ContentWeb/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../../ContentWeb/layer/layer.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../../ContentWeb/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../../ContentWeb/js/public.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../../ContentWeb/js/index.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../../ContentWeb/js/jquery.dotdotdot.min.js" type="text/javascript" charset="utf-8"></script>
-	</head>
+	<script src="../../ContentWeb/js/jquery.dotdotdot.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
 
-	<body>
-		<nav class="nav navbar-white navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<!--在移动端的时候导航条折叠起来，三横的样式出现，点击该样式可以显示或隐藏导航条上的内容-->
-					<button class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-					<a href="index.html?ishome=true" class="navbar-brand"><img src="../../ContentWeb/images/logo.png"/></a>
-				</div>
-				<div id="menu" class="collapse navbar-collapse">
-					<ul class="nav navbar-nav">
-						<li class="active">
-							<a href="index.html?ishome=true">首页</a>
-						</li>
-						<li>
-							<a href="../ArticleContent/aboutus.html" class="dropdown-toggle" data-toggle="dropdown" >关于我们</a>
-							<ul class="dropdown-menu">
-								<li>
-									<a href="#">企业介绍</a>
-								</li>
-								<li>
-									<a href="#">关于我们</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="../ArticleContent/aboutus.html">专业领域</a>
-						</li>
-						<li>
-							<a href="../ArticleContent/aboutus.html">专业团队</a>
-						</li>
-						<li>
-							<a href="../ArticleContent/aboutus.html">专业交流</a>
-						</li>
-						<li>
-							<a href="../ArticleContent/aboutus.html">建纬招聘</a>
-						</li>
-						<li>
-							<a href="../ArticleContent/aboutus.html">联系我们</a>
-						</li>
-					</ul>
-					<a href="../ArticleContent/search.html" class="navbar-search"><i class="iconfont">&#xe7b7;</i>
-						<p><i class="iconfont">&#xe7b7;</i> 搜索</p>
-					</a>
-				</div>
+<body>
+	<nav class="nav navbar-white navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<!--在移动端的时候导航条折叠起来，三横的样式出现，点击该样式可以显示或隐藏导航条上的内容-->
+				<button class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html?ishome=true" class="navbar-brand"><img src="../../ContentWeb/images/logo.png" /></a>
 			</div>
-		</nav>
-		<div class="navHeight"></div>
-			
-		<!--首页动画-->
-		<div class="backs">
-			<div class="c"><img src="../../ContentWeb/images/homeBack.jpg"/></div>
-			<div class="a"><img src="../../ContentWeb/images/logo.png"/></div>
-			<div class="b">城市开发建设法律服务领跑者</div>
-		</div>
-		
-		<!--首页轮播-->
-		<div class="swiper-container" id="indexbanner">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<a href="javascript:">	
-						<p><img src="../../ContentWeb/images/banner.jpg" /></p>
-						<div>
-							<h2>在这里我们给你最有力的回应</h2>
-							<p>Professional team Professional service</p>
-							<span>了解服务</span>
-						</div>
-						
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="javascript:">
-						<p><img src="../../ContentWeb/images/banner.jpg" /></p>
-						<div>
-							<h2>在这里我们给你最有力的回应</h2>
-							<p>Professional team Professional service</p>
-							<span>了解服务</span>
-						</div>
-						
-					</a>
-				</div>
-				<div class="swiper-slide">
-					<a href="javascript:">
-						<p><img src="../../ContentWeb/images/banner.jpg" /></p>
-						<div>
-							<h2>在这里我们给你最有力的回应</h2>
-							<p>Professional team Professional service</p>
-							<span>了解服务</span>
-						</div>
-						
-					</a>
-				</div>
-			</div>
-			<!-- 如果需要分页器 -->
-			<div class="swiper-pagination a"></div>
-
-			<!-- 如果需要导航按钮 -->
-			<div class="swiper-button-prev a swiper-button-white"></div>
-			<div class="swiper-button-next b swiper-button-white"></div>
-		</div>
-		<!--首页轮播结束-->
-		<!--业务领域-->
-		<div class="business">
-			<div class="title">
-				<h2>业务领域</h2>
-				<div>
-					<div style="width: 12vw;"><p class="left"></p><p class="right"></p></div>
-					<p class="center"><span></span><span></span><span></span></p>
-				</div>
-			</div>
-			<div class="content" id="businessDetails">
-				<ul>
-					<li>
-						<p><img src="../../ContentWeb/images/icon_list.png"/><img src="../../ContentWeb/images/icon_list.png"/></p>
-						<h2>城市更新</h2>
-						<div>1建纬城市更新业务中心致力于为粤港澳大湾区的客户提供存量土地开发的精准专业服务。该中心由建纬（深圳）律师事务所主任、高级合伙人贺倩明博士领衔创立，该中心发起设立城市更新非盈利性研究机构---深圳市华勤城市更新研究院，充分整合规划、财务、金融、产业等跨界专业精英资源，能够为城市更新项目复杂问题提供切实可行的解决方案...
-</div>
+			<div id="menu" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="index.html?ishome=true">首页</a>
 					</li>
 					<li>
-						<p><img src="../../ContentWeb/images/icon_list.png"/><img src="../../ContentWeb/images/icon_list.png"/></p>
-						<h2>投资并购</h2>
-						<div>2建纬城市更新业务中心致力于为粤港澳大湾区的客户提供存量土地开发的精准专业服务。该中心由建纬（深圳）律师事务所主任、高级合伙人贺倩明博士领衔创立，该中心发起设立城市更新非盈利性研究机构---深圳市华勤城市更新研究院，充分整合规划、财务、金融、产业等跨界专业精英资源，能够为城市更新项目复杂问题提供切实可行的解决方案...
-</div>
+						<a href="../ArticleContent/aboutus.html" class="dropdown-toggle" data-toggle="dropdown">关于我们</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">企业介绍</a>
+							</li>
+							<li>
+								<a href="#">关于我们</a>
+							</li>
+						</ul>
 					</li>
 					<li>
-						<p><img src="../../ContentWeb/images/icon_list.png"/><img src="../../ContentWeb/images/icon_list.png"/></p>
-						<h2>不动产金融</h2>
-						<div>3建纬城市更新业务中心致力于为粤港澳大湾区的客户提供存量土地开发的精准专业服务。该中心由建纬（深圳）律师事务所主任、高级合伙人贺倩明博士领衔创立，该中心发起设立城市更新非盈利性研究机构---深圳市华勤城市更新研究院，充分整合规划、财务、金融、产业等跨界专业精英资源，能够为城市更新项目复杂问题提供切实可行的解决方案...
-</div>
+						<a href="../ArticleContent/aboutus.html">专业领域</a>
 					</li>
 					<li>
-						<p><img src="../../ContentWeb/images/icon_list.png"/><img src="../../ContentWeb/images/icon_list.png"/></p>
-						<h2>争议解决</h2>
-						<div>4建纬城市更新业务中心致力于为粤港澳大湾区的客户提供存量土地开发的精准专业服务。该中心由建纬（深圳）律师事务所主任、高级合伙人贺倩明博士领衔创立，该中心发起设立城市更新非盈利性研究机构---深圳市华勤城市更新研究院，充分整合规划、财务、金融、产业等跨界专业精英资源，能够为城市更新项目复杂问题提供切实可行的解决方案...
-</div>
+						<a href="../ArticleContent/aboutus.html">专业团队</a>
 					</li>
 					<li>
-						<p><img src="../../ContentWeb/images/icon_list.png"/><img src="../../ContentWeb/images/icon_list.png"/></p>
-						<h2>基础设施</h2>
-						<div>5建纬城市更新业务中心致力于为粤港澳大湾区的客户提供存量土地开发的精准专业服务。该中心由建纬（深圳）律师事务所主任、高级合伙人贺倩明博士领衔创立，该中心发起设立城市更新非盈利性研究机构---深圳市华勤城市更新研究院，充分整合规划、财务、金融、产业等跨界专业精英资源，能够为城市更新项目复杂问题提供切实可行的解决方案...
-</div>
+						<a href="../ArticleContent/aboutus.html">专业交流</a>
 					</li>
 					<li>
-						<p><img src="../../ContentWeb/images/icon_list.png"/><img src="../../ContentWeb/images/icon_list.png"/></p>
-						<h2>PPP</h2>
-						<div>6建纬城市更新业务中心致力于为粤港澳大湾区的客户提供存量土地开发的精准专业服务。该中心由建纬（深圳）律师事务所主任、高级合伙人贺倩明博士领衔创立，该中心发起设立城市更新非盈利性研究机构---深圳市华勤城市更新研究院，充分整合规划、财务、金融、产业等跨界专业精英资源，能够为城市更新项目复杂问题提供切实可行的解决方案...
-</div>
+						<a href="../ArticleContent/aboutus.html">建纬招聘</a>
 					</li>
 					<li>
-						<p><img src="../../ContentWeb/images/icon_list.png"/><img src="../../ContentWeb/images/icon_list.png"/></p>
-						<h2>建筑工程</h2>
-						<div>7建纬城市更新业务中心致力于为粤港澳大湾区的客户提供存量土地开发的精准专业服务。该中心由建纬（深圳）律师事务所主任、高级合伙人贺倩明博士领衔创立，该中心发起设立城市更新非盈利性研究机构---深圳市华勤城市更新研究院，充分整合规划、财务、金融、产业等跨界专业精英资源，能够为城市更新项目复杂问题提供切实可行的解决方案...
-</div>
-					</li>
-					<li>
-						<p><img src="../../ContentWeb/images/icon_list.png"/><img src="../../ContentWeb/images/icon_list.png"/></p>
-						<h2>房地产综合业务</h2>
-						<div>8建纬城市更新业务中心致力于为粤港澳大湾区的客户提供存量土地开发的精准专业服务。该中心由建纬（深圳）律师事务所主任、高级合伙人贺倩明博士领衔创立，该中心发起设立城市更新非盈利性研究机构---深圳市华勤城市更新研究院，充分整合规划、财务、金融、产业等跨界专业精英资源，能够为城市更新项目复杂问题提供切实可行的解决方案...
-</div>
+						<a href="../ArticleContent/aboutus.html">联系我们</a>
 					</li>
 				</ul>
+				<a href="../ArticleContent/search.html" class="navbar-search"><i class="iconfont">&#xe7b7;</i>
+					<p><i class="iconfont">&#xe7b7;</i> 搜索</p>
+				</a>
 			</div>
 		</div>
-		<!--业务领域结束-->
-		
-		<!--热点资讯-->
-		<div class="news">
-			<div class="title">
-				<h2>热点资讯</h2>
+	</nav>
+	<div class="navHeight"></div>
+
+	<!--首页动画-->
+	<div class="backs">
+		<div class="c"><img src="../../ContentWeb/images/homeBack.jpg" /></div>
+		<div class="a"><img src="../../ContentWeb/images/logo.png" /></div>
+		<div class="b">城市开发建设法律服务领跑者</div>
+	</div>
+
+	<!--首页轮播-->
+	<div class="swiper-container" id="indexbanner">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<a href="javascript:">
+					<p><img src="../../ContentWeb/images/banner.jpg" /></p>
+					<div>
+						<h2>在这里我们给你最有力的回应</h2>
+						<p>Professional team Professional service</p>
+						<span>了解服务</span>
+					</div>
+
+				</a>
+			</div>
+			<div class="swiper-slide">
+				<a href="javascript:">
+					<p><img src="../../ContentWeb/images/banner.jpg" /></p>
+					<div>
+						<h2>在这里我们给你最有力的回应</h2>
+						<p>Professional team Professional service</p>
+						<span>了解服务</span>
+					</div>
+
+				</a>
+			</div>
+			<div class="swiper-slide">
+				<a href="javascript:">
+					<p><img src="../../ContentWeb/images/banner.jpg" /></p>
+					<div>
+						<h2>在这里我们给你最有力的回应</h2>
+						<p>Professional team Professional service</p>
+						<span>了解服务</span>
+					</div>
+
+				</a>
+			</div>
+		</div>
+		<!-- 如果需要分页器 -->
+		<div class="swiper-pagination a"></div>
+
+		<!-- 如果需要导航按钮 -->
+		<div class="swiper-button-prev a swiper-button-white"></div>
+		<div class="swiper-button-next b swiper-button-white"></div>
+	</div>
+	<!--首页轮播结束-->
+	<!--业务领域-->
+	<div class="business">
+		<div class="title">
+			<h2>业务领域</h2>
+			<div>
+				<div style="width: 12vw;">
+					<p class="left"></p>
+					<p class="right"></p>
+				</div>
+				<p class="center"><span></span><span></span><span></span></p>
+			</div>
+		</div>
+		<div class="content" id="businessDetails">
+			<ul>
+				<li>
+					<p><img src="../../ContentWeb/images/icon_list.png" /><img src="../../ContentWeb/images/icon_list.png" /></p>
+					<h2>城市更新</h2>
+					<div>1建纬城市更新业务中心致力于为粤港澳大湾区的客户提供存量土地开发的精准专业服务。该中心由建纬（深圳）律师事务所主任、高级合伙人贺倩明博士领衔创立，该中心发起设立城市更新非盈利性研究机构---深圳市华勤城市更新研究院，充分整合规划、财务、金融、产业等跨界专业精英资源，能够为城市更新项目复杂问题提供切实可行的解决方案...
+					</div>
+				</li>
+				<li>
+					<p><img src="../../ContentWeb/images/icon_list.png" /><img src="../../ContentWeb/images/icon_list.png" /></p>
+					<h2>投资并购</h2>
+					<div>2建纬城市更新业务中心致力于为粤港澳大湾区的客户提供存量土地开发的精准专业服务。该中心由建纬（深圳）律师事务所主任、高级合伙人贺倩明博士领衔创立，该中心发起设立城市更新非盈利性研究机构---深圳市华勤城市更新研究院，充分整合规划、财务、金融、产业等跨界专业精英资源，能够为城市更新项目复杂问题提供切实可行的解决方案...
+					</div>
+				</li>
+				<li>
+					<p><img src="../../ContentWeb/images/icon_list.png" /><img src="../../ContentWeb/images/icon_list.png" /></p>
+					<h2>不动产金融</h2>
+					<div>3建纬城市更新业务中心致力于为粤港澳大湾区的客户提供存量土地开发的精准专业服务。该中心由建纬（深圳）律师事务所主任、高级合伙人贺倩明博士领衔创立，该中心发起设立城市更新非盈利性研究机构---深圳市华勤城市更新研究院，充分整合规划、财务、金融、产业等跨界专业精英资源，能够为城市更新项目复杂问题提供切实可行的解决方案...
+					</div>
+				</li>
+				<li>
+					<p><img src="../../ContentWeb/images/icon_list.png" /><img src="../../ContentWeb/images/icon_list.png" /></p>
+					<h2>争议解决</h2>
+					<div>4建纬城市更新业务中心致力于为粤港澳大湾区的客户提供存量土地开发的精准专业服务。该中心由建纬（深圳）律师事务所主任、高级合伙人贺倩明博士领衔创立，该中心发起设立城市更新非盈利性研究机构---深圳市华勤城市更新研究院，充分整合规划、财务、金融、产业等跨界专业精英资源，能够为城市更新项目复杂问题提供切实可行的解决方案...
+					</div>
+				</li>
+				<li>
+					<p><img src="../../ContentWeb/images/icon_list.png" /><img src="../../ContentWeb/images/icon_list.png" /></p>
+					<h2>基础设施</h2>
+					<div>5建纬城市更新业务中心致力于为粤港澳大湾区的客户提供存量土地开发的精准专业服务。该中心由建纬（深圳）律师事务所主任、高级合伙人贺倩明博士领衔创立，该中心发起设立城市更新非盈利性研究机构---深圳市华勤城市更新研究院，充分整合规划、财务、金融、产业等跨界专业精英资源，能够为城市更新项目复杂问题提供切实可行的解决方案...
+					</div>
+				</li>
+				<li>
+					<p><img src="../../ContentWeb/images/icon_list.png" /><img src="../../ContentWeb/images/icon_list.png" /></p>
+					<h2>PPP</h2>
+					<div>6建纬城市更新业务中心致力于为粤港澳大湾区的客户提供存量土地开发的精准专业服务。该中心由建纬（深圳）律师事务所主任、高级合伙人贺倩明博士领衔创立，该中心发起设立城市更新非盈利性研究机构---深圳市华勤城市更新研究院，充分整合规划、财务、金融、产业等跨界专业精英资源，能够为城市更新项目复杂问题提供切实可行的解决方案...
+					</div>
+				</li>
+				<li>
+					<p><img src="../../ContentWeb/images/icon_list.png" /><img src="../../ContentWeb/images/icon_list.png" /></p>
+					<h2>建筑工程</h2>
+					<div>7建纬城市更新业务中心致力于为粤港澳大湾区的客户提供存量土地开发的精准专业服务。该中心由建纬（深圳）律师事务所主任、高级合伙人贺倩明博士领衔创立，该中心发起设立城市更新非盈利性研究机构---深圳市华勤城市更新研究院，充分整合规划、财务、金融、产业等跨界专业精英资源，能够为城市更新项目复杂问题提供切实可行的解决方案...
+					</div>
+				</li>
+				<li>
+					<p><img src="../../ContentWeb/images/icon_list.png" /><img src="../../ContentWeb/images/icon_list.png" /></p>
+					<h2>房地产综合业务</h2>
+					<div>8建纬城市更新业务中心致力于为粤港澳大湾区的客户提供存量土地开发的精准专业服务。该中心由建纬（深圳）律师事务所主任、高级合伙人贺倩明博士领衔创立，该中心发起设立城市更新非盈利性研究机构---深圳市华勤城市更新研究院，充分整合规划、财务、金融、产业等跨界专业精英资源，能够为城市更新项目复杂问题提供切实可行的解决方案...
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--业务领域结束-->
+
+	<!--热点资讯-->
+	<div class="news">
+		<div class="title">
+			<h2>热点资讯</h2>
+			<div>
 				<div>
-					<div><p class="left"></p><p class="right"></p></div>
-					<p class="center"><span></span><span></span><span></span></p>
+					<p class="left"></p>
+					<p class="right"></p>
 				</div>
+				<p class="center"><span></span><span></span><span></span></p>
 			</div>
-			<div class="newsNav">
-				<span class="on">新闻动态</span>
-				<span>成果发布</span>
+		</div>
+		<div class="newsNav">
+			<span class="on">新闻动态</span>
+			<span>成果发布</span>
+		</div>
+		<div class="content">
+			<div class="left">
+				<p><img src="../../ContentWeb/images/new_back.png" /></p>
+				<h2>展会完美落幕，建纬&华勤精彩瞬间回顾...</h2>
+				<span>2019 / 02 / 28</span>
+				<div>8月31日，第45届房地产交易博览会在深圳会展中心正式落下帷幕第45届房地产交易博览会在深圳会展中心正式落下帷幕第45届房地产交易博览会在深圳会展中心正式落下帷幕。回顾现场，耳畔似乎依旧人声沸，参展人员穿梭不息。尽管展会只有短短的三天...</div>
+				<a href="">查看详情<i class="iconfont">&#xe636;</i></a>
 			</div>
-			<div class="content">
-				<div class="left">
-					<p><img src="../../ContentWeb/images/new_back.png"/></p>
-					<h2>展会完美落幕，建纬&华勤精彩瞬间回顾...</h2>
-					<span>2019 / 02 / 28</span>
-					<div>8月31日，第45届房地产交易博览会在深圳会展中心正式落下帷幕第45届房地产交易博览会在深圳会展中心正式落下帷幕第45届房地产交易博览会在深圳会展中心正式落下帷幕。回顾现场，耳畔似乎依旧人声沸，参展人员穿梭不息。尽管展会只有短短的三天...</div>
-					<a href="">查看详情<i class="iconfont">&#xe636;</i></a>
-				</div>
-				<div class="right">
-					<ul>
-						<li class="new"><a href="">
+			<div class="right">
+				<ul>
+					<li class="new"><a href="">
 							<p class="date">
 								<span class="r">28</span>
 								<span class="line">/</span>
@@ -223,7 +229,7 @@
 								<p>2018年6月30日星期六上午九时许2018年6月30日星期六上午九时许2018年6月30日星期六上午九时许2018年6月30日星期六上午九时许2018年6月30日星期六上午九时许2018年6月30日星期六上午九时许，由中国政法大学房地产法研究中心、深圳市华勤城市更新研究院主办</p>
 							</div>
 						</a></li>
-						<li><a href="">
+					<li><a href="">
 							<p class="date">
 								<span class="r">28</span>
 								<span class="line">/</span>
@@ -233,7 +239,8 @@
 								<h2>粤港澳大湾区城市更新高峰论坛</h2>
 								<p>2018年6月30日星期六上午九时许，由中国政法大学房地产法研究中心、深圳市华勤城市更新研究院主办</p>
 							</div>
-						</a></li><li><a href="">
+						</a></li>
+					<li><a href="">
 							<p class="date">
 								<span class="r">28</span>
 								<span class="line">/</span>
@@ -244,7 +251,7 @@
 								<p>2018年6月30日星期六上午九时许，由中国政法大学房地产法研究中心、深圳市华勤城市更新研究院主办</p>
 							</div>
 						</a></li>
-						<li><a href="">
+					<li><a href="">
 							<p class="date">
 								<span class="r">28</span>
 								<span class="line">/</span>
@@ -255,83 +262,86 @@
 								<p>2018年6月30日星期六上午九时许，由中国政法大学房地产法研究中心、深圳市华勤城市更新研究院主办</p>
 							</div>
 						</a></li>
-					</ul>
-				</div>
-			</div>
-			<script type="text/javascript">
-				$(function(){
-					$(".news .content .left h2").dotdotdot({wrap: 'letter'});
-					$(".news .content .left div").dotdotdot({wrap: 'letter'});
-					$(".news .content .right ul li div.text h2").dotdotdot({wrap: 'letter'});
-					$(".news .content .right ul li div.text p").dotdotdot({wrap: 'letter'});
-				})
-			</script>
-			<p class="more"><a href="">查看更多<i class="iconfont">&#xe636;</i></a></p>
-		</div>
-		<!--热点资讯结束-->
-		
-		<!--回到顶部-->
-		<div class="theTop" onclick="theTop()" ><i class="iconfont">&#xe67f;</i><span><img src="../../ContentWeb/images/top_back.png"/><font>回到顶部</font></span></div>
-		
-		<!--底部-->
-		<div class="footer">
-			<ul>
-				<li>
-					<a href="">关于我们</a>
-					<a href="">建纬介绍</a>
-					<a href="">建纬荣誉</a>
-					<a href="">行业成就</a>
-					<a href="">联系我们</a>
-					<a href="">新闻动态</a>
-				</li>
-				<li>
-					<a href="">专业邻域 </a>
-					<a href="">城市更新</a>
-					<a href="">投资并购</a>
-					<a href="">不动产金融</a>
-					<a href="">建设工程</a>
-					<a href="">基础设施</a>
-					<a href="">PPP</a>
-					<a href="">房地产综合业务</a>
-					<a href="">争议解决</a>
-				</li>
-				<li>
-					<a href="">专业团队 </a>
-					<a href="">律师列表</a>
-				</li>
-				<li>
-					<a href="">专业交流 </a>
-					<a href="">建纬学院</a>
-					<a href="">专业文章</a>
-					<a href="">专业期刊</a>
-					<a href="">专业著作</a>
-					<a href="">行业周报</a>
-				</li>
-				<li>
-					<a href="">建纬招聘</a>
-					<a href="">走进建纬</a>
-					<a href="">建纬职位</a>
-				</li>
-				
-				<li>
-					<a href="">联系我们 </a>
-					<a href="">联系我们</a>
-				</li>
-			</ul>
-			<div class="bottom">
-				<div class="left">
-					上海市建纬（深圳）律师事务所 版权所有 粤ICP备18033501号
-				</div>
-				<div class="fenxiang">
-					<p onclick="weixin()"><i class="iconfont">&#xe654;</i></p>
-					<p><a href=""><i class="iconfont">&#xe68a;</i></a></p>
-				</div>
-				<div class="right">
-					<a href="">法律声明</a>     
-					<a href="">网站地图</a>
-				</div>
+				</ul>
 			</div>
 		</div>
-		<!--底部结束-->
-	</body>
+		<script type="text/javascript">
+			$(function () {
+				$(".news .content .left h2").dotdotdot({ wrap: 'letter' });
+				$(".news .content .left div").dotdotdot({ wrap: 'letter' });
+				$(".news .content .right ul li div.text h2").dotdotdot({ wrap: 'letter' });
+				$(".news .content .right ul li div.text p").dotdotdot({ wrap: 'letter' });
+			})
+		</script>
+		<p class="more"><a href="">查看更多<i class="iconfont">&#xe636;</i></a></p>
+	</div>
+	<!--热点资讯结束-->
+
+	<!--回到顶部-->
+	<div class="theTop" onclick="theTop()"><i class="iconfont">&#xe67f;</i><span><img src="../../ContentWeb/images/top_back.png" />
+			<font>回到顶部</font>
+		</span></div>
+
+	<!--底部-->
+	<div class="footer">
+		<ul>
+			<li>
+				<a href="">关于我们</a>
+				<a href="">建纬介绍</a>
+				<a href="">建纬荣誉</a>
+				<a href="">行业成就</a>
+				<a href="">联系我们</a>
+				<a href="">新闻动态</a>
+			</li>
+			<li>
+				<a href="">专业邻域 </a>
+				<a href="">城市更新</a>
+				<a href="">投资并购</a>
+				<a href="">不动产金融</a>
+				<a href="">建设工程</a>
+				<a href="">基础设施</a>
+				<a href="">PPP</a>
+				<a href="">房地产综合业务</a>
+				<a href="">争议解决</a>
+			</li>
+			<li>
+				<a href="">专业团队 </a>
+				<a href="">律师列表</a>
+			</li>
+			<li>
+				<a href="">专业交流 </a>
+				<a href="">建纬学院</a>
+				<a href="">专业文章</a>
+				<a href="">专业期刊</a>
+				<a href="">专业著作</a>
+				<a href="">行业周报</a>
+			</li>
+			<li>
+				<a href="">建纬招聘</a>
+				<a href="">走进建纬</a>
+				<a href="">建纬职位</a>
+			</li>
+
+			<li>
+				<a href="">联系我们 </a>
+				<a href="">联系我们</a>
+			</li>
+		</ul>
+		<div class="bottom">
+			<div class="left">
+				上海市建纬（深圳）律师事务所 版权所有 粤ICP备18033501号
+			</div>
+			<div class="fenxiang">
+				<p onclick="weixin()"><i class="iconfont">&#xe654;</i></p>
+				<p><a href=""><i class="iconfont">&#xe68a;</i></a></p>
+			</div>
+			<div class="right">
+				<a href="">法律声明</a>
+				<a href="">网站地图</a>
+			</div>
+		</div>
+	</div>
+	<!--底部结束-->
+</body>
+
 </html>
