@@ -504,7 +504,14 @@ input:focus {
     border-right:1px solid #c9151e;
     display: block;
   }
-  .advantageList{border: 1px solid #DDDDDD;    padding: 1vw;}
+  .advantageList{
+    overflow: hidden;
+    padding:2vw;
+    background:url(../images/zyly_bottom.jpg) no-repeat bottom;
+    background-size:100% auto;
+    background-color:white;
+    padding-bottom:18vw;
+  }
   .advantageList h1,.advantageList h2,.advantageList h3,.advantageList h4,.advantageList h5,.advantageList h6,.advantageList strong{
   	font-size: 1vw !important;
   	line-height:2;
@@ -523,12 +530,28 @@ input:focus {
   }
   .advantageList ul li h2 {
     font-size: 1.1vw;
+    padding-left:2vw;
+    height: 2vw;
+    line-height: 2vw;
     font-weight: 600;
+    position: relative;
+  }
+  .advantageList ul li h2::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top:0.65vw;
+    width:0.8vw;
+    height: 0.8vw;
+    background-color:#c9151e;
+    transform: rotate(45deg);
   }
   .advantageList ul li div {
+    text-indent: 2em;
     line-height: 1.8;
     font-size: 0.8vw;
-    margin-top: 1.5vw;
+    margin-top: 1vw;
+    margin-left:2vw;
   }
   .lndustryList {
     background-color: white;
@@ -2018,13 +2041,20 @@ input:focus {
     border-right:1px solid #c9151e;
     display: block;
   }
-  .advantageList{border: 1px solid #DDDDDD;    padding: 1rem;}
+  .advantageList{
+    overflow: hidden;
+    padding:1rem;
+    background:url(../images/zyly_bottom.jpg) no-repeat bottom;
+    background-size:100% auto;
+    background-color:white;
+    padding-bottom:12rem;
+  }
   .advantageList h1,.advantageList h2,.advantageList h3,.advantageList h4,.advantageList h5,.advantageList h6,.advantageList strong{
-  	font-size: 1.2rem !important;
+  	font-size: 1.3rem !important;
   	line-height:2;
   }
   .advantageList h1 *,.advantageList h2 *,.advantageList h3 *,.advantageList h4 *,.advantageList h5 *,.advantageList h6 *,.advantageList strong *{
-  	font-size: 1.2rem !important;
+  	font-size: 1.3rem !important;
   	line-height:2;
   }
   .advantageList *{font-size: 1rem !important; line-height:1.5; font-family: "微软雅黑" !important;}
@@ -2037,12 +2067,28 @@ input:focus {
   }
   .advantageList ul li h2 {
     font-size: 1.3rem;
+    padding-left:2rem;
+    height: 2rem;
+    line-height: 2rem;
     font-weight: 600;
+    position: relative;
+  }
+  .advantageList ul li h2::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top:0.6rem;
+    width:0.8rem;
+    height: 0.8rem;
+    background-color:#c9151e;
+    transform: rotate(45deg);
   }
   .advantageList ul li div {
+    text-indent: 2em;
     line-height: 1.8;
     font-size: 1rem;
     margin-top: 1rem;
+    margin-left:2rem;
   }
   .lndustryList {
     background-color: white;
