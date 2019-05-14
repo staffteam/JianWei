@@ -196,6 +196,7 @@ input:focus {
     padding: 1.5vw 1.5vw;
     line-height: 2vw;
     position: relative;
+    font-size:0.9vw;
   }
   .navbar-white .navbar-nav > li > a:hover {
     background-color: white;

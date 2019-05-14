@@ -1552,6 +1552,69 @@ input:focus {
   	margin-left:17vw;
   	padding:0;
   }
+
+  .typicalPerformance .list{
+    border-bottom: 1px solid #dddddd;
+    padding:2vw 0;
+  }
+  .typicalPerformance .list .top{
+    position: relative;
+    height: 2vw;
+    line-height: 2vw;
+    padding-left:2vw;
+    font-size:1.2vw;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .typicalPerformance .list .top::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top:0.6vw;
+    width:0.8vw;
+    height: 0.8vw;
+    background-color:#c9151e;
+    transform: rotate(45deg);
+  }
+  .typicalPerformance .bottom{
+    line-height: 1.5;
+    font-size: 0.9vw !important;
+    background-color: white;
+    margin-top: 3vw;
+    position: relative;
+    padding: 1.5vw;
+    display: none;
+  }
+  .typicalPerformance .bottom .triangle {
+      position: absolute;
+      left: 1vw;
+      top: 0;
+      transform: translateY(-99%);
+      width: 2.5vw;
+  }
+  .typicalPerformance .bottom h1,
+  .typicalPerformance .bottom h2,
+  .typicalPerformance .bottom h3,
+  .typicalPerformance .bottom h4,
+  .typicalPerformance .bottom h5,
+  .typicalPerformance .bottom h6,
+  .typicalPerformance .bottom strong * {
+    font-weight: 600;
+    font-size: 1vw !important;
+  }
+  .typicalPerformance .bottom h1 *,
+  .typicalPerformance .bottom h2 *,
+  .typicalPerformance .bottom h3 *,
+  .typicalPerformance .bottom h4 *,
+  .typicalPerformance .bottom h5 *,
+  .typicalPerformance .bottom h6 *,
+  .typicalPerformance .bottom strong * {
+    font-weight: 600;
+    font-size: 1vw !important;
+  }
+  .typicalPerformance .bottom p {
+    margin: 5px 0;
+  }
 }
 @media (max-width: 800px) {
   .streamer {
@@ -2964,5 +3027,66 @@ input:focus {
   
   .periodicalDetails .periodicaContent .left{
   	display: none;
+  }
+  .typicalPerformance .list{
+    border-bottom: 1px solid #dddddd;
+    padding:1rem 0;
+  }
+  .typicalPerformance .list .top{
+    position: relative;
+    line-height: 2rem;
+    padding-left:2rem;
+    font-size:1.2rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .typicalPerformance .list .top::before{
+    position: absolute;
+    content: '';
+    left: 0.3rem;
+    top:0.6rem;
+    width:0.8rem;
+    height: 0.8rem;
+    background-color:#c9151e;
+    transform: rotate(45deg);
+  }
+  .typicalPerformance .bottom{
+    line-height: 1.5;
+    font-size: 0.9rem !important;
+    background-color: white;
+    margin-top: 3rem;
+    position: relative;
+    padding: 1.5rem;
+    display: none;
+  }
+  .typicalPerformance .bottom .triangle {
+      position: absolute;
+      left: 1rem;
+      top: 0;
+      transform: translateY(-99%);
+      width: 2.5rem;
+  }
+  .typicalPerformance .bottom h1,
+  .typicalPerformance .bottom h2,
+  .typicalPerformance .bottom h3,
+  .typicalPerformance .bottom h4,
+  .typicalPerformance .bottom h5,
+  .typicalPerformance .bottom h6,
+  .typicalPerformance .bottom strong * {
+    font-weight: 600;
+    font-size: 1rem !important;
+  }
+  .typicalPerformance .bottom h1 *,
+  .typicalPerformance .bottom h2 *,
+  .typicalPerformance .bottom h3 *,
+  .typicalPerformance .bottom h4 *,
+  .typicalPerformance .bottom h5 *,
+  .typicalPerformance .bottom h6 *,
+  .typicalPerformance .bottom strong * {
+    font-weight: 600;
+    font-size: 1rem !important;
+  }
+  .typicalPerformance .bottom p {
+    margin: 5px 0;
   }
 }
