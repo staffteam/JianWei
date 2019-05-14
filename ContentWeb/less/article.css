@@ -481,6 +481,21 @@ input:focus {
     position: absolute;
     display: block;
   }
+  .productList ul li.no1 div.right h2{
+    display: none;
+  }
+  .productList ul li.no1 div.left{
+    display: none;
+  }
+  .productList ul li.no1 div.right>div{
+    margin-top:0;
+  }
+  .productList ul li.no1 div.right>div p:first-child{
+    margin-top:0;
+  }
+  .productList.notline ul li  div.left::before{
+    display: none;
+  }
   .productList ul li div.right div{
     margin-top:2vw;
   }
@@ -502,7 +517,7 @@ input:focus {
     left:50%;
     bottom:0;
     border-right:1px solid #c9151e;
-    display: block;
+    display: none;
   }
   .advantageList{
     overflow: hidden;
@@ -2081,6 +2096,21 @@ input:focus {
     position: absolute;
     display: block;
   }
+  .productList ul li.no1 div.right h2{
+    display: none;
+  }
+  .productList ul li.no1 div.left{
+    display: none;
+  }
+  .productList ul li.no1 div.right>div{
+    margin-top:0;
+  }
+  .productList ul li.no1 div.right>div p:first-child{
+    margin-top:0;
+  }
+  .productList.notline ul li  div.left::before{
+    display: none;
+  }
   .productList ul li div.right div{
     margin-top:1rem;
   }
@@ -2102,7 +2132,7 @@ input:focus {
     left:50%;
     bottom:0;
     border-right:1px solid #c9151e;
-    display: block;
+    display: none;
   }
   .advantageList{
     overflow: hidden;
