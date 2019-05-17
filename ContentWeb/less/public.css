@@ -109,7 +109,7 @@ input:focus {
     z-index: 9;
     background-color: white;
     position: absolute;
-    right:8vw;
+    right:6vw;
     top: 0;
   }
   .navbar-white .navbar-search .searchlist{

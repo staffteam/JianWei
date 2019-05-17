@@ -143,6 +143,10 @@ if($(window).width()<800){
 }
 var notp=true;
 function searchs(obj){
+	notp=false;
+	setTimeout(function(){
+		notp=true;
+	},200);
 	$(obj).parent().css({'border-bottom':'1px solid #dddddd','width':'46vw'});
 	$('.navbar-white .navbar-nav').animate({'opacity':'0'},300);
 	$(obj).parent().find('input').show().focus();
