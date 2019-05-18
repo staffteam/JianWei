@@ -593,10 +593,26 @@ input:focus {
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    background: url(../images/icon_sanjiao.png) no-repeat;
-    background-size: cover;
-    width: 57.59px;
-    height: 28.79px;
+    background: url(../images/icon_sanjiao.png) no-repeat bottom;
+    background-size: 1.5rem auto;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .business ul li:nth-child(6).liHover:before,
+  .business ul li:nth-child(7).liHover:before,
+  .business ul li:nth-child(8).liHover:before,
+  .business ul li:nth-child(9).liHover:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: auto;
+    transform: translateX(-50%) rotate(180deg);
+    background: url(../images/icon_sanjiao.png) no-repeat bottom;
+    background-size: 1.5rem auto;
+    width: 1.5rem;
+    height: 1.5rem;
   }
   .business ul li p {
     width: 5rem;

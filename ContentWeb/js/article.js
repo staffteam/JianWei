@@ -61,7 +61,7 @@ $(function() {
 	$('span.btns').click(function(){
 		if($(this).hasClass('on')){
 				$(this).removeClass('on');
-				$(this).closest('.left').animate({'left':'-9rem'},300)
+				$(this).closest('.left').animate({'left':'-11rem'},300)
 		}else{
 			$(this).addClass('on');
 			if($(this).closest('.left').css('position') == 'fixed'){

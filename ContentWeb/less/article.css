@@ -1726,10 +1726,10 @@ input:focus {
     min-height: 35vh;
   }
   div.article div.content > div.left {
-    width: 9rem;
+    width: 11rem;
     background-color: white;
     position: absolute;
-    left: -9rem;
+    left: -11rem;
     z-index: 999;
   }
   div.article div.content > div.left span.btns {
@@ -2118,6 +2118,15 @@ input:focus {
   .productList ul li.no1 div.right>div{
     margin-top:0;
   }
+  .productList ul li.no1 div.right>div h1,.productList ul li.no1 div.right>div h2,.productList ul li.no1 div.right>div h3,.productList ul li.no1 div.right>div h4,.productList ul li.no1 div.right>div h5,.productList ul li.no1 div.right>div h6,.productList ul li.no1 div.right>div strong{
+  	font-size: 1.2rem !important;
+  	line-height:2;
+  }
+  .productList ul li.no1 div.right>div h1 *,.productList ul li.no1 div.right>div h2 *,.productList ul li.no1 div.right>div h3 *,.productList ul li.no1 div.right>div h4 *,.productList ul li.no1 div.right>div h5 *,.productList ul li.no1 div.right>div h6 *,.productList ul li.no1 div.right>div strong *{
+  	font-size: 1.2rem !important;
+  	line-height:2;
+  }
+  .productList ul li.no1 div.right>div *{font-size: 1.1rem !important; line-height:1.5; font-family: "微软雅黑" !important;}
   .productList ul li.no1 div.right>div p:first-child{
     margin-top:0;
   }

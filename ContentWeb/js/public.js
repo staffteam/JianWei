@@ -66,7 +66,7 @@ $(function() {
 		    			if($('.article .content>.left span.btns').hasClass('on')){
 		    				$('.article .content>.left').css({"position":"fixed","top":"6rem","bottom":"auto",'left':'1rem'})
 		    			}else{
-		    				$('.article .content>.left').css({"position":"fixed","top":"6rem","bottom":"auto",'left':'-9rem'})
+		    				$('.article .content>.left').css({"position":"fixed","top":"6rem","bottom":"auto",'left':'-11rem'})
 		    			}
 		    		}
 		    	}else if($('body,html').scrollTop()>$('.footer').offset().top-($(window).height()-$('.footer').height()+($(window).width()*0.15))){
@@ -84,7 +84,7 @@ $(function() {
 		    			if($('.article .content>.left span.btns').hasClass('on')){
 		    				$('.article .content>.left').css({"position":"fixed","top":"6rem","bottom":"auto",'left':'1rem'})
 		    			}else{
-		    				$('.article .content>.left').css({"position":"fixed","top":"6rem","bottom":"auto",'left':'-9rem'})
+		    				$('.article .content>.left').css({"position":"fixed","top":"6rem","bottom":"auto",'left':'-11rem'})
 		    			}
 		    		}
 		    	}else{
@@ -99,7 +99,7 @@ $(function() {
 		    			if($('.article .content>.left span.btns').hasClass('on')){
 		    				$('.article .content>.left').css({"position":"absolute","top":"0","bottom":"auto",'left':'0'})
 		    			}else{
-		    				$('.article .content>.left').css({"position":"absolute","top":"0","bottom":"auto",'left':'-9rem'})
+		    				$('.article .content>.left').css({"position":"absolute","top":"0","bottom":"auto",'left':'-11rem'})
 		    			}
 		    		}
 		    	}
