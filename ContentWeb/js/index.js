@@ -67,7 +67,7 @@ $(function() {
 	})
 	$('.title').each(function(){
 		if($(window).width()>800){
-			$(this).find('div').eq(1).css({'width':'12vw'});
+			$(this).find('div').eq(1).css({'width':'230.39px'});
 		}else{
 			$(this).find('div').eq(1).css({'width':'12rem'});
 		}

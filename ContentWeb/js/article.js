@@ -14,7 +14,25 @@ $(function() {
 	$('.honorList ul li').click(function() {
 		$(this).addClass('on').siblings('.honorList ul li').removeClass('on');
 	});
-	var jsons = {"上海":"width:23vw;left:62.1vw; top:23vw;","深圳":"left: 53.5vw;top: 39vw;","北京":"left: 53.5vw;top: 10vw;","长沙":"left: 49.5vw;top: 31vw;","包头":"left: 43.5vw;top: 11vw;","天津":"left: 55vw;top: 11.5vw;","杭州":"width: 25vw;left: 60.1vw;top: 26vw;","昆明":"left: 36.1vw;top: 35vw;","南昌":"width: 31vw;left: 55.1vw;top: 29vw;","合肥":"width: 29vw;left: 56.5vw;top: 24vw;","武汉":"width: 35vw;left: 51.5vw;top: 26vw;","福州":"width: 27vw;left: 59.5vw;top: 32vw;","南京":"width: 27vw;left: 59.5vw;top: 23vw;","重庆":"left: 41.5vw;top: 28.5vw;","西安":"left: 43.5vw;top: 20.5vw;","郑州":"left: 50.5vw;top: 19.5vw;","乌鲁木齐":"left:18vw; top:4vw;","成都":"left:37vw; top:27vw;","太原":"left:48.2vw; top:15vw;"};
+	var jsons = {"上海":"width:441.59px;left:1192.32px; top:441.59px;",
+	"深圳":"left: 1027.2px;top: 748.8px;",
+	"北京":"left: 1027.2px;top: 192px;",
+	"长沙":"left: 950.4px;top: 595.19px;",
+	"包头":"left: 835.19px;top: 211.2px;",
+	"天津":"left: 1056px;top: 220.79px;",
+	"杭州":"width: 480px;left: 1153.92px;top: 499.2px;",
+	"昆明":"left: 693.12px;top: 672px;",
+	"南昌":"width: 595.19px;left: 1057.92px;top: 556.8px;",
+	"合肥":"width: 556.8px;left: 1084.8px;top: 276.8px;",
+	"武汉":"width: 672px;left: 988.8px;top: 499.2px;",
+	"福州":"width: 518.4px;left: 1142.39px;top: 614.4px;",
+	"南京":"width: 518.4px;left: 1142.39px;top: 441.59px;",
+	"重庆":"left: 796.8px;top: 547.19px;",
+	"西安":"left: 835.19px;top: 393.59px;",
+	"郑州":"left: 969.59px;top: 374.4px;",
+	"乌鲁木齐":"left:345.59px; top:76.8px;",
+	"成都":"left:710.4px; top:518.4px;"
+	,"太原":"left:925.44px; top:288px;"};
 	var objs = $('.contactBottom ul li.on');
 	$('.map').show();
 	$('.map >div').attr('style',jsons[objs.html()]);

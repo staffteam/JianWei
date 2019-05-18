@@ -37,8 +37,8 @@ input:focus {
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-top: 0px;
     text-align: center;
-    width: 19vw;
-    height: 6vw;
+    width: 364.8px;
+    height: 115.19px;
   }
   .streamer div.headline:before {
     border-top: 2px solid rgba(255, 255, 255, 0.5);
@@ -60,14 +60,14 @@ input:focus {
   }
   .streamer div.headline span {
     display: block;
-    font-size: 1.4vw;
+    font-size: 26.88px;
     font-weight: 500;
     position: relative;
     transform: translateY(-50%);
   }
   .streamer div.headline font {
     display: block;
-    font-size: 2vw;
+    font-size: 38.4px;
     font-weight: 500;
     line-height: 0.8;
   }
@@ -77,27 +77,27 @@ input:focus {
     font-weight: 100;
     left: 20%;
     color: white;
-    font-size: 1vw;
+    font-size: 19.2px;
   }
   .streamer div.location a {
     color: white;
-    font-size: 1vw;
-    margin: 0 0.5vw;
+    font-size: 19.2px;
+    margin: 0 9.6px;
   }
   body {
     background-color: #f8f8f8;
   }
   div.article {
-    padding-bottom: 5vw;
+    padding-bottom: 96px;
   }
   div.article div.content {
-    width: 60%;
+    width: 1152px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
   }
   div.article div.content > div.left {
-    width: 15vw;
+    width: 288px;
     float: left;
     background-color: white;
   }
@@ -115,7 +115,7 @@ input:focus {
   div.article div.content > div.left.second ul li a i {
     float: right;
     transform: rotate(45deg);
-    font-size: 0.9vw;
+    font-size: 17.27px;
     transition: 0.3s transform;
     color: #999999;
   }
@@ -133,17 +133,17 @@ input:focus {
     border-bottom: 0;
   }
   div.article div.content > div.left div.top {
-    padding: 2vw 0 3vw 0;
+    padding: 38.4px 0 57.59px 0;
     text-align: center;
     color: #c9151e;
   }
   div.article div.content > div.left div.top span {
     display: block;
-    font-size: 1.4vw;
+    font-size: 26.88px;
   }
   div.article div.content > div.left div.top font {
     display: block;
-    font-size: 1.3vw;
+    font-size: 24.95px;
   }
   div.article div.content > div.left ul {
   }
@@ -171,26 +171,26 @@ input:focus {
   div.article div.content > div.left ul li a {
     display: block;
     position: relative;
-    padding: 1.5vw;
-    font-size: 0.9vw;
+    padding: 28.79px;
+    font-size: 17.27px;
     line-height: 1.5;
   }
   div.article div.content > div.right {
-    margin-left: 20vw;
+    margin-left: 384px;
   }
   div.article div.content > div.right div.articleTitle {
     text-align: center;
-    padding: 5vw 0;
+    padding: 96px 0;
   }
   div.article div.content > div.right div.articleTitle.on span.a {
-    width: 7vw;
+    width: 134.4px;
     margin-right: 0;
   }
   div.article div.content > div.right div.articleTitle.on span.a:before {
     opacity: 1;
   }
   div.article div.content > div.right div.articleTitle.on span.b {
-    width: 7vw;
+    width: 134.4px;
     margin-left: 0;
     opacity: 1;
   }
@@ -201,8 +201,8 @@ input:focus {
     border-bottom: 2px solid #c9151e;
     position: relative;
     display: inline-block;
-    width: 3vw;
-    margin-right: 4vw;
+    width: 57.59px;
+    margin-right: 76.8px;
     transition: 0.6s width, 0.6s margin-right, opacity 0.6s;
   }
   div.article div.content > div.right div.articleTitle span.a:before {
@@ -219,21 +219,21 @@ input:focus {
     transition: 0.3s opacity;
   }
   div.article div.content > div.right div.articleTitle h2 {
-    font-size: 1.4vw;
+    font-size: 26.88px;
     font-weight: normal;
     color: black;
     display: inline-block;
     position: relative;
     transform: translateY(25%);
-    padding: 0 1.5vw;
+    padding: 0 28.79px;
     font-weight: 600;
   }
   div.article div.content > div.right div.articleTitle span.b {
     border-bottom: 2px solid #c9151e;
     position: relative;
     display: inline-block;
-    width: 3vw;
-    margin-left: 4vw;
+    width: 57.59px;
+    margin-left: 76.8px;
     transition: 0.6s width, 0.6s margin-left;
   }
   div.article div.content > div.right div.articleTitle span.b:before {
@@ -251,9 +251,9 @@ input:focus {
   }
   div.article div.content > div.right div.professionalList ul li {
     overflow: hidden;
-    padding-bottom: 1.5vw;
+    padding-bottom: 28.79px;
     border-bottom: 1px solid #DDDDDD;
-    margin-bottom: 1.5vw;
+    margin-bottom: 28.79px;
   }
   div.article div.content > div.right div.professionalList ul li:last-child{
   	border-bottom: 0px;
@@ -264,8 +264,8 @@ input:focus {
     color: #c9151e;
   }
   div.article div.content > div.right div.professionalList ul li div.left {
-    width: 15vw;
-    height: 20vw;
+    width: 288px;
+    height: 384px;
     float: left;
     background-color: white;
   }
@@ -282,27 +282,27 @@ input:focus {
   	margin: 0;
   }
   div.article div.content > div.right div.professionalList ul li div.right {
-    margin-left: 18vw;
+    margin-left: 345.59px;
     position: relative;
-    height: 20vw;
+    height: 384px;
   }
   div.article div.content > div.right div.professionalList ul li div.right h2 {
     font-weight: 600;
-    font-size: 1.2vw;
+    font-size: 23.04px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
   div.article div.content > div.right div.professionalList ul li div.right span {
     display: block;
-    margin-top: 0.5vw;
-    font-size: 1vw;
+    margin-top: 9.6px;
+    font-size: 19.2px;
     color: #999999;
   }
   div.article div.content > div.right div.professionalList ul li div.right font {
     display: block;
-    margin-top: 0.2vw;
-    font-size: 0.85vw;
+    margin-top: 3.84px;
+    font-size: 16.32px;
     color: #666666;
     font-weight: 600;
   }
@@ -314,36 +314,36 @@ input:focus {
     -webkit-box-orient: vertical;
     line-height: 30px;
     line-height: 2;
-    font-size: 0.8vw;
-    margin-top: 1vw;
+    font-size: 15px;
+    margin-top: 19.2px;
     -webkit-line-clamp: 3;
   }
   div.article div.content > div.right div.professionalList ul li div.right > div {
     position: absolute;
     right: 0;
-    bottom: 1vw;
+    bottom: 19.2px;
   }
   div.article div.content > div.right div.professionalList ul li div.right > div a {
     display: inline-block;
-    margin-left: 1.5vw;
-    padding-left: 3vw;
-    height: 2vw;
+    margin-left: 28.79px;
+    padding-left: 57.59px;
+    height: 38.4px;
     background: url(../images/icon_jl_fx.png) left no-repeat;
-    background-size: 2vw;
-    line-height: 2vw;
-    font-size: 0.8vw;
+    background-size: 38.4px;
+    line-height: 38.4px;
+    font-size: 15px;
   }
   div.article div.content > div.right div.professionalList ul li div.right > div a:hover {
     opacity: 1 !important;
   }
   div.article div.content > div.right div.professionalList ul li div.right > div a.xz {
     background: url(../images/icon_jl_xz.png) left no-repeat;
-    background-size: 2vw;
+    background-size: 38.4px;
   }
   .pageview {
     text-align: center;
-    margin-top: 4vw;
-    height: 3vw;
+    margin-top: 76.8px;
+    height: 57.59px;
   }
   .pageview span.link {
     color: #c9151e;
@@ -352,18 +352,18 @@ input:focus {
   .pageview .link {
     cursor: pointer;
     color: #000000;
-    font-size: 1vw;
-    width: 2.5vw;
+    font-size: 19.2px;
+    width: 48px;
     border: 0 !important;
     border-radius: 50%;
-    height: 2.5vw;
-    line-height: 2.5vw;
+    height: 48px;
+    line-height: 48px;
     text-align: center;
     display: inline-block;
-    margin: 0 0.5vw;
+    margin: 0 9.6px;
   }
   .pageview .link i {
-    font-size: 0.8vw;
+    font-size: 15px;
     position: relative;
     top: -1px;
   }
@@ -387,27 +387,27 @@ input:focus {
   }
   .collegeList ul li {
     border-top: 1px solid #DDDDDD;
-    padding: 2vw 0;
+    padding: 38.4px 0;
   }
   .collegeList ul li:hover a h2 {
     color: #c9151e;
   }
   .collegeList ul li a h2 {
-    font-size: 1vw;
+    font-size: 19.2px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
   .collegeList ul li a span {
     display: block;
-    margin-top: 0.5vw;
-    font-size: 0.8vw;
+    margin-top: 9.6px;
+    font-size: 15px;
     color: #999999;
   }
   .collegeList ul li a div {
-    margin-top: 0.5vw;
+    margin-top: 9.6px;
     line-height: 2;
-    font-size: 0.8vw;
+    font-size: 15px;
     color: #999999;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -418,38 +418,38 @@ input:focus {
     -webkit-line-clamp: 3;
   }
   .productText {
-    padding: 5vw 0 0 0;
+    padding: 96px 0 0 0;
     line-height: 1.5;
   }
   .productText h1,.productText h2,.productText h3,.productText h4,.productText h5,.productText h6,.productText strong{
-  	font-size: 1vw !important;
+  	font-size: 19.2px !important;
   	line-height:2;
   }
   .productText h1 *,.productText h2 *,.productText h3 *,.productText h4 *,.productText h5 *,.productText h6 *,.productText strong *{
-  	font-size: 1vw !important;
+  	font-size: 19.2px !important;
   	line-height:2;
   }
-  .productText *{font-size: 0.9vw !important; line-height:1.5; font-family: "微软雅黑" !important;}
+  .productText *{font-size: 17.27px !important; line-height:1.5; font-family: "微软雅黑" !important;}
   .productText p{margin:5px 0;}
   .introduceText h1,.introduceText h2,.introduceText h3,.introduceText h4,.introduceText h5,.introduceText h6,.introduceText strong{
-  	font-size: 1vw !important;
+  	font-size: 19.2px !important;
   	line-height:2;
   }
   .introduceText h1 *,.introduceText h2 *,.introduceText h3 *,.introduceText h4 *,.introduceText h5 *,.introduceText h6 *,.introduceText strong *{
-  	font-size: 1vw !important;
+  	font-size: 19.2px !important;
   	line-height:2;
   }
-  .introduceText *{font-size: 0.9vw !important; line-height:1.5; font-family: "微软雅黑" !important;}
+  .introduceText *{font-size: 17.27px !important; line-height:1.5; font-family: "微软雅黑" !important;}
   .introduceText p{margin:5px 0;}
   .productList {
     overflow: hidden;
-    padding:2.5vw;
+    padding:48px;
     background:url(../images/zyly_bottom.jpg) no-repeat bottom;
     background-size:100% auto;
     background-color:white;
   }
   .productList ul li{
-    padding-bottom:4vw;
+    padding-bottom:76.8px;
     position: relative;
   }
   .productList ul li:last-child div.left:before{
@@ -460,15 +460,15 @@ input:focus {
     left: 0;
     top:0;
     bottom:0;
-    width:1.5vw;
+    width:28.79px;
     height: 100%;
   }
   .productList ul li div.right{
-    margin-left:4vw;
+    margin-left:76.8px;
   }
   .productList ul li div.right h2{
-    font-size: 1.2vw;
-    padding-bottom:0.8vw;
+    font-size: 23.04px;
+    padding-bottom:15px;
     font-weight: 600;
     position: relative;
   }
@@ -477,7 +477,7 @@ input:focus {
     content: '';
     left:0;
     bottom:0;
-    width:2.5vw;
+    width:48px;
     position: absolute;
     display: block;
   }
@@ -497,15 +497,15 @@ input:focus {
     display: none;
   }
   .productList ul li div.right div{
-    margin-top:2vw;
+    margin-top:38.4px;
   }
   .productList ul li div.right div p{
-    font-size:0.9vw;
-    margin-top:2vw;
+    font-size:17.28px;
+    margin-top:38.4px;
   }
   .productList ul li div.left span{
-    width:1.5vw;
-    height: 1.5vw;
+    width:28.79px;
+    height: 28.79px;
     background-color:#c9151e;
     display: block;
     border-radius: 50%;
@@ -521,33 +521,33 @@ input:focus {
   }
   .advantageList{
     overflow: hidden;
-    padding:2vw;
+    padding:38.4px;
     background:url(../images/zyly_bottom.jpg) no-repeat bottom;
     background-size:100% auto;
     background-color:white;
-    padding-bottom:18vw;
+    padding-bottom:345.59px;
   }
   .advantageList h1,.advantageList h2,.advantageList h3,.advantageList h4,.advantageList h5,.advantageList h6,.advantageList strong{
-  	font-size: 1vw !important;
+  	font-size: 19.2px !important;
   	line-height:2;
   }
   .advantageList h1 *,.advantageList h2 *,.advantageList h3 *,.advantageList h4 *,.advantageList h5 *,.advantageList h6 *,.advantageList strong *{
-  	font-size: 1vw !important;
+  	font-size: 19.2px !important;
   	line-height:2;
   }
-  .advantageList *{font-size: 0.9vw !important; line-height:1.5; font-family: "微软雅黑" !important;}
+  .advantageList *{font-size: 17.27px !important; line-height:1.5; font-family: "微软雅黑" !important;}
   .advantageList p{margin:5px 0;}
   .advantageList ul li {
-    margin-top: 2vw;
+    margin-top: 38.4px;
   }
   .advantageList ul li:first-child {
     margin-top: 0;
   }
   .advantageList ul li h2 {
-    font-size: 1.1vw;
-    padding-left:2vw;
-    height: 2vw;
-    line-height: 2vw;
+    font-size: 21.11px;
+    padding-left:38.4px;
+    height: 38.4px;
+    line-height: 38.4px;
     font-weight: 600;
     position: relative;
   }
@@ -555,49 +555,49 @@ input:focus {
     position: absolute;
     content: '';
     left: 0;
-    top:0.65vw;
-    width:0.8vw;
-    height: 0.8vw;
+    top:12.47px;
+    width:15px;
+    height: 15px;
     background-color:#c9151e;
     transform: rotate(45deg);
   }
   .advantageList ul li div {
     text-indent: 2em;
     line-height: 1.8;
-    font-size: 0.8vw;
-    margin-top: 1vw;
-    margin-left:2vw;
+    font-size: 15px;
+    margin-top: 19.2px;
+    margin-left:38.4px;
   }
   .lndustryList {
     background-color: white;
-    padding: 3vw;
-    margin-bottom: 2vw;
+    padding: 57.59px;
+    margin-bottom: 38.4px;
   }
   .lndustryList > h2 {
-    font-size: 1vw;
+    font-size: 19.2px;
     line-height: 1.5;
     font-weight: 600;
-    padding-left: 1.5vw;
+    padding-left: 28.79px;
   }
   .lndustryList > p {
-    font-size: 1vw;
-    margin-top: 2vw;
+    font-size: 19.2px;
+    margin-top: 38.4px;
     font-weight: 600;
-    padding-left: 1.5vw;
+    padding-left: 28.79px;
   }
   .lndustryList ul {
-    margin-top: 2vw;
+    margin-top: 38.4px;
   }
   .lndustryList ul li {
-    margin-top: 1.5vw;
-    font-size: 0.9vw;
+    margin-top: 28.79px;
+    font-size: 17.27px;
     position: relative;
-    padding-left: 1.5vw;
+    padding-left: 28.79px;
   }
   .lndustryList ul li:before {
     content: '';
-    width: 0.5vw;
-    height: 0.5vw;
+    width: 9.6px;
+    height: 9.6px;
     background-color: #c9151e;
     display: block;
     position: absolute;
@@ -606,41 +606,41 @@ input:focus {
     transform: translateY(-50%) rotate(45deg);
   }
   .honorList h2 {
-    font-size: 0.8vw;
+    font-size: 15px;
     font-weight: 600;
   }
   .honorList ul {
-    margin-top: 2vw;
+    margin-top: 38.4px;
   }
   .honorList ul li {
     display: inline-block;
-    font-size: 1vw;
-    margin:0.5vw 1vw 0 0vw;
-    padding: 0.2vw 1vw;
+    font-size: 19.2px;
+    margin:9.6px 19.2px 0 0;
+    padding: 3.84px 19.2px;
     cursor: pointer;
   }
   .honorList ul li.on,.honorList ul li:hover {
     background-color: #c9151e;
-    border-radius: 1.5vw;
+    border-radius: 28.79px;
     color: white;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
   }
   .honorContent {
-    margin-top: 3vw;
+    margin-top: 57.59px;
   }
   .honorContent ul li {
-    margin-top: 1.5vw;
+    margin-top: 28.79px;
   }
   .honorContent ul li p {
-    font-size: 0.8vw;
+    font-size: 15px;
     position: relative;
-    padding-left: 1.5vw;
+    padding-left: 28.79px;
     line-height: 2;
   }
   .honorContent ul li p:before {
     content: '';
-    width: 0.5vw;
-    height: 0.5vw;
+    width: 9.6px;
+    height: 9.6px;
     background-color: #c9151e;
     display: block;
     position: absolute;
@@ -649,13 +649,13 @@ input:focus {
     transform: translateY(-50%) rotate(45deg);
   }
   .honorContent ul li div {
-    padding-bottom: 1.5vw;
+    padding-bottom: 28.79px;
     border-bottom: 1px solid #DDDDDD;
-    padding-left: 1.5vw;
+    padding-left: 28.79px;
   }
   .honorContent ul li div span {
     display: block;
-    font-size: 0.8vw;
+    font-size: 15px;
     line-height: 2;
   }
   .culture .top {
@@ -663,7 +663,7 @@ input:focus {
   }
   .culture .top > p {
   	 width:100%;
-  	 height: 21vw;
+  	 height: 403.2px;
   }
   .culture .top > p img{
   	width:100%;
@@ -671,7 +671,7 @@ input:focus {
   }
   .culture .top > div > p {
     overflow: hidden;
-    height: 21vw;
+    height: 403.2px;
     background-color: white;
   }
   .culture .top p:hover img {
@@ -687,29 +687,29 @@ input:focus {
   }
   .culture .top > div div {
     background-color: white;
-    padding: 2vw 3vw;
+    padding: 38.4px 57.59px;
   }
   .culture .top > div div h2 {
-    font-size: 1.2vw;
+    font-size: 23.04px;
     font-weight: 600;
   }
   .culture .top > div div p {
-    font-size: 0.9vw;
-    margin-top: 1.5vw;
+    font-size: 17.27px;
+    margin-top: 28.79px;
   }
   .culture .top div.right {
     margin-left: 4%;
   }
   .culture .bottom {
-    margin-top: 2vw;
+    margin-top: 38.4px;
     background-color: white;
-    padding-top: 2vw;
+    padding-top: 38.4px;
   }
   .culture .bottom > h2 {
-    font-size: 1.2vw;
+    font-size: 23.04px;
     font-weight: 600;
     position: relative;
-    padding-left: 2vw;
+    padding-left: 38.4px;
   }
   .culture .bottom > h2:before {
     content: '';
@@ -721,7 +721,7 @@ input:focus {
     width: 85%;
   }
   .culture .bottom > div {
-    padding: 2vw;
+    padding: 38.4px;
     line-height: 1.5;
   }
   .culture .bottom > div h1,
@@ -731,7 +731,7 @@ input:focus {
   .culture .bottom > div h5,
   .culture .bottom > div h6,
   .culture .bottom > div strong {
-  	font-size: 1vw !important;
+  	font-size: 19.2px !important;
   	line-height:2;
     font-weight: 600;
   }
@@ -742,7 +742,7 @@ input:focus {
   .culture .bottom > div h5 *,
   .culture .bottom > div h6 *,
   .culture .bottom > div strong * {
-  	font-size: 1vw !important;
+  	font-size: 19.2px !important;
   	line-height:2;
     font-weight: 600;
   }
@@ -750,13 +750,13 @@ input:focus {
     margin: 5px 0;
   }
   .culture .bottom > div *{
-  	font-size: 0.9vw !important; 
+  	font-size: 17.27px !important; 
     line-height:1.5;
     font-family: "微软雅黑" !important;
   }
   .newsList ul li {
     border-bottom: 1px solid #DDDDDD;
-    padding: 2vw 0;
+    padding: 38.4px 0;
     position: relative;
   }
   .newsList ul li:first-child {
@@ -764,15 +764,15 @@ input:focus {
   }
   .newsList ul li.new {
     background: url(../images/icon_new.png) no-repeat right top;
-    background-size: 2vw;
+    background-size: 38.4px;
   }
   .newsList ul li.top {
     background: url(../images/icon_top.png) no-repeat right top;
-    background-size: 2vw;
+    background-size: 38.4px;
   }
   .newsList ul li.hot {
     background: url(../images/icon_hot.png) no-repeat right top;
-    background-size: 2vw;
+    background-size: 38.4px;
   }
   .newsList ul li:hover h2 {
     color: #c9151e;
@@ -781,78 +781,78 @@ input:focus {
     color: #c9151e;
   }
   .newsList ul li h2 {
-    font-size: 1vw;
+    font-size: 19.2px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     font-weight: 600;
-    height: 1.5vw;
-    line-height: 1.5vw;
+    height: 28.79px;
+    line-height: 28.79px;
   }
   .newsList ul li span {
-    font-size: 0.9vw;
+    font-size: 17.27px;
     display: block;
-    margin-top: 1vw;
+    margin-top: 19.2px;
   }
   .newsList ul li div{
-  	font-size:0.8vw;
-  	margin-top:0.5vw;
+  	font-size:15px;
+  	margin-top:9.6px;
   	overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    line-height: 1.5vw;
-    height: 3vw;
+    line-height: 28.79px;
+    height: 57.59px;
     -webkit-line-clamp: 2;
     width: 85%;
   }
   .newsList ul li i {
     position: absolute;
-    right: 3vw;
+    right: 57.59px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 1.3vw;
+    font-size: 24.95px;
   }
   .joinList div.list div.top{
   	cursor: pointer;
   }
   .joinList div.list div.top h2 {
-    font-size: 1.2vw;
+    font-size: 23.04px;
     font-weight: 600;
   }
   .joinList div.list div.top span {
     display: block;
-    margin-top: 1vw;
-    font-size: 0.8vw;
+    margin-top: 19.2px;
+    font-size: 15px;
     color: #999999;
   }
   .joinList div.list div.bottom ul li {
-    margin-top: 1.5vw;
+    margin-top: 28.79px;
   }
   .joinList div.list div.bottom ul li h2 {
-    font-size: 1vw;
+    font-size: 19.2px;
     font-weight: 600;
   }
   .joinList div.list div.bottom ul li p {
     line-height: 2;
-    margin-top: 1vw;
-    font-size: 0.9vw;
+    margin-top: 19.2px;
+    font-size: 17.27px;
   }
   .joinList div.list div.bottom{
   	line-height: 1.5;
-    font-size: 0.9vw !important;
+    font-size: 17.27px !important;
     background-color: white;
-    margin-top:3vw;
+    margin-top:57.59px;
     position: relative;
-    padding: 1.5vw;
+    padding: 28.79px;
     display: none;
   }
   .joinList div.list div.bottom .triangle{
   	position: absolute;
-  	left: 1vw;
+  	left: 19.2px;
   	top:0;
   	transform: translateY(-100%);
-  	width:2.8vw;
+  	width:53.76px;
   }
   .joinList div.list div.bottom h1,
   .joinList div.list div.bottom h2,
@@ -862,7 +862,7 @@ input:focus {
   .joinList div.list div.bottom h6,
   .joinList div.list div.bottom strong * {
     font-weight: 600;
-    font-size: 1vw !important;
+    font-size: 19.2px !important;
   }
   .joinList div.list div.bottom h1 *,
   .joinList div.list div.bottom h2 *,
@@ -872,15 +872,15 @@ input:focus {
   .joinList div.list div.bottom h6 *,
   .joinList div.list div.bottom strong * {
     font-weight: 600;
-    font-size: 1vw !important;
+    font-size: 19.2px !important;
   }
   .joinList div.list div.bottom p {
     margin: 5px 0;
   }
   .joinList div.list div.bottom ul li:first-child{margin-top:0;}
   .joinList div.list{
-  	padding-bottom: 2.5vw !important;
-  	margin-top:2.5vw !important;
+  	padding-bottom: 48px !important;
+  	margin-top:48px !important;
   	border-bottom: 1px solid #DDDDDD;
   }
   .joinList div.list:first-child{
@@ -891,13 +891,13 @@ input:focus {
   	padding-bottom: 0 !important;
   }
   .joinList div.list div.bottom *{
-  	font-size: 0.9vw !important; 
+  	font-size: 17.27px !important; 
     line-height:1.5;
     font-family: "微软雅黑" !important;
   }
   .aboutlist div.text {
     line-height: 1.5;
-    font-size: 0.9vw !important;
+    font-size: 17.27px !important;
   }
   .aboutlist div.text h1,
   .aboutlist div.text h2,
@@ -906,7 +906,7 @@ input:focus {
   .aboutlist div.text h5,
   .aboutlist div.text h6 {
     font-weight: 600;
-    font-size: 1vw !important;
+    font-size: 19.2px !important;
   }
   .aboutlist div.text h1 *,
   .aboutlist div.text h2 *,
@@ -916,59 +916,59 @@ input:focus {
   .aboutlist div.text h6 *
   .aboutlist div.text strong * {
     font-weight: 600;
-    font-size: 1vw !important;
+    font-size: 19.2px !important;
   }
   .aboutlist div.text p {
     margin: 5px 0;
   }
   .aboutlist div.text *{
-  	font-size: 0.9vw !important; 
+  	font-size: 17.27px !important; 
     line-height:1.5;
     font-family: "微软雅黑" !important;
   }
   .aboutlist div.list {
-    margin-top: 2vw;
+    margin-top: 38.4px;
   }
   .aboutlist div.list h2 {
-    font-size: 1vw;
+    font-size: 19.2px;
     font-weight: 600;
   }
   .aboutlist div.list div {
-    margin-top: 2vw;
+    margin-top: 38.4px;
     width: 110%;
   }
   .aboutlist div.list div span {
     display: inline-block;
     background-color: white;
-    padding: 0.5vw 3vw;
-    border-radius: 2vw;
+    padding: 9.6px 57.59px;
+    border-radius: 38.4px;
     line-height: 2;
-    font-size: 0.9vw;
-    width: 12vw;
-    margin: 0.5vw 1.5vw 0 0;
+    font-size: 17.27px;
+    width: 230.39px;
+    margin: 9.6px 28.79px 0 0;
     text-align: center;
   }
   .aboutlist div.hd {
-    margin-top: 2vw;
+    margin-top: 38.4px;
   }
   .aboutlist div.hd h2 {
-    font-size: 1vw;
+    font-size: 19.2px;
     font-weight: 600;
   }
   .aboutlist div.hd ul {
-    margin-top: 1.5vw;
+    margin-top: 28.79px;
   }
   .aboutlist div.hd ul li {
     width: 46%;
     float: left;
     margin: 2%;
-    padding: 0.5vw;
+    padding: 9.6px;
     background-color: white;
   }
   .aboutlist div.hd ul li a {
     display: block;
     overflow: hidden;
-    height: 16vw;
+    height: 307.2px;
   }
   .aboutlist div.hd ul li a:hover img {
     transform: scale(1.1);
@@ -983,17 +983,17 @@ input:focus {
   }
   .teamcontent .teamTitle {
     text-align: center;
-    padding: 5vw 0;
+    padding: 96px 0;
   }
   .teamcontent .teamTitle.on span.a {
-    width: 7vw;
+    width: 134.4px;
     margin-right: 0;
   }
   .teamcontent .teamTitle.on span.a:before {
     opacity: 1;
   }
   .teamcontent .teamTitle.on span.b {
-    width: 7vw;
+    width: 134.4px;
     margin-left: 0;
     opacity: 1;
   }
@@ -1004,8 +1004,8 @@ input:focus {
     border-bottom: 2px solid #c9151e;
     position: relative;
     display: inline-block;
-    width: 3vw;
-    margin-right: 4vw;
+    width: 57.59px;
+    margin-right: 76.8px;
     transition: 0.6s width, 0.6s margin-right, opacity 0.6s;
   }
   .teamcontent .teamTitle span.a:before {
@@ -1022,21 +1022,21 @@ input:focus {
     transition: 0.3s opacity;
   }
   .teamcontent .teamTitle h2 {
-    font-size: 1.4vw;
+    font-size: 26.88px;
     font-weight: normal;
     color: black;
     display: inline-block;
     position: relative;
     transform: translateY(25%);
-    padding: 0 1.5vw;
+    padding: 0 28.79px;
     font-weight: 600;
   }
   .teamcontent .teamTitle span.b {
     border-bottom: 2px solid #c9151e;
     position: relative;
     display: inline-block;
-    width: 3vw;
-    margin-left: 4vw;
+    width: 57.59px;
+    margin-left: 76.8px;
     transition: 0.6s width, 0.6s margin-left;
   }
   .teamcontent .teamTitle span.b:before {
@@ -1054,8 +1054,10 @@ input:focus {
   }
   .teamcontent .teamList {
     overflow: hidden;
-    padding: 0 20%;
-    padding-bottom: 2vw;
+    padding: 0 0%;
+    width:1152px;
+    margin:0 auto;
+    padding-bottom: 38.4px;
   }
   .teamcontent .teamList ul li {
     width: 46%;
@@ -1065,8 +1067,8 @@ input:focus {
     border: 1px solid #dddddd;
   }
   .teamcontent .teamList ul li > p {
-    width: 13vw;
-    height: 17.5vw;
+    width: 249.60px;
+    height: 336px;
     overflow: hidden;
     float: left;
   }
@@ -1082,43 +1084,43 @@ input:focus {
     width: 100%;
   }
   .teamcontent .teamList ul li div {
-    margin-left: 13vw;
+    margin-left: 249.60px;
     position: relative;
-    height: 17.5vw;
+    height: 336px;
   }
   .teamcontent .teamList ul li div > a {
-    padding: 2vw 2vw;
+    padding: 38.4px 38.4px;
     display: block;
   }
   .teamcontent .teamList ul li div > a h2 {
-    font-size: 1.2vw;
+    font-size: 23.04px;
   }
   .teamcontent .teamList ul li div > a span {
     display: block;
-    margin-top: 1vw;
-    font-size: 0.8vw;
+    margin-top: 19.2px;
+    font-size: 15px;
     color: #999999;
   }
   .teamcontent .teamList ul li div p {
     position: absolute;
-    right: 2vw;
-    bottom: 2vw;
+    right: 38.4px;
+    bottom: 38.4px;
   }
   .teamcontent .teamList ul li div p a {
-    width: 3.5vw;
-    height: 3.5vw;
+    width: 67.2px;
+    height: 67.2px;
     border-radius: 50%;
-    margin-left: 2vw;
+    margin-left: 38.4px;
     background-color: #F8F8F8;
     display: inline-block;
     text-align: center;
-    line-height: 3.5vw;
+    line-height: 67.2px;
   }
   .teamcontent .teamList ul li div p a:hover{
   	box-shadow: 0 0 20px rgba(0,0,0,0.2);
   }
   .teamcontent .teamList ul li div p a i {
-    font-size: 1.3vw;
+    font-size: 24.95px;
     color: #666666;
   }
   .teamLeft {
@@ -1126,7 +1128,7 @@ input:focus {
     background-color: #F8F8F8 !important;
   }
   .teams {
-    margin-top: 3vw;
+    margin-top: 57.59px;
   }
   .teams > p {
     overflow: hidden;
@@ -1136,17 +1138,17 @@ input:focus {
     width: 100%;
   }
   .teams div.tle {
-    padding: 2vw 1vw;
+    padding: 38.4px 19.2px;
     text-align: center;
     background-color: white;
   }
   .teams div.tle h2 {
-    font-size: 1.3vw;
+    font-size: 24.95px;
     font-weight: 600;
   }
   .teams div.tle span {
-    font-size: 0.8vw;
-    margin-top: 1vw;
+    font-size: 15px;
+    margin-top: 19.2px;
     display: block;
   }
   .teams div.list {
@@ -1155,27 +1157,27 @@ input:focus {
   }
   .teams div.list p {
     border-top: 1px solid #DDDDDD;
-    padding: 1vw;
+    padding: 19.2px;
   }
   .teams div.list p span {
     display: block;
-    font-size: 0.8vw;
+    font-size: 15px;
     text-align: center;
   }
   .teams div.list p span i {
-    font-size: 0.8vw;
+    font-size: 15px;
     color: #c9151e;
-    margin-right: 0.5vw;
+    margin-right: 9.6px;
   }
   .teams div.list p font {
     display: block;
     text-align: center;
-    font-size: 0.7vw;
+    font-size: 13.44px;
     word-break: break-all;
   }
   .teams div.code {
-    margin-top: 2vw;
-    padding: 2vw;
+    margin-top: 38.4px;
+    padding: 38.4px;
     background-color: white;
   }
   .teams div.code p {
@@ -1184,35 +1186,35 @@ input:focus {
   }
   .teams div.code h2 {
     text-align: center;
-    margin-top: 1vw;
-    font-size: 0.8vw;
+    margin-top: 19.2px;
+    font-size: 15px;
   }
   .teams div.down {
-    margin-top: 4vw;
+    margin-top: 76.8px;
     text-align: center;
     background-color: white;
     line-height: 2;
-    font-size: 0.8vw;
-    border-radius: 2vw;
-    padding: 0.5vw 0;
+    font-size: 15px;
+    border-radius: 38.4px;
+    padding: 9.6px 0;
   }
   .teams div.down i {
-    font-size: 0.8vw;
-    margin-right: 1.5vw;
+    font-size: 15px;
+    margin-right: 28.79px;
   }
   .teamContent {
-    padding: 4vw 0;
+    padding: 76.8px 0;
   }
   .teamContent ul li > h2 {
-    font-size: 1vw;
+    font-size: 19.2px;
     font-weight: 600;
     position: relative;
-    padding-left: 1.5vw;
+    padding-left: 28.79px;
   }
   .teamContent ul li > h2:before {
     content: '';
-    width: 0.5vw;
-    height: 0.5vw;
+    width: 9.6px;
+    height: 9.6px;
     background-color: #c9151e;
     display: block;
     position: absolute;
@@ -1231,11 +1233,11 @@ input:focus {
     width: 85%;
   }
   .teamContent ul li > div {
-    padding: 1.5vw 2vw;
+    padding: 28.79px 38.4px;
   }
   .teamContent ul li > div *{
   	line-height: 1.5;
-    font-size: 0.9vw !important;
+    font-size: 17.27px !important;
   }
   .teamContent ul li > div h1,
   .teamContent ul li > div h2,
@@ -1244,7 +1246,7 @@ input:focus {
   .teamContent ul li > div h5,
   .teamContent ul li > div h6 {
     font-weight: 600;
-    font-size: 1vw !important;
+    font-size: 19.2px !important;
   }
   .teamContent ul li > div h1 *,
   .teamContent ul li > div h2 *,
@@ -1253,14 +1255,17 @@ input:focus {
   .teamContent ul li > div h5 *,
   .teamContent ul li > div h6 * {
     font-weight: 600;
-    font-size: 1vw !important;
+    font-size: 19.2px !important;
   }
   .teamContent ul li > div p {
     margin: 5px 0;
   }
   .contactTop {
     overflow: hidden;
-    padding: 0 12.5%;
+    padding: 0 0;
+    max-width:1440px;
+    margin:0 auto;
+    padding:0 20px;
   }
   .contactTop div.left {
     width: 50%;
@@ -1275,36 +1280,38 @@ input:focus {
     float: right;
   }
   .contactTop div.right h2 {
-    font-size: 1.1vw;
+    font-size: 21.11px;
     font-weight: 600;
     position: relative;
-    padding-bottom: 1vw;
+    padding-bottom: 19.2px;
   }
   .contactTop div.right h2:before {
     content: '';
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 3vw;
+    width: 57.59px;
     border-bottom: 3px solid #c9151e;
   }
   .contactTop div.right p {
-    margin-top: 2vw;
-    font-size: 0.8vw;
+    margin-top: 38.4px;
+    font-size: 15px;
   }
   .contactTop div.right p *{
-  	font-size: 0.8vw !important;
+  	font-size: 15px !important;
   }
   .contactBottom {
-    padding: 0 12.5%;
-    height: 42vw;
+    padding: 0 20px;
+    max-width:1440px;
+    margin:0 auto;
+    height: 806.4px;
   }
   .contactBottom ul li {
-    padding: 0.3vw 2vw;
-    border-radius: 2vw;
-    font-size: 0.8vw;
+    padding: 5.76px 38.4px;
+    border-radius: 38.4px;
+    font-size: 15px;
     display: inline-block;
-    margin: 0.5vw;
+    margin: 9.6px;
     cursor: pointer;
     line-height: 2;
   }
@@ -1314,76 +1321,80 @@ input:focus {
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
   }
   .contactBottom div.map {
-    margin: 5vw 0;
-    height: 60vw;
+    margin: 96px 0;
+    height: 1152px;
     background: url(../images/map2.png) no-repeat center;
     background-size: 100% 100%;
     position: relative;
     display: none;
-    transform: scale(0.5);
-    top: -19vw;
+    transform:scale(0.5) translateX(-50%);
+    top: -364.8px;
+    width: 1440px;
+    left: 20%;
   }
   .contactBottom div.map > div {
     position: absolute;
-    width: 50vw !important;
-    height: 14.3vw;
+    width: 960px !important;
+    height: 274.56px;
     background: url(../images/icon_map_bj.png) no-repeat left bottom;
-    background-size: 7vw;
+    background-size: 134.4px;
   }
   .contactBottom div.map > div > span {
     display: block;
     position: absolute;
-    bottom: 5.5vw;
-    font-size: 1.5vw;
+    bottom: 105.6px;
+    font-size: 28.79px;
     text-align: left;
   }
   .contactBottom div.map > div > div {
-    margin-left: 9vw;
+    margin-left: 172.79px;
     padding-top: 0;
   }
   .contactBottom div.map > div > div h2 {
-    font-size: 1.8vw;
+    font-size: 34.55px;
     font-weight: 600;
   }
   .contactBottom div.map > div > div div {
-    font-size: 1.5vw;
+    font-size: 28.79px;
     line-height: 2;
-    margin-top: 1vw;
+    margin-top: 19.2px;
   }
   .search {
-    padding: 5vw 12.5%;
+    padding: 96px 0;
+    width:1152px;
+    margin:0 auto;
   }
   .search div.top {
     width: 80%;
     margin: 0 auto;
-    height: 4vw;
+    height: 76.8px;
     border-bottom: 1px solid #DDDDDD;
     position: relative;
   }
   .search div.top i {
-    font-size: 1.1vw;
+    font-size: 21.11px;
     float: left;
     width: 3%;
-    height: 4vw;
-    line-height: 4vw;
+    height: 76.8px;
+    line-height: 76.8px;
     cursor: pointer;
     text-align: center;
   }
   .search div.top input {
     width: 94%;
     float: left;
-    height: 4vw;
-    line-height: 4vw;
+    height: 76.8px;
+    line-height: 76.8px;
     background-color: rgba(0, 0, 0, 0);
     border: 0;
     padding-left: 2%;
-    font-size: 1.1vw;
+    font-size: 21.11px;
   }
   .search div.top span {
     width: 3%;
     float: right;
-    height: 4vw;
-    line-height: 4vw;
+    height: 76.8px;
+    line-height: 76.8px;
     cursor: pointer;
   }
   .search div.top .searchlist{
@@ -1392,44 +1403,44 @@ input:focus {
   	top: 102%;
   	width: 97%;
   	background-color: white;
-  	max-height: 10vw;
+  	max-height: 192px;
   	overflow-y: auto;
   	overflow-x: hidden;
-  	padding:0 1vw;
+  	padding:0 19.2px;
   }
   .search div.top .searchlist p{
-  	font-size: 0.8vw;
-  	height: 2vw;
-    line-height: 2vw;
+  	font-size: 15px;
+  	height: 38.4px;
+    line-height: 38.4px;
     cursor: pointer;
   }
   .search div.top .searchlist p:hover{
   	color: #c9151e;
   }
   .search div.bottom {
-    margin-top: 5vw;
+    margin-top: 96px;
   }
   .search div.bottom > h2 {
-    font-size: 1.1vw;
+    font-size: 21.11px;
     font-weight: 600;
   }
   .search div.bottom > div {
-    margin-top: 5vw;
+    margin-top: 96px;
   }
   .search div.bottom > div p.null {
-    padding: 5vw 0;
+    padding: 96px 0;
     text-align: center;
-    font-size: 1.1vw;
+    font-size: 21.11px;
   }
   .search div.bottom > div ul li {
     border-top: 1px solid #DDDDDD;
-    padding: 1.5vw 0;
+    padding: 28.79px 0;
   }
   .search div.bottom > div ul li:last-child {
     border-bottom: 1px solid #DDDDDD;
   }
   .search div.bottom > div ul li h2 {
-    font-size: 1.1vw;
+    font-size: 21.11px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1442,30 +1453,32 @@ input:focus {
     -webkit-box-orient: vertical;
     line-height: 30px;
     line-height: 2;
-    margin-top: 1.5vw;
-    font-size: 0.9vw;
+    margin-top: 28.79px;
+    font-size: 17.27px;
     -webkit-line-clamp: 3;
   }
   .newsDetails {
-    padding: 5vw 20%;
+    padding: 96px 0%;
+    width:1152px;
+    margin:0 auto;
   }
   .newsDetails > h2 {
-    font-size: 1.1vw;
+    font-size: 21.11px;
     text-align: center;
     font-weight: 600;
   }
   .newsDetails > p {
     text-align: center;
-    margin-top: 1vw;
-    font-size: 0.9vw;
+    margin-top: 19.2px;
+    font-size: 17.27px;
     color: #666666;
   }
   .newsDetails div.content {
-    padding: 4vw 0;
+    padding: 76.8px 0;
   }
   .newsDetails div.content *{
   	line-height: 1.5;
-    font-size: 0.9vw !important;
+    font-size: 17.27px !important;
   }
   .newsDetails div.content h1,
   .newsDetails div.content h2,
@@ -1474,7 +1487,7 @@ input:focus {
   .newsDetails div.content h5,
   .newsDetails div.content h6 {
     font-weight: 600;
-    font-size: 1vw !important;
+    font-size: 19.2px !important;
   }
   .newsDetails div.content h1 *,
   .newsDetails div.content h2 *,
@@ -1483,7 +1496,7 @@ input:focus {
   .newsDetails div.content h5 *,
   .newsDetails div.content h6 * {
     font-weight: 600;
-    font-size: 1vw !important;
+    font-size: 19.2px !important;
   }
   .newsDetails div.content p {
     margin: 5px 0;
@@ -1492,7 +1505,7 @@ input:focus {
     overflow: hidden;
   }
   .newsDetails div.bottom a {
-    font-size: 0.9vw;
+    font-size: 17.27px;
     width: 49%;
   }
   .newsDetails div.bottom a:hover {
@@ -1505,79 +1518,79 @@ input:focus {
     float: right;
     text-align: right;
   }
-  #hdBanner{margin-top: 2vw; position: relative; overflow: hidden;}
+  #hdBanner{margin-top: 38.4px; position: relative; overflow: hidden;}
   #hdBanner .swiper-slide p img{width: 100%; max-width: none;}
   
    .wzfx> div {
    	margin:0 auto;
    	text-align: center;
-   	margin-top:1vw;
+   	margin-top:19.2px;
   }
   .wzfx>.bshare-custom.icon-medium a {
     display: inline-block;
-    margin-left: 1.5vw;
-    padding-left: 3vw;
-    height: 2vw;
+    margin-left: 28.79px;
+    padding-left: 57.59px;
+    height: 38.4px;
     background: url(../images/icon_jl_fx.png) left no-repeat;
-    background-size: 2vw;
-    line-height: 2vw;
-    font-size: 0.8vw;
+    background-size: 38.4px;
+    line-height: 38.4px;
+    font-size: 15px;
   }
   .wzfx>.bshare-custom.icon-medium a:hover {
     opacity: 1 !important;
   }
   .wzfx>.bshare-custom.icon-medium a.xz {
     background: url(../images/icon_jl_xz.png) left no-repeat;
-    background-size: 2vw;
+    background-size: 38.4px;
   }
   .wzfx>.bshare-custom.icon-medium a.ck {
     background: url(../images/shows.png) left no-repeat;
-    background-size: 2vw;
+    background-size: 38.4px;
   }
   
   .periodicalDetails .periodicaContent{
   	overflow: hidden;
-  	padding:4vw 0;
+  	padding:76.8px 0;
   }
   .periodicalDetails .periodicaContent .left{
-  	width:15vw;
+  	width:288px;
   	float:left;
   	border:1px solid #aaaaaa;
-  	padding-bottom: 2vw;
+  	padding-bottom: 38.4px;
   }
   .periodicalDetails .periodicaContent .left p{
   	width:90%;
   	margin:0 auto;
-  	padding:1vw 0;
+  	padding:19.2px 0;
   }
   .periodicalDetails .periodicaContent .left h2{
-  	font-size:0.8vw;
+  	font-size:15px;
   	margin:0 5%;
-  	margin-top:1vw;
+  	margin-top:19.2px;
   	line-height: 2;
   }
   .periodicalDetails .periodicaContent .left span{
-  	font-size:0.8vw;
+  	font-size:15px;
   	margin:0 5%;
-  	margin-top:0.5vw;
+  	margin-top:9.6px;
   	display: block;
   	line-height: 2;
   }
   .periodicalDetails .periodicaContent .content{
-  	margin-left:17vw;
+  	margin-left:326.4px;
   	padding:0;
   }
 
   .typicalPerformance .list{
     border-bottom: 1px solid #dddddd;
-    padding:2vw 0;
+    padding:38.4px 0;
   }
   .typicalPerformance .list .top{
     position: relative;
-    height: 2vw;
-    line-height: 2vw;
-    padding-left:2vw;
-    font-size:1.2vw;
+    height: 38.4px;
+    line-height: 38.4px;
+    padding-left:38.4px;
+    font-size:23.04px;
     cursor: pointer;
     font-weight: 600;
   }
@@ -1585,27 +1598,27 @@ input:focus {
     position: absolute;
     content: '';
     left: 0;
-    top:0.6vw;
-    width:0.8vw;
-    height: 0.8vw;
+    top:11.52px;
+    width:15px;
+    height: 15px;
     background-color:#c9151e;
     transform: rotate(45deg);
   }
   .typicalPerformance .bottom{
     line-height: 1.5;
-    font-size: 0.9vw !important;
+    font-size: 17.27px !important;
     background-color: white;
-    margin-top: 3vw;
+    margin-top: 57.59px;
     position: relative;
-    padding: 1.5vw;
+    padding: 28.79px;
     display: none;
   }
   .typicalPerformance .bottom .triangle {
       position: absolute;
-      left: 1vw;
+      left: 19.2px;
       top: 0;
       transform: translateY(-99%);
-      width: 2.5vw;
+      width: 48px;
   }
   .typicalPerformance .bottom h1,
   .typicalPerformance .bottom h2,
@@ -1615,7 +1628,7 @@ input:focus {
   .typicalPerformance .bottom h6,
   .typicalPerformance .bottom strong * {
     font-weight: 600;
-    font-size: 1vw !important;
+    font-size: 19.2px !important;
   }
   .typicalPerformance .bottom h1 *,
   .typicalPerformance .bottom h2 *,
@@ -1625,7 +1638,7 @@ input:focus {
   .typicalPerformance .bottom h6 *,
   .typicalPerformance .bottom strong * {
     font-weight: 600;
-    font-size: 1vw !important;
+    font-size: 19.2px !important;
   }
   .typicalPerformance .bottom p {
     margin: 5px 0;
@@ -1675,14 +1688,14 @@ input:focus {
   }
   .streamer div.headline span {
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     position: relative;
     transform: translateY(-50%);
   }
   .streamer div.headline font {
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 0.5;
   }
@@ -1726,7 +1739,7 @@ input:focus {
     border: 1px solid #dddddd;
     background-color: white;
     padding: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     width: 3rem;
     text-align: center;
     margin-right: -1rem;
@@ -1738,7 +1751,7 @@ input:focus {
     display: block;
   }
   div.article div.content > div.left span.btns i {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   div.article div.content > div.left span.btns i:first-child {
     display: block;
@@ -1756,7 +1769,7 @@ input:focus {
   div.article div.content > div.left.second ul li a i {
     float: right;
     transform: rotate(45deg);
-    font-size: 1rem;
+    font-size: 1.1rem;
     transition: 0.3s transform;
     color: #999999;
   }
@@ -1780,11 +1793,11 @@ input:focus {
   }
   div.article div.content > div.left div.top span {
     display: block;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   div.article div.content > div.left div.top font {
     display: block;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-top: 0.2rem;
   }
   div.article div.content > div.left ul {
@@ -1809,7 +1822,7 @@ input:focus {
   div.article div.content > div.left ul li a {
     display: block;
     padding: 1rem 0.5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5;
   }
   div.article div.content > div.right div.articleTitle {
@@ -1835,7 +1848,7 @@ input:focus {
     top: -0.25rem;
   }
   div.article div.content > div.right div.articleTitle h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: normal;
     color: black;
     display: inline-block;
@@ -1881,7 +1894,7 @@ input:focus {
   }
   div.article div.content > div.right div.professionalList ul li div.right h2 {
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1889,13 +1902,13 @@ input:focus {
   div.article div.content > div.right div.professionalList ul li div.right span {
     display: block;
     margin-top: 0.2rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #999999;
   }
   div.article div.content > div.right div.professionalList ul li div.right font {
     display: block;
     margin-top: 0rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #666666;
   }
   div.article div.content > div.right div.professionalList ul li div.right p {
@@ -1905,7 +1918,7 @@ input:focus {
     -webkit-box-orient: vertical;
     line-height: 30px;
     line-height: 1.5;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-top: 0.5rem;
     -webkit-line-clamp: 2;
   }
@@ -1950,7 +1963,7 @@ input:focus {
     margin: 0 0.5rem;
   }
   .pageview .link i {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .pageview .link:first-child {
     width: auto;
@@ -1988,12 +2001,12 @@ input:focus {
   .collegeList ul li a span {
     display: block;
     margin-top: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #999999;
   }
   .collegeList ul li a div {
     margin-top: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #999999;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2008,7 +2021,7 @@ input:focus {
     line-height: 1.5;
   }
   .productText * {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
     font-family: "微软雅黑" !important;
   }
   .productText h1,
@@ -2034,7 +2047,7 @@ input:focus {
     line-height: 1.5;
   }
   .introduceText * {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
     font-family: "微软雅黑" !important;
   }
   .introduceText h1,
@@ -2143,14 +2156,14 @@ input:focus {
     padding-bottom:12rem;
   }
   .advantageList h1,.advantageList h2,.advantageList h3,.advantageList h4,.advantageList h5,.advantageList h6,.advantageList strong{
-  	font-size: 1.3rem !important;
+  	font-size: 1.2rem !important;
   	line-height:2;
   }
   .advantageList h1 *,.advantageList h2 *,.advantageList h3 *,.advantageList h4 *,.advantageList h5 *,.advantageList h6 *,.advantageList strong *{
-  	font-size: 1.3rem !important;
+  	font-size: 1.2rem !important;
   	line-height:2;
   }
-  .advantageList *{font-size: 1rem !important; line-height:1.5; font-family: "微软雅黑" !important;}
+  .advantageList *{font-size: 1.1rem !important; line-height:1.5; font-family: "微软雅黑" !important;}
   .advantageList p{margin:5px 0;}
   .advantageList ul li {
     margin-top: 1rem;
@@ -2159,7 +2172,7 @@ input:focus {
     margin-top: 0;
   }
   .advantageList ul li h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding-left:2rem;
     height: 2rem;
     line-height: 2rem;
@@ -2179,7 +2192,7 @@ input:focus {
   .advantageList ul li div {
     text-indent: 2em;
     line-height: 1.8;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-top: 1rem;
     margin-left:2rem;
   }
@@ -2205,7 +2218,7 @@ input:focus {
   }
   .lndustryList ul li {
     margin-top: 1.5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     position: relative;
     padding-left: 1.5rem;
   }
@@ -2221,7 +2234,7 @@ input:focus {
     transform: rotate(45deg);
   }
   .honorList h2 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
   }
   .honorList ul {
@@ -2247,7 +2260,7 @@ input:focus {
     margin-top: 1rem;
   }
   .honorContent ul li p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     position: relative;
     padding-left: 1.5rem;
   }
@@ -2270,7 +2283,7 @@ input:focus {
   }
   .honorContent ul li div span {
     display: block;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5;
   }
   .culture .top {
@@ -2298,11 +2311,11 @@ input:focus {
     padding: 1rem;
   }
   .culture .top > div div h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
   }
   .culture .top > div div p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-top: 1rem;
   }
   .culture .bottom {
@@ -2311,10 +2324,10 @@ input:focus {
     padding-top: 1rem;
   }
   .culture .bottom > h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     position: relative;
-    padding-left: 2vw;
+    padding-left: 38.4px;
   }
   .culture .bottom > h2:before {
     content: '';
@@ -2330,7 +2343,7 @@ input:focus {
     line-height: 1.5;
   }
   .culture .bottom > div * {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
     font-family: "微软雅黑" !important;
   }
   .culture .bottom > div h1,
@@ -2357,7 +2370,7 @@ input:focus {
     margin: 5px 0;
   }
   .culture .bottom > div {
-    padding: 2vw;
+    padding: 38.4px;
     line-height: 1.5;
   }
   .newsList ul li {
@@ -2396,7 +2409,7 @@ input:focus {
     font-weight: 600;
   }
   .newsList ul li div{
-  	font-size: 1rem;
+  	font-size: 1.1rem;
   	margin-top:0.5rem;
   	overflow: hidden;
     text-overflow: ellipsis;
@@ -2421,7 +2434,7 @@ input:focus {
   .joinList div.list div.top span {
     display: block;
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #999999;
   }
   .joinList div.list{
@@ -2453,7 +2466,7 @@ input:focus {
   .joinList div.list div.bottom ul li p {
     line-height: 2;
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .joinList div.list div.bottom .triangle{
   	position: absolute;
@@ -2485,7 +2498,7 @@ input:focus {
     font-size: 1.2rem !important;
   }
   .aboutlist div.text * {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
     font-family: "微软雅黑" !important;
   }
   .aboutlist div.text p {
@@ -2508,7 +2521,7 @@ input:focus {
     border-radius: 2rem;
     margin: 0.5rem;
     line-height: 2;
-    font-size: 1rem;
+    font-size: 1.1rem;
     width: 8rem;
     text-align: center;
     margin-right: 0.5rem;
@@ -2566,7 +2579,7 @@ input:focus {
     top: -0.25rem;
   }
   .teamcontent .teamTitle h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: normal;
     color: black;
     display: inline-block;
@@ -2602,7 +2615,7 @@ input:focus {
   }
   .teamcontent .teamList ul li > p {
     width: 10rem;
-    height: 43.5vw;
+    height: 43.49vw;
     overflow: hidden;
     float: left;
   }
@@ -2620,7 +2633,7 @@ input:focus {
   .teamcontent .teamList ul li div {
     margin-left: 10rem;
     position: relative;
-    height: 43.5vw;
+    height: 43.49vw;
   }
   .teamcontent .teamList ul li div > a {
     padding: 1rem;
@@ -2632,7 +2645,7 @@ input:focus {
   .teamcontent .teamList ul li div > a span {
     display: block;
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #999999;
   }
   .teamcontent .teamList ul li div p {
@@ -2675,11 +2688,11 @@ input:focus {
     background-color: white;
   }
   .teams div.tle h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
   }
   .teams div.tle span {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-top: 1rem;
     display: block;
   }
@@ -2693,18 +2706,18 @@ input:focus {
   }
   .teams div.list p span {
     display: block;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: center;
   }
   .teams div.list p span i {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #c9151e;
-    margin-right: 0.5vw;
+    margin-right: 9.6px;
   }
   .teams div.list p font {
     display: block;
     text-align: center;
-    font-size: 0.8vw;
+    font-size: 15px;
     word-break: break-all;
   }
   .teams div.code {
@@ -2726,7 +2739,7 @@ input:focus {
     text-align: center;
     background-color: white;
     line-height: 2;
-    font-size: 1rem;
+    font-size: 1.1rem;
     border-radius: 1rem;
     padding: 0.5rem;
   }
@@ -2787,7 +2800,7 @@ input:focus {
     font-size: 1.2rem !important;
   }
   .teamContent ul li > div * {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
     font-family: "微软雅黑" !important;
   }
   .teamContent ul li > div p {
@@ -2805,7 +2818,7 @@ input:focus {
     margin-top: 1.5rem;
   }
   .contactTop div.right h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     position: relative;
     padding-bottom: 1rem;
@@ -2828,7 +2841,7 @@ input:focus {
   .contactBottom ul li {
     padding: 0.3rem 2rem;
     border-radius: 2rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: inline-block;
     margin: 0.5rem;
     cursor: pointer;
@@ -2874,7 +2887,7 @@ input:focus {
     position: relative;
   }
   .search div.top i {
-    font-size: 1.2vw;
+    font-size: 23.04px;
     float: left;
     width: 5%;
     height: 3rem;
@@ -2961,7 +2974,7 @@ input:focus {
     line-height: 30px;
     line-height: 1.5;
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     -webkit-line-clamp: 3;
   }
   .newsDetails {
@@ -2975,7 +2988,7 @@ input:focus {
   .newsDetails > p {
     text-align: center;
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #666666;
   }
   .newsDetails div.content {
@@ -3001,7 +3014,7 @@ input:focus {
     font-size: 1.2rem !important;
   }
   .newsDetails div.content * {
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
     font-family: "微软雅黑" !important;
   }
   .newsDetails div.content p {
@@ -3011,7 +3024,7 @@ input:focus {
     overflow: hidden;
   }
   .newsDetails div.bottom a {
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: block;
   }
   .newsDetails div.bottom a:hover {
@@ -3041,7 +3054,7 @@ input:focus {
     background: url(../images/icon_jl_fx.png) left no-repeat;
     background-size: 1.5rem;
     line-height: 1.5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .wzfx>.bshare-custom.icon-medium a:hover {
     opacity: 1 !important;
@@ -3104,7 +3117,7 @@ input:focus {
   .typicalPerformance .bottom h6,
   .typicalPerformance .bottom strong * {
     font-weight: 600;
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
   }
   .typicalPerformance .bottom h1 *,
   .typicalPerformance .bottom h2 *,
@@ -3114,7 +3127,7 @@ input:focus {
   .typicalPerformance .bottom h6 *,
   .typicalPerformance .bottom strong * {
     font-weight: 600;
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
   }
   .typicalPerformance .bottom p {
     margin: 5px 0;

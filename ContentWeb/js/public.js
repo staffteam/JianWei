@@ -147,7 +147,7 @@ function searchs(obj){
 	setTimeout(function(){
 		notp=true;
 	},200);
-	$(obj).parent().css({'border-bottom':'1px solid #dddddd','width':'46vw'});
+	$(obj).parent().css({'border-bottom':'1px solid #dddddd','width':'883.19px'});
 	$('.navbar-white .navbar-nav').animate({'opacity':'0'},300);
 	$(obj).parent().find('input').show().focus();
 	$(obj).parent().find('span').show().animate({'opacity':'1'},300);
@@ -160,8 +160,8 @@ function blurs(obj){
 	setTimeout(function(){
 		if(notp){
 			$(obj).val('').css({'opacity':'0'});
-			$(obj).parent().css({'border-bottom':'0 solid #dddddd','width':'2vw'});
-			$(obj).parent().find('i').css({'width':'2vw'})
+			$(obj).parent().css({'border-bottom':'0 solid #dddddd','width':'38.4px'});
+			$(obj).parent().find('i').css({'width':'38.4px'})
 			$(obj).parent().find('.searchlist').show().css({'opacity':'0'});
 			$('.navbar-white .navbar-nav').animate({'opacity':'1'},300);
 			$(obj).parent().find('span').animate({'opacity':'0'},300,function(){

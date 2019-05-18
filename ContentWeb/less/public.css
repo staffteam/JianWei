@@ -57,9 +57,12 @@ img {
 }
 @font-face {
   font-family: 'iconfont';
-  /* project id 1119181 */
-  src: url('//at.alicdn.com/t/font_1119181_7m3py25lubj.eot');
-  src: url('//at.alicdn.com/t/font_1119181_7m3py25lubj.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_1119181_7m3py25lubj.woff2') format('woff2'), url('//at.alicdn.com/t/font_1119181_7m3py25lubj.woff') format('woff'), url('//at.alicdn.com/t/font_1119181_7m3py25lubj.ttf') format('truetype'), url('//at.alicdn.com/t/font_1119181_7m3py25lubj.svg#iconfont') format('svg');
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/iconfont.woff2') format('woff2'),
+      url('../fonts/iconfont.woff') format('woff'),
+      url('../fonts/iconfont.ttf') format('truetype'),
+      url('../fonts/iconfont.svg#iconfont') format('svg');
 }
 .iconfont {
   font-family: "iconfont" !important;
@@ -86,30 +89,31 @@ input:focus {
 }
 
 @media (max-width: 1920px) and (min-width: 801px) {
+  body{min-width:1200px; overflow-x: auto;}
   .navbar-white {
     background-color: white;
-    height: 5vw;
+    height: 96px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   }
   .navbar-white .navbar-brand {
-    height: 5vw;
-    padding:1.5vw 0.8vw;
+    height: 96px;
+    padding:28.79px 15px;
   }
   .navbar-white .navbar-brand img {
     height: 100%;
   }
   .navbar-white .navbar-search {
     display: inline-block;
-    height: 2.5vw;
-    margin:1.25vw 0;
-    line-height: 2.5vw;
-    margin-left: 2vw;
-    width: 2vw;
+    height: 48px;
+    margin: 24px 0;
+    line-height: 48px;
+    margin-left: 38.4px;
+    width: 38.4px;
     transition: 0.3s width;
     z-index: 9;
     background-color: white;
     position: absolute;
-    right:6vw;
+    right:40px;
     top: 0;
   }
   .navbar-white .navbar-search .searchlist{
@@ -118,19 +122,19 @@ input:focus {
     top: 102%;
     width: 88%;
     left: 12%;
-    padding:0 1vw;
+    padding:0 19.2px;
     background-color: white;
     display: none;
     opacity: 0;
     transition: 0.3s opacity;
-    max-height: 10vw;
+    max-height: 192px;
     overflow-x:hidden;
     overflow-y: auto;
   }
   .navbar-white .navbar-search .searchlist p{
-  	font-size: 0.8vw;
-  	height: 2vw;
-  	line-height: 2vw;
+  	font-size: 15px;
+  	height: 38.4px;
+  	line-height: 38.4px;
   }
   .navbar-white .navbar-search .searchlist p:hover,.navbar-white .navbar-search .searchlist p.on{
   	color: #c9151e;
@@ -141,13 +145,13 @@ input:focus {
     position: absolute;
     right:0;
     top:0;
-    height: 2.2vw;
-    line-height: 2.2vw;
+    height: 42.23px;
+    line-height: 42.23px;
     cursor: pointer;
     display: none;
     opacity: 0;
   }
-  .navbar-white .navbar-search span i{font-size:1.3vw;}
+  .navbar-white .navbar-search span i{font-size:24.96px;}
   .navbar-white .navbar-search:hover {
     text-decoration: none;
   }
@@ -156,8 +160,8 @@ input:focus {
   }
   .container{position: relative;}
   .navbar-white .navbar-search i {
-    font-size: 1.6vw;
-    width:2vw;
+    font-size: 30.72px;
+    width:38.4px;
     text-align: center;
     color: #666666;
     float: left;
@@ -166,18 +170,18 @@ input:focus {
   .navbar-white .navbar-search input{
   	width: 78%;
   	border:0;
-  	font-size:1vw;
-    height: 2.2vw;
+  	font-size:19.2px;
+    height: 42.23px;
     display: none;
     opacity: 0;
     transition: 0.3s opacity;
   }
   .navbar-white .navbar-nav {
-    height: 5vw;
-    margin-left: 5vw;
+    height: 96px;
+    margin-left: 40px;
   }
   .navbar-white .navbar-nav > li {
-    height: 5vw;
+    height: 96px;
   }
   .navbar-white .navbar-nav > li.active > a {
     background-color: white;
@@ -193,10 +197,10 @@ input:focus {
     border-bottom: 4px solid #c9151e;
   }
   .navbar-white .navbar-nav > li > a {
-    padding: 1.5vw 1.5vw;
-    line-height: 2vw;
+    padding: 28.79px 28.79px;
+    line-height: 38.4px;
     position: relative;
-    font-size:0.78vw;
+    font-size:15px;
   }
   .navbar-white .navbar-nav > li > a:hover {
     background-color: white;
@@ -215,31 +219,31 @@ input:focus {
     margin-left: 5px;
   }
   .navbar-white .navbar-nav > li > ul li a {
-    line-height: 2vw;
-    font-size:0.78vw;
+    line-height: 38.4px;
+    font-size:15px;
   }
   .title {
     text-align: center;
-    height: 5vw;
-    width: 15vw;
+    height: 96px;
+    width: 288px;
     margin: 0 auto;
   }
   .title:hover > div > div {
-    width: 12vw;
+    width: 230.39px;
   }
   .title h2 {
-    font-size: 1.4vw;
+    font-size: 26.88px;
     font-weight: 600;
   }
   .title > div {
     margin: 0 auto;
-    margin-top: 1vw;
+    margin-top: 19.2px;
     display: block;
     position: relative;
-    width: 14vw;
+    width: 268.8px;
   }
   .title > div > div {
-    width: 14vw;
+    width: 268.8px;
     transition: 0.5s width;
     margin: 0 auto;
     position: relative;
@@ -303,7 +307,7 @@ input:focus {
   }
   .footer {
     background-color: #1b1b1b;
-    padding: 3vw 17.5%;
+    padding: 57.59px 17.5%;
   }
   .footer ul {
     overflow: hidden;
@@ -317,58 +321,58 @@ input:focus {
   .footer ul li a:first-child {
     color: #f8f8f8;
     opacity: 0.5;
-    margin-bottom: 0.5vw;
+    margin-bottom: 9.6px;
   }
   .footer ul li a {
     color: white;
-    font-size: 0.8vw;
+    font-size: 15px;
     line-height: 2;
     display: block;
   }
   .footer .bottom {
     width: 92%;
     margin: 0 auto;
-    margin-top: 2vw;
+    margin-top: 38.4px;
   }
   .footer .bottom div.left {
     display: inline-block;
     color: white;
     opacity: 0.8;
-    font-size: 0.8vw;
+    font-size: 15px;
   }
   .footer .bottom div.fenxiang {
     display: inline-block;
     position: relative;
-    top: 0.5vw;
-    margin-left: 1vw;
+    top: 9.6px;
+    margin-left: 19.2px;
   }
   .footer .bottom div.fenxiang p {
     display: inline-block;
     position: relative;
-    width: 2vw;
-    height: 2vw;
-    margin-left: 1vw;
+    width: 38.4px;
+    height: 38.4px;
+    margin-left: 19.2px;
     cursor: pointer;
   }
   .footer .bottom div.fenxiang p i {
     color: #c9151e;
-    font-size: 1.8vw;
+    font-size: 34.55px;
     border-radius: 50%;
     position: absolute;
     left: 0;
     z-index: 9;
     top: 0;
-    width: 2vw;
-    height: 2vw;
-    line-height: 2vw;
+    width: 38.4px;
+    height: 38.4px;
+    line-height: 38.4px;
   }
   .footer .bottom div.fenxiang p i:before {
     background-color: white;
-    width: 1.4vw;
-    height: 1.4vw;
-    line-height: 1.6vw;
-    top: 0.3vw;
-    left: 0.3vw;
+    width: 26.88px;
+    height: 26.88px;
+    line-height: 30.72px;
+    top: 5.76px;
+    left: 5.76px;
     border-radius: 50%;
     position: absolute;
     content: '';
@@ -384,8 +388,8 @@ input:focus {
     display: inline-block;
     color: white;
     opacity: 0.8;
-    font-size: 0.8vw;
-    margin-right: 3vw;
+    font-size: 15px;
+    margin-right: 57.59px;
   }
   .bsTop {
     width: auto !important;
@@ -398,7 +402,7 @@ input:focus {
     margin: 16px !important;
   }
   .navHeight {
-    height: 5vw;
+    height: 96px;
   }
   .nav .open > a,
   .nav .open > a:focus,
@@ -411,39 +415,39 @@ input:focus {
     color: #c9151e;
   }
   .wxfx {
-    padding: 1vw;
+    padding: 19.2px;
   }
   .wxfx h2 {
     text-align: center;
-    font-size: 0.8vw;
+    font-size: 15px;
   }
   .wxfx div {
-    margin-top: 1vw;
+    margin-top: 19.2px;
     text-align: center;
   }
   .wxfx div p{
   	display: inline-block;
-  	margin: 0 1vw 0 1vw;
-  	width: 10vw;
-  	height: 10vw;
+  	margin: 0 19.2px 0 19.2px;
+  	width: 192px;
+  	height: 192px;
   }
   .theTop {
     position: fixed;
-    bottom: 10vw;
+    bottom: 192px;
     display: none;
     border-radius: 50%;
     cursor: pointer;
-    right: 5vw;
-    width: 5vw;
-    height: 5vw;
+    right: 96px;
+    width: 96px;
+    height: 96px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    line-height: 5vw;
+    line-height: 96px;
     z-index: 999;
   }
   .theTop i {
-    font-size: 1.4vw;
+    font-size: 26.88px;
   }
   .theTop.show {
     display: block;
@@ -453,27 +457,19 @@ input:focus {
   }
   .theTop span{
   	position: absolute;
-  	left: -11vw;
-  	width: 11vw;
-  	top: 0.5vw;
-  	line-height: 3.9vw;
+  	left: -211.2px;
+  	width: 211.2px;
+  	top: 9.6px;
+  	line-height: 74.88px;
 		display: none;
   }
   .theTop span font{
   	position: absolute;
   	top:0;
   	left: 0;
-  	width:9.5vw;
+  	width:180.4px;
   	color: white;
-  	font-size: 0.85vw;
-  }
-}
-@media (max-width: 1400px) and (min-width: 801px) {
-  .navbar-white .navbar-search i {
-    font-size: 20px;
-  }
-  .navbar-white .navbar-nav > li > a {
-    padding: 1.5vw 1vw;
+  	font-size: 16.32px;
   }
 }
 @media (max-width: 800px) {
@@ -525,6 +521,9 @@ input:focus {
   .navbar-white .navbar-search > i {
     display: none;
   }
+  .navbar-white .navbar-search >span{
+    display: none;
+  }
   .navbar-white #menu {
     background-color: white;
     border-bottom: 1px solid #DDDDDD;
@@ -532,6 +531,7 @@ input:focus {
   .navbar-white .navbar-nav > li > a {
     padding: 0.5rem 1rem;
     line-height: 2rem;
+    font-size:1.2rem;
   }
   .navbar-white .navbar-nav > li > a > span.caret {
     margin-left: 5px;
@@ -638,7 +638,7 @@ input:focus {
   .footer ul li a:first-child {
     color: #f8f8f8;
     opacity: 0.5;
-    margin-bottom: 0.5vw;
+    margin-bottom: 9.6px;
   }
   .footer ul li a {
     color: white;
@@ -653,7 +653,7 @@ input:focus {
   .footer .bottom div.left {
     color: white;
     opacity: 0.8;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 2;
     padding: 1rem 0;
   }
@@ -703,7 +703,7 @@ input:focus {
     display: inline-block;
     color: white;
     opacity: 0.8;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-right: 2rem;
   }
   .bsTop {
@@ -752,17 +752,17 @@ input:focus {
     z-index: 999;
   }
   .theTop i {
-    font-size: 1.3rem; 
+    font-size: 1.2rem; 
   }
   .theTop.show {
     display: block;
   }
   .theTop span{
   	position: absolute;
-  	left: -11vw;
-  	width: 11vw;
-  	top: 0.5vw;
-  	line-height: 3.9vw;
+  	left: -211.2px;
+  	width: 211.2px;
+  	top: 9.6px;
+  	line-height: 74.88px;
 		display: none;
   }
 }
