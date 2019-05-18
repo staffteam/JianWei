@@ -469,6 +469,7 @@ input:focus {
     transform: translateY(-50%) translateX(-50%);
     top: 40%;
     opacity: 0;
+    width:400px;
   }
   .backs div.b {
     font-size: 24.95px;
@@ -939,7 +940,7 @@ input:focus {
     opacity: 0;
   }
   .backs div.b {
-    font-size: 26.88px;
+    font-size: 1rem;
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -947,9 +948,9 @@ input:focus {
     transform: translateY(-50%) translateX(-50%);
     top: 55%;
     width: 70%;
-    letter-spacing: 19.2px;
-    text-indent: 19.2px;
-    padding: 0 96px;
+    letter-spacing: 0.2rem;
+    text-indent: 0.2rem;
+    padding: 0 3rem;
     text-align: center;
   }
   .backs div.b:before {
@@ -957,7 +958,7 @@ input:focus {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 76.8px;
+    width: 2rem;
     border-bottom: 2px solid #c9151e;
     position: absolute;
     display: block;
@@ -967,7 +968,7 @@ input:focus {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 76.8px;
+    width: 2rem;
     border-bottom: 2px solid #c9151e;
     position: absolute;
     display: block;
