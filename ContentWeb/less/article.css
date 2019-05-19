@@ -74,7 +74,7 @@ input:focus {
   .streamer div.location {
     position: absolute;
     bottom: 10%;
-    font-weight: 100;
+    font-weight: 500;
     left: 20%;
     color: white;
     font-size: 19.2px;
@@ -1263,12 +1263,12 @@ input:focus {
   .contactTop {
     overflow: hidden;
     padding: 0 0;
-    max-width:1440px;
+    width:1200px;
     margin:0 auto;
     padding:0 20px;
   }
   .contactTop div.left {
-    width: 50%;
+    width: 700px;
     float: left;
   }
   .contactTop div.left img {
@@ -1276,7 +1276,7 @@ input:focus {
     width: 100%;
   }
   .contactTop div.right {
-    width: 45%;
+    width: 392px;
     float: right;
   }
   .contactTop div.right h2 {
@@ -1302,12 +1302,12 @@ input:focus {
   }
   .contactBottom {
     padding: 0 20px;
-    max-width:1440px;
+    width:1200px;
     margin:0 auto;
     height: 806.4px;
   }
   .contactBottom ul li {
-    padding: 5.76px 38.4px;
+    padding: 5.76px 38px;
     border-radius: 38.4px;
     font-size: 15px;
     display: inline-block;
@@ -1702,7 +1702,7 @@ input:focus {
   .streamer div.location {
     position: absolute;
     bottom: 8%;
-    font-weight: 100;
+    font-weight: 500;
     left: 10%;
     color: white;
     font-size: 1.2rem;
