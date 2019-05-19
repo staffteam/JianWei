@@ -189,9 +189,11 @@ function inputs(obj){
     });
     $(obj).parent().find('.searchlist p').click(function(){
     	notp=false;
+		$("#headsearch").val($(this).html());
+		$("#headsearch").focus();
+		$("#searchs").val($(this).html());
+		$("#searchs").focus();
 		setTimeout(function(){notp=true;},110);
-		var locations = location.protocol+'//'+location.host;
-		location.href=locations+'/Search?value='+$(this).html();
     });
 }
 function headsearchDel(){
@@ -212,7 +214,7 @@ function weixin(){
 	  type: 1,
 	  title: false,
 	  area:arrs,
-	  content: '<div class="wxfx"><h2>关注微信公众号</h2><div><p><img src="../../ContentWeb/images/weixin.jpg" /></p><p><img src="../../ContentWeb/images/weixin.jpg" /></p></div></div>'
+	  content: $('#weixin').html()
 	});
 }
 

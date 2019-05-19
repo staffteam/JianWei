@@ -44,7 +44,7 @@ $(function() {
 		$('.map >div').attr('style',jsons[$(this).html()]);
 		$('.map').show();
 		if($(window).width()>=800){
-			$('body,html').animate({scrollTop:$('.map >div').offset().top-($(window).width()*0.06)},300)
+			//$('body,html').animate({scrollTop:$('.map >div').offset().top-($(window).width()*0.06)},300)
 		}
 		$('.map >div>span').html($(this).html());
 		$('.map >div>div h2').html($(this).attr('data-title'));
@@ -53,9 +53,8 @@ $(function() {
 	//搜索
 	$('#searchs').keydown(function(){
 		if(event.keyCode==13)
-	    {
-	          $('#searchTitle').html($(this).val());  
-	          $('#searchContent').html('<p class="null">- 暂无内容 -</p>');
+	    {	          $('#searchTitle').html($(this).val());  
+            	dataLoad(0);
 	    }
 	})
 	$('span.btns').click(function(){
@@ -82,4 +81,3 @@ function deleteNull(){
 	$('#searchs').val('');  
 	$('#searchTitle').html('');  
 }
-
