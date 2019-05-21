@@ -209,7 +209,7 @@ function theTop(){
 }
 //微信
 function weixin(){
-	var arrs = $(window).width()>800?['26vw','14.5vw']:['22rem','13rem'];
+	var arrs = $(window).width()>800?['500px','278px']:['22rem','13rem'];
 	layer.open({
 	  type: 1,
 	  title: false,

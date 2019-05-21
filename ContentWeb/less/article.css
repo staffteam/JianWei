@@ -422,24 +422,24 @@ input:focus {
     line-height: 1.5;
   }
   .productText h1,.productText h2,.productText h3,.productText h4,.productText h5,.productText h6,.productText strong{
-  	font-size: 19.2px !important;
+  	font-size: 19.2px ;
   	line-height:2;
   }
   .productText h1 *,.productText h2 *,.productText h3 *,.productText h4 *,.productText h5 *,.productText h6 *,.productText strong *{
-  	font-size: 19.2px !important;
+  	font-size: 19.2px ;
   	line-height:2;
   }
-  .productText *{font-size: 17.27px !important; line-height:1.5; font-family: "微软雅黑" !important;}
+  .productText *{font-size: 17.27px ; line-height:1.5; font-family: "微软雅黑" !important;}
   .productText p{margin:5px 0;}
   .introduceText h1,.introduceText h2,.introduceText h3,.introduceText h4,.introduceText h5,.introduceText h6,.introduceText strong{
-  	font-size: 19.2px !important;
+  	font-size: 19.2px ;
   	line-height:2;
   }
   .introduceText h1 *,.introduceText h2 *,.introduceText h3 *,.introduceText h4 *,.introduceText h5 *,.introduceText h6 *,.introduceText strong *{
-  	font-size: 19.2px !important;
+  	font-size: 19.2px ;
   	line-height:2;
   }
-  .introduceText *{font-size: 17.27px !important; line-height:1.5; font-family: "微软雅黑" !important;}
+  .introduceText *{font-size: 17.27px ; line-height:1.5; font-family: "微软雅黑" !important;}
   .introduceText p{margin:5px 0;}
   .productList {
     overflow: hidden;
@@ -528,14 +528,14 @@ input:focus {
     padding-bottom:345.59px;
   }
   .advantageList h1,.advantageList h2,.advantageList h3,.advantageList h4,.advantageList h5,.advantageList h6,.advantageList strong{
-  	font-size: 19.2px !important;
+  	font-size: 19.2px ;
   	line-height:2;
   }
   .advantageList h1 *,.advantageList h2 *,.advantageList h3 *,.advantageList h4 *,.advantageList h5 *,.advantageList h6 *,.advantageList strong *{
-  	font-size: 19.2px !important;
+  	font-size: 19.2px ;
   	line-height:2;
   }
-  .advantageList *{font-size: 17.27px !important; line-height:1.5; font-family: "微软雅黑" !important;}
+  .advantageList *{font-size: 17.27px ; line-height:1.5; font-family: "微软雅黑" !important;}
   .advantageList p{margin:5px 0;}
   .advantageList ul li {
     margin-top: 38.4px;
@@ -731,7 +731,7 @@ input:focus {
   .culture .bottom > div h5,
   .culture .bottom > div h6,
   .culture .bottom > div strong {
-  	font-size: 19.2px !important;
+  	font-size: 19.2px ;
   	line-height:2;
     font-weight: 600;
   }
@@ -742,7 +742,7 @@ input:focus {
   .culture .bottom > div h5 *,
   .culture .bottom > div h6 *,
   .culture .bottom > div strong * {
-  	font-size: 19.2px !important;
+  	font-size: 19.2px ;
   	line-height:2;
     font-weight: 600;
   }
@@ -750,7 +750,7 @@ input:focus {
     margin: 5px 0;
   }
   .culture .bottom > div *{
-  	font-size: 17.27px !important; 
+  	font-size: 17.27px ; 
     line-height:1.5;
     font-family: "微软雅黑" !important;
   }
@@ -840,7 +840,7 @@ input:focus {
   }
   .joinList div.list div.bottom{
   	line-height: 1.5;
-    font-size: 17.27px !important;
+    font-size: 17.27px ;
     background-color: white;
     margin-top:57.59px;
     position: relative;
@@ -862,7 +862,7 @@ input:focus {
   .joinList div.list div.bottom h6,
   .joinList div.list div.bottom strong * {
     font-weight: 600;
-    font-size: 19.2px !important;
+    font-size: 19.2px ;
   }
   .joinList div.list div.bottom h1 *,
   .joinList div.list div.bottom h2 *,
@@ -872,15 +872,15 @@ input:focus {
   .joinList div.list div.bottom h6 *,
   .joinList div.list div.bottom strong * {
     font-weight: 600;
-    font-size: 19.2px !important;
+    font-size: 19.2px ;
   }
   .joinList div.list div.bottom p {
     margin: 5px 0;
   }
   .joinList div.list div.bottom ul li:first-child{margin-top:0;}
   .joinList div.list{
-  	padding-bottom: 48px !important;
-  	margin-top:48px !important;
+  	padding-bottom: 48px ;
+  	margin-top:48px ;
   	border-bottom: 1px solid #DDDDDD;
   }
   .joinList div.list:first-child{
@@ -891,13 +891,13 @@ input:focus {
   	padding-bottom: 0 !important;
   }
   .joinList div.list div.bottom *{
-  	font-size: 17.27px !important; 
+  	font-size: 17.27px ; 
     line-height:1.5;
     font-family: "微软雅黑" !important;
   }
   .aboutlist div.text {
     line-height: 1.5;
-    font-size: 17.27px !important;
+    font-size: 17.27px ;
   }
   .aboutlist div.text h1,
   .aboutlist div.text h2,
@@ -906,7 +906,7 @@ input:focus {
   .aboutlist div.text h5,
   .aboutlist div.text h6 {
     font-weight: 600;
-    font-size: 19.2px !important;
+    font-size: 19.2px ;
   }
   .aboutlist div.text h1 *,
   .aboutlist div.text h2 *,
@@ -916,13 +916,13 @@ input:focus {
   .aboutlist div.text h6 *
   .aboutlist div.text strong * {
     font-weight: 600;
-    font-size: 19.2px !important;
+    font-size: 19.2px ;
   }
   .aboutlist div.text p {
     margin: 5px 0;
   }
   .aboutlist div.text *{
-  	font-size: 17.27px !important; 
+  	font-size: 17.27px ; 
     line-height:1.5;
     font-family: "微软雅黑" !important;
   }
@@ -1237,7 +1237,7 @@ input:focus {
   }
   .teamContent ul li > div *{
   	line-height: 1.5;
-    font-size: 17.27px !important;
+    font-size: 17.27px ;
   }
   .teamContent ul li > div h1,
   .teamContent ul li > div h2,
@@ -1246,7 +1246,7 @@ input:focus {
   .teamContent ul li > div h5,
   .teamContent ul li > div h6 {
     font-weight: 600;
-    font-size: 19.2px !important;
+    font-size: 19.2px ;
   }
   .teamContent ul li > div h1 *,
   .teamContent ul li > div h2 *,
@@ -1255,7 +1255,7 @@ input:focus {
   .teamContent ul li > div h5 *,
   .teamContent ul li > div h6 * {
     font-weight: 600;
-    font-size: 19.2px !important;
+    font-size: 19.2px ;
   }
   .teamContent ul li > div p {
     margin: 5px 0;
@@ -1298,7 +1298,7 @@ input:focus {
     font-size: 15px;
   }
   .contactTop div.right p *{
-  	font-size: 15px !important;
+  	font-size: 15px ;
   }
   .contactBottom {
     padding: 0 20px;
@@ -1478,7 +1478,7 @@ input:focus {
   }
   .newsDetails div.content *{
   	line-height: 1.5;
-    font-size: 17.27px !important;
+    font-size: 17.27px ;
   }
   .newsDetails div.content h1,
   .newsDetails div.content h2,
@@ -1487,7 +1487,7 @@ input:focus {
   .newsDetails div.content h5,
   .newsDetails div.content h6 {
     font-weight: 600;
-    font-size: 19.2px !important;
+    font-size: 19.2px ;
   }
   .newsDetails div.content h1 *,
   .newsDetails div.content h2 *,
@@ -1496,7 +1496,7 @@ input:focus {
   .newsDetails div.content h5 *,
   .newsDetails div.content h6 * {
     font-weight: 600;
-    font-size: 19.2px !important;
+    font-size: 19.2px ;
   }
   .newsDetails div.content p {
     margin: 5px 0;
@@ -1606,7 +1606,7 @@ input:focus {
   }
   .typicalPerformance .bottom{
     line-height: 1.5;
-    font-size: 17.27px !important;
+    font-size: 17.27px ;
     background-color: white;
     margin-top: 57.59px;
     position: relative;
@@ -1628,7 +1628,7 @@ input:focus {
   .typicalPerformance .bottom h6,
   .typicalPerformance .bottom strong * {
     font-weight: 600;
-    font-size: 19.2px !important;
+    font-size: 19.2px ;
   }
   .typicalPerformance .bottom h1 *,
   .typicalPerformance .bottom h2 *,
@@ -1638,7 +1638,7 @@ input:focus {
   .typicalPerformance .bottom h6 *,
   .typicalPerformance .bottom strong * {
     font-weight: 600;
-    font-size: 19.2px !important;
+    font-size: 19.2px ;
   }
   .typicalPerformance .bottom p {
     margin: 5px 0;
@@ -1954,7 +1954,7 @@ input:focus {
     cursor: pointer;
     color: #000000;
     font-size: 1.2rem;
-    border: 0px !important;
+    border: 0 !important;
     border-radius: 50%;
     height: 2.5rem;
     line-height: 2.5rem;
