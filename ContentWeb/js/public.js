@@ -9,6 +9,7 @@ $(function() {
 		}
 
 	}
+	$('.streamer').addClass('on');
 	if($(window).width()>800){
 		$('#menu >ul>li').hover(function(){
 		$(this).addClass("open");
@@ -26,7 +27,12 @@ $(function() {
 	
 	//logo初始化
 	publicObj.wap()?$('.header .nav>ul>li').eq(3).before('<li class="logo"><a href="/"><img src="../../Contentweb/images/logo.png" /></a></li>'):'';
-	
+	if($('.teamTitle').length>0 && $('body,html').scrollTop()>$('.teamTitle').offset().top-($(window).height()*0.5)){
+		$('.teamTitle').addClass('on');
+	}
+	if($('.articleTitle').length>0 && $('body,html').scrollTop()>$('.articleTitle').offset().top-($(window).height()*0.5)){
+		$('.articleTitle').addClass('on');
+	}
 	//導航wap
 	var articleTop = $('.article .content>.left').length>0?$('.article .content>.left').offset().top-($(window).width()*0.05):0;
 	    $('.wapbtn').click(function(){
@@ -103,7 +109,13 @@ $(function() {
 		    			}
 		    		}
 		    	}
-	    	}
+			}
+			if($('.teamTitle').length>0 && $('body,html').scrollTop()>$('.teamTitle').offset().top-($(window).height()*0.5)){
+				$('.teamTitle').addClass('on');
+			}
+			if($('.articleTitle').length>0 && $('body,html').scrollTop()>$('.articleTitle').offset().top-($(window).height()*0.5)){
+				$('.articleTitle').addClass('on');
+			}
 	    })
 	    
 	    //搜索

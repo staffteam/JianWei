@@ -110,7 +110,7 @@
                 </div>
                 <ul>
                     <li class="on">
-                        <a href="javascript:">城市更新<i class="iconfont">&#xe60e;</i></a>
+                        <a href="javascript:">城市更新<i class="iconfont">&#xe62a;</i></a>
                         <div>
                             <p class="on"><a href="">产品介绍</a></p>
                             <p><a href="">典型业绩</a></p>
@@ -144,7 +144,7 @@
                 </div>
                 <div class="typicalPerformance">
                     <div class="list">
-                        <div class="top">徐州粤海水务有限责任公司2019年度第一期资产支持票据项目</div>
+                        <div class="top">徐州粤海水务有限责任公司2019年度第一期资产支持票据项目<i class="iconfont">&#xe62a;</i></div>
                         <div class="bottom">
                             <span class="triangle"><img src="../../ContentWeb/images/icon_triangle.png"></span>
                             <div>
@@ -158,7 +158,7 @@
                         </div>
                     </div>
                     <div class="list">
-                        <div class="top">某股权投资基金投资深圳长租公寓项目</div>
+                        <div class="top">某股权投资基金投资深圳长租公寓项目<i class="iconfont">&#xe62a;</i></div>
                         <div class="bottom">
                             <span class="triangle"><img src="../../ContentWeb/images/icon_triangle.png"></span>
                             <div>
@@ -169,7 +169,7 @@
                         </div>
                     </div>
                     <div class="list">
-                        <div class="top">某集团收购一家融资担保公司项目</div>
+                        <div class="top">某集团收购一家融资担保公司项目<i class="iconfont">&#xe62a;</i></div>
                         <div class="bottom">
                             <span class="triangle"><img src="../../ContentWeb/images/icon_triangle.png"></span>
                             <div>
@@ -185,8 +185,10 @@
                     $(function(){
                         $('.typicalPerformance .list .top').click(function(){
                             if($(this).parent().find('.bottom').css('display')=='none'){
+                                $(this).addClass('on');
                                 $(this).parent().find('.bottom').show();
                             }else{
+                                $(this).removeClass('on');
                                 $(this).parent().find('.bottom').hide();
                             }
                         })

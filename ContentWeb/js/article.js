@@ -70,12 +70,6 @@ $(function() {
 			}
 		}
 	});
-	$('.teamTitle').hover(function(){
-		$(this).addClass('on');
-	});
-	$('.articleTitle').hover(function(){
-		$(this).addClass('on');
-	});
 })
 function deleteNull(){
 	$('#searchs').val('');  

@@ -27,6 +27,11 @@ input:focus {
   .streamer p img {
     max-width: none;
     width: 100%;
+    transform: scale(1.5);
+    transition: 3s transform;
+  }
+  .streamer.on p img{
+    transform: scale(1);
   }
   .streamer div.headline {
     position: absolute;
@@ -91,10 +96,11 @@ input:focus {
     padding-bottom: 96px;
   }
   div.article div.content {
-    width: 1152px;
+    width: 1192px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    padding: 0 20px 20px 20px;
   }
   div.article div.content > div.left {
     width: 288px;
@@ -105,7 +111,7 @@ input:focus {
     display: none;
   }
   div.article div.content > div.left.second ul li.on a i {
-    transform: rotate(0deg);
+    transform: rotate(90deg);
     color: white;
   }
   div.article div.content > div.left.second ul li a {
@@ -114,7 +120,7 @@ input:focus {
   }
   div.article div.content > div.left.second ul li a i {
     float: right;
-    transform: rotate(45deg);
+    transform: rotate(0deg);
     font-size: 17.27px;
     transition: 0.3s transform;
     color: #999999;
@@ -326,10 +332,10 @@ input:focus {
   div.article div.content > div.right div.professionalList ul li div.right > div a {
     display: inline-block;
     margin-left: 28.79px;
-    padding-left: 57.59px;
+    padding-left: 30px;
     height: 38.4px;
     background: url(../images/icon_jl_fx.png) left no-repeat;
-    background-size: 38.4px;
+    background-size: 25px;
     line-height: 38.4px;
     font-size: 15px;
   }
@@ -338,7 +344,7 @@ input:focus {
   }
   div.article div.content > div.right div.professionalList ul li div.right > div a.xz {
     background: url(../images/icon_jl_xz.png) left no-repeat;
-    background-size: 38.4px;
+    background-size: 25px;
   }
   .pageview {
     text-align: center;
@@ -420,6 +426,29 @@ input:focus {
   .productText {
     padding: 0 0 0 0;
     line-height: 1.5;
+    border: 3px solid #c9151e;
+    padding: 30px;
+    position: relative;
+  }
+  .productText::before{
+    position: absolute;
+    left:-3px;
+    top:50%;
+    content: '';
+    display:block;
+    transform: translateY(-50%);
+    border-left:3px solid #f8f8f8;
+    height: 170px;
+  }
+  .productText::after{
+    position: absolute;
+    right:-3px;
+    top:50%;
+    content: '';
+    display:block;
+    transform: translateY(-50%);
+    border-right:3px solid #f8f8f8;
+    height: 170px;
   }
   .productText h1,.productText h2,.productText h3,.productText h4,.productText h5,.productText h6,.productText strong{
   	font-size: 19.2px ;
@@ -447,6 +476,7 @@ input:focus {
     background:url(../images/zyly_bottom.jpg) no-repeat bottom;
     background-size:100% auto;
     background-color:white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
   }
   .productList ul li{
     padding-bottom:76.8px;
@@ -526,6 +556,7 @@ input:focus {
     background-size:100% auto;
     background-color:white;
     padding-bottom:345.59px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
   }
   .advantageList h1,.advantageList h2,.advantageList h3,.advantageList h4,.advantageList h5,.advantageList h6,.advantageList strong{
   	font-size: 19.2px ;
@@ -572,6 +603,7 @@ input:focus {
     background-color: white;
     padding: 57.59px;
     margin-bottom: 38.4px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
   }
   .lndustryList > h2 {
     font-size: 19.2px;
@@ -601,9 +633,9 @@ input:focus {
     background-color: #c9151e;
     display: block;
     position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
+    left: 5px;
+    top: 7px;
+    transform: rotate(45deg);
   }
   .honorList h2 {
     font-size: 15px;
@@ -748,6 +780,14 @@ input:focus {
   }
   .culture .bottom > div p {
     margin: 5px 0;
+    overflow: hidden;
+  }
+  .culture .bottom > div p img{
+    transform: scale(1);
+    transition: 0.3s transform;
+  }
+  .culture .bottom > div p:hover img{
+    transform: scale(1.1);
   }
   .culture .bottom > div *{
   	font-size: 17.27px ; 
@@ -820,6 +860,9 @@ input:focus {
     font-size: 23.04px;
     font-weight: 600;
   }
+  .joinList div.list div.top:hover h2,.joinList div.list div.top.on h2{
+    color:#c9151e;
+  }
   .joinList div.list div.top span {
     display: block;
     margin-top: 19.2px;
@@ -846,6 +889,7 @@ input:focus {
     position: relative;
     padding: 28.79px;
     display: none;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
   }
   .joinList div.list div.bottom .triangle{
   	position: absolute;
@@ -1529,10 +1573,10 @@ input:focus {
   .wzfx>.bshare-custom.icon-medium a {
     display: inline-block;
     margin-left: 28.79px;
-    padding-left: 57.59px;
+    padding-left: 30px;
     height: 38.4px;
     background: url(../images/icon_jl_fx.png) left no-repeat;
-    background-size: 38.4px;
+    background-size: 25px;
     line-height: 38.4px;
     font-size: 15px;
   }
@@ -1541,11 +1585,11 @@ input:focus {
   }
   .wzfx>.bshare-custom.icon-medium a.xz {
     background: url(../images/icon_jl_xz.png) left no-repeat;
-    background-size: 38.4px;
+    background-size: 25px;
   }
   .wzfx>.bshare-custom.icon-medium a.ck {
     background: url(../images/shows.png) left no-repeat;
-    background-size: 38.4px;
+    background-size: 25px;
   }
   
   .periodicalDetails .periodicaContent{
@@ -1594,6 +1638,14 @@ input:focus {
     cursor: pointer;
     font-weight: 600;
   }
+  .typicalPerformance .list .top i{
+    margin-left:10px;
+    font-size:23.04px;
+    color:#c9151e;
+  }
+  .typicalPerformance .list .top:hover,.typicalPerformance .list .top.on{
+    color:#c9151e;
+  }
   .typicalPerformance .list .top::before{
     position: absolute;
     content: '';
@@ -1612,7 +1664,8 @@ input:focus {
     position: relative;
     padding: 28.79px;
     display: none;
-  }
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }  
   .typicalPerformance .bottom .triangle {
       position: absolute;
       left: 19.2px;
@@ -1721,7 +1774,6 @@ input:focus {
   div.article div.content {
     width: 95%;
     margin: 0 auto;
-    overflow: hidden;
     position: relative;
     min-height: 35vh;
   }
@@ -1760,7 +1812,7 @@ input:focus {
     display: none;
   }
   div.article div.content > div.left.second ul li.on a i {
-    transform: rotate(0deg);
+    transform: rotate(90deg);
   }
   div.article div.content > div.left.second ul li a {
     position: relative;
@@ -1768,7 +1820,7 @@ input:focus {
   }
   div.article div.content > div.left.second ul li a i {
     float: right;
-    transform: rotate(45deg);
+    transform: rotate(0deg);
     font-size: 1.1rem;
     transition: 0.3s transform;
     color: #999999;
@@ -2019,6 +2071,29 @@ input:focus {
   .productText {
     padding: 0 0 0 0;
     line-height: 1.5;
+    border: 3px solid #c9151e;
+    padding: 1rem;
+    position: relative;
+  }
+  .productText::before{
+    position: absolute;
+    left:-3px;
+    top:50%;
+    content: '';
+    display:block;
+    transform: translateY(-50%);
+    border-left:3px solid #f8f8f8;
+    height: 5rem;
+  }
+  .productText::after{
+    position: absolute;
+    right:-3px;
+    top:50%;
+    content: '';
+    display:block;
+    transform: translateY(-50%);
+    border-right:3px solid #f8f8f8;
+    height: 5rem;
   }
   .productText * {
     font-size: 1.1rem !important;
@@ -2075,6 +2150,7 @@ input:focus {
     background:url(../images/zyly_bottom.jpg) no-repeat bottom;
     background-size:100% auto;
     background-color:white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
   }
   .productList ul li{
     padding-bottom:2rem;
@@ -2463,7 +2539,8 @@ input:focus {
   	background-color: white;
   	padding: 1rem;
   	margin-top: 2rem;
-  	display: none;
+    display: none;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
   }
   .joinList div.list div.bottom ul li {
     margin-top: 2rem;
@@ -3092,6 +3169,14 @@ input:focus {
     cursor: pointer;
     font-weight: 600;
   }
+  .typicalPerformance .list .top i{
+    margin-left:1rem;
+    font-size:1.2rem;
+    color:#c9151e;
+  }
+  .typicalPerformance .list .top:hover,.typicalPerformance .list .top.on{
+    color:#c9151e;
+  }
   .typicalPerformance .list .top::before{
     position: absolute;
     content: '';
@@ -3110,6 +3195,7 @@ input:focus {
     position: relative;
     padding: 1.5rem;
     display: none;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
   }
   .typicalPerformance .bottom .triangle {
       position: absolute;

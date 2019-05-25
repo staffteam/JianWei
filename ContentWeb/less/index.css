@@ -60,12 +60,12 @@ input:focus {
   .business {
     padding: 96px 0;
     background-color: #F5F5F5;
+    overflow: hidden;
   }
   .business ul {
     width:1152px;
     margin:0 auto;
     margin-top: 96px;
-    overflow: hidden;
   }
   .business ul li {
     width: 25%;
@@ -131,6 +131,9 @@ input:focus {
   .business ul li p:hover img:last-child {
     display: block;
   }
+  .business ul li:hover>h2,.business ul li.liHover>h2{
+    color:#c9151e;
+  }
   .business ul li p img {
     position: absolute;
     top: 50%;
@@ -151,9 +154,10 @@ input:focus {
     display: none;
   }
   .business ul li.txtShow {
-    width: 100%;
+    width: 160%;
+    left:-30%;
     background-color: white;
-    padding: 57.59px 8%;
+    padding: 57.59px 36%;
     position: relative;
   }
   .business ul li.txtShow div.content {
@@ -165,10 +169,11 @@ input:focus {
     font-size: 17.27px;
     text-align: left;
     font-weight: 600;
+    display: none;
   }
   .business ul li.txtShow div.content div {
     display: block;
-    margin-top: 38.4px;
+    /* margin-top: 38.4px; */
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;

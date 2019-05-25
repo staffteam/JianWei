@@ -307,16 +307,26 @@ input:focus {
   }
   .footer {
     background-color: #1b1b1b;
-    padding: 57.59px 17.5%;
+    padding: 57.59px 0;
   }
   .footer ul {
     overflow: hidden;
-    width: 108%;
+    width:1152px;
+    position: relative;
+    margin:0 auto;
   }
   .footer ul li {
     width: 12%;
     float: left;
-    margin-left: 4%;
+    margin-left: 7%;
+  }
+  .footer ul li:first-child{
+    margin-left:0;
+  }
+  .footer ul li:last-child{
+    float:right;
+    margin-left:0;
+    text-align: right;
   }
   .footer ul li a:first-child {
     color: #f8f8f8;
@@ -330,21 +340,24 @@ input:focus {
     display: block;
   }
   .footer .bottom {
-    width: 92%;
+    width: 1152px;
     margin: 0 auto;
     margin-top: 38.4px;
+    height: 40px;
   }
   .footer .bottom div.left {
-    display: inline-block;
+    display: block;
     color: white;
     opacity: 0.8;
     font-size: 15px;
+    float:left;
   }
   .footer .bottom div.fenxiang {
-    display: inline-block;
+    display: block;
     position: relative;
-    top: 9.6px;
-    margin-left: 19.2px;
+    margin-left: 19.2px;  
+    margin-top: -8px;
+    float:left;
   }
   .footer .bottom div.fenxiang p {
     display: inline-block;
@@ -380,7 +393,7 @@ input:focus {
     z-index: -1;
   }
   .footer .bottom div.right {
-    display: inline-block;
+    display: block;
     float: right;
     margin-right: 7%;
   }

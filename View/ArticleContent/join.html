@@ -179,8 +179,10 @@
 						$(function(){
 							$('.joinList .list .top').click(function(){
 								if($(this).parent().find('.bottom').css('display')=='none'){
+									$(this).addClass('on');
 									$(this).parent().find('.bottom').show();
 								}else{
+									$(this).removeClass('on');
 									$(this).parent().find('.bottom').hide();
 								}
 							})
