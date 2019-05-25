@@ -111,7 +111,7 @@ input:focus {
     display: none;
   }
   div.article div.content > div.left.second ul li.on a i {
-    transform: rotate(90deg);
+    transform: rotate(0deg);
     color: white;
   }
   div.article div.content > div.left.second ul li a {
@@ -120,7 +120,7 @@ input:focus {
   }
   div.article div.content > div.left.second ul li a i {
     float: right;
-    transform: rotate(0deg);
+    transform: rotate(90deg);
     font-size: 17.27px;
     transition: 0.3s transform;
     color: #999999;
@@ -428,6 +428,7 @@ input:focus {
     line-height: 1.5;
     border: 3px solid #c9151e;
     padding: 30px;
+    margin-top:95px;
     position: relative;
   }
   .productText::before{
@@ -472,14 +473,10 @@ input:focus {
   .introduceText p{margin:5px 0;}
   .productList {
     overflow: hidden;
-    padding:48px;
-    background:url(../images/zyly_bottom.jpg) no-repeat bottom;
-    background-size:100% auto;
-    background-color:white;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding:0;
   }
   .productList ul li{
-    padding-bottom:76.8px;
+    padding-bottom:45px;
     position: relative;
   }
   .productList ul li:last-child div.left:before{
@@ -494,60 +491,37 @@ input:focus {
     height: 100%;
   }
   .productList ul li div.right{
-    margin-left:76.8px;
+    margin-left:0;
   }
   .productList ul li div.right h2{
-    font-size: 23.04px;
+    font-size: 20px;
     padding-bottom:15px;
     font-weight: 600;
     position: relative;
+    background-color:#eeeeee;
+    height: 45px;
+    line-height: 45px;
+    padding-left:40px;
   }
   .productList ul li div.right h2::before{
-    border-bottom:3px solid #c9151e;
+    border-left:3px solid #c9151e;
     content: '';
     left:0;
+    top:0;
     bottom:0;
-    width:48px;
+    width:0;
     position: absolute;
     display: block;
-  }
-  .productList ul li.no1 div.right h2{
-    display: none;
-  }
-  .productList ul li.no1 div.left{
-    display: none;
-  }
-  .productList ul li.no1 div.right>div{
-    margin-top:0;
-  }
-  .productList ul li.no1 div.right>div p:first-child{
-    margin-top:0;
   }
   .productList.notline ul li  div.left::before{
     display: none;
   }
   .productList ul li div.right div{
-    margin-top:38.4px;
+    margin-top:30px;
+    padding-left:40px;
   }
   .productList ul li div.right div p{
     font-size:17.28px;
-    margin-top:38.4px;
-  }
-  .productList ul li div.left span{
-    width:28.79px;
-    height: 28.79px;
-    background-color:#c9151e;
-    display: block;
-    border-radius: 50%;
-  }
-  .productList ul li div.left::before{
-    content:'';
-    position: absolute;
-    top:0;
-    left:50%;
-    bottom:0;
-    border-right:1px solid #c9151e;
-    display: block;
   }
   .advantageList{
     overflow: hidden;
@@ -695,11 +669,12 @@ input:focus {
   }
   .culture .top > p {
   	 width:100%;
-  	 height: 403.2px;
+     height: 403.2px;
+     overflow: hidden;
   }
   .culture .top > p img{
   	width:100%;
-  	max-width:100%;
+    max-width:100%;
   }
   .culture .top > div > p {
     overflow: hidden;
@@ -735,13 +710,13 @@ input:focus {
   .culture .bottom {
     margin-top: 38.4px;
     background-color: white;
-    padding-top: 38.4px;
   }
   .culture .bottom > h2 {
     font-size: 23.04px;
     font-weight: 600;
     position: relative;
     padding-left: 38.4px;
+    display: none;
   }
   .culture .bottom > h2:before {
     content: '';
@@ -1781,7 +1756,7 @@ input:focus {
     width: 11rem;
     background-color: white;
     position: absolute;
-    left: -11rem;
+    left: -12rem;
     z-index: 999;
   }
   div.article div.content > div.left span.btns {
@@ -1812,7 +1787,7 @@ input:focus {
     display: none;
   }
   div.article div.content > div.left.second ul li.on a i {
-    transform: rotate(90deg);
+    transform: rotate(0deg);
   }
   div.article div.content > div.left.second ul li a {
     position: relative;
@@ -1820,7 +1795,7 @@ input:focus {
   }
   div.article div.content > div.left.second ul li a i {
     float: right;
-    transform: rotate(0deg);
+    transform: rotate(90deg);
     font-size: 1.1rem;
     transition: 0.3s transform;
     color: #999999;
@@ -2074,6 +2049,7 @@ input:focus {
     border: 3px solid #c9151e;
     padding: 1rem;
     position: relative;
+    margin-top:2rem;
   }
   .productText::before{
     position: absolute;
@@ -2146,11 +2122,7 @@ input:focus {
   }
   .productList {
     overflow: hidden;
-    padding:2rem 2rem;
-    background:url(../images/zyly_bottom.jpg) no-repeat bottom;
-    background-size:100% auto;
-    background-color:white;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding:0 0;
   }
   .productList ul li{
     padding-bottom:2rem;
@@ -2168,69 +2140,34 @@ input:focus {
     height: 100%;
   }
   .productList ul li div.right{
-    margin-left:3rem;
+    margin-left:0;
   }
   .productList ul li div.right h2{
     font-size: 1.2rem;
-    padding-bottom:0.8rem;
     font-weight: 600;
     position: relative;
+    line-height: 1.5;
+    padding:0.5rem 0 0.5rem 1.5rem;
+    background-color:#eeeeee;
   }
   .productList ul li div.right h2::before{
-    border-bottom:3px solid #c9151e;
+    border-left:3px solid #c9151e;
     content: '';
     left:0;
     bottom:0;
-    width:1.5rem;
+    top:0;
     position: absolute;
     display: block;
-  }
-  .productList ul li.no1 div.right h2{
-    display: none;
-  }
-  .productList ul li.no1 div.left{
-    display: none;
-  }
-  .productList ul li.no1 div.right>div{
-    margin-top:0;
-  }
-  .productList ul li.no1 div.right>div h1,.productList ul li.no1 div.right>div h2,.productList ul li.no1 div.right>div h3,.productList ul li.no1 div.right>div h4,.productList ul li.no1 div.right>div h5,.productList ul li.no1 div.right>div h6,.productList ul li.no1 div.right>div strong{
-  	font-size: 1.2rem !important;
-  	line-height:2;
-  }
-  .productList ul li.no1 div.right>div h1 *,.productList ul li.no1 div.right>div h2 *,.productList ul li.no1 div.right>div h3 *,.productList ul li.no1 div.right>div h4 *,.productList ul li.no1 div.right>div h5 *,.productList ul li.no1 div.right>div h6 *,.productList ul li.no1 div.right>div strong *{
-  	font-size: 1.2rem !important;
-  	line-height:2;
-  }
-  .productList ul li.no1 div.right>div *{font-size: 1.1rem !important; line-height:1.5; font-family: "微软雅黑" !important;}
-  .productList ul li.no1 div.right>div p:first-child{
-    margin-top:0;
   }
   .productList.notline ul li  div.left::before{
     display: none;
   }
   .productList ul li div.right div{
     margin-top:1rem;
+    padding-left:1.5rem;
   }
   .productList ul li div.right div p{
     font-size:0.9rem;
-    margin-top:1.5rem;
-  }
-  .productList ul li div.left span{
-    width:1.5rem;
-    height: 1.5rem;
-    background-color:#c9151e;
-    display: block;
-    border-radius: 50%;
-  }
-  .productList ul li div.left::before{
-    content:'';
-    position: absolute;
-    top:0;
-    left:50%;
-    bottom:0;
-    border-right:1px solid #c9151e;
-    display: block;
   }
   .advantageList{
     overflow: hidden;
@@ -2374,6 +2311,14 @@ input:focus {
   .culture .top {
     overflow: hidden;
   }
+  .culture .top > p {
+  	 width:100%;
+     overflow: hidden;
+  }
+  .culture .top > p img{
+  	width:100%;
+    max-width:100%;
+  }
   .culture .top > div {
     margin: 1rem 0;
   }
@@ -2406,13 +2351,13 @@ input:focus {
   .culture .bottom {
     margin-top: 1rem;
     background-color: white;
-    padding-top: 1rem;
   }
   .culture .bottom > h2 {
     font-size: 1.2rem;
     font-weight: 600;
     position: relative;
     padding-left: 38.4px;
+    display: none;
   }
   .culture .bottom > h2:before {
     content: '';
@@ -2453,10 +2398,6 @@ input:focus {
   }
   .culture .bottom > div p {
     margin: 5px 0;
-  }
-  .culture .bottom > div {
-    padding: 38.4px;
-    line-height: 1.5;
   }
   .newsList ul li {
     border-bottom: 1px solid #DDDDDD;

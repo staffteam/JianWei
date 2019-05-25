@@ -308,6 +308,7 @@ input:focus {
   .footer {
     background-color: #1b1b1b;
     padding: 57.59px 0;
+    text-align: center;
   }
   .footer ul {
     overflow: hidden;
@@ -319,6 +320,7 @@ input:focus {
     width: 12%;
     float: left;
     margin-left: 7%;
+    text-align: left;
   }
   .footer ul li:first-child{
     margin-left:0;
@@ -340,10 +342,9 @@ input:focus {
     display: block;
   }
   .footer .bottom {
-    width: 1152px;
-    margin: 0 auto;
     margin-top: 38.4px;
-    height: 40px;
+    height: 30px;
+    display: inline-block;
   }
   .footer .bottom div.left {
     display: block;
@@ -396,6 +397,7 @@ input:focus {
     display: block;
     float: right;
     margin-right: 7%;
+    display: none;
   }
   .footer .bottom div.right a {
     display: inline-block;
@@ -640,6 +642,7 @@ input:focus {
   .footer {
     background-color: #1b1b1b;
     padding: 1.5rem 2.5%;
+    text-align: center;
   }
   .footer ul {
     overflow: hidden;
@@ -647,6 +650,7 @@ input:focus {
   }
   .footer ul li {
     display: inline-grid;
+    width:15.5%;
   }
   .footer ul li a:first-child {
     color: #f8f8f8;
@@ -658,10 +662,13 @@ input:focus {
     font-size: 1rem;
     line-height: 2;
     display: block;
+    width:150%;
+    margin-left:-25%;
   }
   .footer .bottom {
     margin-top: 0;
     text-align: center;
+    display: inline-block;
   }
   .footer .bottom div.left {
     color: white;
@@ -711,6 +718,7 @@ input:focus {
     text-align: center;
     display: inline-block;
     margin-left: 2rem;
+    display: none;
   }
   .footer .bottom div.right a {
     display: inline-block;
