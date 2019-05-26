@@ -133,6 +133,7 @@ input:focus {
   }
   .business ul li:hover>h2,.business ul li.liHover>h2{
     color:#c9151e;
+    font-weight: 600;
   }
   .business ul li p img {
     position: absolute;

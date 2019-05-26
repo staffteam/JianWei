@@ -124,6 +124,8 @@ input:focus {
     font-size: 17.27px;
     transition: 0.3s transform;
     color: #999999;
+    position: absolute;
+    right:20px;
   }
   div.article div.content > div.left.second ul li div {
     display: none;
@@ -132,9 +134,11 @@ input:focus {
   div.article div.content > div.left.second ul li div p {
     border-top: 1px solid #DDDDDD;
   }
+  div.article div.content > div.left.second ul li div p a{
+    padding:20px;
+  }
   div.article div.content > div.left.second ul li div p.on a {
-    background-color: #c9151e;
-    color: white;
+    color: #c9151e;
   }
   div.article div.content > div.left.second ul li div p:last-child {
     border-bottom: 0;
@@ -1807,6 +1811,8 @@ input:focus {
     font-size: 1.1rem;
     transition: 0.3s transform;
     color: #999999;
+    position: absolute;
+    right:0.5rem;
   }
   div.article div.content > div.left.second ul li div {
     display: none;
@@ -1816,8 +1822,10 @@ input:focus {
     border-bottom: 1px solid #DDDDDD;
   }
   div.article div.content > div.left.second ul li div p.on a {
-    background-color: #c9151e;
-    color: white;
+    color: #c9151e;
+  }
+  div.article div.content > div.left.second ul li div p.on a i{
+    color: #c9151e;
   }
   div.article div.content > div.left.second ul li div p:last-child {
     border-bottom: 0;
@@ -1844,7 +1852,11 @@ input:focus {
     position: relative;
   }
   div.article div.content > div.left ul li.on > a {
-    color: #c9151e;
+    background-color: #c9151e;
+    color:white;
+  }
+  div.article div.content > div.left ul li.on > a i{
+    color: white;
   }
   div.article div.content > div.left ul li.on > a:before {
     height: 60%;
@@ -1854,12 +1866,16 @@ input:focus {
     width: 0.2rem;
     background-color: #c9151e;
     content: '';
+    display: none;
   }
   div.article div.content > div.left ul li a {
     display: block;
     padding: 1rem 0.5rem;
     font-size: 1.1rem;
     line-height: 1.5;
+  }
+  div.article div.content > div.left ul li div a{
+    padding: 0.5rem 0.5rem;
   }
   div.article div.content > div.right div.articleTitle {
     text-align: center;
@@ -2178,16 +2194,16 @@ input:focus {
   .productList ul li div.right div p{
     font-size:0.9rem;
   }
-  .productList ul li.no1 div.right>div h1,.productList ul li.no1 div.right>div h2,.productList ul li.no1 div.right>div h3,.productList ul li.no1 div.right>div h4,.productList ul li.no1 div.right>div h5,.productList ul li.no1 div.right>div h6,.productList ul li.no1 div.right>div strong{
+  .productList ul li div.right>div h1,.productList ul li div.right>div h2,.productList ul li div.right>div h3,.productList ul li div.right>div h4,.productList ul li div.right>div h5,.productList ul li div.right>div h6,.productList ul li div.right>div strong{
   	font-size: 1.2rem !important;
   	line-height:2;
   }
-  .productList ul li.no1 div.right>div h1 *,.productList ul li.no1 div.right>div h2 *,.productList ul li.no1 div.right>div h3 *,.productList ul li.no1 div.right>div h4 *,.productList ul li.no1 div.right>div h5 *,.productList ul li.no1 div.right>div h6 *,.productList ul li.no1 div.right>div strong *{
+  .productList ul li div.right>div h1 *,.productList ul li div.right>div h2 *,.productList ul li div.right>div h3 *,.productList ul li div.right>div h4 *,.productList ul li div.right>div h5 *,.productList ul li div.right>div h6 *,.productList ul li div.right>div strong *{
   	font-size: 1.2rem !important;
   	line-height:2;
   }
-  .productList ul li.no1 div.right>div *{font-size: 1.1rem !important; line-height:1.5; font-family: "微软雅黑" !important;}
-  .productList ul li.no1 div.right>div p:first-child{
+  .productList ul li div.right>div *{font-size: 1.1rem !important; line-height:1.5; font-family: "微软雅黑" !important;}
+  .productList ul li div.right>div p:first-child{
     margin-top:0;
   }
   .advantageList{
