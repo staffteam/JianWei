@@ -133,7 +133,8 @@ input:focus {
     border-top: 1px solid #DDDDDD;
   }
   div.article div.content > div.left.second ul li div p.on a {
-    background-color: #eeeeee;
+    background-color: #c9151e;
+    color: white;
   }
   div.article div.content > div.left.second ul li div p:last-child {
     border-bottom: 0;
@@ -1617,9 +1618,15 @@ input:focus {
     margin-left:10px;
     font-size:23.04px;
     color:#c9151e;
+    transition: 0.3s transform;
+    transform: rotate(0deg);
+    display: inline-block;
   }
   .typicalPerformance .list .top:hover,.typicalPerformance .list .top.on{
     color:#c9151e;
+  }
+  .typicalPerformance .list .top.on i{
+    transform: rotate(90deg);
   }
   .typicalPerformance .list .top::before{
     position: absolute;
@@ -1630,6 +1637,7 @@ input:focus {
     height: 15px;
     background-color:#c9151e;
     transform: rotate(45deg);
+    display: none;
   }
   .typicalPerformance .bottom{
     line-height: 1.5;
@@ -1808,7 +1816,8 @@ input:focus {
     border-bottom: 1px solid #DDDDDD;
   }
   div.article div.content > div.left.second ul li div p.on a {
-    color: #c9151e;
+    background-color: #c9151e;
+    color: white;
   }
   div.article div.content > div.left.second ul li div p:last-child {
     border-bottom: 0;
@@ -2168,6 +2177,18 @@ input:focus {
   }
   .productList ul li div.right div p{
     font-size:0.9rem;
+  }
+  .productList ul li.no1 div.right>div h1,.productList ul li.no1 div.right>div h2,.productList ul li.no1 div.right>div h3,.productList ul li.no1 div.right>div h4,.productList ul li.no1 div.right>div h5,.productList ul li.no1 div.right>div h6,.productList ul li.no1 div.right>div strong{
+  	font-size: 1.2rem !important;
+  	line-height:2;
+  }
+  .productList ul li.no1 div.right>div h1 *,.productList ul li.no1 div.right>div h2 *,.productList ul li.no1 div.right>div h3 *,.productList ul li.no1 div.right>div h4 *,.productList ul li.no1 div.right>div h5 *,.productList ul li.no1 div.right>div h6 *,.productList ul li.no1 div.right>div strong *{
+  	font-size: 1.2rem !important;
+  	line-height:2;
+  }
+  .productList ul li.no1 div.right>div *{font-size: 1.1rem !important; line-height:1.5; font-family: "微软雅黑" !important;}
+  .productList ul li.no1 div.right>div p:first-child{
+    margin-top:0;
   }
   .advantageList{
     overflow: hidden;
@@ -3114,9 +3135,15 @@ input:focus {
     margin-left:1rem;
     font-size:1.2rem;
     color:#c9151e;
+    transition: 0.3s transform;
+    transform: rotate(0deg);
+    display: inline-block;
   }
-  .typicalPerformance .list .top:hover,.typicalPerformance .list .top.on{
+  .typicalPerformance .list .top.on{
     color:#c9151e;
+  }
+  .typicalPerformance .list .top.on i{
+    transform: rotate(90deg);
   }
   .typicalPerformance .list .top::before{
     position: absolute;
@@ -3127,6 +3154,7 @@ input:focus {
     height: 0.8rem;
     background-color:#c9151e;
     transform: rotate(45deg);
+    display: none;
   }
   .typicalPerformance .bottom{
     line-height: 1.5;

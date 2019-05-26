@@ -662,8 +662,8 @@ input:focus {
     font-size: 1rem;
     line-height: 2;
     display: block;
-    width:150%;
-    margin-left:-25%;
+    width:200%;
+    margin-left:-50%;
   }
   .footer .bottom {
     margin-top: 0;
