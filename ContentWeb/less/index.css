@@ -1,7 +1,7 @@
 input {
   border: 1px solid #dddddd;
   outline: none;
-  font-family: Arial, "微软雅黑";
+  font-family: Arial, "寰蒋闆呴粦";
 }
 input:focus {
   border: 1px solid #dddddd;
@@ -149,7 +149,7 @@ input:focus {
   .business ul li h2 {
     text-align: center;
     margin-top: 38.4px;
-    font-size: 15.36px;
+    font-size: 17px;
   }
   .business ul li > div {
     display: none;
@@ -528,6 +528,9 @@ input:focus {
   #indexbanner .swiper-slide > a > p img {
     height: 100%;
     max-width: none;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
   }
   #indexbanner .swiper-slide div {
     position: absolute;
@@ -1007,4 +1010,5 @@ input:focus {
     position: absolute;
     display: block;
   }
+  .newsBanner{padding-bottom: 2rem !important;}
 }
