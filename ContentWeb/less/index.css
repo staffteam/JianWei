@@ -1,7 +1,7 @@
 input {
   border: 1px solid #dddddd;
   outline: none;
-  font-family: Arial, "寰蒋闆呴粦";
+  font-family: Arial,"Microsoft Yahei",Helvetica,Tahoma,"PingFang SC","lantinghei SC","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
 }
 input:focus {
   border: 1px solid #dddddd;
