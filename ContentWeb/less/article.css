@@ -82,11 +82,11 @@ input:focus {
     font-weight: 500;
     left: 20%;
     color: white;
-    font-size: 19.2px;
+    font-size: 19px;
   }
   .streamer div.location a {
     color: white;
-    font-size: 19.2px;
+    font-size: 19px;
     margin: 0 9.6px;
   }
   body {
@@ -111,7 +111,7 @@ input:focus {
     display: none;
   }
   div.article div.content > div.left.second ul li.on a i {
-    transform: rotate(0deg);
+    transform: rotate(90deg);
     color: white;
   }
   div.article div.content > div.left.second ul li a {
@@ -191,7 +191,7 @@ input:focus {
   }
   div.article div.content > div.right div.articleTitle {
     text-align: center;
-    padding: 96px 0;
+    padding: 60px 0;
   }
   div.article div.content > div.right div.articleTitle.on span.a {
     width: 134.4px;
@@ -299,7 +299,7 @@ input:focus {
   }
   div.article div.content > div.right div.professionalList ul li div.right h2 {
     font-weight: 600;
-    font-size: 23.04px;
+    font-size: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -307,7 +307,7 @@ input:focus {
   div.article div.content > div.right div.professionalList ul li div.right span {
     display: block;
     margin-top: 9.6px;
-    font-size: 19.2px;
+    font-size: 19px;
     color: #999999;
   }
   div.article div.content > div.right div.professionalList ul li div.right font {
@@ -326,13 +326,13 @@ input:focus {
     line-height: 30px;
     line-height: 2;
     font-size: 15px;
-    margin-top: 19.2px;
+    margin-top: 19px;
     -webkit-line-clamp: 3;
   }
   div.article div.content > div.right div.professionalList ul li div.right > div {
     position: absolute;
     right: 0;
-    bottom: 19.2px;
+    bottom: 19px;
   }
   div.article div.content > div.right div.professionalList ul li div.right > div a {
     display: inline-block;
@@ -363,7 +363,7 @@ input:focus {
   .pageview .link {
     cursor: pointer;
     color: #000000;
-    font-size: 19.2px;
+    font-size: 19px;
     width: 48px;
     border: 0 !important;
     border-radius: 50%;
@@ -404,7 +404,7 @@ input:focus {
     color: #c9151e;
   }
   .collegeList ul li a h2 {
-    font-size: 19.2px;
+    font-size: 19px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -457,21 +457,21 @@ input:focus {
     height: 170px;
   }
   .productText h1,.productText h2,.productText h3,.productText h4,.productText h5,.productText h6,.productText strong{
-  	font-size: 19.2px ;
+  	font-size: 19px ;
   	line-height:2;
   }
   .productText h1 *,.productText h2 *,.productText h3 *,.productText h4 *,.productText h5 *,.productText h6 *,.productText strong *{
-  	font-size: 19.2px ;
+  	font-size: 19px ;
   	line-height:2;
   }
   .productText *{font-size: 17.27px ; line-height:1.5; font-family: "微软雅黑" !important;}
   .productText p{margin:5px 0;}
   .introduceText h1,.introduceText h2,.introduceText h3,.introduceText h4,.introduceText h5,.introduceText h6,.introduceText strong{
-  	font-size: 19.2px ;
+  	font-size: 19px ;
   	line-height:2;
   }
   .introduceText h1 *,.introduceText h2 *,.introduceText h3 *,.introduceText h4 *,.introduceText h5 *,.introduceText h6 *,.introduceText strong *{
-  	font-size: 19.2px ;
+  	font-size: 19px ;
   	line-height:2;
   }
   .introduceText *{font-size: 17.27px ; line-height:1.5; font-family: "微软雅黑" !important;}
@@ -499,7 +499,7 @@ input:focus {
     margin-left:0;
   }
   .productList ul li div.right h2{
-    font-size: 20px;
+    font-size: 16px;
     padding-bottom:15px;
     font-weight: 600;
     position: relative;
@@ -538,11 +538,11 @@ input:focus {
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
   }
   .advantageList h1,.advantageList h2,.advantageList h3,.advantageList h4,.advantageList h5,.advantageList h6,.advantageList strong{
-  	font-size: 19.2px ;
+  	font-size: 19px ;
   	line-height:2;
   }
   .advantageList h1 *,.advantageList h2 *,.advantageList h3 *,.advantageList h4 *,.advantageList h5 *,.advantageList h6 *,.advantageList strong *{
-  	font-size: 19.2px ;
+  	font-size: 19px ;
   	line-height:2;
   }
   .advantageList *{font-size: 17.27px ; line-height:1.5; font-family: "微软雅黑" !important;}
@@ -554,10 +554,10 @@ input:focus {
     margin-top: 0;
   }
   .advantageList ul li h2 {
-    font-size: 21.11px;
-    padding-left:38.4px;
-    height: 38.4px;
-    line-height: 38.4px;
+    font-size: 16px;
+    padding-left:30px;
+    height: 30px;
+    line-height: 30px;
     font-weight: 600;
     position: relative;
   }
@@ -565,9 +565,9 @@ input:focus {
     position: absolute;
     content: '';
     left: 0;
-    top:12.47px;
-    width:15px;
-    height: 15px;
+    top:10px;
+    width:10px;
+    height: 10px;
     background-color:#c9151e;
     transform: rotate(45deg);
   }
@@ -575,8 +575,8 @@ input:focus {
     text-indent: 2em;
     line-height: 1.8;
     font-size: 15px;
-    margin-top: 19.2px;
-    margin-left:38.4px;
+    margin-top: 15px;
+    margin-left:30px;
   }
   .lndustryList {
     background-color: white;
@@ -585,35 +585,38 @@ input:focus {
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
   }
   .lndustryList > h2 {
-    font-size: 19.2px;
+    font-size: 14px;
     line-height: 1.5;
     font-weight: 600;
+    padding:10px 0;
     padding-left: 28.79px;
+    background-color: #f5f5f5;
   }
   .lndustryList > p {
-    font-size: 19.2px;
+    font-size: 16px;
     margin-top: 38.4px;
     font-weight: 600;
     padding-left: 28.79px;
   }
   .lndustryList ul {
-    margin-top: 38.4px;
+    margin-top: 30px;
   }
   .lndustryList ul li {
-    margin-top: 28.79px;
-    font-size: 17.27px;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 30px;
     position: relative;
     padding-left: 28.79px;
   }
   .lndustryList ul li:before {
     content: '';
-    width: 9.6px;
-    height: 9.6px;
+    width: 10px;
+    height: 10px;
     background-color: #c9151e;
     display: block;
     position: absolute;
     left: 5px;
-    top: 7px;
+    top: 10px;
     transform: rotate(45deg);
   }
   .honorList h2 {
@@ -625,9 +628,9 @@ input:focus {
   }
   .honorList ul li {
     display: inline-block;
-    font-size: 19.2px;
-    margin:9.6px 19.2px 0 0;
-    padding: 3.84px 19.2px;
+    font-size: 19px;
+    margin:9.6px 19px 0 0;
+    padding: 3.84px 19px;
     cursor: pointer;
   }
   .honorList ul li.on,.honorList ul li:hover {
@@ -702,7 +705,7 @@ input:focus {
     padding: 38.4px 57.59px;
   }
   .culture .top > div div h2 {
-    font-size: 23.04px;
+    font-size: 20px;
     font-weight: 600;
   }
   .culture .top > div div p {
@@ -717,7 +720,7 @@ input:focus {
     background-color: white;
   }
   .culture .bottom > h2 {
-    font-size: 23.04px;
+    font-size: 20px;
     font-weight: 600;
     position: relative;
     padding-left: 38.4px;
@@ -743,7 +746,7 @@ input:focus {
   .culture .bottom > div h5,
   .culture .bottom > div h6,
   .culture .bottom > div strong {
-  	font-size: 19.2px ;
+  	font-size: 19px ;
   	line-height:2;
     font-weight: 600;
   }
@@ -754,7 +757,7 @@ input:focus {
   .culture .bottom > div h5 *,
   .culture .bottom > div h6 *,
   .culture .bottom > div strong * {
-  	font-size: 19.2px ;
+  	font-size: 19px ;
   	line-height:2;
     font-weight: 600;
   }
@@ -801,7 +804,7 @@ input:focus {
     color: #c9151e;
   }
   .newsList ul li h2 {
-    font-size: 19.2px;
+    font-size: 16px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -812,7 +815,7 @@ input:focus {
   .newsList ul li span {
     font-size: 17.27px;
     display: block;
-    margin-top: 19.2px;
+    margin-top: 19px;
   }
   .newsList ul li div{
   	font-size:15px;
@@ -837,7 +840,7 @@ input:focus {
   	cursor: pointer;
   }
   .joinList div.list div.top h2 {
-    font-size: 23.04px;
+    font-size: 20px;
     font-weight: 600;
   }
   .joinList div.list div.top:hover h2,.joinList div.list div.top.on h2{
@@ -845,7 +848,7 @@ input:focus {
   }
   .joinList div.list div.top span {
     display: block;
-    margin-top: 19.2px;
+    margin-top: 19px;
     font-size: 15px;
     color: #999999;
   }
@@ -853,12 +856,12 @@ input:focus {
     margin-top: 28.79px;
   }
   .joinList div.list div.bottom ul li h2 {
-    font-size: 19.2px;
+    font-size: 19px;
     font-weight: 600;
   }
   .joinList div.list div.bottom ul li p {
     line-height: 2;
-    margin-top: 19.2px;
+    margin-top: 19px;
     font-size: 17.27px;
   }
   .joinList div.list div.bottom{
@@ -873,7 +876,7 @@ input:focus {
   }
   .joinList div.list div.bottom .triangle{
   	position: absolute;
-  	left: 19.2px;
+  	left: 19px;
   	top:0;
   	transform: translateY(-100%);
   	width:53.76px;
@@ -886,7 +889,7 @@ input:focus {
   .joinList div.list div.bottom h6,
   .joinList div.list div.bottom strong * {
     font-weight: 600;
-    font-size: 19.2px ;
+    font-size: 19px ;
   }
   .joinList div.list div.bottom h1 *,
   .joinList div.list div.bottom h2 *,
@@ -896,7 +899,7 @@ input:focus {
   .joinList div.list div.bottom h6 *,
   .joinList div.list div.bottom strong * {
     font-weight: 600;
-    font-size: 19.2px ;
+    font-size: 19px ;
   }
   .joinList div.list div.bottom p {
     margin: 5px 0;
@@ -930,7 +933,7 @@ input:focus {
   .aboutlist div.text h5,
   .aboutlist div.text h6 {
     font-weight: 600;
-    font-size: 19.2px ;
+    font-size: 19px ;
   }
   .aboutlist div.text h1 *,
   .aboutlist div.text h2 *,
@@ -940,7 +943,7 @@ input:focus {
   .aboutlist div.text h6 *
   .aboutlist div.text strong * {
     font-weight: 600;
-    font-size: 19.2px ;
+    font-size: 19px ;
   }
   .aboutlist div.text p {
     margin: 5px 0;
@@ -954,7 +957,7 @@ input:focus {
     margin-top: 38.4px;
   }
   .aboutlist div.list h2 {
-    font-size: 19.2px;
+    font-size: 19px;
     font-weight: 600;
   }
   .aboutlist div.list div {
@@ -976,7 +979,7 @@ input:focus {
     margin-top: 38.4px;
   }
   .aboutlist div.hd h2 {
-    font-size: 19.2px;
+    font-size: 19px;
     font-weight: 600;
   }
   .aboutlist div.hd ul {
@@ -1117,11 +1120,11 @@ input:focus {
     display: block;
   }
   .teamcontent .teamList ul li div > a h2 {
-    font-size: 23.04px;
+    font-size: 20px;
   }
   .teamcontent .teamList ul li div > a span {
     display: block;
-    margin-top: 19.2px;
+    margin-top: 19px;
     font-size: 15px;
     color: #999999;
   }
@@ -1162,7 +1165,7 @@ input:focus {
     width: 100%;
   }
   .teams div.tle {
-    padding: 38.4px 19.2px;
+    padding: 38.4px 19px;
     text-align: center;
     background-color: white;
   }
@@ -1172,7 +1175,7 @@ input:focus {
   }
   .teams div.tle span {
     font-size: 15px;
-    margin-top: 19.2px;
+    margin-top: 19px;
     display: block;
   }
   .teams div.list {
@@ -1181,7 +1184,7 @@ input:focus {
   }
   .teams div.list p {
     border-top: 1px solid #DDDDDD;
-    padding: 19.2px;
+    padding: 19px;
   }
   .teams div.list p span {
     display: block;
@@ -1210,7 +1213,7 @@ input:focus {
   }
   .teams div.code h2 {
     text-align: center;
-    margin-top: 19.2px;
+    margin-top: 19px;
     font-size: 15px;
   }
   .teams div.down {
@@ -1230,7 +1233,7 @@ input:focus {
     padding: 76.8px 0;
   }
   .teamContent ul li > h2 {
-    font-size: 19.2px;
+    font-size: 19px;
     font-weight: 600;
     position: relative;
     padding-left: 28.79px;
@@ -1270,7 +1273,7 @@ input:focus {
   .teamContent ul li > div h5,
   .teamContent ul li > div h6 {
     font-weight: 600;
-    font-size: 19.2px ;
+    font-size: 19px ;
   }
   .teamContent ul li > div h1 *,
   .teamContent ul li > div h2 *,
@@ -1279,7 +1282,7 @@ input:focus {
   .teamContent ul li > div h5 *,
   .teamContent ul li > div h6 * {
     font-weight: 600;
-    font-size: 19.2px ;
+    font-size: 19px ;
   }
   .teamContent ul li > div p {
     margin: 5px 0;
@@ -1307,7 +1310,7 @@ input:focus {
     font-size: 21.11px;
     font-weight: 600;
     position: relative;
-    padding-bottom: 19.2px;
+    padding-bottom: 19px;
   }
   .contactTop div.right h2:before {
     content: '';
@@ -1381,7 +1384,7 @@ input:focus {
   .contactBottom div.map > div > div div {
     font-size: 28.79px;
     line-height: 2;
-    margin-top: 19.2px;
+    margin-top: 19px;
   }
   .search {
     padding: 96px 0;
@@ -1430,7 +1433,7 @@ input:focus {
   	max-height: 192px;
   	overflow-y: auto;
   	overflow-x: hidden;
-  	padding:0 19.2px;
+  	padding:0 19px;
   }
   .search div.top .searchlist p{
   	font-size: 15px;
@@ -1493,7 +1496,7 @@ input:focus {
   }
   .newsDetails > p {
     text-align: center;
-    margin-top: 19.2px;
+    margin-top: 19px;
     font-size: 17.27px;
     color: #666666;
   }
@@ -1511,7 +1514,7 @@ input:focus {
   .newsDetails div.content h5,
   .newsDetails div.content h6 {
     font-weight: 600;
-    font-size: 19.2px ;
+    font-size: 19px ;
   }
   .newsDetails div.content h1 *,
   .newsDetails div.content h2 *,
@@ -1520,7 +1523,7 @@ input:focus {
   .newsDetails div.content h5 *,
   .newsDetails div.content h6 * {
     font-weight: 600;
-    font-size: 19.2px ;
+    font-size: 19px ;
   }
   .newsDetails div.content p {
     margin: 5px 0;
@@ -1548,7 +1551,7 @@ input:focus {
    .wzfx> div {
    	margin:0 auto;
    	text-align: center;
-   	margin-top:19.2px;
+   	margin-top:19px;
   }
   .wzfx>.bshare-custom.icon-medium a {
     display: inline-block;
@@ -1585,12 +1588,12 @@ input:focus {
   .periodicalDetails .periodicaContent .left p{
   	width:90%;
   	margin:0 auto;
-  	padding:19.2px 0;
+  	padding:19px 0;
   }
   .periodicalDetails .periodicaContent .left h2{
   	font-size:15px;
   	margin:0 5%;
-  	margin-top:19.2px;
+  	margin-top:19px;
   	line-height: 2;
   }
   .periodicalDetails .periodicaContent .left span{
@@ -1611,19 +1614,19 @@ input:focus {
   }
   .typicalPerformance .list .top{
     position: relative;
-    height: 38.4px;
-    line-height: 38.4px;
-    padding-left:38.4px;
-    font-size:23.04px;
+    height: 30px;
+    line-height: 30px;
+    padding-left:30px;
+    font-size:16px;
     cursor: pointer;
     font-weight: 600;
   }
   .typicalPerformance .list .top i{
     margin-left:10px;
-    font-size:23.04px;
+    font-size:16px;
     color:#c9151e;
     transition: 0.3s transform;
-    transform: rotate(0deg);
+    transform: rotate(90deg);
     display: inline-block;
   }
   .typicalPerformance .list .top:hover,.typicalPerformance .list .top.on{
@@ -1655,7 +1658,7 @@ input:focus {
   }  
   .typicalPerformance .bottom .triangle {
       position: absolute;
-      left: 19.2px;
+      left: 19px;
       top: 0;
       transform: translateY(-99%);
       width: 48px;
@@ -1668,7 +1671,7 @@ input:focus {
   .typicalPerformance .bottom h6,
   .typicalPerformance .bottom strong * {
     font-weight: 600;
-    font-size: 19.2px ;
+    font-size: 19px ;
   }
   .typicalPerformance .bottom h1 *,
   .typicalPerformance .bottom h2 *,
@@ -1678,7 +1681,7 @@ input:focus {
   .typicalPerformance .bottom h6 *,
   .typicalPerformance .bottom strong * {
     font-weight: 600;
-    font-size: 19.2px ;
+    font-size: 19px ;
   }
   .typicalPerformance .bottom p {
     margin: 5px 0;
@@ -1799,7 +1802,7 @@ input:focus {
     display: none;
   }
   div.article div.content > div.left.second ul li.on a i {
-    transform: rotate(0deg);
+    transform: rotate(90deg);
   }
   div.article div.content > div.left.second ul li a {
     position: relative;
@@ -2951,7 +2954,7 @@ input:focus {
     position: relative;
   }
   .search div.top i {
-    font-size: 23.04px;
+    font-size: 20px;
     float: left;
     width: 5%;
     height: 3rem;
@@ -3152,7 +3155,7 @@ input:focus {
     font-size:1.2rem;
     color:#c9151e;
     transition: 0.3s transform;
-    transform: rotate(0deg);
+    transform: rotate(90deg);
     display: inline-block;
   }
   .typicalPerformance .list .top.on{

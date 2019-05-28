@@ -528,6 +528,9 @@ input:focus {
   #indexbanner .swiper-slide > a > p img {
     height: 100%;
     max-width: none;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
   }
   #indexbanner .swiper-slide div {
     position: absolute;
