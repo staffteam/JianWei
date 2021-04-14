@@ -23,9 +23,9 @@ body {
   background: #fff;
   color: #333;
   font-size: 14px;
-  font-family: Arial,"Microsoft Yahei",Helvetica,Tahoma,"PingFang SC","lantinghei SC","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+  font-family: "微软雅黑";
 }
-*{font-family: Arial,"Microsoft Yahei",Helvetica,Tahoma,"PingFang SC","lantinghei SC","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif !important;}
+*{font-family: "微软雅黑" !important;}
 ul,
 ol {
   list-style-type: none;
@@ -76,7 +76,7 @@ img {
 input {
   border: 1px solid #dddddd;
   outline: none;
-  font-family: Arial,"Microsoft Yahei",Helvetica,Tahoma,"PingFang SC","lantinghei SC","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+  font-family: "微软雅黑";
 }
 input:focus {
   border: 1px solid #dddddd;
@@ -359,6 +359,9 @@ input:focus {
     position: relative;
     margin-left: 19.2px;  
     margin-top: -8px;
+    float:left;
+  }
+  .footer .bottom div.fenxiang>a{
     float:left;
   }
   .footer .bottom div.fenxiang p {

@@ -1,4 +1,4 @@
-function getQueryString(name) { 
+﻿function getQueryString(name) { 
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
     var r = window.location.search.substr(1).match(reg); 
     if (r != null) return r[2]; 
@@ -54,7 +54,7 @@ $(function() {
 //					if(list_ > $('#businessDetails ul li').length-1){
 //						list_ = $('#businessDetails ul li').length-1;
 //					}
-				$('#businessDetails ul li').eq(3).after("<li class='txtShow' data-index='"+index_+"'><div class='content'><div>"+$(this).find('div').html()+"</div><a>查看更多<i class='iconfont' >&#xe636;</i></a></div><div class='right' ><span onclick='zmove(this)' ><i class='iconfont' >&#xe630;</i></span><span onclick='ymove(this)'> <i class='iconfont' >&#xe604;</i></span></div></li>");
+				$('#businessDetails ul li').eq(3).after("<li class='txtShow' data-index='"+index_+"'><div class='content'><div>"+$(this).find('div').html()+"</div>"+$(this).find('.area').html()+"</li>");
 				
 		}else{
 			$(obj).removeClass('liHover');
